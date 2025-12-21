@@ -17,7 +17,8 @@ export async function generateStaticParams() {
 
 export default async function ThesisPage({ params }: Props) {
   const { slug } = await params;
-  const thesis = getThesis(slug);
+  const decodedSlug = decodeURIComponent(slug);
+  const thesis = getThesis(decodedSlug);
 
   if (!thesis) {
     notFound();
@@ -52,7 +53,7 @@ export default async function ThesisPage({ params }: Props) {
           <ThesisWithAnnotations
             content={processedContent}
             thesisTitle={thesis.title}
-            thesisSlug={slug}
+            thesisSlug={decodedSlug}
           />
         </article>
 
@@ -63,7 +64,7 @@ export default async function ThesisPage({ params }: Props) {
         )}
       </div>
 
-      <ChatSidebar thesisSlug={slug} thesisTitle={thesis.title} />
+      <ChatSidebar thesisSlug={decodedSlug} thesisTitle={thesis.title} />
     </div>
   );
 }

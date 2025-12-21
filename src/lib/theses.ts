@@ -92,7 +92,8 @@ export function getAllTheses(): Thesis[] {
     const { content } = matter(fileContent);
 
     const slug = filename.replace(".md", "");
-    const title = slug.replace(/-/g, " ");
+    // Title is the slug itself (filenames are now human-readable)
+    const title = slug;
 
     return {
       slug,
@@ -122,7 +123,7 @@ export function getThesis(slug: string): Thesis | null {
 
   return {
     slug,
-    title: slug.replace(/-/g, " "),
+    title: slug,
     content,
     maturity: extractMaturity(content),
     take: extractTake(content),

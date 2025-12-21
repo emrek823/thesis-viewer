@@ -76,7 +76,7 @@ export default function HomePage() {
                 {items.map((thesis) => (
                   <Link
                     key={thesis.slug}
-                    href={`/thesis/${thesis.slug}`}
+                    href={`/thesis/${encodeURIComponent(thesis.slug)}`}
                     className="block p-5 card-nintendo bg-white group"
                   >
                     <div className="flex items-start justify-between gap-4">
