@@ -2,7 +2,7 @@ import { getThesis, getAllTheses } from "@/lib/theses";
 import { resolveWikilinks } from "@/lib/wikilinks";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ThesisContent } from "@/components/ThesisContent";
+import { ThesisWithAnnotations } from "@/components/ThesisWithAnnotations";
 import { SourcesPanel } from "@/components/SourcesPanel";
 import { ChatSidebar } from "@/components/ChatSidebar";
 
@@ -49,9 +49,11 @@ export default async function ThesisPage({ params }: Props) {
             <h1 className="font-mono font-bold text-3xl">{thesis.title}</h1>
           </header>
 
-          <div className="prose max-w-none">
-            <ThesisContent content={processedContent} />
-          </div>
+          <ThesisWithAnnotations
+            content={processedContent}
+            thesisTitle={thesis.title}
+            thesisSlug={slug}
+          />
         </article>
 
         {thesis.sources.length > 0 && (
