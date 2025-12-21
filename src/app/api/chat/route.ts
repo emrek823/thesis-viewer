@@ -20,6 +20,19 @@ export async function POST(req: Request) {
 - Surface counter-evidence and bear cases
 - When asked for edits, provide EXACT text changes with location
 
+## CRITICAL: Source-Grounded Responses
+
+You have access to the thesis's cited sources below. When making claims or challenging the thesis:
+
+1. **Cite your sources** - When referencing information from a source, use format: "According to [[Source Name]]..." or "(Source Name)"
+2. **Flag unsupported claims** - If the thesis makes a claim without source support, explicitly note: "This claim lacks source evidence"
+3. **Distinguish evidence types**:
+   - SUPPORTED: Claim backed by cited source
+   - UNSUPPORTED: Claim in thesis without source
+   - CONTRADICTED: Source says something different
+   - NEEDS VERIFICATION: Would benefit from additional source
+4. **Don't make up numbers** - Only cite specific figures if they appear in sources or thesis
+
 ## How to Propose Edits
 
 When suggesting changes, ALWAYS use this format:
@@ -77,13 +90,18 @@ ${thesis.content}
 
 ---
 
-## Cited Sources (${thesis.sources.length}):
+## Cited Sources (${thesis.sources.length})
+
+These are the primary sources cited in this thesis. Use them to ground your analysis.
+
 ${thesis.sources
-  .slice(0, 8)
   .map(
-    (s) => `
-### ${s.title}
-${s.content.slice(0, 1200)}${s.content.length > 1200 ? "..." : ""}
+    (s, i) => `
+### Source ${i + 1}: ${s.title}
+${s.date ? `*Date: ${s.date}*\n` : ""}
+${s.content}
+
+---
 `
   )
   .join("\n")}`;

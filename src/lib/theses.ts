@@ -19,6 +19,12 @@ export interface Source {
   title: string;
   content: string;
   date?: string;
+  type?: string;
+  folder?: string;
+}
+
+export interface SourceWithBacklinks extends Source {
+  backlinks: { slug: string; title: string; maturity: Thesis["maturity"] }[];
 }
 
 function extractMaturity(content: string): Thesis["maturity"] {
@@ -146,14 +152,25 @@ export function getSource(name: string): Source | null {
   }
 
   const fileContent = fs.readFileSync(filePath, "utf-8");
-  const { content, data } = matter(fileContent);
 
-  return {
-    slug: name,
-    title: data.title || name.replace(/-/g, " "),
-    content,
-    date: data.date,
-  };
+  try {
+    const { content, data } = matter(fileContent);
+    return {
+      slug: name,
+      title: data.title || name.replace(/-/g, " "),
+      content,
+      date: data.date,
+    };
+  } catch {
+    // If frontmatter parsing fails, return content as-is
+    // Strip any malformed frontmatter
+    const contentWithoutFrontmatter = fileContent.replace(/^---[\s\S]*?---\n?/, "");
+    return {
+      slug: name,
+      title: name.replace(/-/g, " "),
+      content: contentWithoutFrontmatter,
+    };
+  }
 }
 
 function findFile(dir: string, filename: string): string | null {
@@ -177,26 +194,96 @@ export function getAllSources(): Source[] {
 
   const sources: Source[] = [];
 
-  function walkDir(dir: string) {
+  function walkDir(dir: string, folder: string = "") {
     const entries = fs.readdirSync(dir, { withFileTypes: true });
     for (const entry of entries) {
       const fullPath = path.join(dir, entry.name);
       if (entry.isDirectory()) {
-        walkDir(fullPath);
+        walkDir(fullPath, entry.name);
       } else if (entry.name.endsWith(".md")) {
         const fileContent = fs.readFileSync(fullPath, "utf-8");
-        const { content, data } = matter(fileContent);
         const slug = entry.name.replace(".md", "");
-        sources.push({
-          slug,
-          title: data.title || slug.replace(/-/g, " "),
-          content,
-          date: data.date,
-        });
+
+        try {
+          const { content, data } = matter(fileContent);
+          sources.push({
+            slug,
+            title: data.title || slug.replace(/-/g, " "),
+            content,
+            date: data.date,
+            type: data.type,
+            folder: folder || undefined,
+          });
+        } catch {
+          // Handle malformed frontmatter
+          const contentWithoutFrontmatter = fileContent.replace(/^---[\s\S]*?---\n?/, "");
+          sources.push({
+            slug,
+            title: slug.replace(/-/g, " "),
+            content: contentWithoutFrontmatter,
+            folder: folder || undefined,
+          });
+        }
       }
     }
   }
 
   walkDir(PROCESSED_DIR);
   return sources;
+}
+
+export function getSourceWithBacklinks(slug: string): SourceWithBacklinks | null {
+  const source = getSource(slug);
+  if (!source) return null;
+
+  // Find all theses that cite this source
+  const theses = getAllTheses();
+  const backlinks: SourceWithBacklinks["backlinks"] = [];
+
+  for (const thesis of theses) {
+    const thesisPath = path.join(THESES_DIR, `${thesis.slug}.md`);
+    if (!fs.existsSync(thesisPath)) continue;
+
+    const content = fs.readFileSync(thesisPath, "utf-8");
+    // Check if this thesis cites the source
+    if (content.includes(`[[${slug}]]`) || content.includes(`[[${slug}|`)) {
+      backlinks.push({
+        slug: thesis.slug,
+        title: thesis.title,
+        maturity: thesis.maturity,
+      });
+    }
+  }
+
+  // Get folder info
+  let folder: string | undefined;
+  const found = findFileWithPath(PROCESSED_DIR, `${slug}.md`);
+  if (found) {
+    const relativePath = path.relative(PROCESSED_DIR, found);
+    const parts = relativePath.split(path.sep);
+    if (parts.length > 1) {
+      folder = parts[0];
+    }
+  }
+
+  return {
+    ...source,
+    folder,
+    backlinks,
+  };
+}
+
+function findFileWithPath(dir: string, filename: string): string | null {
+  if (!fs.existsSync(dir)) return null;
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      const found = findFileWithPath(fullPath, filename);
+      if (found) return found;
+    } else if (entry.name === filename) {
+      return fullPath;
+    }
+  }
+  return null;
 }

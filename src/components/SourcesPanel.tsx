@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import type { Source } from "@/lib/theses";
 
 interface Props {
@@ -53,10 +54,29 @@ export function SourcesPanel({ sources }: Props) {
                     {source.date}
                   </div>
                 )}
-                <div className="text-sm text-gray-700 max-h-60 overflow-y-auto whitespace-pre-wrap">
-                  {source.content.slice(0, 1000)}
-                  {source.content.length > 1000 && "..."}
+                <div className="text-sm text-gray-700 max-h-40 overflow-y-auto whitespace-pre-wrap mb-3">
+                  {source.content.slice(0, 500)}
+                  {source.content.length > 500 && "..."}
                 </div>
+                <Link
+                  href={`/source/${encodeURIComponent(source.slug)}`}
+                  className="inline-flex items-center gap-1 text-xs text-accent hover:underline"
+                >
+                  Read full source
+                  <svg
+                    className="w-3 h-3"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </Link>
               </div>
             )}
           </div>
