@@ -10,7 +10,6 @@ interface Props {
   onClose: () => void;
   onSubmit: (content: string, selectedText: string, mode: "comment" | "suggest") => void;
   isLoading?: boolean;
-  aiSuggestion?: string;
 }
 
 export function AnnotationPopover({
@@ -21,31 +20,41 @@ export function AnnotationPopover({
   onClose,
   onSubmit,
   isLoading,
-  aiSuggestion,
 }: Props) {
-  const [content, setContent] = useState(aiSuggestion || "");
-  const [useAi, setUseAi] = useState(false);
+  const [content, setContent] = useState("");
+  const [replacementText, setReplacementText] = useState("");
+  const [editMode, setEditMode] = useState<"comment" | "replace" | "insert">(
+    mode === "comment" ? "comment" : "replace"
+  );
 
   const handleSubmit = () => {
-    if (!content.trim()) return;
-    onSubmit(content, selectedText, mode);
+    let finalContent = "";
+
+    if (editMode === "comment") {
+      finalContent = content;
+    } else if (editMode === "replace") {
+      finalContent = `REPLACE:\n"${selectedText}"\n\nWITH:\n"${replacementText || content}"`;
+    } else {
+      finalContent = `AFTER:\n"${selectedText}"\n\nINSERT:\n"${content}"`;
+    }
+
+    if (!finalContent.trim()) return;
+    onSubmit(finalContent, selectedText, mode);
   };
+
+  // Calculate safe position
+  const safeX = Math.min(Math.max(position.x, 220), window.innerWidth - 220);
+  const safeY = Math.min(position.y + 30, window.innerHeight - 400);
 
   return (
     <>
       {/* Backdrop */}
-      <div
-        className="fixed inset-0 z-40"
-        onClick={onClose}
-      />
+      <div className="fixed inset-0 z-40" onClick={onClose} />
 
       {/* Popover */}
       <div
-        className="fixed z-50 w-96 bg-white border border-gray-200 rounded-xl shadow-xl transform -translate-x-1/2"
-        style={{
-          left: Math.min(Math.max(position.x, 200), window.innerWidth - 200),
-          top: Math.min(position.y + 20, window.innerHeight - 300),
-        }}
+        className="fixed z-50 w-[400px] bg-white border border-gray-200 rounded-xl shadow-xl transform -translate-x-1/2"
+        style={{ left: safeX, top: safeY }}
       >
         <div className="p-4">
           {/* Header */}
@@ -69,37 +78,82 @@ export function AnnotationPopover({
             <p className="text-sm text-gray-700 line-clamp-3">"{selectedText}"</p>
           </div>
 
-          {/* Input */}
-          <div className="mb-3">
-            <textarea
-              value={content}
-              onChange={(e) => setContent(e.target.value)}
-              placeholder={
-                mode === "comment"
-                  ? "What's your thought on this?"
-                  : "How should this be changed?"
-              }
-              className="w-full px-3 py-2 text-sm border border-gray-200 rounded-lg resize-none focus:outline-none focus:border-accent"
-              rows={4}
-              autoFocus
-            />
-          </div>
-
-          {/* AI assist toggle for suggest mode */}
+          {/* Mode selector for suggest */}
           {mode === "suggest" && (
-            <div className="mb-3">
+            <div className="flex gap-2 mb-3">
               <button
-                onClick={() => setUseAi(!useAi)}
-                className={`text-xs px-2 py-1 rounded ${
-                  useAi
-                    ? "bg-accent text-white"
-                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                onClick={() => setEditMode("replace")}
+                className={`flex-1 px-3 py-1.5 text-xs rounded-lg border transition-colors ${
+                  editMode === "replace"
+                    ? "border-accent bg-accent/10 text-accent"
+                    : "border-gray-200 text-gray-600 hover:border-gray-300"
                 }`}
               >
-                ✨ Get AI suggestion
+                Replace
               </button>
-              {isLoading && (
-                <span className="ml-2 text-xs text-gray-500">Thinking...</span>
+              <button
+                onClick={() => setEditMode("insert")}
+                className={`flex-1 px-3 py-1.5 text-xs rounded-lg border transition-colors ${
+                  editMode === "insert"
+                    ? "border-accent bg-accent/10 text-accent"
+                    : "border-gray-200 text-gray-600 hover:border-gray-300"
+                }`}
+              >
+                Insert After
+              </button>
+            </div>
+          )}
+
+          {/* Input */}
+          <div className="mb-3">
+            {editMode === "replace" && mode === "suggest" ? (
+              <>
+                <p className="text-xs text-gray-500 mb-1">Replace with:</p>
+                <textarea
+                  value={replacementText}
+                  onChange={(e) => setReplacementText(e.target.value)}
+                  placeholder="Enter the replacement text..."
+                  className="w-full px-3 py-2 text-sm border border-gray-200 rounded-lg resize-none focus:outline-none focus:border-accent"
+                  rows={4}
+                  autoFocus
+                />
+              </>
+            ) : (
+              <>
+                <p className="text-xs text-gray-500 mb-1">
+                  {editMode === "comment" ? "Your comment:" : "Text to insert:"}
+                </p>
+                <textarea
+                  value={content}
+                  onChange={(e) => setContent(e.target.value)}
+                  placeholder={
+                    editMode === "comment"
+                      ? "What's your thought on this?"
+                      : "Enter text to insert after the selection..."
+                  }
+                  className="w-full px-3 py-2 text-sm border border-gray-200 rounded-lg resize-none focus:outline-none focus:border-accent"
+                  rows={4}
+                  autoFocus
+                />
+              </>
+            )}
+          </div>
+
+          {/* Preview for edits */}
+          {mode === "suggest" && (editMode === "replace" ? replacementText : content) && (
+            <div className="mb-3 p-2 bg-gray-50 rounded-lg text-xs">
+              <p className="text-gray-500 mb-1">Preview:</p>
+              {editMode === "replace" ? (
+                <div>
+                  <span className="bg-red-100 text-red-800 line-through">{selectedText.slice(0, 50)}</span>
+                  <span> → </span>
+                  <span className="bg-green-100 text-green-800">{replacementText.slice(0, 50)}</span>
+                </div>
+              ) : (
+                <div>
+                  <span className="text-gray-700">{selectedText.slice(0, 30)}...</span>
+                  <span className="bg-green-100 text-green-800 mx-1">[+ {content.slice(0, 30)}...]</span>
+                </div>
               )}
             </div>
           )}
@@ -108,10 +162,13 @@ export function AnnotationPopover({
           <div className="flex gap-2">
             <button
               onClick={handleSubmit}
-              disabled={!content.trim() || isLoading}
+              disabled={
+                isLoading ||
+                (editMode === "replace" && mode === "suggest" ? !replacementText.trim() : !content.trim())
+              }
               className="flex-1 px-4 py-2 bg-accent text-white text-sm font-medium rounded-lg hover:bg-accent-hover disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             >
-              {mode === "comment" ? "Add Comment" : "Submit Suggestion"}
+              {mode === "comment" ? "Add Comment" : "Send Suggestion"}
             </button>
             <button
               onClick={onClose}
@@ -122,7 +179,7 @@ export function AnnotationPopover({
           </div>
 
           <p className="mt-2 text-xs text-gray-400 text-center">
-            This will be sent to the Virtue team for review
+            Sent to team for review
           </p>
         </div>
       </div>
