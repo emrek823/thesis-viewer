@@ -1,4 +1,4 @@
-# Thesis: World Models for Medicine
+# Thesis: Foundation Models for Medicine
 
 **Type:** Tech (How to build? What architecture?)
 
@@ -7,8 +7,6 @@
 LLMs are hitting a ceiling in healthcare—they predict tokens, not patient trajectories. The next wave is "world models" that understand biological/clinical dynamics and can simulate outcomes given interventions. JEPA-style architectures predicting state, not next token. This is a distinct category from foundation models: dynamics > snapshots.
 
 **How this evolved:** Emerged from cluster: Standard Model for oncology ("patient is not a document"), M-Optimus ("world model for biology"), Cambrian-S (spatial supersensing). Common thread: moving beyond text-based LLMs to models that understand physical/biological reality.
-
-**Market size:** Clinical decision support market valued at $2.7-6.4B in 2025, growing to $4.5-10.7B by 2030 (CAGR 9.6-11%). AI-powered CDSS specifically: $0.87B in 2025, reaching $1.79B by 2030 (15.6% CAGR). AI in oncology market: $4.2B in 2024, projected to reach $27.2B by 2032 (26.2% CAGR). AI in drug discovery: $2.6B in 2025, expanding to $8.2B by 2030 (25.9% CAGR). Combined addressable market: $15-25B by 2030 if world models prove clinical utility and capture premium pricing over conventional AI.
 
 ## Maturity: Emerging
 

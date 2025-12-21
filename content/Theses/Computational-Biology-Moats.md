@@ -73,6 +73,8 @@ Bear case (Owl Posting): Can't do absolute pathogenicity classification. Still n
 
 Resolution: DNA models useful **if coupled with domain-specific multi-modal data.** Model is infrastructure; data is moat.
 
+**Graph AI as multi-scale validation architecture:** PROTON (Dec 2025) demonstrates heterogeneous graph transformers generating testable hypotheses validated across molecular, organoid, and clinical systems. In Alzheimer's disease, PROTON-predicted drugs were validated in n=610,524 patient EHRs at Mass General Brigham—five predicted drugs showed reduced 7-year dementia risk (minimum HR=0.63, 95% CI: 0.53-0.75, p<1×10⁻⁷). In Parkinson's, PROTON linked genetic risk loci to genes essential for dopaminergic neuron survival, predicted pesticides toxic to patient-derived neurons (endosulfan ranked top 1.29% of predictions), and reproduced 6 genome-wide α-synuclein experiments (NES 2.13-2.30, FDR-adjusted p<1×10⁻⁴). **Key insight:** This validates the clinical outcome data moat thesis—the differentiating factor is validation against real patient outcomes at population scale, not model architecture.
+
 **Population-scale genomic foundation models (G2P Bio):**
 
 The missing piece isn't better DNA models—it's clean signal extraction from biobanks. G2P Bio's SLMM (patent pending) extracts causal human signals at scale by filtering out noise (ancestry, environment, technical artifacts). Most AI trained on cell lines, animal models, protein structures. Only 2 of 11 leading mutation-effect prediction models beat random chance on real human population data. G2P's population-trained model: 20x improvement (ΔBIC 556 vs 27 for next best).
@@ -259,76 +261,6 @@ Pathology foundation models: 70% of oncology decisions rely solely on H&E morpho
 
 ---
 
-## GTM Considerations
-
-**Market Segmentation by Moat Layer:**
-
-**Clinical Outcome Data (Highest conviction post-Chai-2):**
-- Buyers: Pharma R&D, AI platforms needing validation beyond developability
-- Message: "Chai-2 solved developability. Clinical outcomes are the next moat. We have the data."
-- Timing: Phase II/III data from AI-discovered programs (2026-2028)
-
-**Population Genetics (Emerging moat):**
-- Buyers: Pharma target validation teams, rare disease programs
-- Message: "Existing models fail on real human data. We extract clean signal from biobanks."
-- Timing: Biobank partnerships maturing, pharma target validation budgets allocated
-
-**Multi-Modal Integration (Platform consolidators):**
-- Buyers: Health systems, pharma oncology divisions, precision medicine programs
-- Message: "Single modalities hit ceiling. Integration creates SOTA outcomes."
-- Timing: Pathology + genomics convergence happening now
-
-**Champion Identification:**
-
-- **Technical buyer (Computational Bio Lead):** Pain = models fail on real-world data. Hook = "We train on human outcomes, not cell lines."
-- **Economic buyer (Head of R&D):** Pain = AI platforms not translating to clinic. Hook = "8 programs in human testing now, 80-90% Phase I success."
-- **Clinical buyer (CMO, oncologist):** Pain = molecular testing costs limit access. Hook = "H&E-based inference at 75% cost reduction."
-
----
-
-## Path to $1B+
-
-**Scenario 1: Clinical Outcome Data Platform**
-```
-Target: $60-80M ARR at 15-20x = $900M-$1.6B
-Timeline: 6-8 years (Phase II/III data accumulation)
-
-Stage               Revenue        Data Strategy               Moat
-──────────────────────────────────────────────────────────────────────────
-0-$5M ARR           $1-5M          Failed program aggregation  Anonymized outcomes
-$5-25M ARR          $5-25M         Active program partnerships Outcome prediction
-$25-60M ARR         $25-60M        Industry standard           Network effects
-$60M+ ARR           $60M+          Clinical prediction engine  Data monopoly
-```
-
-**Scenario 2: Multi-Modal Clinical Platform (Standard Model trajectory)**
-```
-Target: $60-80M ARR at 15-20x = $900M-$1.6B
-Timeline: 6-8 years
-
-Stage               Revenue        Customer Type           Moat
-──────────────────────────────────────────────────────────────────────────
-Year 0-2            $0-2M          Academic + POCs         Publications, KOLs
-Year 2-4            $2-15M         Pharma POCs             5-10 pharma POCs
-Year 4-6            $15-40M        Platform licenses       10-20 pharma licenses
-Year 6-8            $40-80M        Clinical deployment     Regulatory approvals
-```
-
-**Scenario 3: Integrated Discovery Platform (Absci model)**
-```
-Target: $80-120M ARR at 15-20x = $1.2B-$2.4B
-Timeline: 7-10 years (clinical proof required)
-
-Stage               Revenue        Customer Type           Moat
-──────────────────────────────────────────────────────────────────────────
-0-$10M ARR          Services       AI platforms (validation) Speed (6 weeks)
-$10-40M ARR         Partnerships   Pharma discovery deals   Developability data
-$40-80M ARR         Platform       Pharma + biotech access  Clinical translation
-$80M+ ARR           Royalties      Commercial milestones    Approved drugs
-```
-
----
-
 ## Open Questions
 
 ### When does open-source achieve 10%+ hit rates?
@@ -365,15 +297,16 @@ $80M+ ARR           Royalties      Commercial milestones    Approved drugs
 
 ### Supporting Evidence
 
-| Date | Source | Key Insight |
-|------|--------|-------------|
-| 2025-06-XX | Chai-2 Publication | 16% binding hit rate + 86% developability. Computational moat validated. |
-| 2025-12-20 | G2P Bio deck | 20x improvement (ΔBIC 556 vs 27). 9 of 11 models fail on real human data. |
-| 2025-12-20 | Standard Model Bio call | Multi-modal convergence. $4.8M Sanofi contract. SOTA cancer outcomes. |
-| 2025-12-20 | W51 Papers Digest | Pathology FMs: H&E → molecular inference, 75% cost reduction. |
-| 2025-12-17 | Models are in, molecules are out | "No path to ROI for proprietary model." 8 programs in clinic now. |
-| 2025-12-17 | OpenMidnight | SOTA pathology on 12K slides for $1.6K. Cost commoditization is real. |
-| 2025-12-20 | Lilly TuneLab | $1B+ proprietary data. Federated learning for biotech. Data aggregation moat. |
+| Date       | Source                           | Key Insight                                                                   |
+| ---------- | -------------------------------- | ----------------------------------------------------------------------------- |
+| 2025-12-21 | [[Graph AI generates neurological hypotheses validated in molecular, organoid, and clinical systems]] | PROTON: Graph transformer validated in n=610,524 patients. 5 drugs reduced 7-yr dementia risk (HR=0.63). Validates clinical outcome data moat. |
+| 2025-06-XX | Chai-2 Publication               | 16% binding hit rate + 86% developability. Computational moat validated.      |
+| 2025-12-20 | G2P Bio deck                     | 20x improvement (ΔBIC 556 vs 27). 9 of 11 models fail on real human data.     |
+| 2025-12-20 | Standard Model Bio call          | Multi-modal convergence. $4.8M Sanofi contract. SOTA cancer outcomes.         |
+| 2025-12-20 | W51 Papers Digest                | Pathology FMs: H&E → molecular inference, 75% cost reduction.                 |
+| 2025-12-17 | Models are in, molecules are out | "No path to ROI for proprietary model." 8 programs in clinic now.             |
+| 2025-12-17 | OpenMidnight                     | SOTA pathology on 12K slides for $1.6K. Cost commoditization is real.         |
+| 2025-12-20 | Lilly TuneLab                    | $1B+ proprietary data. Federated learning for biotech. Data aggregation moat. |
 
 ### Related Theses
 
@@ -383,4 +316,5 @@ $80M+ ARR           Royalties      Commercial milestones    Approved drugs
 
 ### Evolution Log
 
+- 2025-12-21: Added PROTON validation—graph transformer hypotheses validated in n=610,524 patients at Mass General Brigham (5 drugs reduced 7-yr dementia risk, HR=0.63). Reinforces clinical outcome data moat thesis: model architecture commoditizes, population-scale clinical validation differentiates.
 - 2025-12-20: Created by merging Biology-Foundation-Models and AI-Drug-Discovery-Moats. Core insight: Chai-2's 86% developability validation shifted thesis from "wet lab is moat" to "clinical outcome data is moat." Models commoditize, but data from human outcomes (population genetics, clinical trials) creates durable advantage. Reduced redundancy while preserving competitive landscape, GTM, and Path to $1B sections.
