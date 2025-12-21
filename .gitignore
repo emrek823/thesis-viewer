@@ -33,6 +33,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# content (synced separately)
-/content/Theses/
-/content/Processed/
+# content is tracked in git for Vercel builds
+# Run ./scripts/sync-content.sh before committing updates
