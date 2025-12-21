@@ -1,7 +1,8 @@
 "use client";
 
-import { useChat } from "ai/react";
-import { useState, useEffect } from "react";
+import { useChat } from "@ai-sdk/react";
+import { DefaultChatTransport } from "ai";
+import { useState, useEffect, useMemo } from "react";
 
 interface Props {
   thesisSlug: string;
@@ -15,6 +16,15 @@ interface ParsedEdit {
   currentText: string;
   newText: string;
   raw: string;
+}
+
+// Helper to extract text content from v5 message parts
+function getMessageText(message: { parts?: Array<{ type: string; text?: string }> }): string {
+  if (!message.parts) return "";
+  return message.parts
+    .filter((p) => p.type === "text" && p.text)
+    .map((p) => p.text)
+    .join("");
 }
 
 function parseEditBlocks(content: string): ParsedEdit[] {
@@ -50,17 +60,34 @@ export function ChatSidebar({ thesisSlug, thesisTitle }: Props) {
   const [pendingEdits, setPendingEdits] = useState<ParsedEdit[]>([]);
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
+  const [input, setInput] = useState("");
 
-  const { messages, input, handleInputChange, handleSubmit, isLoading } =
-    useChat({
-      body: { thesisSlug },
-    });
+  const transport = useMemo(
+    () =>
+      new DefaultChatTransport({
+        api: "/api/chat",
+        body: () => ({ thesisSlug }),
+      }),
+    [thesisSlug]
+  );
+
+  const { messages, sendMessage, status } = useChat({ transport });
+
+  const isLoading = status === "streaming" || status === "submitted";
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!input.trim() || isLoading) return;
+    await sendMessage({ text: input });
+    setInput("");
+  };
 
   // Parse edit blocks from assistant messages
   useEffect(() => {
     const lastAssistant = [...messages].reverse().find((m) => m.role === "assistant");
     if (lastAssistant) {
-      const edits = parseEditBlocks(lastAssistant.content);
+      const text = getMessageText(lastAssistant);
+      const edits = parseEditBlocks(text);
       setPendingEdits(edits);
     }
   }, [messages]);
@@ -74,7 +101,7 @@ export function ChatSidebar({ thesisSlug, thesisTitle }: Props) {
         body: JSON.stringify({
           thesis: thesisTitle,
           suggestion: `**Section:** ${edit.section}\n**Action:** ${edit.action}\n**Location:** ${edit.location}\n\n**Current:**\n${edit.currentText || "(new content)"}\n\n**Proposed:**\n${edit.newText}`,
-          chatContext: messages.map((m) => `${m.role}: ${m.content.slice(0, 300)}`).join("\n\n"),
+          chatContext: messages.map((m) => `${m.role}: ${getMessageText(m).slice(0, 300)}`).join("\n\n"),
         }),
       });
 
@@ -89,22 +116,9 @@ export function ChatSidebar({ thesisSlug, thesisTitle }: Props) {
     }
   };
 
-  const requestEdit = () => {
-    // Append a message asking for a specific edit
-    const editRequest = {
-      role: "user" as const,
-      content: "Based on our discussion, propose a specific edit to the thesis. Use the ```edit format with SECTION, LOCATION, ACTION, CURRENT TEXT, and NEW TEXT.",
-    };
-
-    // Submit via the form by setting input and triggering submit
-    const form = document.querySelector('form');
-    const inputEl = form?.querySelector('input');
-    if (inputEl) {
-      const nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value')?.set;
-      nativeInputValueSetter?.call(inputEl, editRequest.content);
-      inputEl.dispatchEvent(new Event('input', { bubbles: true }));
-      form?.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
-    }
+  const requestEdit = async () => {
+    const editPrompt = "Based on our discussion, propose a specific edit to the thesis. Use the ```edit format with SECTION, LOCATION, ACTION, CURRENT TEXT, and NEW TEXT.";
+    await sendMessage({ text: editPrompt });
   };
 
   return (
@@ -145,25 +159,13 @@ export function ChatSidebar({ thesisSlug, thesisTitle }: Props) {
                 </p>
                 <div className="space-y-2 text-left max-w-xs mx-auto">
                   <button
-                    onClick={() => {
-                      const el = document.querySelector('input[type="text"]') as HTMLInputElement;
-                      if (el) {
-                        el.value = "What's the weakest part of this thesis?";
-                        el.dispatchEvent(new Event('input', { bubbles: true }));
-                      }
-                    }}
+                    onClick={() => setInput("What's the weakest part of this thesis?")}
                     className="w-full text-left px-3 py-2 text-xs bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors"
                   >
                     "What's the weakest part of this thesis?"
                   </button>
                   <button
-                    onClick={() => {
-                      const el = document.querySelector('input[type="text"]') as HTMLInputElement;
-                      if (el) {
-                        el.value = "What evidence would change your mind on this?";
-                        el.dispatchEvent(new Event('input', { bubbles: true }));
-                      }
-                    }}
+                    onClick={() => setInput("What evidence would change your mind on this?")}
                     className="w-full text-left px-3 py-2 text-xs bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors"
                   >
                     "What evidence would change your mind?"
@@ -172,7 +174,9 @@ export function ChatSidebar({ thesisSlug, thesisTitle }: Props) {
               </div>
             )}
 
-            {messages.map((m) => (
+            {messages.map((m) => {
+              const messageText = getMessageText(m);
+              return (
               <div
                 key={m.id}
                 className={`${m.role === "user" ? "ml-8" : "mr-2"}`}
@@ -186,22 +190,22 @@ export function ChatSidebar({ thesisSlug, thesisTitle }: Props) {
                 >
                   {/* Render message, but replace edit blocks with styled versions */}
                   <div className="whitespace-pre-wrap">
-                    {m.role === "assistant" && m.content.includes("```edit") ? (
+                    {m.role === "assistant" && messageText.includes("```edit") ? (
                       <>
-                        {m.content.split(/```edit[\s\S]*?```/).map((part, i) => (
+                        {messageText.split(/```edit[\s\S]*?```/).map((part, i) => (
                           <span key={i}>{part}</span>
                         ))}
                       </>
                     ) : (
-                      m.content
+                      messageText
                     )}
                   </div>
                 </div>
 
                 {/* Show parsed edits as cards */}
-                {m.role === "assistant" && parseEditBlocks(m.content).length > 0 && (
+                {m.role === "assistant" && parseEditBlocks(messageText).length > 0 && (
                   <div className="mt-2 space-y-2">
-                    {parseEditBlocks(m.content).map((edit, i) => (
+                    {parseEditBlocks(messageText).map((edit, i) => (
                       <div
                         key={i}
                         className="border border-gray-200 rounded-lg p-3 bg-white"
@@ -247,7 +251,7 @@ export function ChatSidebar({ thesisSlug, thesisTitle }: Props) {
                   </div>
                 )}
               </div>
-            ))}
+            )})}
 
             {isLoading && (
               <div className="mr-2">
@@ -262,8 +266,9 @@ export function ChatSidebar({ thesisSlug, thesisTitle }: Props) {
           <div className="px-4 py-3 border-t border-gray-200">
             <form onSubmit={handleSubmit} className="flex gap-2">
               <input
+                type="text"
                 value={input}
-                onChange={handleInputChange}
+                onChange={(e) => setInput(e.target.value)}
                 placeholder="Challenge this thesis..."
                 className="flex-1 px-3 py-2 text-sm border border-gray-200 rounded-lg focus:outline-none focus:border-accent"
               />

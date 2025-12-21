@@ -1,10 +1,14 @@
 import { anthropic } from "@ai-sdk/anthropic";
-import { streamText, tool } from "ai";
-import { z } from "zod";
+import { streamText, stepCountIs } from "ai";
 import { getThesis } from "@/lib/theses";
 import { parseThesis, formatThesisStructure } from "@/lib/thesis-parser";
 
 export const maxDuration = 60;
+
+// Anthropic's native web search tool
+const webSearchTool = anthropic.tools.webSearch_20250305({
+  maxUses: 3,
+});
 
 export async function POST(req: Request) {
   const { messages, thesisSlug } = await req.json();
@@ -112,60 +116,10 @@ ${s.content}
     system: systemPrompt,
     messages,
     tools: {
-      webSearch: tool({
-        description:
-          "Search the web for current information, market data, competitor updates, regulatory news, or to validate claims in the thesis.",
-        parameters: z.object({
-          query: z
-            .string()
-            .describe("The search query - be specific"),
-        }),
-        execute: async ({ query }) => {
-          const response = await fetch(
-            `https://api.anthropic.com/v1/messages`,
-            {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-                "x-api-key": process.env.ANTHROPIC_API_KEY!,
-                "anthropic-version": "2023-06-01",
-              },
-              body: JSON.stringify({
-                model: "claude-sonnet-4-20250514",
-                max_tokens: 1024,
-                tools: [
-                  {
-                    type: "web_search_20250305",
-                    name: "web_search",
-                    max_uses: 3,
-                  },
-                ],
-                messages: [
-                  {
-                    role: "user",
-                    content: `Search for: ${query}. Return a concise summary of findings with sources.`,
-                  },
-                ],
-              }),
-            }
-          );
-
-          if (!response.ok) {
-            return { error: "Web search failed", query };
-          }
-
-          const data = await response.json();
-          const textContent = data.content
-            ?.filter((c: { type: string }) => c.type === "text")
-            ?.map((c: { text: string }) => c.text)
-            ?.join("\n");
-
-          return { query, results: textContent || "No results found" };
-        },
-      }),
+      web_search: webSearchTool,
     },
-    maxSteps: 5,
+    stopWhen: stepCountIs(5),
   });
 
-  return result.toDataStreamResponse();
+  return result.toUIMessageStreamResponse();
 }
