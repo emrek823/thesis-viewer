@@ -2,7 +2,7 @@
 
 ## Investment Take
 
-Hospital equipment maintenance is a $22B market running on 1990s tools while 40% of the technician workforce retires. 7,300 openings/year vs 400 graduates/year (18:1 gap). 30 BMET programs closed in 5 years; 23 states have no training pathway ([[claude compass_artifact]]).
+Hospital equipment maintenance is a $22B market running on 1990s tools while 40% of the technician workforce retires. 7,300 openings/year vs 400 graduates/year (18:1 gap). 30 BMET programs closed in 5 years; 23 states have no training pathway ([[claude compass_artifact_wf-47eb8b48-df83-488d-a269-b71800dd5639_text_markdown]]).
 
 AI-native predictive maintenance isn't optional—it's the only path through a structural labor shortage. Industrial IoT has proven 99.9% failure detection (Augury). GE OnWatch achieves 60% downtime reduction, Philips 30% via 1M events + 200K sensor readings/day per MRI. Healthcare is 5 years behind. Same physics, same ML, different regulatory wrapper.
 
@@ -18,13 +18,13 @@ TRIMEDX (1.7M+ devices, $200M+ tech investment, TRIMEDX-AIQ launched Dec 2025) c
 ## Bull Case
 
 - [x] **Structural labor shortage.** 18:1 gap (7,300 needed vs 400 graduates). Not cyclical—demographic. AI is only solution.
-  - *Evidence:* [[claude compass_artifact]] — 30 programs closed, 23 states without training
+  - *Evidence:* [[claude compass_artifact_wf-47eb8b48-df83-488d-a269-b71800dd5639_text_markdown]] — 30 programs closed, 23 states without training
 
 - [ ] **Regulatory tailwind.** FDA Section 524B + HIPAA force device tracking. Once tracking, predictive is obvious upsell.
   - *Evidence:* Change Healthcare $2.9B losses, Ascension $1.1B — cybersecurity now board-level
 
 - [ ] **Industrial IoT proven.** Augury 99.9% failure detection. GE OnWatch 60% downtime reduction. Technology risk is low.
-  - *Evidence:* [[claude compass_artifact]] — Philips: 1M events + 200K readings/day → 30% downtime reduction
+  - *Evidence:* [[claude compass_artifact_wf-47eb8b48-df83-488d-a269-b71800dd5639_text_markdown]] — Philips: 1M events + 200K readings/day → 30% downtime reduction
 
 ---
 
@@ -79,7 +79,7 @@ TRIMEDX (1.7M+ devices, $200M+ tech investment, TRIMEDX-AIQ launched Dec 2025) c
 
 | Date | Source | Type | Key Signal |
 |------|--------|------|------------|
-| 2025-12-20 | [[claude compass_artifact]] | Research | $22B market, 40% BMET retirement, 7,300 openings vs 400 graduates (18:1). Armis $4.2B at 21x ARR. |
+| 2025-12-20 | [[claude compass_artifact_wf-47eb8b48-df83-488d-a269-b71800dd5639_text_markdown]] | Research | $22B market, 40% BMET retirement, 7,300 openings vs 400 graduates (18:1). Armis $4.2B at 21x ARR. |
 | 2025-12-20 | TRIMEDX-AIQ launch | Company | 6.1M device records, 90-95% US visibility. $200M+ tech investment. |
 | 2025-12-20 | GE OnWatch | Company | 60% downtime reduction, 35% fewer on-site service calls. |
 | 2025-12-20 | Philips | Company | 1M events + 200K sensor readings/day per MRI → 30% downtime reduction. |

@@ -2,9 +2,9 @@
 
 ## Investment Take
 
-DNA is "once and done"—you sequence it once and the medical utility is mostly cancer. Proteins change constantly—weekly, monthly, yearly—creating a recurring testing model at tens of dollars per sample ([[Alex __ Emre]]). Genomics built Illumina. Proteomics builds recurring revenue diagnostics businesses. Quanterix proves the model: 80% recurring revenue through consumables and reagents, 7 consecutive quarters double-digit growth ([[Quanterix Q3 2025 results]]).
+DNA is "once and done"—you sequence it once and the medical utility is mostly cancer. Proteins change constantly—weekly, monthly, yearly—creating a recurring testing model at tens of dollars per sample ([[Alex __ Emre]]). Genomics built Illumina. Proteomics builds recurring revenue diagnostics businesses. Quanterix proves the model: 80% recurring revenue through consumables and reagents, 7 consecutive quarters double-digit growth (Quanterix Q3 2025 results).
 
-The market is bifurcating: mass spec offers unbiased discovery but remains research-only due to complexity, while affinity-based platforms (Olink, SomaLogic, Alamar) race toward clinical diagnostics. Thermo paid $3.1B for Olink ([[Thermo Fisher Olink acquisition decision document]]). Illumina acquiring SomaLogic (H1 2026 close). Alamar raised $250M total with attomolar sensitivity (10-100x higher than competitors) ([[Alamar $128M Series C]]).
+The market is bifurcating: mass spec offers unbiased discovery but remains research-only due to complexity, while affinity-based platforms (Olink, SomaLogic, Alamar) race toward clinical diagnostics. Thermo paid $3.1B for Olink (Thermo Fisher Olink acquisition decision document). Illumina acquiring SomaLogic (H1 2026 close). Alamar raised $250M total with attomolar sensitivity (10-100x higher than competitors) (Alamar $128M Series C).
 
 The $100B diagnostic TAM has current players capturing only 5-10%. Market: $31.8B (2023) → $100.99B (2032) at 13.7% CAGR. Reagents/kits represent 60-68% of market revenue—high-margin recurring consumables. The razor-razorblade model works: instruments as capital sale, consumables as recurring per-test revenue.
 
@@ -16,13 +16,13 @@ The $100B diagnostic TAM has current players capturing only 5-10%. Market: $31.8
 ## Bull Case
 
 - [ ] **Recurring revenue > one-time.** Quanterix 80% recurring revenue. Reagents/kits 60-68% of market. Model proven.
-  - *Evidence:* [[Quanterix Q3 2025 results]] — 7 consecutive quarters double-digit growth
+  - *Evidence:* Quanterix Q3 2025 results — 7 consecutive quarters double-digit growth
 
 - [ ] **Strategic M&A validates market.** Thermo paid $3.1B for Olink. Illumina acquiring SomaLogic. Danaher bought Abcam.
-  - *Evidence:* [[Thermo Fisher Olink acquisition decision document]] — Genomics giants recognize proteomics
+  - *Evidence:* Thermo Fisher Olink acquisition decision document — Genomics giants recognize proteomics
 
 - [ ] **Sensitivity breakthroughs enabling new use cases.** Alamar's attomolar detection unlocks early disease detection previously impossible.
-  - *Evidence:* [[Alamar $128M Series C]] — 10-100x sensitivity vs Olink/SomaLogic
+  - *Evidence:* Alamar $128M Series C — 10-100x sensitivity vs Olink/SomaLogic
 
 ---
 
@@ -32,7 +32,7 @@ The $100B diagnostic TAM has current players capturing only 5-10%. Market: $31.8
   - *Evidence:* Needs validation — Survey payer medical directors on evidence requirements
 
 - [ ] **Technology fragmentation.** Multiple platforms (mass spec, antibody, aptamer) with no standard. Cross-platform results uncorrelated.
-  - *Evidence:* [[Bridging proteomics to clinic]] — Benzon Foundation Symposium: standardization critical barrier
+  - *Evidence:* Bridging proteomics to clinic — Benzon Foundation Symposium: standardization critical barrier
 
 - [ ] **Clinical adoption slow.** Physicians trained on genomics/chemistry panels. Mass spec requires PhD operators. Even affinity platforms need specialized training.
   - *Evidence:* Needs monitoring — Track clinical lab proteomics adoption rates
@@ -79,8 +79,8 @@ The $100B diagnostic TAM has current players capturing only 5-10%. Market: $31.8
 | Date | Source | Type | Key Signal |
 |------|--------|------|------------|
 | 2025-12-20 | [[Alex __ Emre]] | Operator | Proteins change constantly vs DNA "once and done." OLink $3B. $100B TAM, 5-10% penetration. |
-| 2025 | [[Quanterix Q3 2025 results]] | Company | 80% recurring revenue. 7 consecutive quarters double-digit growth. FDA Breakthrough for LucentAD Alzheimer's. |
-| 2024 | [[Thermo Fisher Olink acquisition decision document]] | Company | $3.1B acquisition. Olink 40-50% of high-plex market share. |
-| 2024 | [[Alamar $128M Series C]] | Company | $250M total funding. NULISA platform: attomolar sensitivity (10-100x competitors). |
+| 2025 | Quanterix Q3 2025 results | Company | 80% recurring revenue. 7 consecutive quarters double-digit growth. FDA Breakthrough for LucentAD Alzheimer's. |
+| 2024 | Thermo Fisher Olink acquisition decision document | Company | $3.1B acquisition. Olink 40-50% of high-plex market share. |
+| 2024 | Alamar $128M Series C | Company | $250M total funding. NULISA platform: attomolar sensitivity (10-100x competitors). |
 | 2024-2025 | Illumina SomaLogic acquisition | Company | Expected H1 2026 close. SomaLogic 11,000+ protein measurements. |
-| 2025 | [[Bridging proteomics to clinic]] | Research | Benzon Foundation: standardization and QC critical barriers. Cross-platform comparability lacking. |
+| 2025 | Bridging proteomics to clinic | Research | Benzon Foundation: standardization and QC critical barriers. Cross-platform comparability lacking. |

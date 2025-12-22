@@ -29,7 +29,7 @@ The instrument vendors face innovator's dilemma. Thermo ($210B), Danaher ($160B)
 ## Bear Case
 
 - [ ] **Software wrappers are good enough.** Benchling ($6.1B), Ganymede building real businesses on middleware. Maybe native integration isn't necessary.
-  - *Evidence:* [[Rebuild Biotech for the AI Era - Benchling]] — $6.1B valuation, 270K scientists
+  - *Evidence:* [[Rebuild Biotech for the AI Era  Benchling]] — $6.1B valuation, 270K scientists
 
 - [ ] **Incumbents add APIs faster than expected.** If Thermo/Illumina ship real APIs in 2 years, startup window closes.
   - *Evidence:* Needs monitoring — no signal yet
@@ -81,7 +81,7 @@ The instrument vendors face innovator's dilemma. Thermo ($210B), Danaher ($160B)
 | 2025-12-17 | [[Open Sourcing π0]] | Research | Execution layer commoditizing. 1-20 hours data sufficient for fine-tuning. |
 | 2025-12-17 | [[The Lab Automation Startup Ecosystem]] | Research | Gap identified: "automation-native instruments with pythonic APIs and autonomous agent control" |
 | 2025-12-19 | [[Virtue and Tomaz Berisa]] | Operator | Human cost floor $20-30 even if sequencing free. Current $300-400 vs $100 theoretical. 8 years running GenCOV. "Automate whole lab, not components." |
-| 2025-12-19 | [[Kosmos - Edison Scientific]] | Research | AI Scientist does 6 months PhD work in 1 day. Computational commoditizing faster than wet lab. |
-| 2025-12-20 | [[Rebuild Biotech for the AI Era - Benchling]] | Company | $6.1B valuation, 270K scientists. Deep Research Agent saved 8 months. Proves software value in stack. |
+| 2025-12-19 | Kosmos - Edison Scientific | Research | AI Scientist does 6 months PhD work in 1 day. Computational commoditizing faster than wet lab. |
+| 2025-12-20 | [[Rebuild Biotech for the AI Era  Benchling]] | Company | $6.1B valuation, 270K scientists. Deep Research Agent saved 8 months. Proves software value in stack. |
 | 2025-12-20 | [[Antitrust & the Science Instrument Industry]] | Research | Thermo $210B, Danaher $160B, Agilent $40B. No new prime in 40 years. Charges recurring license for Python API. |
-| 2025-12-20 | [[Measuring AI's capability to accelerate biological research in the wet lab]] | Research | GPT-5 optimized cloning protocol 79x. Still requires humans to execute—automation-native instruments would close loop. |
+| 2025-12-20 | [[Measuring AI’s capability to accelerate biological research in the wet lab]] | Research | GPT-5 optimized cloning protocol 79x. Still requires humans to execute—automation-native instruments would close loop. |

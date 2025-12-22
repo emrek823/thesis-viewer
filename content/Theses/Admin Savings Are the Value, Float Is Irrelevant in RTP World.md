@@ -10,7 +10,7 @@ RTP costs $0.02 vs wire $20—1000x efficiency. RTP Network (550+ FIs, 70% U.S. 
 
 Pre-claim intervention validated: Codoxo Point Zero achieves up to 40% reduction in overpayments, $12-16 PMPY savings, 42% admin cost decrease, 20-30x efficiency vs post-claim ([[DS_Point_Zero]]). Moving "further left" in payment lifecycle—provider education before claims created—transforms adversarial to collaborative relationships.
 
-Machinify's $670M Performant acquisition confirms platform strategy: 75+ health plans, 170M lives, full-stack prevention-detection-recovery ([[Machinify Completes Acquisition of Performant Healthcare]]). Winners control multiple intervention points across payment lifecycle.
+Machinify's $670M Performant acquisition confirms platform strategy: 75+ health plans, 170M lives, full-stack prevention-detection-recovery ([[2025-12-21-machinify-completes-acquisition-of-performant-heal]]). Winners control multiple intervention points across payment lifecycle.
 
 **How this evolved:**
 - *2025-12-05:* Matt Swatzell crystallized: float is irrelevant, admin savings are the value.
@@ -90,7 +90,7 @@ Machinify's $670M Performant acquisition confirms platform strategy: 75+ health 
 | 2025-12-05 | [[Matt Swatzell and Virtue]] | Operator | Float not material. Real value: admin savings (prompt pay, MA stars, re-adjudication). RTP $0.02 vs wire $20. |
 | 2025-11-25 | [[Proto __ Virtue]] | Operator | Cash-pay infrastructure gap. Systems tied to insurance rails. Clinics paying $100K+ for Frankenstein stacks. |
 | 2025-12-20 | [[DS_Point_Zero]] | Research | Pre-claim payment integrity: 40% overpayment reduction, $12-16 PMPY, 42% admin cost decrease, 20-30x efficiency. |
-| 2025-12-20 | [[Machinify Completes Acquisition of Performant Healthcare]] | Company | $670M deal. 75+ health plans, 170M lives. Full-stack: prevention + detection + recovery. |
+| 2025-12-20 | [[2025-12-21-machinify-completes-acquisition-of-performant-heal]] | Company | $670M deal. 75+ health plans, 170M lives. Full-stack: prevention + detection + recovery. |
 | 2025-12-20 | [[Post LinkedIn]] | Research | Health insurance float 0.3x premiums vs 2.5x P&C. Investment income only 20% of profit. Delay is intentional. |
 | 2025-12-21 | [[Performant Investor Overview]] | Company | $300B+ payment integrity space. 1 in 5 claims wrong. $4-5B serviceable: Federal $500M-1B, State $300-500M, Commercial $3.2-3.5B. |
 | 2025-12-08 | [[Virtue _ Autonomy]] | Operator | Stedi→FrontRunner switch: 75¢ vs 11-12¢. Vendor economics poorly understood, switching costs overestimated. |
