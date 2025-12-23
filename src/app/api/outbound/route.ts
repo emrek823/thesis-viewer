@@ -14,7 +14,6 @@ interface Candidate {
   bucket: string;
   linkedin: string;
   thesis: string;
-  outreach_angle?: string;
 }
 
 interface Vote {
@@ -22,7 +21,7 @@ interface Vote {
   name: string;
   role: string;
   bucket: string;
-  vote: "up" | "down" | "skip";
+  vote: number; // 1-5 rating
   timestamp: string;
 }
 
@@ -58,19 +57,24 @@ export async function GET() {
   const candidates = await getCandidates();
   const votesData = await getVotes();
 
-  const votedUrls = new Set(votesData.votes.map((v) => v.linkedin));
+  const votesByUrl = new Map(votesData.votes.map((v) => [v.linkedin, v]));
 
-  const enrichedCandidates = candidates.map((c) => ({
-    ...c,
-    voted: votedUrls.has(c.linkedin),
-    vote: votesData.votes.find((v) => v.linkedin === c.linkedin)?.vote || null,
-  }));
+  const enrichedCandidates = candidates.map((c) => {
+    const vote = votesByUrl.get(c.linkedin);
+    return {
+      ...c,
+      voted: !!vote,
+      vote: vote?.vote || null,
+    };
+  });
 
-  const voteCounts = {
-    up: votesData.votes.filter((v) => v.vote === "up").length,
-    down: votesData.votes.filter((v) => v.vote === "down").length,
-    skip: votesData.votes.filter((v) => v.vote === "skip").length,
-  };
+  // Count votes by rating (1-5)
+  const voteCounts: Record<number, number> = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
+  for (const v of votesData.votes) {
+    if (v.vote >= 1 && v.vote <= 5) {
+      voteCounts[v.vote]++;
+    }
+  }
 
   // Calculate patterns
   const patterns = calculatePatterns(votesData.votes);
@@ -87,7 +91,7 @@ export async function POST(request: NextRequest) {
   const body = await request.json();
   const { linkedin, name, role, bucket, vote } = body;
 
-  if (!linkedin || !vote) {
+  if (!linkedin || vote === undefined) {
     return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
   }
 
@@ -102,7 +106,7 @@ export async function POST(request: NextRequest) {
     name,
     role,
     bucket,
-    vote,
+    vote: Number(vote),
     timestamp: new Date().toISOString(),
   });
 
@@ -119,24 +123,33 @@ function calculatePatterns(votes: Vote[]) {
     const role = (v.role || "").toLowerCase();
     const keywords: string[] = [];
 
+    // Extract role signals
     if (role.includes("vp") || role.includes("vice president")) keywords.push("VP-level");
     if (role.includes("director")) keywords.push("Director-level");
     if (role.includes("head of")) keywords.push("Head of...");
-    if (role.includes("chief")) keywords.push("C-level");
-    if (role.includes("phd")) keywords.push("PhD");
-    if (role.includes("payer")) keywords.push("Payer focus");
+    if (role.includes("chief") || role.includes("cto") || role.includes("cmo")) keywords.push("C-level");
+    if (role.includes("phd") || role.includes("ph.d")) keywords.push("PhD");
+    if (role.includes("professor") || role.includes("researcher")) keywords.push("Academic");
+    if (role.includes("payer") || role.includes("health plan") || role.includes("insurance")) keywords.push("Payer");
+    if (role.includes("provider") || role.includes("health system") || role.includes("hospital")) keywords.push("Provider");
     if (role.includes("clinical")) keywords.push("Clinical focus");
-    if (role.includes("ai") || role.includes("ml")) keywords.push("AI/ML title");
-    if (role.includes("innovation")) keywords.push("Innovation role");
-    if (role.includes("cms") || role.includes("government")) keywords.push("Government");
-    if (role.includes("health system") || role.includes("hospital")) keywords.push("Health System");
+    if (role.includes("ai") || role.includes("ml") || role.includes("machine learning")) keywords.push("AI/ML title");
+    if (role.includes("innovation")) keywords.push("Innovation");
+    if (role.includes("cms") || role.includes("government") || role.includes("federal")) keywords.push("Government");
+    if (role.includes("google") || role.includes("microsoft") || role.includes("amazon")) keywords.push("Big Tech");
+    if (role.includes("startup") || role.includes("founder")) keywords.push("Startup");
 
-    keywords.push(`Bucket: ${v.bucket}`);
+    // Bucket signal
+    keywords.push(`${v.bucket.charAt(0).toUpperCase() + v.bucket.slice(1)} bucket`);
+
+    // Categorize by rating
+    const isGood = v.vote >= 4; // 4-5 = good
+    const isBad = v.vote <= 2;  // 1-2 = bad
 
     for (const kw of keywords) {
-      if (v.vote === "up") {
+      if (isGood) {
         goodSignals[kw] = (goodSignals[kw] || 0) + 1;
-      } else if (v.vote === "down") {
+      } else if (isBad) {
         badSignals[kw] = (badSignals[kw] || 0) + 1;
       }
     }
@@ -145,11 +158,11 @@ function calculatePatterns(votes: Vote[]) {
   return {
     good: Object.entries(goodSignals)
       .sort((a, b) => b[1] - a[1])
-      .slice(0, 8)
+      .slice(0, 10)
       .map(([signal, count]) => ({ signal, count })),
     bad: Object.entries(badSignals)
       .sort((a, b) => b[1] - a[1])
-      .slice(0, 8)
+      .slice(0, 10)
       .map(([signal, count]) => ({ signal, count })),
   };
 }

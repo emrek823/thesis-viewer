@@ -10,7 +10,7 @@ interface Candidate {
   thesis: string;
   outreach_angle?: string;
   voted: boolean;
-  vote: "up" | "down" | "skip" | null;
+  vote: number | null;
 }
 
 interface Pattern {
@@ -20,7 +20,7 @@ interface Pattern {
 
 interface OutboundData {
   candidates: Candidate[];
-  voteCounts: { up: number; down: number; skip: number };
+  voteCounts: Record<number, number>;
   patterns: { good: Pattern[]; bad: Pattern[] };
   total: number;
 }
@@ -30,6 +30,7 @@ export function OutboundVoter() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(true);
   const [showPatterns, setShowPatterns] = useState(false);
+  const [showProfile, setShowProfile] = useState(true);
 
   const loadData = useCallback(async () => {
     const res = await fetch("/api/outbound");
@@ -38,7 +39,7 @@ export function OutboundVoter() {
 
     // Find first unvoted candidate
     const firstUnvoted = json.candidates.findIndex((c: Candidate) => !c.voted);
-    setCurrentIndex(firstUnvoted >= 0 ? firstUnvoted : json.candidates.length);
+    setCurrentIndex(firstUnvoted >= 0 ? firstUnvoted : 0);
     setLoading(false);
   }, []);
 
@@ -46,7 +47,7 @@ export function OutboundVoter() {
     loadData();
   }, [loadData]);
 
-  const vote = async (type: "up" | "down" | "skip") => {
+  const vote = async (rating: number) => {
     if (!data || currentIndex >= data.candidates.length) return;
 
     const candidate = data.candidates[currentIndex];
@@ -59,7 +60,7 @@ export function OutboundVoter() {
         name: candidate.name,
         role: candidate.role,
         bucket: candidate.bucket,
-        vote: type,
+        vote: rating,
       }),
     });
 
@@ -67,31 +68,42 @@ export function OutboundVoter() {
     setData((prev) => {
       if (!prev) return prev;
       const newCandidates = [...prev.candidates];
-      newCandidates[currentIndex] = { ...candidate, voted: true, vote: type };
+      newCandidates[currentIndex] = { ...candidate, voted: true, vote: rating };
       return {
         ...prev,
         candidates: newCandidates,
         voteCounts: {
           ...prev.voteCounts,
-          [type]: prev.voteCounts[type] + 1,
+          [rating]: (prev.voteCounts[rating] || 0) + 1,
         },
       };
     });
 
     // Move to next unvoted
     let next = currentIndex + 1;
-    while (next < data.candidates.length && data.candidates[next].voted) {
+    while (next < data.candidates.length && data.candidates[next]?.voted) {
       next++;
     }
+    if (next >= data.candidates.length) next = 0; // wrap around
     setCurrentIndex(next);
   };
 
-  // Keyboard shortcuts
+  const goTo = (index: number) => {
+    if (data && index >= 0 && index < data.candidates.length) {
+      setCurrentIndex(index);
+    }
+  };
+
+  // Keyboard shortcuts: 1-5 for rating, arrow keys for navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "ArrowLeft") vote("down");
-      else if (e.key === "ArrowRight") vote("up");
-      else if (e.key === "ArrowDown") vote("skip");
+      if (e.key >= "1" && e.key <= "5") {
+        vote(parseInt(e.key));
+      } else if (e.key === "ArrowLeft") {
+        goTo(currentIndex - 1);
+      } else if (e.key === "ArrowRight") {
+        goTo(currentIndex + 1);
+      }
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
@@ -115,176 +127,221 @@ export function OutboundVoter() {
   }
 
   const { candidates, voteCounts, patterns } = data;
-  const reviewed = voteCounts.up + voteCounts.down + voteCounts.skip;
-  const allDone = currentIndex >= candidates.length;
+  const reviewed = Object.values(voteCounts).reduce((a, b) => a + b, 0);
+  const candidate = candidates[currentIndex];
+
+  const ratingLabels: Record<number, string> = {
+    1: "Skip",
+    2: "Meh",
+    3: "Maybe",
+    4: "Good",
+    5: "Great",
+  };
+
+  const ratingColors: Record<number, string> = {
+    1: "bg-gray-200 hover:bg-gray-300 text-gray-600",
+    2: "bg-red-100 hover:bg-red-200 text-red-700",
+    3: "bg-yellow-100 hover:bg-yellow-200 text-yellow-700",
+    4: "bg-green-100 hover:bg-green-200 text-green-700",
+    5: "bg-emerald-200 hover:bg-emerald-300 text-emerald-800",
+  };
 
   return (
-    <div className="max-w-2xl mx-auto">
-      {/* Stats bar */}
-      <div className="flex items-center justify-between mb-6 text-sm">
-        <div className="flex gap-4">
+    <div className="flex gap-6 h-[calc(100vh-200px)] min-h-[600px]">
+      {/* Left side: Candidate card */}
+      <div className="w-1/3 min-w-[350px] flex flex-col">
+        {/* Stats bar */}
+        <div className="flex items-center justify-between mb-4 text-sm">
           <span className="text-gray-500">
-            {reviewed}/{candidates.length} reviewed
+            {reviewed}/{candidates.length} rated
           </span>
-          <span className="text-green-600">👍 {voteCounts.up}</span>
-          <span className="text-red-500">👎 {voteCounts.down}</span>
-          <span className="text-gray-400">⏭ {voteCounts.skip}</span>
-        </div>
-        <button
-          onClick={() => setShowPatterns(!showPatterns)}
-          className="text-xs text-gray-500 hover:text-accent"
-        >
-          {showPatterns ? "Hide" : "Show"} Patterns
-        </button>
-      </div>
-
-      {/* Patterns panel */}
-      {showPatterns && (
-        <div className="card-nintendo bg-white p-4 mb-6">
-          <div className="grid grid-cols-2 gap-6">
-            <div>
-              <h4 className="pixel-header text-xs text-green-600 mb-2">
-                👍 GOOD SIGNALS
-              </h4>
-              {patterns.good.length > 0 ? (
-                <ul className="text-sm space-y-1">
-                  {patterns.good.map((p) => (
-                    <li key={p.signal} className="flex justify-between">
-                      <span>{p.signal}</span>
-                      <span className="text-green-600 font-mono">{p.count}x</span>
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="text-gray-400 text-sm">Vote to see patterns</p>
-              )}
-            </div>
-            <div>
-              <h4 className="pixel-header text-xs text-red-500 mb-2">
-                👎 BAD SIGNALS
-              </h4>
-              {patterns.bad.length > 0 ? (
-                <ul className="text-sm space-y-1">
-                  {patterns.bad.map((p) => (
-                    <li key={p.signal} className="flex justify-between">
-                      <span>{p.signal}</span>
-                      <span className="text-red-500 font-mono">{p.count}x</span>
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="text-gray-400 text-sm">Vote to see patterns</p>
-              )}
-            </div>
+          <div className="flex gap-2">
+            {[5, 4, 3, 2, 1].map((r) => (
+              <span
+                key={r}
+                className={`text-xs px-2 py-0.5 rounded ${
+                  r >= 4 ? "text-green-600" : r === 3 ? "text-yellow-600" : "text-gray-400"
+                }`}
+              >
+                {r}★ {voteCounts[r] || 0}
+              </span>
+            ))}
           </div>
         </div>
-      )}
 
-      {allDone ? (
-        /* All done screen */
-        <div className="card-nintendo bg-white p-8 text-center">
-          <h2 className="pixel-header text-lg mb-4">ALL DONE! 🎉</h2>
-          <p className="text-gray-600 mb-6">
-            Reviewed {reviewed} candidates
-          </p>
-          <div className="flex justify-center gap-8 text-lg">
-            <span className="text-green-600">👍 {voteCounts.up}</span>
-            <span className="text-red-500">👎 {voteCounts.down}</span>
-            <span className="text-gray-400">⏭ {voteCounts.skip}</span>
-          </div>
-
-          {/* Show liked candidates */}
-          {voteCounts.up > 0 && (
-            <div className="mt-8 text-left">
-              <h3 className="pixel-header text-xs text-gray-500 mb-3">
-                👍 LIKED CANDIDATES
-              </h3>
-              <div className="space-y-2">
-                {candidates
-                  .filter((c) => c.vote === "up")
-                  .map((c) => (
-                    <a
-                      key={c.linkedin}
-                      href={c.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block p-3 bg-green-50 border border-green-200 rounded hover:bg-green-100 transition"
-                    >
-                      <div className="font-medium">{c.name}</div>
-                      <div className="text-sm text-gray-600">{c.role}</div>
-                    </a>
-                  ))}
-              </div>
-            </div>
-          )}
+        {/* Navigation */}
+        <div className="flex items-center justify-between mb-4">
+          <button
+            onClick={() => goTo(currentIndex - 1)}
+            disabled={currentIndex === 0}
+            className="px-3 py-1 text-sm bg-gray-100 hover:bg-gray-200 rounded disabled:opacity-30"
+          >
+            ← Prev
+          </button>
+          <span className="text-sm text-gray-500">
+            {currentIndex + 1} of {candidates.length}
+          </span>
+          <button
+            onClick={() => goTo(currentIndex + 1)}
+            disabled={currentIndex === candidates.length - 1}
+            className="px-3 py-1 text-sm bg-gray-100 hover:bg-gray-200 rounded disabled:opacity-30"
+          >
+            Next →
+          </button>
         </div>
-      ) : (
-        /* Candidate card */
-        <div className="card-nintendo bg-white p-6">
-          <div className="flex items-center gap-2 mb-4">
+
+        {/* Candidate card */}
+        <div className="card-nintendo bg-white p-5 flex-1 flex flex-col">
+          <div className="flex items-center gap-2 mb-3">
             <span
               className={`px-3 py-1 rounded-full text-xs font-bold uppercase ${
-                candidates[currentIndex].bucket === "academic"
+                candidate.bucket === "academic"
                   ? "bg-purple-100 text-purple-700"
                   : "bg-blue-100 text-blue-700"
               }`}
             >
-              {candidates[currentIndex].bucket}
+              {candidate.bucket}
             </span>
-            <span className="text-xs text-gray-400">
-              {currentIndex + 1} of {candidates.length}
-            </span>
+            {candidate.voted && (
+              <span className="px-2 py-0.5 bg-gray-100 rounded text-xs">
+                Rated: {candidate.vote}★
+              </span>
+            )}
           </div>
 
-          <h2 className="font-mono font-bold text-xl mb-2">
-            {candidates[currentIndex].name}
-          </h2>
+          <h2 className="font-mono font-bold text-xl mb-2">{candidate.name}</h2>
 
-          <p className="text-gray-600 mb-4">
-            {candidates[currentIndex].role || "No role specified"}
+          <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+            {candidate.role || "No role specified"}
           </p>
 
-          <div className="bg-gray-50 p-3 rounded-lg mb-4 text-sm">
-            <span className="text-gray-500">📋 Thesis:</span>{" "}
-            {candidates[currentIndex].thesis}
+          <div className="bg-gray-50 p-3 rounded-lg mb-4 text-sm flex-1">
+            <div className="text-gray-500 mb-1">📋 Thesis:</div>
+            <div className="font-medium">{candidate.thesis}</div>
           </div>
 
-          <a
-            href={candidates[currentIndex].linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block text-blue-600 hover:underline mb-6 text-sm"
-          >
-            View LinkedIn Profile →
-          </a>
-
-          {/* Vote buttons */}
-          <div className="flex gap-4">
-            <button
-              onClick={() => vote("down")}
-              className="flex-1 py-4 text-3xl bg-red-100 hover:bg-red-200 rounded-xl transition active:scale-95"
-            >
-              👎
-            </button>
-            <button
-              onClick={() => vote("skip")}
-              className="flex-1 py-4 text-lg bg-gray-100 hover:bg-gray-200 rounded-xl transition active:scale-95"
-            >
-              Skip
-            </button>
-            <button
-              onClick={() => vote("up")}
-              className="flex-1 py-4 text-3xl bg-green-100 hover:bg-green-200 rounded-xl transition active:scale-95"
-            >
-              👍
-            </button>
+          {/* 1-5 Rating buttons */}
+          <div className="space-y-2">
+            <div className="grid grid-cols-5 gap-2">
+              {[1, 2, 3, 4, 5].map((r) => (
+                <button
+                  key={r}
+                  onClick={() => vote(r)}
+                  className={`py-3 rounded-lg font-bold text-lg transition active:scale-95 ${ratingColors[r]}`}
+                >
+                  {r}
+                </button>
+              ))}
+            </div>
+            <div className="grid grid-cols-5 gap-2 text-xs text-center text-gray-500">
+              {[1, 2, 3, 4, 5].map((r) => (
+                <span key={r}>{ratingLabels[r]}</span>
+              ))}
+            </div>
           </div>
 
-          <p className="text-center text-xs text-gray-400 mt-4">
-            ← = 👎 &nbsp;&nbsp; → = 👍 &nbsp;&nbsp; ↓ = skip
+          <p className="text-center text-xs text-gray-400 mt-3">
+            Press 1-5 to rate · ←→ to navigate
           </p>
         </div>
-      )}
+
+        {/* Patterns toggle */}
+        <button
+          onClick={() => setShowPatterns(!showPatterns)}
+          className="mt-4 text-xs text-gray-500 hover:text-accent"
+        >
+          {showPatterns ? "Hide" : "Show"} Patterns
+        </button>
+
+        {showPatterns && (
+          <div className="card-nintendo bg-white p-4 mt-2">
+            <div className="grid grid-cols-2 gap-4 text-sm">
+              <div>
+                <h4 className="text-xs font-bold text-green-600 mb-2">👍 HIGH RATED</h4>
+                {patterns.good.length > 0 ? (
+                  <ul className="space-y-1">
+                    {patterns.good.slice(0, 5).map((p) => (
+                      <li key={p.signal} className="flex justify-between text-xs">
+                        <span>{p.signal}</span>
+                        <span className="text-green-600">{p.count}x</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-gray-400 text-xs">Rate 4-5 to see</p>
+                )}
+              </div>
+              <div>
+                <h4 className="text-xs font-bold text-red-500 mb-2">👎 LOW RATED</h4>
+                {patterns.bad.length > 0 ? (
+                  <ul className="space-y-1">
+                    {patterns.bad.slice(0, 5).map((p) => (
+                      <li key={p.signal} className="flex justify-between text-xs">
+                        <span>{p.signal}</span>
+                        <span className="text-red-500">{p.count}x</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-gray-400 text-xs">Rate 1-2 to see</p>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Right side: LinkedIn profile */}
+      <div className="flex-1 flex flex-col">
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="text-sm font-medium text-gray-600">LinkedIn Profile</h3>
+          <div className="flex gap-2">
+            <button
+              onClick={() => setShowProfile(!showProfile)}
+              className="text-xs text-gray-500 hover:text-accent"
+            >
+              {showProfile ? "Hide" : "Show"} Preview
+            </button>
+            <a
+              href={candidate.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-blue-600 hover:underline"
+            >
+              Open in new tab →
+            </a>
+          </div>
+        </div>
+
+        {showProfile ? (
+          <div className="flex-1 card-nintendo bg-white overflow-hidden">
+            <iframe
+              src={candidate.linkedin}
+              className="w-full h-full border-0"
+              title={`LinkedIn profile of ${candidate.name}`}
+              sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+            />
+          </div>
+        ) : (
+          <div className="flex-1 card-nintendo bg-gray-50 flex items-center justify-center">
+            <div className="text-center text-gray-400">
+              <p className="mb-2">Profile preview hidden</p>
+              <a
+                href={candidate.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                Open LinkedIn →
+              </a>
+            </div>
+          </div>
+        )}
+
+        <p className="text-xs text-gray-400 mt-2 text-center">
+          Note: LinkedIn may block preview. Click "Open in new tab" if needed.
+        </p>
+      </div>
     </div>
   );
 }
