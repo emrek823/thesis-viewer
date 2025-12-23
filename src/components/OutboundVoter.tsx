@@ -30,7 +30,6 @@ export function OutboundVoter() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(true);
   const [showPatterns, setShowPatterns] = useState(false);
-  const [showProfile, setShowProfile] = useState(true);
 
   const loadData = useCallback(async () => {
     const res = await fetch("/api/outbound");
@@ -291,56 +290,39 @@ export function OutboundVoter() {
         )}
       </div>
 
-      {/* Right side: LinkedIn profile */}
+      {/* Right side: LinkedIn profile link */}
       <div className="flex-1 flex flex-col">
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-sm font-medium text-gray-600">LinkedIn Profile</h3>
-          <div className="flex gap-2">
-            <button
-              onClick={() => setShowProfile(!showProfile)}
-              className="text-xs text-gray-500 hover:text-accent"
-            >
-              {showProfile ? "Hide" : "Show"} Preview
-            </button>
+        </div>
+
+        <div className="flex-1 card-nintendo bg-gradient-to-br from-blue-50 to-white flex items-center justify-center">
+          <div className="text-center px-8">
+            <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg className="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </div>
+            <h4 className="font-mono font-bold text-lg mb-2">{candidate.name}</h4>
+            <p className="text-gray-500 text-sm mb-6 max-w-md">
+              {candidate.role || "View profile on LinkedIn"}
+            </p>
             <a
               href={candidate.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-blue-600 hover:underline"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition"
             >
-              Open in new tab →
+              Open LinkedIn Profile
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
             </a>
+            <p className="text-xs text-gray-400 mt-4">
+              Opens in new tab
+            </p>
           </div>
         </div>
-
-        {showProfile ? (
-          <div className="flex-1 card-nintendo bg-white overflow-hidden">
-            <iframe
-              src={candidate.linkedin}
-              className="w-full h-full border-0"
-              title={`LinkedIn profile of ${candidate.name}`}
-              sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
-            />
-          </div>
-        ) : (
-          <div className="flex-1 card-nintendo bg-gray-50 flex items-center justify-center">
-            <div className="text-center text-gray-400">
-              <p className="mb-2">Profile preview hidden</p>
-              <a
-                href={candidate.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                Open LinkedIn →
-              </a>
-            </div>
-          </div>
-        )}
-
-        <p className="text-xs text-gray-400 mt-2 text-center">
-          Note: LinkedIn may block preview. Click "Open in new tab" if needed.
-        </p>
       </div>
     </div>
   );
