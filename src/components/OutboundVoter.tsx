@@ -11,6 +11,8 @@ interface Candidate {
   outreach_angle?: string;
   voted: boolean;
   vote: number | null;
+  warmPath?: string | null;
+  rowNumber?: number;
 }
 
 interface Pattern {
@@ -50,6 +52,8 @@ export function OutboundVoter() {
   const [enrichment, setEnrichment] = useState<EnrichmentData | null>(null);
   const [enriching, setEnriching] = useState(false);
   const [copied, setCopied] = useState<string | null>(null);
+  const [sendingHappenstance, setSendingHappenstance] = useState(false);
+  const [happenstanceStatus, setHappenstanceStatus] = useState<string | null>(null);
 
   const loadData = useCallback(async () => {
     const res = await fetch("/api/outbound");
@@ -98,6 +102,53 @@ export function OutboundVoter() {
     await navigator.clipboard.writeText(text);
     setCopied(label);
     setTimeout(() => setCopied(null), 2000);
+  };
+
+  const sendHappenstance = async () => {
+    if (!data || sendingHappenstance) return;
+    const candidate = data.candidates[currentIndex];
+
+    setSendingHappenstance(true);
+    setHappenstanceStatus(null);
+    try {
+      const res = await fetch("/api/happenstance", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: candidate.name,
+          role: candidate.role,
+          linkedin: candidate.linkedin,
+          candidateRow: candidate.rowNumber,
+        }),
+      });
+      const json = await res.json();
+      if (json.status === "sent") {
+        setHappenstanceStatus("Email sent! Check back in 1-2 min.");
+        // Refresh data after a delay
+        setTimeout(() => loadData(), 5000);
+      } else {
+        setHappenstanceStatus("Failed to send");
+      }
+    } catch {
+      setHappenstanceStatus("Error sending email");
+    }
+    setSendingHappenstance(false);
+  };
+
+  const checkHappenstanceInbox = async () => {
+    setHappenstanceStatus("Checking inbox...");
+    try {
+      const res = await fetch("/api/happenstance");
+      const json = await res.json();
+      if (json.found > 0) {
+        setHappenstanceStatus(`Found ${json.found} responses. Refreshing...`);
+        loadData();
+      } else {
+        setHappenstanceStatus("No new responses yet");
+      }
+    } catch {
+      setHappenstanceStatus("Error checking inbox");
+    }
   };
 
   const vote = async (rating: number) => {

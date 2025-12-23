@@ -22,6 +22,8 @@ interface Candidate {
   thesis: string;
   rating?: number | null;
   ratedAt?: string | null;
+  warmPath?: string | null;
+  rowNumber?: number;
 }
 
 interface Vote {
@@ -54,11 +56,11 @@ async function getSheetsData() {
 
   const response = await sheets.spreadsheets.values.get({
     spreadsheetId: process.env.GOOGLE_SHEET_ID,
-    range: "Candidates!A2:G100",
+    range: "Candidates!A2:H100",
   });
 
   const rows = response.data.values || [];
-  return rows.map((row) => ({
+  return rows.map((row, index) => ({
     name: row[0] || "",
     role: row[1] || "",
     bucket: row[2] || "",
@@ -66,6 +68,8 @@ async function getSheetsData() {
     thesis: row[4] || "",
     rating: row[5] ? parseInt(row[5]) : null,
     ratedAt: row[6] || null,
+    warmPath: row[7] || null,
+    rowNumber: index + 2, // +2 for header row and 0-indexing
   }));
 }
 
