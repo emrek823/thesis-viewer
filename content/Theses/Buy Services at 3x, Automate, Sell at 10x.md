@@ -88,13 +88,12 @@ The AI vendor landscape is fragmenting by use case: Anterior AI rated 8/10 for c
 
 | Date | Source | Type | Key Signal |
 |------|--------|------|------------|
-| 2025-12-21 | WellSky RCM Tegus | Operator | SNF: 500→<80 FTEs with automation (84% reduction). Collections $0.90→$0.98. Large systems 70% automated. |
-| 2025-12-21 | Elevance Anterior Tegus | Operator | Anterior AI 8/10 clinical reasoning. Reduces manual 70-75%. "PA is table stakes." |
-| 2025-12-21 | LifePoint Plenful Tegus | Operator | Plenful > Latent > Mandolin for pharmacy RCM. "AI is a code word"—not always robust. |
-| 2025-11-25 | NextGenMed - Sam Slezek | Operator | Pittsburgh credentialer JV (60:40). 10x profit growth projected Y1. Services at 50%+ labor cost. |
+| 2025-12-21 | [[Senior Director of Revenue Cycle Management at WellSky _ Waystar Holding Corp. _ Tegus]] | Operator | SNF: 500→<80 FTEs with automation (84% reduction). Collections $0.90→$0.98. Large systems 70% automated. |
+| 2025-12-21 | [[Senior Director - Product, GTM, and Growth Strategy at Elevance Health Inc. _ Anterior _ Tegus]] | Operator | Anterior AI 8/10 clinical reasoning. Reduces manual 70-75%. "PA is table stakes." |
+| 2025-12-21 | [[Chief Medical Informatics Officer (CMIO), VP & AI_RCM_CDI Physician Executive at LifePoint Health _ Plenful _ Tegus]] | Operator | Plenful > Latent > Mandolin for pharmacy RCM. "AI is a code word"—not always robust. |
+| 2025-11-25 | [[Sam Slezek and Virtue]] | Operator | Pittsburgh credentialer JV (60:40). 10x profit growth projected Y1. Services at 50%+ labor cost. |
 | 2025-12-20 | [[Monthly Sync_ Gyde _ Virtue]] | Operator | VCs claim roll-ups but most aren't closing. a16z one deal. Bain/Norwest 18+ mo, no closings. |
-| 2025-11-26 | Sage - Clara Home Care | Operator | WellSky "25-year-old, crappy, broken." 100-min intake → target 10 min. |
-| 2025-11-25 | Proto - Cash Pay Infrastructure | Operator | $100K+ Frankenstein tech stacks. 50-state proxy coverage opportunity. |
+| 2025-11-25 | [[Proto __ Virtue]] | Operator | $100K+ Frankenstein tech stacks. 50-state proxy coverage opportunity. |
 | 2025-12-20 | [[Anu and Virtue]] | Operator | Geographic arbitrage: MA expensive, MN $350K acquisition, MO $425K with "insane" rates. |
 | 2025-12-17 | [[Tonic Discussion]] | Operator | DFA implementation eliminates engineering maintenance. "Built Tennr in 3 hours." |
 | 2025-12-21 | [[Senior Vice President of Innovation at PAM Health _ Charta Health _ Tegus]] | Operator | Charta > SmarterDx > Brellium. Pre-bill AI: 6-week setup, low 6-figures. "Imagine 100% chart reviews through AI" vs 10% spot checks. Payer-side opportunity too. |

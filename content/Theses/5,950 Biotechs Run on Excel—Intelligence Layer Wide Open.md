@@ -6,9 +6,9 @@ Biopharma operations tooling only serves the top 50 companies. The remaining 5,9
 
 Virtual biotechs with 10-person teams can't navigate the CDMO constellation: drug substance → drug product → vial filling → specialty manufacturing. Each handoff is manual. No single platform connects them. 301 CDMO partnerships announced in 2025 alone, fragmenting into cell & gene (80+ announcements), ADCs (30+), biosimilars, mRNA ([[Quinn Johns and Virtue]]).
 
-The intelligence layer connecting process design → CDMO selection → supply forecasting → trial optimization is wide open. This isn't workflow software—it's an intelligence platform that captures operational decision-making as proprietary data moat. Thermo Fisher's $8.875B Clario acquisition validates the thesis: platforms aggregating trial operational data command premium valuations (Thermo Fisher Agrees to Acquire Clario).
+The intelligence layer connecting process design → CDMO selection → supply forecasting → trial optimization is wide open. This isn't workflow software—it's an intelligence platform that captures operational decision-making as proprietary data moat. Thermo Fisher's $8.875B Clario acquisition validates the thesis: platforms aggregating trial operational data command premium valuations ([[Thermo Fisher Scientific to Acquire Clario Holdings, Inc., Enabling Pharma and Biotech Customers to Accelerate Innovation with Deeper Clinical Insights|Thermo Fisher Clario Acquisition]]).
 
-Reshoring creates future CDMO opportunity: $480B+ pledged since early 2025, but industry skeptics predict 75% for sale within 10 years. Since 80% of FDA approvals come from smaller companies, CDMO demand for small/mid biotech remains strong regardless (Tariffs, CDMO M&A, and the Road to FY26 Guidance).
+Reshoring creates future CDMO opportunity—CDMO demand for small/mid biotech remains strong as 80% of FDA approvals come from smaller companies.
 
 **Timing catalyst: MFN creates urgency NOW.** 12 of 17 targeted pharmas committed to voluntary MFN deals, locking future launches to international pricing ([[White House unveils nine new ‘most favored nation’ deals]]). Structural margin pressure forces efficiency investments—operations tooling becomes priority, not nice-to-have. Biosecure Act forces CDMO reshoring in 12-24 months, creating selection/navigation demand ([[Weakened Biosecure Act poised to become law after Senate passage]]).
 
@@ -81,10 +81,9 @@ Reshoring creates future CDMO opportunity: $480B+ pledged since early 2025, but 
 
 ## Evidence
 
-| Date | Source | Type | Key Signal |
-|------|--------|------|------------|
-| 2025-12-20 | [[Jake __ Virtue]] | Operator | Only 50 of 6,000 pharma companies do forecasting. Rest run on Excel. 7-10 day consultant turnaround. |
-| 2025-12-20 | [[Quinn Johns and Virtue]] | Operator | CDMO fragmentation—virtual biotechs can't manage constellation. Eitri provides end-to-end platform. |
-| 2025-12-20 | [[Practical Considerations for Integrating AIML in Clinical Trials]] | Research | PROCOVA qualified (EMA 2020, FDA 2021). AI covariate adjustment works but needs operational infrastructure. |
-| 2025-12-20 | Thermo Fisher Agrees to Acquire Clario | Company | $8.875B acquisition. Clinical endpoint data infrastructure rollup validates intelligence layer thesis. |
-| 2025-12-20 | Tariffs, CDMO M&A, and the Road to FY26 Guidance | Research | $480B+ reshoring pledges. Skeptics predict 75% for sale in 10 years. 80% FDA approvals from smaller companies. |
+| Date       | Source                                                               | Type     | Key Signal                                                                                                     |
+| ---------- | -------------------------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------- |
+| 2025-12-20 | [[Jake __ Virtue]]                                                   | Operator | Only 50 of 6,000 pharma companies do forecasting. Rest run on Excel. 7-10 day consultant turnaround.           |
+| 2025-12-20 | [[Quinn Johns and Virtue]]                                           | Operator | CDMO fragmentation—virtual biotechs can't manage constellation. Eitri provides end-to-end platform.            |
+| 2025-12-20 | [[Practical Considerations for Integrating AIML in Clinical Trials]] | Research | PROCOVA qualified (EMA 2020, FDA 2021). AI covariate adjustment works but needs operational infrastructure.    |
+| 2025-12-20 | [[Thermo Fisher Scientific to Acquire Clario Holdings, Inc., Enabling Pharma and Biotech Customers to Accelerate Innovation with Deeper Clinical Insights]] | Company  | $8.875B acquisition. Clinical endpoint data infrastructure rollup validates intelligence layer thesis.         |

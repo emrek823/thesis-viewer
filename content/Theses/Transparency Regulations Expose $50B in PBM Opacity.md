@@ -84,6 +84,6 @@ GLP-1 crisis exposes dysfunction: HCA dropped Wegovy/Zepbound, directing employe
 | 2025-12-20 | [[Codoxo's Oversubscribed Series C Led by CVS Health Ventures to Revolutionize Payment Integrity for America's Largest Health Plans]] | Company | CVS Ventures led $35M. 80M+ lives. "Point Zero" pre-claim intervention. |
 | 2025-12-20 | [[Employers drop coverage for weight loss drugs as pharma's direct-to-consumer programs grow]] | Research | HCA dropped GLP-1 for D2C. Can't determine if cash < PBM price. |
 | 2025-12-19 | [[Cigna sees high level of employer health plan claims in 2025]] | Company | Claims surge late 2024. Q1 2025: $63M vs $532M YoY. Lost 1M lives. |
-| 2025-05-30 | CMS RFI | Research | Executive Order 14221 directs 90-day enforcement. |
+| 2025-05-30 | [[CMS RFI on Hospital Price Transparency per Executive Order 14221]] | Research | Executive Order 14221 directs 90-day enforcement. |
 | 2025-12-22 | [[2025-12-21-2024-340b-covered-entity-purchases-hrsa]] | Research | $81.4B 340B purchases (2024). DSH hospitals $64B. Top 10 drugs = 1/3 of spend. Specialty = 61.5% of spend, 40% of units. |
 | 2025-12-22 | [[Director, 340B Program at Mount Sinai Health System _ Plenful _ Tegus]] | Operator | 340B Dir (7 hospitals). Built own optimization system. Rejected Latent 340B offering. "More sophisticated than average." |

@@ -32,7 +32,7 @@ The $100B diagnostic TAM has current players capturing only 5-10%. Market: $31.8
   - *Evidence:* Needs validation — Survey payer medical directors on evidence requirements
 
 - [ ] **Technology fragmentation.** Multiple platforms (mass spec, antibody, aptamer) with no standard. Cross-platform results uncorrelated.
-  - *Evidence:* Bridging proteomics to clinic — Benzon Foundation Symposium: standardization critical barrier
+  - *Evidence:* Needs validation — Survey proteomics labs on cross-platform reproducibility
 
 - [ ] **Clinical adoption slow.** Physicians trained on genomics/chemistry panels. Mass spec requires PhD operators. Even affinity platforms need specialized training.
   - *Evidence:* Needs monitoring — Track clinical lab proteomics adoption rates
@@ -79,8 +79,7 @@ The $100B diagnostic TAM has current players capturing only 5-10%. Market: $31.8
 | Date | Source | Type | Key Signal |
 |------|--------|------|------------|
 | 2025-12-20 | [[Alex __ Emre]] | Operator | Proteins change constantly vs DNA "once and done." OLink $3B. $100B TAM, 5-10% penetration. |
-| 2025 | Quanterix Q3 2025 results | Company | 80% recurring revenue. 7 consecutive quarters double-digit growth. FDA Breakthrough for LucentAD Alzheimer's. |
-| 2024 | Thermo Fisher Olink acquisition decision document | Company | $3.1B acquisition. Olink 40-50% of high-plex market share. |
-| 2024 | Alamar $128M Series C | Company | $250M total funding. NULISA platform: attomolar sensitivity (10-100x competitors). |
-| 2024-2025 | Illumina SomaLogic acquisition | Company | Expected H1 2026 close. SomaLogic 11,000+ protein measurements. |
-| 2025 | Bridging proteomics to clinic | Research | Benzon Foundation: standardization and QC critical barriers. Cross-platform comparability lacking. |
+| 2025 | [[Quanterix Q3 2025 earnings - 80% recurring revenue]] | Company | 80% recurring revenue. 7 consecutive quarters double-digit growth. FDA Breakthrough for LucentAD Alzheimer's. |
+| 2024 | [[Thermo Fisher acquires Olink for $3.1B]] | Company | $3.1B acquisition. Olink 40-50% of high-plex market share. |
+| 2024 | [[Alamar Biosciences raises $128M Series C for NULISA proteomics]] | Company | $250M total funding. NULISA platform: attomolar sensitivity (10-100x competitors). |
+| 2024-2025 | [[Illumina to acquire SomaLogic for $425M]] | Company | Expected H1 2026 close. SomaLogic 11,000+ protein measurements. |

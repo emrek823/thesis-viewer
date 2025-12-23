@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Sync theses and processed sources from Obsidian vault
+# Sync theses and sources from Obsidian vault
 # Run this before building or during development
 
 VAULT_PATH="$HOME/Desktop/Obsidian Vault/LLM_Second_Brain"
@@ -19,15 +19,19 @@ else
   echo "  Warning: Theses folder not found at $VAULT_PATH/Theses"
 fi
 
-# Sync Processed sources
+# Sync Sources (was Processed, now Sources with subfolders)
 rm -rf "$CONTENT_PATH/Processed"
 mkdir -p "$CONTENT_PATH/Processed"
-if [ -d "$VAULT_PATH/Processed" ]; then
-  cp -r "$VAULT_PATH/Processed"/* "$CONTENT_PATH/Processed/" 2>/dev/null || true
+
+if [ -d "$VAULT_PATH/Sources" ]; then
+  # Copy all markdown files from Sources and its subfolders into flat Processed folder
+  find "$VAULT_PATH/Sources" -name "*.md" -type f | while read -r file; do
+    cp "$file" "$CONTENT_PATH/Processed/" 2>/dev/null || true
+  done
   count=$(find "$CONTENT_PATH/Processed" -name "*.md" 2>/dev/null | wc -l)
-  echo "  Copied $count processed sources"
+  echo "  Copied $count sources from Sources/"
 else
-  echo "  Warning: Processed folder not found at $VAULT_PATH/Processed"
+  echo "  Warning: Sources folder not found at $VAULT_PATH/Sources"
 fi
 
 echo "Done!"

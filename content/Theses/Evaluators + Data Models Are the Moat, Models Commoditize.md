@@ -6,7 +6,7 @@ Healthcare AI moats are NOT in the model layer—foundation models commoditize i
 
 Pure LLMs hit 85% accuracy ceiling with 8-15% hallucination rates ([[papers-digest-2025-W51]]). Healthcare requires 95%+. SmarterDX demonstrated the evaluator moat: expert-derived labels + fine-tuning achieved 81%→92% AUROC on complex coding cases—an 11-point lift that came from domain expertise, not model architecture ([[SmarterDx - Smarter by Design]]). Parsed confirmed: "evaluation quality sets the ceiling on model performance" ([[Parsed + Baseten Building Models That Touch Grass]]).
 
-The semantic layer is prerequisite for AI agents. Without canonical definitions of "patient," "encounter," or "margin," agents amplify bad data at scale. Translucent's 5x growth ($625K→$1.8M ARR in 4 months) validates CFO demand for margin visibility built on semantic layer + hybrid architecture ([[Will Detwiler and Emre Karatas]]). Epic's dominance (90%+ US medical records, decade-long migrations, $1B+ switching costs) proves "data model = destiny" (Texas antitrust case).
+The semantic layer is prerequisite for AI agents. Without canonical definitions of "patient," "encounter," or "margin," agents amplify bad data at scale. Translucent's 5x growth ($625K→$1.8M ARR in 4 months) validates CFO demand for margin visibility built on semantic layer + hybrid architecture ([[Will Detwiler and Emre Karatas]]). Epic's dominance (90%+ US medical records, decade-long migrations, $1B+ switching costs) proves "data model = destiny" ([[Don't Mess With Texas Epic Edition|Texas antitrust case]]).
 
 Labs aren't optimizing for healthcare. OpenAI explicitly focused on "general capability," not ICD-10 coding or prior auth workflows. This creates 18-36 month window for vertical specialists while labs chase AGI.
 
@@ -29,6 +29,7 @@ Labs aren't optimizing for healthcare. OpenAI explicitly focused on "general cap
 - *2025-12-22:* **3rd Tennr customer validates contextual AI moat.** MPOWERHealth (intraoperative monitoring, 600 employees, 100K cases/year): 300-400% efficiency gains (6-12 min → 1-3 min per case). Tried Azure ML internally—"couldn't replicate the contextual look" that Tennr has. Key: Tennr reads "completely unstructured, ever-evolving" documents without large training sets. 9.5/10 satisfaction, low six figures annual spend doubling. Human-in-the-loop still required ([[Tennr MPOWERHEALTH]]).
 - *2025-12-22:* **SmarterDX founder confirms fine-tuning moat.** Fine-tuned models deliver 30-40% improvement for ICD-10 PCS vs frontier models. "Transforms rejection rate: from rejecting 2 out of 3 to accepting 2 out of 3." OpenAI explicit: "not interested in improving models for operational healthcare within the US." ICD-10 PCS on GPT-5 "still terrible" despite CM improvements. Best-in-class retriever models "nowhere near acceptable for medical applications." Labs not optimizing for healthcare—18-36 month window real ([[Virtue (Sean _ Emre) __ Scott Fleming]]).
 - *2025-12-22:* **Interior's DFA ontology is the pattern.** Interior's value-add: "building ontology that converts payer policy PDFs into deterministic finite automaton." LLMs reason within predetermined state transitions rather than open-ended responses. Claims data platform landscape fragmenting: Tuva (data engineer favorite), Accorded (actuary-centric), Zeus (unstructured EMR) ([[AI in Care Delivery (Virtue)]]).
+- *2025-12-22:* **Absorbed [[RL + Proprietary Workflows = Enterprise AI Moat]].** Same mechanism: domain-specific fine-tuning + feedback loops beats foundation models. RL framing adds: (1) verifiable environments enable self-improvement (code compiles, claim accepted), (2) online RL creates continuous improvement (Cursor/Cognition tab acceptance), (3) talent scarcity + data governance are real blockers. Moat formula: verifiable + fast feedback + domain expertise ([[RL in Real Life Durable Moats]]).
 
 ---
 
@@ -54,7 +55,7 @@ Labs aren't optimizing for healthcare. OpenAI explicitly focused on "general cap
   - *Evidence:* Needs monitoring — Snowflake Healthcare Data Cloud announcements
 
 - [ ] **EHR incumbents win distribution.** Epic has 274 AI agent customers, Oracle claims "AI built in not bolted on." If they bundle natively, middleware startups lose.
-  - *Evidence:* Texas antitrust case — Epic controls distribution, 43.9% App Orchard share
+  - *Evidence:* [[Don't Mess With Texas Epic Edition]] — Epic controls distribution, 43.9% App Orchard share
 
 ---
 
@@ -100,17 +101,17 @@ Labs aren't optimizing for healthcare. OpenAI explicitly focused on "general cap
 
 | Date | Source | Type | Key Signal |
 |------|--------|------|------------|
-| 2025-12-21 | MSK Abridge Tegus | Operator | "Abridge has own LLM, Ambience uses OpenAI"—yet 6-7/10 head-to-heads. Ontology > architecture. Stickiness 8/10. |
+| 2025-12-21 | [[Director of Strategy and Innovation Group for Memorial Sloan Kettering Cancer Center _ Abridge _ Tegus]] | Operator | "Abridge has own LLM, Ambience uses OpenAI"—yet 6-7/10 head-to-heads. Ontology > architecture. Stickiness 8/10. |
 | 2025-12-20 | [[SmarterDx - Smarter by Design]] | Research | 81%→92% AUROC from expert labels. ~50% F1 improvement. |
 | 2025-12-16 | [[Parsed + Baseten Building Models That Touch Grass]] | Research | "Evaluation quality sets ceiling." Specialization beats scale. |
 | 2025-12-20 | [[Will Detwiler and Emre Karatas]] | Operator | CFO priority shift: margin analytics now "top 3." Translucent 5x growth. |
-| 2025-12-17 | Texas antitrust case | Research | Epic 90%+ records. Migrations take decade, cost $1B+. |
+| 2025-12-17 | [[Don't Mess With Texas Epic Edition]] | Research | Epic 90%+ records. Migrations take decade, cost $1B+. |
 | 2025-12 | [[papers-digest-2025-W51]] | Research | 8-15% hallucination in clinical LLMs. FDA post-market surveillance. |
 | 2025-12-21 | [[Mitigating Hallucinations in Healthcare LLMs with Granular Fact-Checking and Domain-Specific]] | Research | Fact-checking modules: 0.89 precision, 0.82 recall, F1=0.86. |
 | 2025-12-21 | [[EXAONE Path 2.5 Pathology Foundation Model with Multi-Omics Alignment]] | Research | Multi-modal foundation model (histologic + genomic + epigenetic). |
-| 2025-12 | Abridge valuation | Company | $5.3B valuation, 150+ health systems. Ambient AI leader. |
-| 2025-12 | Tennr Series C | Company | $101M raised. 300-400% efficiency. DFA + doc handling. |
-| 2021-12 | Nuance DAX acquisition | Company | $19.7B MSFT acquisition. 550+ health systems. |
+| 2025-12 | [[Abridge raises $300M Series E at $5.3B valuation]] | Company | $5.3B valuation, 150+ health systems. Ambient AI leader. |
+| 2025-12 | [[Tennr raises $101M Series C at $605M valuation]] | Company | $101M raised. 300-400% efficiency. DFA + doc handling. |
+| 2021-12 | [[Microsoft completes $19.7B Nuance acquisition]] | Company | $19.7B MSFT acquisition. 550+ health systems. |
 | 2025-12-17 | [[When the Speedboats Hit the Wake]] | Research | TEFCA/CMS-Aligned Networks enable real-time data—but raw data useless without semantic layer. |
 | 2025-12-19 | [[POLITICO Pro FDA plans to merge adverse events reporting]] | Research | FDA centralizing FAERS + Sentinel. New pharmacovigilance data layer. |
 | 2025-12-21 | [[Associate Medical Director of Informatics of Emergency Services at a Clinic _ Ambience Healthcare, Inc. _ Tegus]] | Operator | Cleveland Clinic: Ambience 9/10 vs Abridge 6/10. 300 smart data elements for billing. "Coding is long-term differentiator." Customer service + co-development > model. |
@@ -127,3 +128,4 @@ Labs aren't optimizing for healthcare. OpenAI explicitly focused on "general cap
 | 2025-12-22 | [[Tennr MPOWERHEALTH]] | Operator | MPOWERHealth (100K cases/yr): 300-400% efficiency. Tried Azure ML—"couldn't replicate contextual AI." 9.5/10 rating. Human-in-the-loop required. |
 | 2025-12-22 | [[Virtue (Sean _ Emre) __ Scott Fleming]] | Operator | SmarterDX founder: 30-40% fine-tuning improvement vs frontier. OpenAI "not interested in operational healthcare." ICD-10 PCS "still terrible" on GPT-5. |
 | 2025-12-22 | [[AI in Care Delivery (Virtue)]] | Operator | Interior: DFA ontology converts payer PDFs to state machine. LLMs reason within transitions. Claims platform landscape fragmenting. |
+| 2025-12-22 | [[RL in Real Life Durable Moats]] | Research | **Absorbed from RL thesis.** Greylock: "Better foundation models alone cannot solve bespoke personalization." Cursor/Cognition use online RL. Talent scarcity and data governance blockers. |

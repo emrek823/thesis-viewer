@@ -13,6 +13,7 @@ Pricing is usage-based, low six figures annually. ROI break-even at 1.5 FTEs. Pr
 **How this evolved:**
 - *2025-12-21:* Emerged from 6 Assort Health sources initially dismissed as "point solution." Full read revealed 90% abandonment reduction, clear ROI, but distribution > tech as moat.
 - *2025-12-22:* **7th Assort customer confirms: 9/10 rating, $90K annual savings.** Retina practice (6 locations, 10K calls/month) reduced missed calls from 30%→near-zero. Key: saved $90K by eliminating another vendor + reassigning 2 FTEs. "Assort's the buzziest" in retina space. Athena integration was critical—only evaluated vendors with Athena connectivity ([[Chief Administrative Officer at a Medical Group _ Assort Health _ Tegus]]).
+- *2025-12-22:* **Pattern emerging: 3 more Tegus calls validate but reveal fragmentation.** Texas Medical Center chose HelloPatient over Assort for scheduling (Assort better at triage). DSO with 1,100+ locations chose PolyAI over Assort for Salesforce/Epic compatibility. Tennr COO confirmed fax wrangling ROI (5 FTEs → 2) but different use case. Market remains fragmented with no clear winner—distribution partnerships key differentiator.
 
 ---
 

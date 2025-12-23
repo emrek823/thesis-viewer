@@ -90,7 +90,6 @@ Health system CFOs think in portfolio terms, not service line ROI. They won't cu
 | 2025-12-21 | [[Financial Performance of U.S. Health Insurers (2010–2025) (2)]] | Research | UNH $6.5B cost overrun. Medical costs 7.5-8.5% trend. GLP-1: $50B extra pharmacy. VBC at 34% of MA (up from 10.3% in 2017). |
 | 2025-12-08 | [[Will Detwiler and Emre Karatas]] | Operator | CFOs responding "top 3 priority" to margin analytics. Pain = fragmented data requiring manual stitching. |
 | 2025-12-20 | [[Anu and Virtue]] | Operator | Common Spirit ($42B) only invests where they become customer. Customer validation as diligence filter. |
-| 2025-12-20 | Nephron MA Medicaid Research Report | Research | MA margin trough: -2.0% pre-tax (worst in 25 years). MLR 91%. 50% EPS upside if margins recover to 4.5%. |
 | 2025-12-20 | [[Comparing for-profit and not-for-profit health insurers How capital and surplus are managed]] | Research | For-profit: 500% RBC, 21.7% ROE, 3.2% margin. Nonprofit: 774% RBC, 2.3% ROE, 0.7% margin. |
 | 2025-12-22 | [[2025-12-21-2025-the-state-of-ai-in-healthcare-menlo-ventures]] | Research | HC AI adoption 22% vs 9% economy-wide. $1.4B spend in 2025 (3x 2024). 85% to startups. Ambient $600M, coding $450M. Procurement cycles 18-22% shorter for AI. |
 | 2025-12-22 | [[Former Vice President Of Enterprise Analytics at R1 RCM _ Waystar Holding Corp. _ Tegus]] | Operator | Payer incentive to maintain admin burden. RCM 15-20% automated. Cost-to-collect 3.5-4% outsourced. Epic 50% share, 70% of contracts. |

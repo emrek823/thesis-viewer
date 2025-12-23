@@ -80,8 +80,8 @@ TRIMEDX (1.7M+ devices, $200M+ tech investment, TRIMEDX-AIQ launched Dec 2025) c
 | Date | Source | Type | Key Signal |
 |------|--------|------|------------|
 | 2025-12-20 | [[claude compass_artifact_wf-47eb8b48-df83-488d-a269-b71800dd5639_text_markdown]] | Research | $22B market, 40% BMET retirement, 7,300 openings vs 400 graduates (18:1). Armis $4.2B at 21x ARR. |
-| 2025-12-20 | TRIMEDX-AIQ launch | Company | 6.1M device records, 90-95% US visibility. $200M+ tech investment. |
-| 2025-12-20 | GE OnWatch | Company | 60% downtime reduction, 35% fewer on-site service calls. |
-| 2025-12-20 | Philips | Company | 1M events + 200K sensor readings/day per MRI → 30% downtime reduction. |
-| 2025-12-20 | Augury | Company | 99.9% failure detection, 100M+ machine recordings, Munich RE backing. |
-| 2025-12-20 | Armis/Claroty | Company | 15-21x ARR multiples for healthcare IoT security. |
+| 2025-12-20 | [[TRIMEDX launches TRIMEDX-AIQ AI-native clinical asset intelligence]] | Company | 6.1M device records, 90-95% US visibility. $200M+ tech investment. |
+| 2025-12-20 | [[GE HealthCare OnWatch Predict reduces unplanned downtime 60%]] | Company | 60% downtime reduction, 35% fewer on-site service calls. |
+| 2025-12-20 | [[Philips predictive maintenance - 35% MRI cases solved predictively]] | Company | 1M events + 200K sensor readings/day per MRI → 30% downtime reduction. |
+| 2025-12-20 | [[Augury raises $75M Series F at $1B+ valuation]] | Company | 99.9% failure detection, 100M+ machine recordings, Munich RE backing. |
+| 2025-12-20 | [[Armis raises $435M at $6.1B valuation for IoT security]] | Company | 15-21x ARR multiples for healthcare IoT security. |

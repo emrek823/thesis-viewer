@@ -2,13 +2,13 @@
 
 ## Investment Take
 
-Clinical trial operations is the last Excel stronghold in pharma. 94% of trials delayed >1 month, each delay costing $600K-$8M/day ([[slope-seed-pitch-deck---q4-2019-05f0f0f4]]). The industry spends $80B annually on trials while 30-50% of operations still run on spreadsheets (Biopharma Company Auxilius Condor Tegus). This is a $19B TAM hiding in plain sight.
+Clinical trial operations is the last Excel stronghold in pharma. 94% of trials delayed >1 month, each delay costing $600K-$8M/day ([[slope-seed-pitch-deck---q4-2019-05f0f0f4]]). The industry spends $80B annually on trials while 30-50% of operations still run on spreadsheets ([[Director at a Pharmaceutical Therapeutics Company _ Greenphire _ Tegus|Greenphire Tegus]]). This is a $19B TAM hiding in plain sight.
 
-The winners are emerging. Slope (supply chain) grew 267% YoY to $3M revenue with $2.4M TCV backlog ([[slope-series-a-pitch-deck-e7d229e2]]). Unlearn (digital twins) promises 50% cost reduction and 50% fewer control arm subjects ([[unlearnai_pitch-1-05e675e9]]). Greenphire dominates patient payments with 2M+ patients across complex multi-arm oncology trials (J&J Janssen Greenphire Tegus).
+The winners are emerging. Slope (supply chain) grew 267% YoY to $3M revenue with $2.4M TCV backlog ([[slope-series-a-pitch-deck-e7d229e2]]). Unlearn (digital twins) promises 50% cost reduction and 50% fewer control arm subjects ([[unlearnai_pitch-1-05e675e9]]). Greenphire dominates patient payments with 2M+ patients across complex multi-arm oncology trials ([[Contract Process Operations Lead, J&J Innovative Medicine at The Janssen Pharmaceutical Companies of Johnson & Johnson _ Greenphire _ Tegus|J&J Janssen Greenphire Tegus]]).
 
 The market is segmented by company stage. ~600 clinical-stage biotechs in the $0-500M revenue "sweet spot" are ideal targets—good science, cash runway, Phase II-III active ([[Vice President of Finance at Velocity Clinical Research _ Greenphire _ Tegus]]). Larger pharma (30%) use specialized tools, mid-market (20%) buy branded solutions, but 50% still use Excel. Government funding cuts (30-35% hit) are forcing efficiency investments.
 
-**Why now:** Thermo Fisher's $8.875B acquisition of Clario for endpoint data signals big pharma values trial operations infrastructure (Thermo Fisher Clario Acquisition). Trial site networks consolidating. AI integration accelerating but human connection becoming differentiator ([[More 2026 Clinical Predictions]]).
+**Why now:** Thermo Fisher's $8.875B acquisition of Clario for endpoint data signals big pharma values trial operations infrastructure ([[Thermo Fisher Scientific to Acquire Clario Holdings, Inc., Enabling Pharma and Biotech Customers to Accelerate Innovation with Deeper Clinical Insights|Thermo Fisher Clario Acquisition]]). Trial site networks consolidating. AI integration accelerating but human connection becoming differentiator ([[More 2026 Clinical Predictions]]).
 
 **How this evolved:**
 - *2025-12-21:* Emerged from source cluster: Slope (supply chain), Unlearn (digital twins), Greenphire/Auxilius (payments/accruals). Shared mechanism: trial delays = massive cost, automation = clear ROI.
@@ -25,7 +25,7 @@ The market is segmented by company stage. ~600 clinical-stage biotechs in the $0
   - *Evidence:* [[Director at a Pharmaceutical Therapeutics Company _ Greenphire _ Tegus]] — 30-20-50 split (specialized/branded/Excel), 600 clinical-stage biotechs in U.S.
 
 - [ ] **M&A validates category.** Thermo Fisher paid $8.875B for Clario (endpoint data). Big pharma buying operations infrastructure.
-  - *Evidence:* Thermo Fisher Clario Acquisition — "immediately accretive" to EPS
+  - *Evidence:* [[Thermo Fisher Scientific to Acquire Clario Holdings, Inc., Enabling Pharma and Biotech Customers to Accelerate Innovation with Deeper Clinical Insights|Thermo Fisher Clario Acquisition]] — "immediately accretive" to EPS
 
 ---
 
@@ -84,10 +84,9 @@ The market is segmented by company stage. ~600 clinical-stage biotechs in the $0
 | 2025-12-21 | [[slope-seed-pitch-deck---q4-2019-05f0f0f4]] | Company | 94% trials delayed >1 month. $600K-$8M/day delay costs. 2.1K trials, 276 sites. |
 | 2025-12-21 | [[slope-series-a-pitch-deck-e7d229e2]] | Company | 267% YoY growth, $3M revenue, $2.4M TCV backlog. $100M revenue target by 2025. |
 | 2025-12-21 | [[unlearnai_pitch-1-05e675e9]] | Company | Digital twins = 50% cost reduction, 50% fewer subjects. $80B annual trial spend. |
-| 2025-12-21 | J&J Janssen Greenphire Tegus | Operator | 2M+ patients in trials, complex multi-arm oncology, milestone-based payments. |
-| 2025-12-21 | Biopharma Company Auxilius Condor Tegus | Operator | 600 clinical-stage biotechs in sweet spot. 30-20-50 split (specialized/branded/Excel). |
+| 2025-12-21 | [[Contract Process Operations Lead, J&J Innovative Medicine at The Janssen Pharmaceutical Companies of Johnson & Johnson _ Greenphire _ Tegus]] | Operator | 2M+ patients in trials, complex multi-arm oncology, milestone-based payments. |
 | 2025-12-21 | [[Vice President of Finance at Velocity Clinical Research _ Greenphire _ Tegus]] | Operator | $0-500M biotech sweet spot. 35-40% are ideal candidates. Government funding 30-35% hit. |
-| 2025-12-21 | Thermo Fisher Clario Acquisition | Company | $8.875B acquisition for endpoint data. "Immediately accretive." |
+| 2025-12-21 | [[Thermo Fisher Scientific to Acquire Clario Holdings, Inc., Enabling Pharma and Biotech Customers to Accelerate Innovation with Deeper Clinical Insights]] | Company | $8.875B acquisition for endpoint data. "Immediately accretive." |
 | 2025-12-21 | [[More 2026 Clinical Predictions]] | Research | Site consolidation, AI integration struggles, human connection as differentiator. |
 | 2025-12-22 | [[Contract Process Operations Lead, J&J Innovative Medicine at The Janssen Pharmaceutical Companies of Johnson & Johnson _ Greenphire _ Tegus]] | Operator | "No real competitors" for patient payments. Multiple treatment arms = massive complexity. Suvoda merger for eClinical suite. |
 | 2025-12-22 | [[Director at a Pharmaceutical Therapeutics Company _ Greenphire _ Tegus]] | Operator | 600 midmarket biotechs in U.S. 30-20-50 split. Auxilius "10X revenue growth." $60K/oncology patient. 80/20 investment split favoring Auxilius. |

@@ -4,13 +4,13 @@
 
 Specialty VBC follows a predictable evolution: navigation → platform → 2-sided risk. The companies that win control the highest-cost lever in their specialty. In oncology, that's drug spend (70% of total cost). In cardiology, it's procedural appropriateness. In mental health, it's treatment modality optimization ([[General Catalyst-backed Radial raises $50M to treat mental health in non-traditional ways]]).
 
-The playbook is proven: Thyme Care reached unicorn + profitability managing 80K cancer patients, $5B oncology spend, achieving $429 PEMPM savings ([[Thyme Care Overview - Series B Fundraise]]). VBC penetration gap is massive—50%+ of primary care under value contracts vs 5-28% specialty (McKinsey: Specialty risk). While specialists control 68% of total medical spending, they operate under <10% VBC coverage. This is the market opportunity.
+The playbook is proven: Thyme Care reached unicorn + profitability managing 80K cancer patients, $5B oncology spend, achieving $429 PEMPM savings ([[Thyme Care Overview - Series B Fundraise]]). VBC penetration gap is massive—50%+ of primary care under value contracts vs 5-28% specialty ([[McKinsey - Specialty risk is the next frontier of VBC]]). While specialists control 68% of total medical spending, they operate under <10% VBC coverage. This is the market opportunity.
 
 MA VBC adoption is accelerating: 34% of MA provider payments were population-based in 2023, up from 10.3% in 2017 ([[Nephron Research 2026 Healthcare Services Outlook (1)]]). Two-sided risk MA shows materially lower utilization: hospitalizations -4.3% vs FFS, ED visits -13.4%. This validates the VBC→outcomes→margin thesis for specialty care.
 
 The platform wedge matters: Thyme Box enables 1,000+ oncologists. Radial building software to license to mental health clinics. House Rx's in-clinic specialty pharmacy platform achieves 3.5-day medication start (80% faster) and mid-80s% adherence (vs 50% national) ([[From Prescriptions to Patients How AI Is Redefining the Medication Experience]]). Platform licensing becomes second revenue stream beyond care delivery.
 
-**Timing catalyst: ACO REACH creates analytics demand.** CMS pulling back unlimited reinsurance, adjustment factor unknown until year-end. ACOs flying blind on risk exposure—predictive analytics modeling budget neutrality factors in real-time becomes critical. C3 AI won NIH+CMS consolidation contract (HHS Selects C3 AI), validating federal appetite for AI in population health.
+**Timing catalyst: ACO REACH creates analytics demand.** CMS pulling back unlimited reinsurance, adjustment factor unknown until year-end. ACOs flying blind on risk exposure—predictive analytics modeling budget neutrality factors in real-time becomes critical. C3 AI won NIH+CMS consolidation contract ([[U.S. Department of Health and Human Services Selects C3 AI as Enterprise AI Platform|HHS Selects C3 AI]]), validating federal appetite for AI in population health.
 
 **How this evolved:**
 - *2025-12-20:* Saw primary care VBC mature (Oak Street). Started seeing same pattern in oncology (Thyme Care), mental health (Radial). Realized specialty VBC is repeatable playbook.
@@ -28,7 +28,7 @@ The platform wedge matters: Thyme Box enables 1,000+ oncologists. Radial buildin
   - *Evidence:* [[Beyond Navigation Thyme Care Ready for Heavy Lifts to Make Value-Based Care Work]] — Drug spend = 70% of oncology cost
 
 - [ ] **Penetration gap = TAM.** 50% primary care vs 5-28% specialty VBC penetration while specialists control 68% of spending.
-  - *Evidence:* McKinsey: Specialty risk — Specialty = 38% direct spending, 68% total cost of care
+  - *Evidence:* [[McKinsey - Specialty risk is the next frontier of VBC]] — Specialty = 38% direct spending, 68% total cost of care
 
 ---
 
@@ -93,12 +93,12 @@ The platform wedge matters: Thyme Box enables 1,000+ oncologists. Radial buildin
 
 | Date | Source | Type | Key Signal |
 |------|--------|------|------------|
+| 2025-07 | [[McKinsey - Specialty risk is the next frontier of VBC]] | Research | 50%+ primary care vs 5-28% specialty VBC penetration. Specialists = 38% direct, 68% total cost of care. $100B/year savings opportunity. |
 | 2025-12-21 | [[Nephron Research 2026 Healthcare Services Outlook (1)]] | Research | 34% MA payments population-based (2023), up from 10.3% (2017). Two-sided risk: -4.3% hospitalizations, -13.4% ED visits vs FFS. |
 | 2025-12-20 | [[Thyme Care Overview - Series B Fundraise]] | Company | $429 PEMPM savings. $90K patient spend, $8.3K addressable. 70%+ MA conversion. Profitability at 80K patients. |
 | 2025-12-20 | [[Beyond Navigation Thyme Care Ready for Heavy Lifts to Make Value-Based Care Work]] | Research | Drug spend = 70% of oncology. Collaborative vs confrontational approach. Part D vs Part B billing optimization. |
-| 2025-12-20 | McKinsey: Specialty risk | Research | Specialty = 38% direct spending, 68% total cost. VBC penetration: 50% primary care vs 5-28% specialty. |
 | 2025-12-09 | [[General Catalyst-backed Radial raises $50M to treat mental health in non-traditional ways]] | Company | Mental health neuromodulation. Insurance covers TMS/esketamine. Profitable on per-treatment fees. Platform software for licensing. |
 | 2025-12-20 | [[From Prescriptions to Patients How AI Is Redefining the Medication Experience]] | Research | House Rx: 3.5-day med start (80% faster), mid-80s% adherence. Arine: 50% provider adoption, 40% hospitalization reduction. |
-| 2025-12-20 | Hinge Health S-1 filing | Company | $6.2B valuation, $390M revenue, 33% YoY growth. MSK VBC at scale. |
-| 2025-12-20 | Sword Health funding | Company | $3B valuation, $100M ARR. Outcome-based pricing: 50% activation, 50% goal achievement. |
-| 2025-12-20 | HHS Selects C3 AI | Company | Federal data consolidation: NIH + CMS unified. Government buying AI for population health. |
+| 2025-12-20 | [[Hinge Health S-1 IPO Filing]] | Company | $390M revenue, 33% YoY growth, $2.6B IPO valuation. MSK VBC at scale. |
+| 2025-12-20 | [[Sword Health raises $130M at $3B valuation]] | Company | $3B valuation, $340M total raised. Outcome-based pricing: 50% activation, 50% goal achievement. |
+| 2025-12-20 | [[U.S. Department of Health and Human Services Selects C3 AI as Enterprise AI Platform]] | Company | Federal data consolidation: NIH + CMS unified. Government buying AI for population health. |

@@ -96,15 +96,14 @@ FDA is accelerating biosimilar approval: October 2025 guidance says comparative 
 
 | Date | Source | Type | Key Signal |
 |------|--------|------|------------|
-| 2025-12-21 | FDA Biosimilar Guidance Oct 2025 | Research | CES "may not be necessary" if CAA shows similarity. "Streamlined approach" reduces dev cost $24M+. |
+| 2025-12-21 | [[FDA proposes eliminating comparative efficacy studies for biosimilars]] | Research | CES "may not be necessary" if CAA shows similarity. "Streamlined approach" reduces dev cost $24M+. |
 | 2025-12-16 | [[Claude-MSO transactions and biosimilar market evolution]] | Research | Hospitals lose $3,148/patient switching Avastin→Mvasi. MSO margins 3-5x on steering. Adalimumab 2%→23% in 12 months. |
 | 2025-10-21 | [[The Future of Buy-and-Bill Market Access Five Drivers of Wholesalers’ Vertical Integration with Physician Practices]] | Research | Big 3 spent $16B+ on MSOs. Wholesaler vertical integration creates concentrated buyers. |
 | 2025-10-29 | [[FDA Moves to Accelerate Biosimilar Development and Lower Drug Costs]] | Research | Saves $24M + 1-3 years per biosimilar. 30-40 launches by 2028. June 2024 guidance eliminated switching studies. |
 | 2025-12-17 | [[FDA wants to use more real-world data and calls again for early-phase trials reform]] | Research | FDA accepting RWD without patient identifiers. Biosimilar outcome data can support regulatory decisions. |
-| 2025-12-20 | W51 Policy Digest | Research | BSUFA V (FY2028-2032) secures regulatory infrastructure. FDA promotional labeling guidance enables clearer biosimilar marketing. |
-| 2025-10-01 | [[CVS, Considering a Breakup, Will Find It’s Hard to Do]] | Research | CVS $88B+ on vertical integration, now considering breakup. Full integration fails, partial (MSO) works. |
-| 2025-12-20 | McKesson-Core Ventures | Company | $2.49B deal closed Aug 2024. FTC did not block. Regulatory green light for MSO consolidation. |
-| 2025-12-20 | Cardinal-ION | Company | $1.1B deal closed Dec 2024. No regulatory intervention. |
+| 2025-10-01 | [[CVS, Considering a Breakup, Will Find It's Hard to Do]] | Research | CVS $88B+ on vertical integration, now considering breakup. Full integration fails, partial (MSO) works. |
+| 2025-12-20 | [[McKesson acquires Core Ventures for $2.49B]] | Company | $2.49B deal closed Aug 2024. FTC did not block. Regulatory green light for MSO consolidation. |
+| 2025-12-20 | [[Cardinal Health acquires ION for $1.1B]] | Company | $1.1B deal closed Dec 2024. No regulatory intervention. |
 
 ---
 

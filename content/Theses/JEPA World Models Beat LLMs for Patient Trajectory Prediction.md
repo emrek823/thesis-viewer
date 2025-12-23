@@ -6,7 +6,7 @@ LLMs are hitting a ceiling in healthcare—they predict tokens, not patient traj
 
 MSK validation proves the thesis: JEPA architecture achieved 0.727 AUROC vs 0.687 for Qwen3-VL 8B. The lift is specific to dynamic tasks—treatment change prediction: 0.78 vs 0.70 for generalist models. "Specialization beats scale." Model weights now public on HuggingFace ([[The Patient is Not a Document Moving from LLMs to a World Model for Oncology (Part 2)]]).
 
-Healthcare decisions are fundamentally about: "If I do X, what happens to the patient?" LLMs can't answer this. World models can. CRONOS validates this for imaging: 50-70% scan frequency reduction while improving progression tracking. MCR-VQGAN generates synthetic tau PET from routine MRI for Alzheimer's, cutting diagnostic costs 80-90% (W51 Papers Digest). Both represent state prediction (what would it look like?) rather than token prediction.
+Healthcare decisions are fundamentally about: "If I do X, what happens to the patient?" LLMs can't answer this. World models can. CRONOS validates this for imaging: 50-70% scan frequency reduction while improving progression tracking. MCR-VQGAN generates synthetic tau PET from routine MRI for Alzheimer's, cutting diagnostic costs 80-90% ([[papers-digest-2025-W51]]). Both represent state prediction (what would it look like?) rather than token prediction.
 
 **How this evolved:**
 - *2025-12-17:* Emerged from cluster: Standard Model for oncology, M-Optimus "world model for biology," Cambrian-S spatial supersensing. Common thread: beyond text-based LLMs to models understanding physical/biological reality.
@@ -87,9 +87,7 @@ Healthcare decisions are fundamentally about: "If I do X, what happens to the pa
 | 2025-12-17 | [[The Patient is Not a Document Moving from LLMs to a World Model for Oncology (Part 1)]] | Research | LLMs hit 30.3% completeness on real treatment decisions. JEPA architecture proposed. |
 | 2025-12-17 | [[The Patient is Not a Document Moving from LLMs to a World Model for Oncology (Part 2)]] | Research | MSK validation: JEPA +5.8% over SFT. Treatment change 0.78 vs 0.70. Model weights public. |
 | 2025-12-17 | [[Bioptimus Unveils M-Optimus, a World Model for Biology]] | Company | "World model for biology" from H&E pathology. Beyond classification to simulation. |
-| 2025-12-20 | W51 Papers Digest | Research | CRONOS: 50-70% scan reduction. MCR-VQGAN: 80-90% cost reduction for tau PET from MRI. |
-| 2025-12-20 | arXiv survey | Research | CheXWorld: JEPA for radiograph representations. DT-GPT: LLM forecasting for clinical trajectories. |
-| 2025-12-20 | Market research | Research | AI oncology: $4.2B (2024) → $27.2B (2032). Drug discovery AI: $2.6B → $8.2B by 2030. |
+| 2025-12-20 | [[papers-digest-2025-W51]] | Research | CRONOS: 50-70% scan reduction. MCR-VQGAN: 80-90% cost reduction for tau PET from MRI. |
 | 2025-12-21 | [[2025-12-21-curiosity-a-new-medical-intelligence-for-clinical]] | Company | Epic Curiosity: 100B patient events, simulates "plausible future timelines," outperformed 78 single-purpose models. Feb 2026 researcher access. |
 | 2025-12-21 | [[CRONOS Continuous Time Reconstruction for 4D Medical Longitudinal Series]] | Research | First continuous sequence-to-image forecasting for 3D medical data. Spatio-temporal velocity field for trajectory prediction. |
 | 2025-12-22 | [[2025-12-21-thesis-viewer-virtue-vc]] | Company | Standard Model architectural details: JEPA with multimodal fusion, hybrid SFT+JEPA training to prevent collapse, cause-and-effect data structuring. StandardModel-v1 coming to HuggingFace. |
