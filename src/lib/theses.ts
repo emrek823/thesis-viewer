@@ -156,11 +156,18 @@ export function getSource(name: string): Source | null {
 
   try {
     const { content, data } = matter(fileContent);
+    // gray-matter auto-parses dates to Date objects, convert back to string
+    // Check both 'date' and 'published' fields
+    const rawDate = data.date || data.published;
+    let dateStr: string | undefined;
+    if (rawDate) {
+      dateStr = rawDate instanceof Date ? rawDate.toISOString().split('T')[0] : String(rawDate);
+    }
     return {
       slug: name,
       title: data.title || name.replace(/-/g, " "),
       content,
-      date: data.date,
+      date: dateStr,
     };
   } catch {
     // If frontmatter parsing fails, return content as-is
@@ -207,11 +214,18 @@ export function getAllSources(): Source[] {
 
         try {
           const { content, data } = matter(fileContent);
+          // gray-matter auto-parses dates to Date objects, convert back to string
+          // Check both 'date' and 'published' fields
+          const rawDate = data.date || data.published;
+          let dateStr: string | undefined;
+          if (rawDate) {
+            dateStr = rawDate instanceof Date ? rawDate.toISOString().split('T')[0] : String(rawDate);
+          }
           sources.push({
             slug,
             title: data.title || slug.replace(/-/g, " "),
             content,
-            date: data.date,
+            date: dateStr,
             type: data.type,
             folder: folder || undefined,
           });
