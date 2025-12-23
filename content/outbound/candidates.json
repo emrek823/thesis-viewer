@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Danielle Bitterman",
+    "role": "Physician-Scientist | AI Clinical Evaluation ...",
+    "bucket": "academic",
+    "linkedin": "https://www.linkedin.com/in/danielle-bitterman-87834b16b",
+    "thesis": "Evaluators + Data Models Are the Moat",
+    "outreach_angle": "**Hook:** As a physician-scientist focused on AI clinical evaluation, you're likely seeing firsthand how the real value in healthcare AI isn't coming from model improvements alone - like how SmarterDx jumped from 81% to 92% AUROC primarily through better expert labeling rather than architectural changes.\n\n**Question:** From your clinical evaluation work, are you finding that the bottleneck for AI adoption is more about having the right domain expertise and evaluation frameworks rather than raw model performance?",
+    "full_title": "Danielle Bitterman - Physician-Scientist | AI Clinical Evaluation ..."
+  },
+  {
+    "name": "Yugang Jia, Ph.D MPH",
+    "role": "Health AI @ Google & Lecture @ MIT",
+    "bucket": "academic",
+    "linkedin": "https://www.linkedin.com/in/yugang-jia-ph-d-mph-b983b57",
+    "thesis": "Evaluators + Data Models Are the Moat",
+    "outreach_angle": "**Hook:** Given your work on Health AI at Google and teaching at MIT, you're perfectly positioned to evaluate our thesis that \"evaluators + data models are the moat\" in healthcare AI - especially since we're seeing cases like SmarterDX jumping from 81% to 92% AUROC purely through expert labeling improvements, not architectural changes.\n\n**Question:** From Google's perspective on healthcare AI development, do you think LLM accuracy improvements will eventually make these specialized evaluation frameworks obsolete, or will domain expertise always require custom ontologies and labeling?",
+    "full_title": "Yugang Jia, Ph.D MPH - Health AI @ Google & Lecture @ MIT"
+  },
+  {
+    "name": "Iman Azimi",
+    "role": "Research Scientist, PhD | mHealth, LLM agents, AI",
+    "bucket": "academic",
+    "linkedin": "https://www.linkedin.com/in/imanazimi",
+    "thesis": "Evaluators + Data Models Are the Moat",
+    "outreach_angle": "**Hook:** As a research scientist working on mHealth and LLM agents, you're likely seeing firsthand how the real competitive advantage isn't in model architecture\u2014SmarterDX jumped from 81% to 92% AUROC purely through better expert labels and data, not model improvements.\n\n**Question:** In your mHealth research, are you finding that domain-specific evaluation frameworks and curated datasets are becoming more defensible than the underlying AI models themselves?",
+    "full_title": "Iman Azimi - Research Scientist, PhD | mHealth, LLM agents, AI"
+  },
+  {
+    "name": "Melanie Dufva, PhD",
+    "role": "Clinical Validation | AI/ML SaMD | LinkedIn",
+    "bucket": "academic",
+    "linkedin": "https://www.linkedin.com/in/melaniedufva",
+    "thesis": "Evaluators + Data Models Are the Moat",
+    "outreach_angle": "**Hook:** As someone focused on clinical validation of AI/ML medical devices, you're seeing firsthand what we're observing across healthcare AI - that expert evaluation frameworks often matter more than raw model performance. SmarterDX jumped from 81% to 92% AUROC primarily through better expert labels, not architectural improvements.\n\n**Question:** In your clinical validation work, are you finding that having domain-specific evaluation criteria and expert-labeled datasets creates more defensible competitive advantages than the underlying ML models themselves?",
+    "full_title": "Melanie Dufva, PhD - Clinical Validation | AI/ML SaMD | LinkedIn"
+  },
+  {
+    "name": "Carrie Savage Bennette, PhD MPH",
+    "role": "Data Scientist & AI/ML Engineer",
+    "bucket": "academic",
+    "linkedin": "https://www.linkedin.com/in/carrie-bennette",
+    "thesis": "Evaluators + Data Models Are the Moat",
+    "outreach_angle": "**Hook:** As a Data Scientist & AI/ML Engineer with your academic background, you've likely seen how model performance often comes down to data quality and evaluation frameworks rather than architecture - like how SmarterDX jumped from 81% to 92% AUROC purely through better expert labeling, not model improvements.\n\n**Question:** In your experience, do you think the focus on LLM capabilities is overshadowing the critical work of building robust evaluation systems and domain-specific data models?",
+    "full_title": "Carrie Savage Bennette, PhD MPH - Data Scientist & AI/ML Engineer"
+  },
+  {
+    "name": "Michael Mullarkey, PhD",
+    "role": "Machine Learning Engineer - LinkedIn",
+    "bucket": "academic",
+    "linkedin": "https://www.linkedin.com/in/mcmullarkey",
+    "thesis": "Evaluators + Data Models Are the Moat",
+    "outreach_angle": "**Hook:** As a PhD Machine Learning Engineer, you've likely seen how model architecture improvements often get overshadowed by data quality - like how SmarterDx jumped from 81% to 92% AUROC purely through better expert labeling, not a fancier model.\n\n**Question:** From your ML engineering perspective, do you think the current focus on foundation model capabilities is missing the bigger opportunity in specialized evaluators and domain-specific data curation?",
+    "full_title": "Michael Mullarkey, PhD - Machine Learning Engineer - LinkedIn"
+  },
+  {
+    "name": "Rohit Shinde",
+    "role": "AI, VBC, Payer-Provider Interoperability! - LinkedIn",
+    "bucket": "industry",
+    "linkedin": "https://www.linkedin.com/in/rohitpshinde",
+    "thesis": "Evaluators + Data Models Are the Moat",
+    "outreach_angle": "**Hook:** Given your focus on payer-provider interoperability, I'm curious about your take on our thesis that specialized data models and evaluators are becoming the real moat in healthcare AI - not the underlying LLMs. We're seeing this play out with Cleveland Clinic choosing vendors based on their 300 smart billing data elements rather than LLM capabilities.\n\n**Question:** In your experience with VBC and interoperability, are you seeing payers prioritize vendors who've built robust healthcare-specific evaluation frameworks over those with better foundational models?",
+    "full_title": "Rohit Shinde - AI, VBC, Payer-Provider Interoperability! - LinkedIn"
+  },
+  {
+    "name": "Abhishek Shukla",
+    "role": "AI-Driven Payer & Provider Transformation",
+    "bucket": "industry",
+    "linkedin": "https://www.linkedin.com/in/abhishekdshukla",
+    "thesis": "Evaluators + Data Models Are the Moat",
+    "outreach_angle": "**Hook:** Given your focus on AI-driven transformation across payers and providers, you're likely seeing firsthand how the real competitive advantage isn't coming from better LLMs, but from having the right evaluation frameworks and domain-specific data models - like how Cleveland Clinic chose their smart billing vendor based on 300 specialized data elements rather than underlying model performance.\n\n**Question:** In your payer transformation work, are you finding that success hinges more on having robust evaluation systems for AI outputs, or are you still seeing organizations get distracted by chasing the latest model capabilities?",
+    "full_title": "Abhishek Shukla | AI-Driven Payer & Provider Transformation"
+  },
+  {
+    "name": "Tyler S.",
+    "role": "VP of Payer Partnerships | AI-assisted Automation for ...",
+    "bucket": "industry",
+    "linkedin": "https://www.linkedin.com/in/tylerstowell",
+    "thesis": "Evaluators + Data Models Are the Moat",
+    "outreach_angle": "**Hook:** As VP of Payer Partnerships focusing on AI-assisted automation, you're likely seeing firsthand how the real competitive advantage isn't in the AI models themselves, but in the specialized evaluators and data frameworks that make them actually work in healthcare operations\u2014like how Cleveland Clinic chose their vendor based on 300 smart billing data elements rather than LLM capabilities.\n\n**Question:** From your payer partnership perspective, are you finding that health plans care more about vendors having the right healthcare-specific data models and evaluation frameworks, or are they still getting distracted by whoever has the \"best\" underlying AI model?",
+    "full_title": "Tyler S. - VP of Payer Partnerships | AI-assisted Automation for ..."
+  },
+  {
+    "name": "Dima Gorenshteyn",
+    "role": "Director of AI/ML @ Thirty Madison | Healthcare",
+    "bucket": "industry",
+    "linkedin": "https://www.linkedin.com/in/dimagor",
+    "thesis": "Evaluators + Data Models Are the Moat",
+    "outreach_angle": "**Hook:** As Director of AI/ML at Thirty Madison, you're likely seeing firsthand how healthcare AI success hinges more on domain-specific data and evaluation frameworks than raw model performance - similar to how SmarterDX jumped from 81% to 92% AUROC primarily through expert labels rather than architectural improvements.\n\n**Question:** In your experience building AI for healthcare at scale, are you finding that proprietary clinical datasets and evaluation methodologies create stronger competitive moats than the underlying models themselves?",
+    "full_title": "Dima Gorenshteyn - Director of AI/ML @ Thirty Madison | Healthcare"
+  },
+  {
+    "name": "Shauna M. Overgaard, Ph.D.",
+    "role": "Scaling AI Innovation Through Global ...",
+    "bucket": "industry",
+    "linkedin": "https://www.linkedin.com/in/shaunaovergaard",
+    "thesis": "Evaluators + Data Models Are the Moat",
+    "outreach_angle": "**Hook:** As someone scaling AI innovation globally, you're likely seeing firsthand how the real competitive advantage in AI isn't coming from model improvements, but from proprietary evaluation systems and domain-specific data - like how SmarterDX jumped from 81% to 92% AUROC purely through expert labeling, not better model architecture.\n\n**Question:** In your experience scaling AI across different markets, are you finding that companies with strong evaluation frameworks and contextual data are creating more defensible moats than those just optimizing foundation models?",
+    "full_title": "Shauna M. Overgaard, Ph.D. - Scaling AI Innovation Through Global ..."
+  },
+  {
+    "name": "Shuki Licht",
+    "role": "VP, Head of AI Technology & Innovation - LinkedIn",
+    "bucket": "industry",
+    "linkedin": "https://www.linkedin.com/in/shukilicht",
+    "thesis": "Evaluators + Data Models Are the Moat",
+    "outreach_angle": "**Hook:** As VP of AI Technology & Innovation, you're likely seeing the shift where AI differentiation comes less from model performance and more from domain-specific evaluation frameworks and curated datasets - like how SmarterDX jumped from 81% to 92% AUROC primarily through expert label curation rather than architectural improvements.\n\n**Question:** In your experience leading AI innovation, are you finding that proprietary evaluators and specialized data models create stronger competitive moats than raw LLM capabilities?",
+    "full_title": "Shuki Licht - VP, Head of AI Technology & Innovation - LinkedIn"
+  },
+  {
+    "name": "Brijesh Patel",
+    "role": "Head of Innovation and AI at Pyx Health - LinkedIn",
+    "bucket": "industry",
+    "linkedin": "https://www.linkedin.com/in/brijpatel",
+    "thesis": "Evaluators + Data Models Are the Moat",
+    "outreach_angle": "**Hook:** As Head of Innovation and AI at Pyx Health, you're likely seeing firsthand how healthcare AI success depends more on domain expertise than raw model power - similar to how SmarterDX jumped from 81% to 92% AUROC primarily through expert labeling rather than architectural improvements.\n\n**Question:** In your experience deploying AI at Pyx Health, are you finding that your competitive advantage comes more from your healthcare-specific data models and evaluation frameworks, or from the underlying LLM technology itself?",
+    "full_title": "Brijesh Patel - Head of Innovation and AI at Pyx Health - LinkedIn"
+  },
+  {
+    "name": "Jacob Shiff",
+    "role": "Chief AI & Technology Officer, CMS Innovation Center",
+    "bucket": "industry",
+    "linkedin": "https://www.linkedin.com/in/jacob-shiff",
+    "thesis": "Evaluators + Data Models Are the Moat",
+    "outreach_angle": "**Hook:** As Chief AI & Technology Officer at CMS Innovation Center, you're likely seeing firsthand how healthcare AI vendors compete - and our research suggests the real differentiation isn't in the models themselves but in specialized evaluators and data architectures. For instance, SmarterDx jumped from 81% to 92% AUROC purely through expert labeling improvements, not better model architecture.\n\n**Question:** Given CMS's role in shaping healthcare AI adoption, are you finding that vendors with domain-specific evaluation frameworks are outperforming those focused primarily on model sophistication?",
+    "full_title": "Jacob Shiff - Chief AI & Technology Officer, CMS Innovation Center"
+  }
+]

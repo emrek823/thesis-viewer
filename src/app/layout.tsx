@@ -33,6 +33,12 @@ export default function RootLayout({
                 Theses
               </a>
               <a
+                href="/outbound"
+                className="px-3 py-1.5 text-sm text-gray-600 hover:text-accent border-2 border-transparent hover:border-gray-200 transition-all"
+              >
+                Outbound
+              </a>
+              <a
                 href="https://www.virtuevc.com"
                 target="_blank"
                 rel="noopener noreferrer"
