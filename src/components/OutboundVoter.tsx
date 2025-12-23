@@ -25,11 +25,31 @@ interface OutboundData {
   total: number;
 }
 
+interface RecentActivity {
+  title: string;
+  url: string;
+  date: string;
+  snippet: string;
+}
+
+interface EnrichmentData {
+  profile: string;
+  recent: RecentActivity[];
+  happenstance: {
+    slackQuery: string;
+    emailSubject: string;
+    emailBody: string;
+  };
+}
+
 export function OutboundVoter() {
   const [data, setData] = useState<OutboundData | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(true);
   const [showPatterns, setShowPatterns] = useState(false);
+  const [enrichment, setEnrichment] = useState<EnrichmentData | null>(null);
+  const [enriching, setEnriching] = useState(false);
+  const [copied, setCopied] = useState<string | null>(null);
 
   const loadData = useCallback(async () => {
     const res = await fetch("/api/outbound");
@@ -45,6 +65,40 @@ export function OutboundVoter() {
   useEffect(() => {
     loadData();
   }, [loadData]);
+
+  // Reset enrichment when candidate changes
+  useEffect(() => {
+    setEnrichment(null);
+  }, [currentIndex]);
+
+  const fetchEnrichment = async () => {
+    if (!data || enriching) return;
+    const candidate = data.candidates[currentIndex];
+
+    setEnriching(true);
+    try {
+      const res = await fetch("/api/enrich", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: candidate.name,
+          linkedin: candidate.linkedin,
+          role: candidate.role,
+        }),
+      });
+      const json = await res.json();
+      setEnrichment(json);
+    } catch (error) {
+      console.error("Enrichment failed:", error);
+    }
+    setEnriching(false);
+  };
+
+  const copyToClipboard = async (text: string, label: string) => {
+    await navigator.clipboard.writeText(text);
+    setCopied(label);
+    setTimeout(() => setCopied(null), 2000);
+  };
 
   const vote = async (rating: number) => {
     if (!data || currentIndex >= data.candidates.length) return;
@@ -290,38 +344,150 @@ export function OutboundVoter() {
         )}
       </div>
 
-      {/* Right side: LinkedIn profile link */}
+      {/* Right side: Enrichment panel */}
       <div className="flex-1 flex flex-col">
         <div className="flex items-center justify-between mb-4">
-          <h3 className="text-sm font-medium text-gray-600">LinkedIn Profile</h3>
+          <h3 className="text-sm font-medium text-gray-600">Research & Outreach</h3>
+          <a
+            href={candidate.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-blue-600 hover:underline flex items-center gap-1"
+          >
+            Open LinkedIn
+            <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
         </div>
 
-        <div className="flex-1 card-nintendo bg-gradient-to-br from-blue-50 to-white flex items-center justify-center">
-          <div className="text-center px-8">
-            <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-              </svg>
+        <div className="flex-1 card-nintendo bg-white p-5 overflow-y-auto">
+          {!enrichment && !enriching && (
+            <div className="h-full flex flex-col items-center justify-center text-center">
+              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
+                <svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <h4 className="font-medium text-gray-700 mb-2">Research this person</h4>
+              <p className="text-gray-500 text-sm mb-6 max-w-sm">
+                Get profile summary, recent activity (last 2 months), and Happenstance query for warm intros.
+              </p>
+              <button
+                onClick={fetchEnrichment}
+                className="px-6 py-3 bg-accent hover:bg-accent/90 text-white font-medium rounded-lg transition"
+              >
+                Enrich Profile
+              </button>
             </div>
-            <h4 className="font-mono font-bold text-lg mb-2">{candidate.name}</h4>
-            <p className="text-gray-500 text-sm mb-6 max-w-md">
-              {candidate.role || "View profile on LinkedIn"}
-            </p>
-            <a
-              href={candidate.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition"
-            >
-              Open LinkedIn Profile
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
-            <p className="text-xs text-gray-400 mt-4">
-              Opens in new tab
-            </p>
-          </div>
+          )}
+
+          {enriching && (
+            <div className="h-full flex flex-col items-center justify-center">
+              <div className="animate-spin w-8 h-8 border-2 border-accent border-t-transparent rounded-full mb-4"></div>
+              <p className="text-gray-500">Searching for {candidate.name}...</p>
+            </div>
+          )}
+
+          {enrichment && (
+            <div className="space-y-6">
+              {/* Profile Summary */}
+              <div>
+                <h4 className="text-xs font-bold text-gray-500 uppercase mb-2 flex items-center gap-2">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                  Profile Summary
+                </h4>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  {enrichment.profile || "No profile information found."}
+                </p>
+              </div>
+
+              {/* Recent Activity */}
+              <div>
+                <h4 className="text-xs font-bold text-gray-500 uppercase mb-2 flex items-center gap-2">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Recent Activity (Last 2 Months)
+                </h4>
+                {enrichment.recent.length > 0 ? (
+                  <ul className="space-y-3">
+                    {enrichment.recent.map((item, i) => (
+                      <li key={i} className="text-sm">
+                        <a
+                          href={item.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 hover:underline font-medium"
+                        >
+                          {item.title}
+                        </a>
+                        <span className="text-gray-400 text-xs ml-2">{item.date}</span>
+                        {item.snippet && (
+                          <p className="text-gray-500 text-xs mt-1">{item.snippet}...</p>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-sm text-gray-400 italic">No recent activity found.</p>
+                )}
+              </div>
+
+              {/* Happenstance */}
+              <div>
+                <h4 className="text-xs font-bold text-gray-500 uppercase mb-2 flex items-center gap-2">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  Happenstance (Warm Intros)
+                </h4>
+                <div className="bg-gray-50 rounded-lg p-3 space-y-3">
+                  <div>
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="text-xs text-gray-500">Slack Query</span>
+                      <button
+                        onClick={() => copyToClipboard(enrichment.happenstance.slackQuery, "slack")}
+                        className="text-xs text-blue-600 hover:underline"
+                      >
+                        {copied === "slack" ? "✓ Copied!" : "Copy"}
+                      </button>
+                    </div>
+                    <code className="text-xs bg-white px-2 py-1 rounded border block">
+                      {enrichment.happenstance.slackQuery}
+                    </code>
+                  </div>
+                  <div>
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="text-xs text-gray-500">Email to agent@happenstance.ai</span>
+                      <button
+                        onClick={() => copyToClipboard(enrichment.happenstance.emailBody, "email")}
+                        className="text-xs text-blue-600 hover:underline"
+                      >
+                        {copied === "email" ? "✓ Copied!" : "Copy"}
+                      </button>
+                    </div>
+                    <code className="text-xs bg-white px-2 py-1 rounded border block whitespace-pre-wrap">
+                      {enrichment.happenstance.emailBody}
+                    </code>
+                  </div>
+                </div>
+                <p className="text-xs text-gray-400 mt-2">
+                  Paste in Slack or email to find who in your network knows this person.
+                </p>
+              </div>
+
+              {/* Re-run button */}
+              <button
+                onClick={fetchEnrichment}
+                className="text-xs text-gray-500 hover:text-accent"
+              >
+                ↻ Refresh enrichment
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>
