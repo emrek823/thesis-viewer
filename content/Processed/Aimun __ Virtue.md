@@ -3,7 +3,7 @@ granola_id: 63ad9759-7310-4243-9b94-56af8c785c5b
 title: "Aimun <> Virtue"
 type: note
 created: 2025-12-19T22:26:57.328Z
-updated: 2025-12-20T03:47:03.389Z
+updated: 2025-12-23T21:09:14.040Z
 attendees: []
 ---
 ### Deal Status Update

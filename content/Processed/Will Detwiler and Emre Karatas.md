@@ -3,7 +3,7 @@ granola_id: d0420e12-c6fe-4c07-981c-cef084874f64
 title: "Will Detwiler and Emre Karatas"
 type: note
 created: 2025-12-08T18:00:04.422Z
-updated: 2025-12-15T16:37:02.397Z
+updated: 2026-01-05T12:47:58.959Z
 attendees:
   - willdetwiler@gmail.com
 ---

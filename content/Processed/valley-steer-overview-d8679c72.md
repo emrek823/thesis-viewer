@@ -1,0 +1,267 @@
+---
+source_pdf: "https://drive.google.com/file/d/1LjBC_aaSzz0mAfFiXtz5viH0shLmVLtJ/view"
+drive_folder: "Portfolio/Valley Steer"
+type: portfolio
+company: Valley Steer
+ingested: 2025-12-26
+original_filename: "Valley Steer Overview.pdf"
+---
+
+> **Original:** [View Original PDF](https://drive.google.com/file/d/1LjBC_aaSzz0mAfFiXtz5viH0shLmVLtJ/view)
+
+## Slide 1: Valley Steer Overview
+Valley Steer Overview
+
+---
+
+## Slide 2: What Is Valley Steer?
+What Is Valley Steer?
+Valley Steer is creating a real time payments service for providers in the Managed Medicare and Medicaid markets. We enable this by generating clinically data rich claims and aligning payment acceleration incentives between value based care providers and their contracted risk bearing entities.
+Valley Steer is an early stage startup that currently has ~1.5m members and processes over 500k claims / encounters per month.
+
+2
+
+---
+
+## Slide 3: What Is Valley Steer's Approach?
+What Is Valley Steer's Approach?
+Building a real time payments service for value based care providers requires developing and integrating several highly commoditized pieces of payer infrastructure.
+As Valley Steer develops each piece of this infrastructure, we sell these pieces as ultra low cost, high quality independent services.
+
+3
+
+---
+
+## Slide 4: Which Services Are Live Today?
+Which Services Are Live Today?
+1.  Redbird: Paper form to structured electronic output
+2.  Magneto: Claims aggregation, modification, and misdirection
+3.  Jubilee: Patient chart review for suspected diagnosis and quality gaps
+
+4
+
+---
+
+## Slide 5: What Makes Valley Steer Services Different?
+What Makes Valley Steer Services Different?
+
+| | Valley Steer | Existing Incumbents |
+| :-------------------------------- | :----------- | :------------------ |
+| Access to Low Cost Overseas Labor | X            | X                   |
+| Developing Proprietary Software   | X            | Sometimes           |
+| Leveraging AI / Machine Learning (ML) | X            |                     |
+| Offered Commodity Services Priced As: | Wedge / Loss Leader | Cash Cow            |
+
+5
+
+---
+
+## Slide 6: Is Valley Steer a Technology or Services Business?
+Is Valley Steer a Technology or Services Business?
+Valley Steer is a technology-enabled services business.
+All developed technology is used internally to enable Valley Steer's services teams. Valley Steer does not sell technology. Additionally, Valley Steer's products do not require any custom integrations to operate.
+Valley Steer sits within the existing data pipes.
+
+6
+
+---
+
+## Slide 7: Redbird: Ultra Low Cost Paper to Electronic Conversion
+Redbird: Ultra Low Cost Paper to Electronic Conversion
+
+**Input Documents (Examples):**
+*   Claim: CMS-1500, UB04
+*   Dispute / Appeal
+*   Pre-Authorization
+*   Enrollment
+*   Patient Chart
+
+**Process:**
+*   Input documents are sent to **Redbird**.
+
+**Output:**
+*   **Structured Data Output** (csv, EDI, xls, etc)
+
+**Utility pricing:** Per document fee
+
+7
+
+---
+
+## Slide 8: Redbird is an ML Assisted Paper Form OCR Extraction Service
+Redbird is an ML Assisted Paper Form OCR Extraction Service
+Ex: CMS-1500 to 837 Conversion
+
+**Form Details (visible from screenshot):**
+*   **Received Date:** 2022-02-08
+*   **Last Modify At:** 2022-10-02 21:51
+*   **Assigned To:** (Select to assign)
+*   **Notes:**
+*   **Document Type:** cms1500
+*   **Last Modify By:**
+
+**Extracted Data Fields (from right panel):**
+*   **24b_1:Place Of Service:** 41
+*   **24c_1:Emg:** X
+*   **24d_1:Code:** A0427
+*   **24d_1:Modifier1:** SH!
+*   **24d_1:Modifier2:**
+*   **24d_1:Modifier3:**
+*   **24d_1:Modifier4:**
+*   **24e_1:Diagnosis Pointer:** A
+*   **24f_1:Charges Dollar:** 1840
+*   **24f_1:Charges Cents:** 00
+*   **24g_1:Days Or Units:** 001
+*   **24h_1:Family Plan:**
+*   **24i_1:Qual:** ZZ
+*   **24j_1:ld:** 33-0285453
+*   **24l_1:Npi:** 1639131436
+
+8
+
+---
+
+## Slide 9: Magneto: Electronic Claims Aggregation, Modification, Misdirects
+Magneto: Electronic Claims Aggregation, Modification, Misdirects
+
+**Process Flow:**
+1.  **Inbound Data** goes to **Valley Steer**.
+2.  **Valley Steer** processes the data.
+3.  Processed data goes to either **Payer Internal Systems** or **External Destination**.
+
+**Content Handling:**
+1.  **Content that should be rejected and sent back to provider or health plan**
+    *   *Reasons include insufficient data, wrong data, etc.*
+2.  **Clean content can flow directly to payer's internal systems and workflows**
+3.  **Content that doesn't need to go through ops process can be routed to destination**
+
+**Utility pricing:** Per claim fee
+
+9
+
+---
+
+## Slide 10: Jubilee: Structuring, Abstracting, Extracting Patient Charts
+Jubilee: Structuring, Abstracting, Extracting Patient Charts
+
+**Data Elements Extracted:**
+*   Member Details
+*   Provider Details
+*   Dates of Service
+*   Places of Service
+*   Suspected Diagnosis
+*   HCC's
+*   Quality Gaps
+
+*   Paper Charts, PDF's OK
+
+**Valley Steer Difference:**
+Valley Steer is the only Chart Abstraction company that leverages employed, practicing General Practitioners for chart review. Other companies use non-practitioner individuals with nursing degrees for clinical work.
+With regards to risk adjustment, Valley Steer's system is developed and optimized to do concurrent coding
+
+**Utility pricing:** Per page fee
+
+10
+
+---
+
+## Slide 11: Jubilee Example of HEDIS / RAF Chart Abstraction
+Jubilee Example of HEDIS / RAF Chart Abstraction
+Risk Adjustment Review d_v0.996
+Details For Chart 201: Dates of Service 2020-05-21 to 2020-09-16
+
+**(C)hart (E)ncounters (I)CD (R)eview C(P)T Analytics**
+
+**Encounter(s) All Encounters**
+*Show Rejected*
+
+| ICD-10 | Description                                   | Status      | Notes                                                                                                                                                                                                                                                |
+| :----- | :-------------------------------------------- | :---------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| E1169  | Type 2 diabetes mellitus with other           | Accepted    |                                                                                                                                                                                                                                                      |
+| E7800  | Pure hypercholesterolemia,                    | Inconclusive | not listed in diagnosis, but pt refill atorvastatin meds                                                                                                                                                                                             |
+| I10    | Essential (primary) hypertension              | Inconclusive | BP in this visit 142/78. Slightly elevated (ideally <14. Previous visits BP within normal limit. Need to inquire.                                                                                                                                     |
+| Z23    | Encounter for immunization                  | Inconclusive | pt asked for flu shot                                                                                                                                                                                                                                |
+| M2740  | Unspecified cyst of jaw                     | GP Query    |                                                                                                                                                                                                                                                      |
+| Z6824  | Body mass index [BMI] 24.0-24.9, adult        | Inconclusive | BMI 24.63. categorized as normal, but close to over (>25), which may cause pt to be at an increased risk.                                                                                                                                           |
+| E1121  | Type 2 diabetes mellitus with diabetic        | Accepted    |                                                                                                                                                                                                                                                      |
+| E119   | Type 2 diabetes mellitus without              | Accepted    | The provider used code E11.9 which says without complications, but there's also diabetic nephropathy.                                                                                                                                                |
+| M109   | Gout, unspecified                             | Possible Pr... | No information about this condition. Need confirmat provider. Pt doesn't have complaint or prescriptions.                                                                                                                                              |
+| R5383  | Other fatigue                                 | Inconclusive |                                                                                                                                                                                                                                                      |
+*Showing 24 results*
+
+**Summary for All Encounters**
+25 Total Findings
+
+| Status     | # of Findings |
+| :--------- | :------------ |
+| Accepted   | 5             |
+| Rejected   | 1             |
+| GP Query   | 2             |
+| Unreviewed | 17            |
+*Ready For Coding*
+
+**The Following Has Been Completed:**
+*   ✔ Member Details Ch...
+*   Electronic/Provide...
+*   Provider Details Ch...
+*   Record is Legible
+*   Date of Service Spe...
+*   ✔ Hospital/Physician...
+
+**Medication and Prescription Details (right panel, extracted and summarized):**
+
+*   **Cholecalciferol (Vitamin D3) 50000 UNIT Oral Tablet**
+    *   **Dose:** Take 1 tablet (50,000 units) by mouth weekly
+    *   **Date:** 07/26/19-07/26/19
+    *   **Condition:** Vitamin D deficiency
+    *   **Provider comment:** called pharmacy to cancel prescription; unnecessary dose - kk by Katherine Ko NP on 07/26/19
+    *   **EScript (verified):** 07/26/19 Prescriber: Katherine Ko NP SIG: Take 1 tablet (50,000 units) by mouth weekly Refills: 1 Quan
+    *   **EScript (verified):** 03/18/19 Prescriber: David Chen MD MBA SIG: Take 1 tablet (50,000 units) by mouth weekly Refills: 1 (
+
+*   **Ergocalciferol (Vitamin D (Ergocalciferol)) 50000 UNIT Oral Capsule**
+    *   **Dose:** Take 1 capsule (50,000 units) by mouth weekly
+    *   **Date:** 08/09/19-10/09/19
+    *   **Condition:** Vitamin D deficiency
+    *   **EScript (verified):** 08/09/19 Prescriber: Katherine Ko NP SIG: Take 1 capsule (50,000 units) by mouth weekly Refills: 1 Qua
+
+*   **Glimepiride (Amaryl) 2 MG Oral Tablet**
+    *   **Dose:** Take 1 tablet (2 mg) by mouth daily
+    *   **Date:** 04/23/18-03/01/20
+    *   **Condition:** Diabetes
+    *   **Provider comment:** Rx by Dr. Lee by David Chen MD MBA on 06/09/20
+    *   **EScript (verified):** 04/17/20 Prescriber: David Chen MD MBA SIG: Take 1 tablet (2 mg) by mouth daily Refills: 0 Quantity:!
+    *   **EScript (refill request):** 12/11/19 Prescriber: Sylvia Ng NP-C SIG: Take 1 tablet (2 mg) by mouth daily Refills: 1 Quantity: 9
+    *   **EScript (verified):** 03/21/19 Prescriber: David Chen MD MBA SIG: Take 1 tablet (2 mg) by mouth daily Refills: 1 Quantity:!
+    *   **EScript (verified):** 02/25/19 Prescriber: David Chen MD MBA SIG: Take 1 tablet (2 mg) by mouth daily Refills: 1 Quantity::
+
+*   **Losartan Potassium 25 MG Oral Tablet**
+    *   **Dose:** Take 1 tablet (25 mg) by mouth daily
+    *   **Date:** 04/01/19-09/16/20
+    *   **Condition:** Diabetes
+    *   **EScript (verified):** 12/11/19 Prescriber: Sylvia Ng NP-C SIG: Take 1 tablet (25 mg) by mouth daily Refills: 2 Quantity: 90
+    *   **EScript (verified):** 09/27/19 Prescriber: David Chen MD MBA SIG: Take 1 tablet (25 mg) by mouth daily Refills: 2 Quantity
+    *   **EScript (verified):** 04/01/19 Prescriber: David Chen MD MBA SIG: Take 1 tablet (25 mg) by mouth daily Refills: 1 Quantity
+    *   **Provider comment:** Rx by Dr. Lee by Sylvia Ng NP-C on 12/11/19
+
+*   **Metformin HCI (metFORMIN HCI) 500 MG Oral Tablet**
+    *   **Dose:** Take 1 tablet (500 mg) by mouth 2 times per day
+    *   **Date:** 04/23/18-12/11/19
+    *   **Condition:** Diabetes
+    *   **EScript (verified):** 11/07/19 Prescriber: David Chen MD MBA SIG: Take 1 tablet (500 mg) by mouth 2 times per day Refills Quantity: 180
+    *   **EScript (verified):** 03/21/19 Prescriber: David Chen MD MBA SIG: Take 1 tablet (500 mg) by mouth 2 times per day Refills Quantity: 180
+    *   **EScript (verified):** 02/25/19 Prescriber: David Chen MD MBA SIG: Take 1 tablet (500 mg) by mouth 2 times per day Refills Quantity: 60
+
+*   **Metformin HCI (metFORMIN HCI) 500 MG Oral Tablet**
+    *   **Dose:** Take 1 tablet (500 mg) by mouth 2 times per day with meals
+    *   **Date:** -06/09/20
+    *   **Condition:** Diabetes
+
+11
+
+---
+
+## Slide 12: Questions?
+Questions?
+info@valleysteer.com
+
+12

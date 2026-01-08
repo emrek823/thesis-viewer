@@ -3,7 +3,7 @@ granola_id: 95638ebd-4414-4a82-94d1-7b0651f30e74
 title: "Quinn Johns and Virtue"
 type: note
 created: 2025-12-15T20:01:21.544Z
-updated: 2025-12-15T20:36:38.077Z
+updated: 2025-12-23T21:09:29.531Z
 attendees:
   - quinn@eitriai.com
   - sd@virtuevc.com

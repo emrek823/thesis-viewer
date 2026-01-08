@@ -1,0 +1,1180 @@
+---
+source_pdf: "https://drive.google.com/file/d/1Ttv7vk0EKqVA3R5OyA1nbMG6_1_bj1OM/view"
+drive_folder: "Research"
+type: research
+
+ingested: 2025-12-27
+original_filename: "RightSite Investor Update.2024.04.11 - Final.pdf"
+---
+
+> **Original:** [View Original PDF](https://drive.google.com/file/d/1Ttv7vk0EKqVA3R5OyA1nbMG6_1_bj1OM/view)
+
+# Investor Update April 11, 2024
+
+## Slide 1: Investor Update April 11, 2024
+
+**Image Description:** The slide features a large image of multiple ambulances parked in what appears to be a lot, with some buildings and trees in the background. The ambulances are white with "Grady" and medical service logos. In the top right corner, the "RIGHT SI+E For non-emergency patients" logo is displayed. At the bottom right, "Investor Update April 11, 2024 1-2:30 CT" is visible.
+
+**Footer:**
+RightSite Investor Update.2024.04.11
+Confidential
+
+## Slide 2: Company Update - Q1 Highlights
+
+The seed extension financing strategy set out to prove that health plans would sign shared savings contracts that generate significant gross margin and cash flow. The strategy also called for modulating EMS call volume growth until a community's blended case rate ("BCR") of payor contracts was above our cost-per-call (a proxy for Cost of Care).
+
+With that framework in mind, here's how we did for Q1 2024:
+
+**Revenue Update - Health Plan Sales**
+
+*   **Performance:** Our Q1 target was a BCR (Blended Case Rate) of $250 in Georgia. We closed the quarter at $136 in GA, an increase of $49 from the beginning of the quarter, but short of our goal due to timing issues with Payors (see below.)
+*   **Payor Pipeline Activity:** The payor pipeline advanced across the board, with 5 new FFS contracts (GA, TX, FL) and 1 new case rate (GA) signed. We are deep in the final contracting stage with 1 FFS (United-GA all LOBs) and 3 case rate negotiations (Humana, CareSource and Aetna) that did not close in Q1. We have line of site to close the following contracts in Q2:
+    *   Humana Case Rate adds ~ $48
+    *   CareSource Case Rate adds ~ $24
+    *   Aetna Case Rate adds ~ $40
+    *   United FFS adds ~ $21
+    *   Total additional BCR of these deals = 48+24+40+21=$133 or $269 GA BCR
+*   **External Factors:** Our case rate sales process encountered two bottlenecks. First, negotiations with three plans - Humana, CareSource, and Aetna - moved from state-based teams to their enterprise teams. The good news is that when closed, these will be enterprise-wide contracts—the bad news is that the enterprise sales process is slower. Second, executive turnover at Humana and United has lengthened their decision-making time. For example, at Humana, we've worked through **three** different Southeast region plan presidents and a reorganization in value-based contracting since August ‘23. At United, five of their senior leadership positions turned over last quarter. Despite the longer sales cycle, solid execution of our sales process ensured deep and wide relationships and helped us weather these challenges without pipeline degradation.
+
+**Footer:**
+Confidential
+2
+
+## Slide 3: Company Update - Q1 Highlights
+
+*   **FFS Sales Process Improvement:** Our FFS sales process improved as we are completing the final physician credentialing in the arcane state-based Medicare, Medicaid, and DEA applications in our core states. Adding a dedicated person to address all credentialing and FFS-related activity resulted in faster provider contract submissions through standard provider/payor channels. For example, the Centene Texas FFS provider contract was recently executed for all LOBs (Medicare, Medicaid, and Exchange) in under a month.
+*   **Revenue Cycle Management:** As we mature our revenue cycle process, Cindy Buckles pivoted from a sales support role to lead our RCM efforts. She brings 25 years of payor and provider contracting experience (BCBS-TN), where she helped design and implement TennCare, and then 5 years working with providers to negotiate payor contracts. Her background has assisted us with the physician, state, and payor licensing, credentialing, enrollment, and patient insurance discovery and verification. She will transition her payor sales efforts throughout Q2 and continue to be a payor SME to the payor sales team.
+*   **Expansion in Sales Team:** We've decided to hire a payor sales rep this quarter to support Clayton. The profile will be expertise in executing provider-payor sales contracts, specifically value-based and quality measure arrangements. A successful hire will generate meaningful BCRs in our target communities. Clayton consulted with Lauren Heller at NVP as we launched this search.
+*   **EMS Sales Expansion:** The sales team has taken the lead in managing the sales process for EMS expansion. Leveraging Clayton's process expertise and Jared's (see slide 5) SME-level understanding of EMS decision-making, we now have a better EMS sales process.
+
+**Footer:**
+Confidential
+3
+
+## Slide 4: Company Update - Q1 Highlights
+
+**Cost of Care Update - Care Team**
+
+Our Care Team oversees patient care episodes. This interdisciplinary team of doctors and lay navigators addresses both clinical and non-clinical needs throughout each episode. With thousands of episodes now under our belt, we see many ways to improve the workflow and collaboration between navigators and physicians, translating into better episode outcomes that require less time. Examples of ways to use technology (like RightSite Connect and pVerify) or improved processes include:
+
+*   Better and faster patient insurance identification
+*   Streamlining and automating documentation
+*   Automating tasks like identifying and contacting clinical and non-clinical resources
+*   Implementing rules-based pathways in our platform for managing specific episode types
+
+This quarter, we will test the implementation of community health worker capabilities within the Care Team, which could generate better outcomes and additional revenue.
+
+We are carefully balancing efforts to reduce episode costs with our commitment to delivering empathic services that our patients and EMS partners value.
+
+**The RightSite Foundation - an Offset to Cost of Care**
+
+Work with the RightSite Foundation continues to accelerate. We think about the Foundation as the "payor" for services provided to the uninsured (transportation, urgent care appointments, prescriptions, DME) and, as such, a meaningful contributor to decreasing the Cost of Care. We are talking to a few philanthropies who are helping us shape the program from an IRS compliance perspective, and positioning to attract community-based philanthropies who are prospects for the Foundation. Q2's goal is to finish building the Foundation's MVP technology/software infrastructure and hire its Director, who we've already identified. There's a budding conversation with one philanthropy that might fund all the Foundation startup costs, and we're working on that now, although the outcome is still uncertain.
+
+**Footer:**
+Confidential
+4
+
+## Slide 5: Company Update - Q1 Highlights
+
+**Call Volume Update - EMS**
+
+The call volume for the quarter decreased by 36%. This reduction wasn't due to a decline in our service quality or fluctuations experienced by our EMS agencies. Instead, the volume drop was an expected consequence of our decreased engagement as a way to modulate call volume. We eased up on our EMS account management, and as a result, they called less often.
+
+With pain comes gain - this decrease in volume prompted us to make two crucial decisions. First, we found and hired an EMS leader. Jared Oscarson, a former EMS Chief and SVP of Operations for Ready Responders, joined us as a full-time consultant. The plan is for him to join our leadership team this quarter. Secondly, we are rolling out our change management/ADKAR-based strategic account plan process for all EMS partners over Q2. This framework allows for a more precise "diagnosis and treatment" of call volume, while setting baseline and forecast call volume goals.
+
+In Q2, a significant development will be the activation of Grady's dispatch center, complementing the volume from Grady's field operations. The potential volume from Grady Dispatch could reach 20-40 calls/day once fully implemented, our BCR > $250, and the Care Team staffs up. We're noticing a growing trend among EMS agencies requesting our assistance in dispatch operations alongside their field activities, as it allows for a broader coverage for their non-emergent calls. From RightSite's perspective, dispatch implementations involve less change management effort since the call volume from dispatch is generated algorithmically rather than relying on EMS medic judgment on scene.
+
+**Footer:**
+Confidential
+5
+
+## Slide 6: Company Update - Q1 Highlights
+
+**Revenue Cycle Update**
+
+Our revenue cycle process is both straightforward and intricate. On the straightforward side, we're submitting just a few FFS codes (99203/4/5) and case rates that should be auto-adjudicated with a HCPCS code. On the intricate side, there are two challenges. First, navigating credentialing within our CPOM entity involves securing approvals at the state and physician levels for Medicare, Medicaid, and DEA. Second, identifying patient insurance in an on-demand, virtual, and 911 environment is hard.
+
+We've submitted 227 FFS claims (MA, Medicare, Mgd Medicaid and Medicaid) to our billing company with an allowable amount of $42,998. Additionally, 133 FFS claims with an allowable amount of $21,757 are prepared for submission as Change Healthcare comes back online.
+
+The billing delay caused by Change Healthcare set us back about four weeks. Additionally, we're awaiting actual effective dates from several payors, and once received, we will file their claims.
+
+**Finance Update**
+
+We closed the oversubscribed Friends & Family tranche, raising the seed extension to $6.0MM. Our operational outflows, excluding one-time expenses like medical malpractice renewals, remained steady, with a monthly burn rate of $450K. However, this rate will decrease significantly over this year as payor contracting, Cost of Care efficiencies, and revenue cycle processes yield results. As of the end of March, we have about $5.5MM in cash.
+
+**Footer:**
+Confidential
+6
+
+## Slide 7: Company Update - Q1 Highlights
+
+**Goals for Q2**
+
+We are continuing our Q1 Company Priorities into Q2, with one change - we are now actively engaging EMS in all markets to promote call volume. Q2 Priorities include these three key objectives:
+
+1.  **Revenue Generation:** Our focus remains increasing blended case rates (BCRs) in GA, TX, and FL to exceed our cost per call and generate healthy gross margins.
+2.  **Cost Optimization:** Continue to improve Care Team processes and the RightSite Connect platform to reduce episode cost of care.
+3.  **Call Volume Growth:** Stimulate growth in EMS call volume with our change management/ADKAR-based EMS strategic account management plans. Also, pursue dispatch implementations.
+
+These three components together define our unit economics, conceptually represented by the formula:
+
+**(BCR - Cost of Care) x Call Volume = Gross Margin -> Cash Flow**
+
+*   **BCR** increases with payor FFS and case rate contracts and the Foundation's offsetting contribution for uninsured care
+*   **Cost of Care** decreases with tech-enabled process efficiencies of the Care Team episodes
+*   **Call Volume** increases with EMS agency growth, dispatch implementations, and our ADKAR account management processes
+
+Our future financing strategies become more evident as we successfully deliver on these three components.
+
+**Footer:**
+Confidential
+7
+
+## Slide 8: Q1:24 Priorities - Review
+
+| Q1 Company Priority                                             | Goal                                                                   | Outcome                                                                                                                                              |
+| :-------------------------------------------------------------- | :--------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1 Execute payor contracts in GA, TX, FL (focus on GA)           | BCR $250 / episode in GA                                               | $136 BCR in GA                                                                                                                                       |
+| 2 Stable credentialing and revenue cycle in GA/TX/FL            | 1) 100% state-based processes complete in GA/TX/FL for physicians active on 1/1/24<br>2) 90% episodes are properly coded and generate clean claims<br>3) 100% contracted/credentialed payors receive claims | 1) 94% licensed \| 72% Medicaid \| 89% Medicare<br>2) Almost (Change Healthcare issue)<br>3) Almost (Change Healthcare issue)                           |
+| 3 Stable EMS call volume and standard EMS account management process | 20/10/10 calls/day in ATL/SAT/JAX (trailing 7 day avg)                 | We missed it. Actual call volume dropped 36% from end of Dec-23 to end of Mar-24.                                                                     |
+| 4 Increase episode efficiency                                   | Time per call reduced by 10%                                           | 10+% episode time reduction                                                                                                                          |
+
+**Footer:**
+Confidential
+8
+
+## Slide 9: Q2:24 Priorities
+
+These Q2 Company Priorities are cascaded to each employee, with role-specific goals.
+
+| Q2 Company Priority                                                                                   | KPI                                                                                 | Goal                                                                                                                                                  |
+| :---------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1 Execute payor contracts in GA/TX/FL                                                                 | Blended case rate / episode                                                         | $350 / episode in GA<br>$150 / episode in TX                                                                                                          |
+| 2 Rev cycle producing clean claims for all eligible episodes                                          | 1) % state-based processes complete in GA/TX/FL<br>2) % episodes are properly coded to clean claims<br>3) % physicians credentialed with contracted plans | 1) 100%<br>2) 90%<br>3) 100%                                                                                                                          |
+| 3 Call volume baseline and growing in communities where BCR > $250; stable where BCR < $250           | 1) Calls / Day by agency<br>2) ADKAR score by agency                                | 1) We will develop a per-agency baseline and at-scale call volume goals by mid-April<br>2) Per EMS agency ADKAR score of > 3/5                           |
+| 4 Reduce episode time                                                                                 | Episode time for physicians and navigators                                          | Reduce by at least 20%                                                                                                                                |
+
+**Footer:**
+Confidential
+9
+
+## Slide 10: Corporate KPIs
+
+**RightSite KPI's Through March 31, 2024**
+
+**COST SAVINGS = 2/8/2022 THROUGH 3/31/2024**
+
+| State and Health Plan Savings (ASSUMES $2K PER DIVERSION) | NON-SAFD EMS Avoided Cost (ASSUMES $500 RATE AVOIDED AMBULANCE RUN) | SAFD EMS Avoided Cost (ASSUMES $1149 RATE AVOIDED AMBULANCE RUN) |
+| :-------------------------------------------------------- | :-------------------------------------------------------------------- | :----------------------------------------------------------------- |
+| $4,876,000                                                | $911,500                                                              | $1,099,593                                                         |
+| Count of Episodes                                         | Count of NON-SAFD Episodes                                            | Count of SAFD Episodes                                             |
+| 2,438                                                     | 1,823                                                                 | 957                                                                |
+
+**Total Payor Savings for Diversions**
+**Total EMS Savings for Not Transporting**
+
+**Footer:**
+Confidential
+10
+
+## Slide 11: Corporate KPIs
+
+**ACTIVATIONS**
+
+| Total Activations SINCE INCEPTION | % Accepts EMS/RightSite Telehealth GOAL > 90% | % Diversions GOAL > 66% |
+| :-------------------------------- | :-------------------------------------------- | :---------------------- |
+| 3,738                             | 96%                                           | 65%                     |
+
+**Monthly Activations by Market**
+
+**Chart Data:** Line chart showing monthly activations by market.
+
+| Month      | SAT Market | ATL Market | JAX Market | Total Activations |
+| :--------- | :--------- | :--------- | :--------- | :---------------- |
+| Oct 2023   | 283        | 220        | 0          | 503               |
+| Nov 2023   | 252        | 203        | 1          | 456               |
+| Dec 2023   | 240        | 218        | 0          | 458               |
+| Jan 2024   | 282        | 227        | 25         | 534               |
+| Feb 2024   | 197        | 186        | 14         | 397               |
+| Mar 2024   | 149        | 139        | 7          | 295               |
+
+**Footer:**
+Confidential
+11
+
+## Slide 12: Corporate KPIs
+
+**Monthly Activations**
+GOAL = TBD
+
+**Chart Data:** Bar chart showing monthly activations.
+
+| Month    | Activations |
+| :------- | :---------- |
+| Oct 2023 | 509         |
+| Nov 2023 | 466         |
+| Dec 2023 | 475         |
+| Jan 2024 | 553         |
+| Feb 2024 | 407         |
+| Mar 2024 | 299         |
+
+**Dispatch vs. Field Monthly Activations**
+Last 6 months
+
+**Chart Data:** Stacked bar chart showing dispatch vs. field monthly activations.
+
+| Month    | Dispatch | Field | Total |
+| :------- | :------- | :---- | :---- |
+| Oct 2023 | 220      | 289   | 509   |
+| Nov 2023 | 205      | 261   | 466   |
+| Dec 2023 | 243      | 232   | 475   |
+| Jan 2024 | 233      | 320   | 553   |
+| Feb 2024 | 198      | 209   | 407   |
+| Mar 2024 | 141      | 158   | 299   |
+
+**Footer:**
+Confidential
+12
+
+## Slide 13: Corporate KPIs
+
+**OUTCOMES**
+
+**% Diversions by Month**
+
+**Chart Data:** Bar chart showing % Diversions by Month.
+
+| Month    | % Diversions |
+| :------- | :----------- |
+| May 2023 | 68%          |
+| Jun 2023 | 67%          |
+| Jul 2023 | 76%          |
+| Aug 2023 | 68%          |
+| Sep 2023 | 70%          |
+| Oct 2023 | 63%          |
+| Nov 2023 | 67%          |
+| Dec 2023 | 68%          |
+| Jan 2024 | 64%          |
+| Feb 2024 | 60%          |
+| Mar 2024 | 65%          |
+
+**Dispatch vs. Field % Diversions by Month**
+Last 6 weeks
+
+**Chart Data:** Stacked bar chart showing % Diversions by Month for Dispatch vs. Field.
+
+| Month    | Dispatch | Field |
+| :------- | :------- | :---- |
+| May 2023 | 68%      | 67%   |
+| Jun 2023 | 68%      | 67%   |
+| Jul 2023 | 76%      | 76%   |
+| Aug 2023 | 68%      | 72%   |
+| Sep 2023 | 70%      | 70%   |
+| Oct 2023 | 53%      | 71%   |
+| Nov 2023 | 62%      | 70%   |
+| Dec 2023 | 61%      | 75%   |
+| Jan 2024 | 55%      | 70%   |
+| Feb 2024 | 52%      | 67%   |
+| Mar 2024 | 55%      | 75%   |
+
+**Footer:**
+Confidential
+13
+
+## Slide 14: Corporate KPIs
+
+**Outcome Totals**
+
+**Chart Data:** Stacked bar chart showing outcome totals by month. Categories are Refusals, Request EMS Response, % Diversions, % ER.
+
+| Month    | Refusals | Request EMS Response | % Diversions | % ER |
+| :------- | :------- | :------------------- | :----------- | :--- |
+| May 2023 | ~10%     | ~22%                 | ~68%         | ~0%  |
+| Jun 2023 | ~12%     | ~21%                 | ~67%         | ~0%  |
+| Jul 2023 | ~10%     | ~14%                 | ~76%         | ~0%  |
+| Aug 2023 | ~13%     | ~19%                 | ~68%         | ~0%  |
+| Sep 2023 | ~10%     | ~20%                 | ~70%         | ~0%  |
+| Oct 2023 | ~10%     | ~27%                 | ~63%         | ~0%  |
+| Nov 2023 | ~10%     | ~23%                 | ~67%         | ~0%  |
+| Dec 2023 | ~11%     | ~21%                 | ~68%         | ~0%  |
+| Jan 2024 | ~10%     | ~26%                 | ~64%         | ~0%  |
+| Feb 2024 | ~10%     | ~30%                 | ~60%         | ~0%  |
+| Mar 2024 | ~10%     | ~25%                 | ~65%         | ~0%  |
+
+*(Note: Exact percentages for each segment are estimated visually from the stacked bar chart as specific values are not provided on the chart itself.)*
+
+**Footer:**
+Confidential
+14
+
+## Slide 15: Corporate KPIs
+
+**OPERATIONS**
+
+| Avg Time to Answer EMS Calls SECONDS | Avg Time to MD on Screen MINUTES | Avg Time to EMS Release MINUTES |
+| :---------------------------------- | :------------------------------- | :------------------------------ |
+| 21                                  | 4                                | 11                              |
+
+**Avg Time to Answer in Seconds (Dispatch vs. Field)**
+Goal < 15 seconds
+
+**Chart Data:** Bar chart showing Avg Time to Answer in Seconds for Dispatch vs. Field. The bar for Oct 2023 Field is annotated with "Extended hours, fewer navigators, unoptimized intake process".
+
+| Month    | Dispatch (Seconds) | Field (Seconds) |
+| :------- | :----------------- | :-------------- |
+| May 2023 | 10                 | 16              |
+| Jun 2023 | 10                 | 17              |
+| Jul 2023 | 10                 | 14              |
+| Aug 2023 | 12                 | 15              |
+| Sep 2023 | 11                 | 15              |
+| Oct 2023 | 10                 | 32              |
+| Nov 2023 | 10                 | 38              |
+| Dec 2023 | 10                 | 39              |
+| Jan 2024 | 10                 | 38              |
+| Feb 2024 | 10                 | 37              |
+| Mar 2024 | 10                 | 38              |
+
+**Avg Time to EMS Release in Minutes (Dispatch vs. Field)**
+Goal <= 20 minutes
+
+**Chart Data:** Bar chart showing Avg Time to EMS Release in Minutes for Dispatch vs. Field.
+
+| Month    | Dispatch (Minutes) | Field (Minutes) |
+| :------- | :----------------- | :-------------- |
+| May 2023 | 4                  | 14              |
+| Jun 2023 | 4                  | 16              |
+| Jul 2023 | 4                  | 15              |
+| Aug 2023 | 6                  | 14              |
+| Sep 2023 | 4                  | 13              |
+| Oct 2023 | 4                  | 15              |
+| Nov 2023 | 4                  | 14              |
+| Dec 2023 | 3                  | 13              |
+| Jan 2024 | 4                  | 13              |
+| Feb 2024 | 4                  | 13              |
+| Mar 2024 | 4                  | 15              |
+
+## Slide 16: Corporate KPIs
+
+**Patient Reach Rate Follow Up**
+GOAL > 66%
+
+**Chart Data:** Bar chart showing Patient Reach Rate Follow Up by quarter.
+
+| Quarter | Reach Rate |
+| :------ | :--------- |
+| Q2 2023 | 76%        |
+| Q3 2023 | 68%        |
+| Q4 2023 | 72%        |
+| Q1 2024 | 75%        |
+
+**PATIENT EXPERIENCE**
+
+| Avg Score out of 10 MONTHLY TOTAL |
+| :-------------------------------- |
+| 9.8                               |
+
+**Footer:**
+Confidential
+16
+
+## Slide 17: Sales
+
+**Footer:**
+Confidential
+17
+
+## Slide 18: Sales - Summary Since 3/5 BOD Mtg
+
+**Total Pipeline / Goals/Obtainment**
+
+| Metric                       | Value                      | Last Month                  |
+| :--------------------------- | :------------------------- | :-------------------------- |
+| **Executed payer contracts** | **14** <br> 12FFS, 2 Case Rate | 10                          |
+| **Late-stage payer deals**   | **10** <br> 5 FFS, 5 Case Rate | 10                          |
+| **Total payer deals**        | **84** <br> 11 States      | 84                          |
+| **Avg GA FFS Rate**          | **$150** <br> Contracted   | $167                        |
+| **Avg Pipe Case Rate**       | **$1,100** <br> All LOB's, Total Pipeline | $900                        |
+
+| Goal / Actual / Forecast                               | GA - Q1/Q2 Goal | GA - Current Actual | GA - April Forecasted | GA - Q2 Goal |
+| :----------------------------------------------------- | :-------------- | :------------------ | :-------------------- | :----------- |
+| **Q1 - GA Blend Rate Goal**                            | **$250**        |                     |                       |              |
+| **Blended Rate, GA**                                   |                 | **$136**            | **$175**              | **$350**     |
+| (Additional info)                                      |                 | $87                 | + 1 FFS, +1 Case Rates | Sentiment -> |
+
+| Goal / Actual / Forecast                               | TX - Q1/Q2 Goal | TX - Current Actual | TX - April Forecasted | TX - Q2 Goal |
+| :----------------------------------------------------- | :-------------- | :------------------ | :-------------------- | :----------- |
+| **Q1 - TX Blend Rate Goal**                            | **N/A**         |                     |                       |              |
+| **Blended Rate, TX**                                   |                 | **$74**             | **$74**               | **$150**     |
+| (Additional info)                                      |                 | $54                 |                       | Sentiment -> |
+
+**Footer:**
+Confidential
+18
+
+## Slide 19: Sales - Payer
+
+**What Happened**
+
+*   **3 new FFS executed**
+    *   Centene, TX - Medicaid, Medicare, Exchange
+*   **1 new Case Rate executed**
+    *   Centene, GA - Medicaid
+*   **3 Case Rates, 1 FFS in final approach (GA).**
+    *   Caresource - Medicaid
+    *   Humana - MA
+    *   Aetna - MA
+    *   United - FFS
+*   **Caresource - full GA Medicaid claims data received and analyzed** - baseline for Medicaid case rate savings established
+*   **TX Progression starting**
+    *   HCSC (parent of BCBS/TX) - first meeting with clinical leadership well received “we have an ER problem" - second meeting scheduled.
+    *   Molina TX - CMO and clinical leadership are in support. Developing project scope in collaboration with SAFD
+    *   Community First Medicaid - CEO supportive, follow ups in April
+
+Additional state opportunities - developing decision matrix to assist in selecting one new state in Q2. Current candidates:
+
+*   Michigan
+*   Virginia
+*   Nevada
+*   Oklahoma
+
+**What's Next**
+
+*   Gas pedal down in Texas
+*   Florida Blue - CEO strategy active to eliminate Blue's Association telehealth obstacles to contracting
+*   United Health (GA, FL) case rate negotiation progression
+*   Aetna "ride alongs" to complete corporate due diligence
+*   Hire a new sales team member
+*   Complete "next state" decision matrix
+*   Priority Health sales initiation. As the #2 volume payor, their interest in RightSite will influence the decision to activate Michigan
+*   Finishing Humana corporate negotiation for enterprise-wide case rate
+*   Accelerate streamlined process for outstanding FFS contracts in GA, TX, and FL
+
+**Challenges**
+
+*   Transitioning Cindy to RCM Lead creates a temporary void in available sales cycles
+*   Cigna continues to be difficult to gain sales traction. Working new entry point in Strategy and Business Development leadership
+*   RightSite is a new service model that still requires multiple departmental approvals at payors
+
+**Footer:**
+Confidential
+19
+
+## Slide 20: Sales - Overview as of April 9, 2024
+
+| **Signed Deals** | **GA** | **TX** | **FL** | **Total** |
+| :--------------- | :----- | :----- | :----- | :-------- |
+| April 9          | 8      | 6      | 0      | 14        |
+| Jan 1            | 6      | 2      | 0      | 8         |
+
+| **Blended Rate** | **GA**    | **TX**    | **FL** |
+| :--------------- | :-------- | :-------- | :----- |
+| April 9          | **$136**  | **$74**   | **$0** |
+| Jan 1            | $87       | $54       | $0     |
+|                  | 56%       | 37%       |        |
+
+| **Call Volume/Mo** | **GA** | **TX** | **FL** | **Total** |
+| :----------------- | :----- | :----- | :----- | :-------- |
+| April 9            | 149    | 139    | 7      | 295       |
+| Jan 1              | 186    | 197    | 14     | 397       |
+|                    | -20%   | -29%   | -50%   | -26%      |
+
+| Est Cost/Call | **< $225/call** |
+| :------------ | :-------------- |
+
+**Footer:**
+Confidential
+20
+
+## Slide 21: Sales - Blended Rate GA
+
+This Blended Rate Calculator combines market (community) payer mix, contracted FFS and case rates, and pipeline estimates for the payors in that market. **The calculator is dynamic**, updating continuously with fresh pipeline dates, amounts, and payor mix adjustments.
+
+**RightSite Blend Rate Forecast - Georgia**
+
+**Contract Signature Month - FFS**
+
+| FFS              | Projected Effective Month | Rate   | Jan-24 | Feb-24 | Mar-24 |
+| :--------------- | :------------------------ | :----- | :----- | :----- | :----- |
+| Medicaid FFS     | Dec-23                    | $133   | 1      | 1      | 1      |
+| Medicare FFS     | Dec-23                    | $210   | 1      | 1      | 1      |
+| Aetna            | Feb-24                    | $210   | 1      | 1      | 1      |
+| Amerigroup       | Mar-24                    | $133   | 0      | 1      | 1      |
+| BCBS             | Mar-24                    | $210   | 0      | 0      | 0      |
+| CareSource       | Mar-24                    | $133   | 1      | 1      | 1      |
+| Centene          | Dec-23                    | $142   | 1      | 1      | 1      |
+| Cigna            | Mar-24                    | $142   | 0      | 0      | 0      |
+| Humana           | Dec-23                    | $210   | 1      | 1      | 1      |
+| Kaiser           | Mar-24                    | $180   | 0      | 0      | 0      |
+| Other            | May-24                    | $180   | 0      | 0      | 0      |
+| UnitedHealth     | Apr-24                    | $210   | 0      | 0      | 0      |
+| Uninsured        |                           | $0     | 0      | 0      | 0      |
+| **Total active contracts** |                           |        | 6      | 7      | 7      |
+
+**Contract Signature Month - Case Rate**
+
+| Case Rate        | Projected Effective Month | Rate     | Jan-24 | Feb-24 | Mar-24 |
+| :--------------- | :------------------------ | :------- | :----- | :----- | :----- |
+| Medicaid FFS     | n/a                       | $0       | 0      | 0      | 0      |
+| Medicare FFS     | n/a                       | $0       | 0      | 0      | 0      |
+| Aetna            | Apr-24                    | $1,000   | 0      | 0      | 0      |
+| Amerigroup       | May-24                    | $700     | 0      | 0      | 0      |
+| BCBS             | May-24                    | $1,200   | 0      | 0      | 0      |
+| CareSource       | May-24                    | $625     | 0      | 0      | 0      |
+| Centene          | Mar-24                    | $607     | 0      | 0      | 1      |
+| Cigna            | Jun-24                    | $650     | 0      | 0      | 0      |
+| Humana           | Mar-24                    | $800     | 0      | 0      | 0      |
+| Kaiser           | Apr-24                    | $800     | 0      | 0      | 0      |
+| Other            | May-24                    | $650     | 0      | 0      | 0      |
+| UnitedHealth     | Jun-24                    | $1,000   | 0      | 0      | 0      |
+| Uninsured        |                           | $0       | 0      | 0      | 0      |
+| **Total active contracts** |                           |        | 0      | 0      | 1      |
+
+**Rate x Signature Date x Payor Mix**
+
+| Blended Rate | Mix   | MCO AWARD | Jan-24 | Feb-24 | Mar-24 |
+| :----------- | :---- | :-------- | :----- | :----- | :----- |
+| Medicaid FFS | 19%   | 0%        | $25    | $25    | $25    |
+| Medicare FFS | 9%    | 9%        | $19    | $19    | $19    |
+| Aetna        | 4%    | 4%        | $8     | $8     | $8     |
+| Amerigroup   | 4%    | 10%       | $0     | $5     | $5     |
+| BCBS         | 4%    | 4%        | $0     | $0     | $0     |
+| CareSource   | 4%    | 10%       | $5     | $5     | $5     |
+| Centene      | 8%    | 12%       | $11    | $11    | $60    |
+| Cigna        | 10%   | 10%       | $0     | $0     | $0     |
+| Humana       | 6%    | 6%        | $13    | $13    | $13    |
+| Kaiser       | 1%    | 1%        | $0     | $0     | $0     |
+| Other        | 2%    | 5%        | $0     | $0     | $0     |
+| UNH          | 10%   | 10%       | $0     | $0     | $0     |
+| Uninsured    | 19%   | 19%       | $0     | $0     | $0     |
+| **Total**    |       |           | **$82**| **$87**| **$136**|
+
+**Note:** The blended case rate calculator is a dynamic projection that doesn't yet take into account a handful of things - like copays or how insurance status and payor mix evolves over time.
+
+**Footer:**
+Confidential
+21
+
+## Slide 22: Sales - EMS in GA
+
+EMS word-of-mouth sales efforts are shown below, and continues to drive GA EMS agency demand. Q1 goals were to keep EMS prospects warm. Q2 goals are to grow call volume through net new EMS agency prospects.
+
+**Reminder:** Existing GA EMS partners cover 17%/5.9M lives in Georgia. Including the agencies > 70% in our pipeline, we would cover 29%/6.2M lives. Including the entire pipeline, we would cover 44%/14M lives. (2022 GA DPH data)
+
+**GA EMS Pipeline**
+
+| Deal                                      | Deal Stage     | %   | Product        |
+| :---------------------------------------- | :------------- | :-- | :------------- |
+| 2024 - Grady EMS e911 & Nurseline         | Closed won     | 100% | Dispatch       |
+| 2024 - Marietta Fire - GA                 | Closed won     | 100% | Field          |
+| 2024 - Dekalb Fire & EMS                  | Contracting    | 90% | MIH/CP         |
+| 2024 - Sandy Springs Fire Dept.)          | Contracting    | 90% | Field; MIH/CP  |
+| 2024 - Rockdale County Fire Rescue        | Contracting    | 90% | Field          |
+| 2024 - Clayton County Fire & EMS          | Contracting    | 90% | MIH/CP; Field  |
+| 2024 - Milton Fire Rescue                 | Contracting    | 90% | Field; MIH/CP  |
+| 2024 - Douglas County e911                | Approved scope | 70% | Dispatch       |
+| 2024 - Roswell Fire                       | Development    | 50% | Field          |
+| 2024 - Alpharetta Fire & EMS              | Development    | 50% | Field; MIH/CP  |
+| 2024 - Henry County Fire Rescue           | Engaged        | 30% | Dispatch       |
+| 2024 - Coweta County - 911                | Engaged        | 30% | Dispatch       |
+| 2024 - Smyrna Fire                        | Initiated      | 10% | Field; MIH/CP  |
+| 2024 - Union City Fire & EMS              | Initiated      | 10% | Field          |
+| 2024 - Gwinnett County Fire & EMS         | Initiated      | 10% | Field; Dispatch|
+| 2024 - Chattahoochee Hills Fire & Rescue  | Initiated      | 10% | Field          |
+| 2024 - Cobb County - e911                 | Initiated      | 10% | Dispatch       |
+| 2024 - Chatham Emergency Services         | Initiated      | 10% | Dispatch; Field|
+| 2024 - College Park Fire                  | Initiated      | 10% | Field          |
+| 2024 - Pooler EMS                         | Initiated      | 10% | Field; MIH/CP  |
+
+| Stage          | %    | Description                                                                    |
+| :------------- | :--- | :----------------------------------------------------------------------------- |
+| Closed/Won     | 100% | Contract fully executed; project kickoff is ready to be scheduled.             |
+| Contracting    | 90%  | Finalize contract, make minor modifications, and negotiate insurance coverage if needed. |
+| Approved Scope | 70%  | Drafting contract & scope of work.                                             |
+| Development    | 50%  | Agreed to proceed with the plan, service lines & MOU process identified.       |
+| Engaged        | 30%  | Decision makers are engaged, and discovery and approval processes are underway. |
+| Initiated      | 10%  | Contact established with the targeted account.                                 |
+| Targeted       | 0%   | Identified as a desirable account and RightSite service line for geography and volume. |
+| Closed/Lost    |      | Deal lost; can happen at any time in the deal                                  |
+
+**Footer:**
+Confidential
+22
+
+## Slide 23: Sales - EMS
+
+**What Happened**
+
+*   Started to accelerate EMS sales to generate more call volume that captures the growing value of the GA BCR.
+*   Organized sales and account management plans for disciplined, efficient EMS call volume growth
+*   **Agreements with 2 new GA EMS partners**
+    *   Grady - Dispatch: expect 3x current volume, 20-40 calls per day, at scale
+    *   Marietta - Field
+*   **6 Dispatch deals in pipeline**
+    *   Dispatch product - Pros: faster to implement, less training and more volume. Cons: lower diversion rate
+*   **Strategic Account Management Plan (sAMp)/ADKAR Scoring** was developed and is in use for EMS Account Management. The sAMp pinpoints account risk and assists in developing targeted strategic action to maximize volume and account satisfaction. These agency-level plans document growth objectives, SWOT, key contacts, contact roles, personas and social styles, green flags, and red flags. A guide to each account growth strategy with shared responsibilities among RSH/Account team members.
+*   **Dallas/Fort Worth EMS (Medstar)** entered into the pipeline. This geographic payer mix is advantageous for RSH.
+
+**What's Next**
+
+*   Full press on GA pipeline
+*   Finalize client-facing project management tools to support implementation
+*   Finish Grady (GA) Dispatch implementation. Learning loops managed to streamline future dispatch implementations
+*   Complete "next state" decision matrix
+*   Continued refinement on EMS reporting designed to visualize RSH value adds. Cost savings, improved efficiencies
+*   Hire a new EMS account manager
+
+**Challenges**
+
+*   Balancing EMS demand with blended case rate goals
+
+**Footer:**
+Confidential
+23
+
+## Slide 24: Finance & RCM
+
+**Footer:**
+Confidential
+24
+
+## Slide 25: Cash - Monthly Trend
+
+**Month-to-Month Spend**
+
+|                   | Aug-23       | Sep-23       | Oct-23       | Nov-23       | Dec-23       | Jan-24       | Feb-24       | Mar-24       |
+| :---------------- | :----------- | :----------- | :----------- | :----------- | :----------- | :----------- | :----------- | :----------- |
+| Cash Balance BOP  | $3,297,256   | $2,905,695   | $2,539,065   | $2,100,419   | $1,601,578   | $1,141,473   | $5,472,423   | $4,841,043   |
+| Collections       | $0           | $0           | $0           | $0           | $142         | $0           | $0           | $0           |
+| Dividend Income   | $13,495      | $11,306      | $9,975       | $7,588       | $5,645       | $3,470       | $20,641      | $23,190      |
+| Investment        | $0           | $0           | $0           | $0           | $0           | $4,799,959   | $17,776      | $1,182,237   |
+| Payroll           | ($245,187)   | ($226,196)   | ($248,485)   | ($271,132)   | ($292,365)   | ($299,604)   | ($460,545)   | ($368,388)   |
+| Consultants + Prof Fees | ($45,243)    | ($19,488)    | ($74,580)    | ($71,189)    | ($82,151)    | ($63,606)    | ($61,299)    | ($52,341)    |
+| Sales + Marketing + Gov't Relations | ($37,674)    | ($52,793)    | ($47,862)    | ($11,635)    | ($22,106)    | ($23,569)    | ($15,924)    | ($21,672)    |
+| Other Operating   | ($75,902)    | ($79,459)    | ($77,694)    | ($152,473)   | ($69,270)    | ($85,700)    | ($120,332)   | ($102,215)   |
+| Non-recurring     | ($1,050)     | $0           | $0           | $0           | $0           | $0           | ($11,698)    | ($43,421)    |
+| Cash Balance EOP  | $2,905,695   | $2,539,065   | $2,100,419   | $1,601,578   | $1,141,473   | $5,472,423   | $4,841,043   | $5,458,433   |
+
+| Net Monthly Adjusted Burn | $446,184 |
+| :------------------------ | :------- |
+
+**MD&A**
+
+1.  Friends & Family tranche was completed by mid-March bringing the raise to $6.0MM
+2.  Feb-24 + Mar-24 show elevated spend in excess of expected spend. Feb-24 had 3 payroll periods + a full year of med mal insurance for all physicians. Mar-24 had a handful of one time outflows as discussed below in bullet 3
+3.  Mar-24 one time outflows include increased cyber insurance coverage, a quarterly payment to ClosedLoop (RightSite's data analytics partner), a one time incentive payment to 1 employee and transaction expenses for the capital raise
+4.  Excluding 1 time outflows, Other Operating expenses were for the most part consistent
+    a.  Note Other Operating expenses include costs related to patient care, I/T, physician admin, T&E, insurance, rent, other
+    b.  Note Non-recurring are non-operational expenses and in 2024 made up entirely of legal payments for the Seed Extension
+5.  Current monthly run rate burn is ~ $450K, which will decline as BCRs increase
+
+**Footer:**
+Confidential
+25
+
+## Slide 26: Cash - Variance
+
+**Variance to Model**
+
+|                  | Model        | YTD Mar-24 Cash | Var F(U)     | Notes                                   |
+| :--------------- | :----------- | :-------------- | :----------- | :-------------------------------------- |
+| Cash Balance BOP | $1,141,473   | $1,141,473      |              |                                         |
+| Seed Extension   | $6,000,000   | $6,000,000      |              |                                         |
+| Collections      | $57,727      | $173            | ($57,554)    | Billable backlog estimated $65K         |
+| Payroll          | ($1,010,945) | ($1,128,537)    | ($117,592)   | 3 payroll periods in Feb-24             |
+| Consultants + Prof Fees | ($183,707)   | ($177,246)      | $6,461       |                                         |
+| Sales + Marketing + Gov't Relations | ($48,750)    | ($61,165)       | ($12,415)    |                                         |
+| Other Operating  | ($250,986)   | ($308,447)      | ($57,461)    | Handful of 1x/annual expenses           |
+| Dividend Income  | $77,544      | $47,301         | ($30,243)    | Investment came in over the 1Q24        |
+| Non-recurring    | ($150,000)   | ($55,119)       | $94,881      | Transaction legal fees                  |
+| Cash Balance EOP | $5,632,355   | $5,458,433      | ($173,922)    |                                         |
+
+**MD&A**
+
+1.  Through March-24, cash realized a negative variance of ~ $174K, due to a variety of factors including
+    a.  1 time/annual payments (see Cash - Monthly Trend)
+    b.  The payroll variance was due to 3 payroll periods occurring in Feb-24
+2.  Sales/Marketing/Gov't Relations had a negative variance made up of various spend including pipeline engineering, association conferences and Jacksonville negotiations
+3.  Dividend Income was negatively impacted by the timing of the institutional closing (1/31) and the F&F closing (by 3/18)
+
+**Footer:**
+Confidential
+26
+
+## Slide 27: Revenue Cycle and Credentialing
+
+**What Happened - Revenue Cycle**
+
+*   Manual claim batch process established
+*   Manual case rate invoice process established and first 3 submitted
+*   Manual process developed for procedure code case rate
+*   Change Healthcare debacle
+*   Working on automation for all manual processes
+
+**What's Next - Revenue Cycle**
+
+*   Development of automated claim submission process
+*   Creation of standard claim reporting
+*   Case rate reporting process - both for invoice and claim methodology
+*   Develop automation rules to enhance first pass rate on claim submissions
+
+**What Happened - Licensing/Credentialing**
+
+*   Heavy focus on completion of multi-state licensing, Medicare and Medicaid for 5 physicians in 3 states (1 new doc in process).
+    *   94% licensed | 72% Medicaid | 89% Medicare
+*   Heavy focus on enrollment & credentialing with payors in GA & TX
+    *   GA - 9 payors | 18 lines of business | 88% active/submitted
+    *   TX - 8 payors | 16 lines of business | 63% active/submitted
+
+**What's Next - Licensing/Credentialing**
+
+*   Complete multi-state licensing, Medicare and Medicaid for 6 (5+1) physicians in 3 states.
+*   Complete enrollment & credentialing with payors in GA & TX
+*   Complete enrollment & credentialing with payors in FL
+*   Development of Policies and Procedures governing actions
+*   Development of Payer Specific Fact Sheets
+
+**What Happened - Insurance Verification**
+
+*   Access to Discovery process for BCBS plans
+*   Capture of insurance cards consistently
+*   Developed plan for information automation and navigator education
+
+**What's Next - Insurance Verification**
+
+*   Implementation of automation where feasible
+*   Formal Documented Insurance Education for Navigators
+*   Monthly batch discovery of un-insureds and unknowns (capture retro-eligibility for Medicaid)
+
+**Footer:**
+Confidential
+27
+
+## Slide 28: EMS and Care Team Operations
+
+**Footer:**
+Confidential
+28
+
+## Slide 29: EMS Operations 1/2
+
+**What Happened**
+
+**Volume**
+
+*   We experienced a 36% decline in call volume since the end of Q4, an expected outcome from modulating EMS volume. Monthly call volume totals GA, TX, and FL were:
+
+    **EMS Call Volume Dec 23 - Mar 24**
+
+    |      | GA  | TX  | FL | Total | Change from Dec |
+    | :--- | :-- | :-- | :- | :---- | :-------------- |
+    | Dec  | 218 | 240 | 0  | 458   | 0%              |
+    | Jan  | 282 | 227 | 25 | 534   | 17%             |
+    | Feb  | 186 | 197 | 14 | 397   | -13%            |
+    | Mar  | 149 | 139 | 7  | 295   | -36%            |
+    | **Total** | **617** | **563** | **46** | **1,226** |                 |
+
+**Implementations/Expansion**
+
+*   Executed Grady Dispatch agreement, projected to add 20-40 calls/day at scale; Initiated Discovery & implementation to be completed in April 2024
+*   Trained all staff at Atlanta Fire Rescue's first station with EMS transporting units - live March 2023
+*   Closed Marietta Fire, completed training first week of April 2024
+*   Initiated contracting process for JFRD pilot program transitioning into a long term partnership and expansion into dispatch
+
+**EMS Account Management:**
+
+*   Re-assessed EMS agency pipeline opportunities
+*   Refined change management/ADKAR account management process and scoring to support EMS growth
+*   Planning to hire ATL-based field representative to support and manage GA EMS partners
+*   Site visits to SAFD, JFRD, Grady and AFRD with key leaders and end users
+*   Trained 50% of rescue staff at JFRD (January 2024)
+*   Mobile Integrated Health Summit - both Cobb Fire & San Antonio Fire incorporated RightSite into their presentations resulting in new prospect inquiries after the conference
+
+## Slide 30: EMS Operations 2/2
+
+**What's Next**
+
+**Volume**
+
+*   **ATL Market**
+    *   > 5% increase in call volume in GA with existing EMS partners
+    *   Grady Dispatch Implementation: Soft launch by end of April
+    *   Pipeline: Alpharetta, Clayton County Fire & EMS, Columbus Fire, Coweta County e911, Dekalb Fire & EMS, Douglas County e911, Henry County, Milton Fire Rescue, Rockdale County Fire Rescue, Roswell Fire, Sandy Springs FD & Smyrna Fire
+*   **TX Market**
+    *   > 5% increase in call volume with SAFD
+    *   Exploring growing initiatives with Molina and SAFD partnership with MIH
+    *   Early stage conversations with MedStar in Fort Worth
+*   **FL/JFRD Market**
+    *   Increase JFRD call volume to baseline 10 calls/day
+    *   Execute expanded JFRD contract to include dispatch
+    *   Roll out to all ambulance rescue units and firefighter medics by end of May
+
+**Challenges**
+
+*   Aligning EMS call volume growth with BCR and Care Team staffing
+
+**Footer:**
+Confidential
+30
+
+## Slide 31: Strategic Account Management Plans- EMS 1/3
+
+The next three slides are an excerpt of our new EMS strategic account worksheet that we are implementing for each agency. It establishes baseline and projected call volume. It also uses the change management ADKAR framework to “diagnose and treat” lagging call volume
+
+| sAMp for: | SAFD | Services: | Dispatch | Account Manager: | Swati |
+| :-------- | :--- | :-------- | :------- | :--------------- | :---- |
+
+| Baseline Volume Threshold (calls/day): | 12 | Goal Volume (50% all calls): | 60 | 9-day Average: (as of 3/29) | 7 |
+| :------------------------------------- | :- | :--------------------------- | :- | :-------------------------- | :- |
+| 3% of total calls (180K/year or 400/day = 12) |    | 30% of 50% of total calls (180K/year or 400 calls/day) = 60 |    |                             |    |
+
+**Date of Report**
+
+**ADKAR Dashboard (1 In Trouble > 5 Doing Great)**
+
+|                      | 2024 Q2   |       |       | 2024 Q3   |       |
+| :------------------- | :-------- | :---- | :---- | :-------- | :---- |
+|                      | April '24 | May '24 | June '24 | July'24   | Aug'24 | Sep'24 |
+| Agency Score (for new accounts) | N/A     |       |       |       |       |       |
+| Chief (Sponsor)      | 4         |       |       |       |       |       |
+| Senior Management (Coalition) | 4         |       |       |       |       |       |
+| Front Line Supervisors | 4         |       |       |       |       |       |
+| Front Line           | 2         |       |       |       |       |       |
+| % Against Baseline Volume | 58%       |       |       |       |       |       |
+
+**This is the aggregate scoring using the ADKAR model. For an example of the question set used for scoring, note the row for “Chief (Sponsor)” and see slide 32.**
+
+Red - less than 50%; Yellow - 50-75%; Green - greater than 75%
+
+**Growth Obje**
+
+| What are the specifjectives?               | Target Date |
+| :----------------------------------------- | :---------- |
+| 1 Active plan for Field Active...          |             |
+| 2 Active plan for MIH/Molina               |             |
+
+**Operational Objectives**
+
+| What are the specific objectives?                                           | Target Date |
+| :-------------------------------------------------------------------------- | :---------- |
+| 1 Push Dr. Winckler to finalize and distribute COG to frontline             | 4/15/2024   |
+| 2 Increase 9-day average to be equal to the baseline call volume threshold (12 calls/day) | 4/30/2024   |
+| 3 Rollout periodic CQI meetings with Dr. Winckler and Mene                  | 4/8/2024    |
+| 4 Revisit the criteria with SAFD to activate RightSite (due to diversion rate trending down) |             |
+| 5 Data Integration with Image trend                                         |             |
+
+**Client SWOT Analysis**
+
+| Strengths                                                                | Weaknesses           |
+| :----------------------------------------------------------------------- | :------------------- |
+| 1. Single EMS provider service for all of Bexar county (same agency provides Fire and transport) | 1. Missing COG       |
+| Opportunities                                                            | Threats              |
+| 1. Field                                                                 | 1. Low utilization due to missing COG |
+| 2. Referral partners e.g. Molina                                         |                      |
+| 3. MIH                                                                   |                      |
+| 4. Opportunity for the fire dept to show that they are taking initiative in residents' social and clinical needs |                      |
+| 5. Expansion beyond Bexar County                                         |                      |
+
+**Footer:**
+Confidential
+31
+
+## Slide 32: Strategic Account Management Plans- EMS 2/3
+
+**This is an example of the question set used for ADKAR scoring. See slide 31.**
+
+**ADKAR Scoring**
+1- Almost no evidence: Needs immediate attention
+3- Some evidence: Needs attention and partner check in
+5- Doing great: Monitor for changes and push for strategic growth
+
+**Almost none**
+**Some evidence**
+**Doing great**
+
+**March 2024**
+
+| Sponsor: Chief Bryan Norris |           |           |                |
+| :-------------------------- | :-------- | :-------- | :------------- |
+| **ADKAR Element**           | **Description** | **Score (1 to 5)** | **Additional Notes** |
+| Fully Committed to using RSH | Yes       | 5         | He drove the meeting with Molina, he is a referrable partner for RightSite |
+| Respected and trusted by all | Yes       | 3         | He is a strong candidate to become top most fire/EMS chief) |
+| (The Top Authority) Able to Give Consequences for positive and negative behavior | Yes       | 3         | He has the ability but does not do that |
+| Active and Visible about using RSH | Active / Visible - Yes | 5         | He does frequent visits to dispatch center<br>He regularly attends RightSite weekly calls and is engaged in developing adoption strategies<br>He understands and uses weekly RightSite data (in his meetings with City etc.) shared with SAFD |
+| Has the leader set up an explicit coalition to drive change? All members define and agree upon the roles and expectations of the coalition members. | Medics Supervisor - Lt. Librado Valadez<br>Comms Chief Garrett Nikolaus<br>Med Director - Dr. Winckler and Dr. Miramontes | 4         |                |
+| Do they have a communication plan? | Unknown   | 2         |                |
+
+**Members of the Coalition**
+Medics Supervisor - Lt. Librado Valadez
+
+AVERAGE SCORE: 4
+
+**Footer:**
+Confidential
+32
+
+## Slide 33: Strategic Account Management Plans- EMS 3/3
+
+| Key Contacts           | Title                        | Role               | Measure Ownership | Social Style       | Relationship | Reports to          |
+| :--------------------- | :--------------------------- | :----------------- | :---------------- | :----------------- | :----------- | :------------------ |
+| 1 Bryan Norris         | SAFD Fire Chief              | Executive Sponsor  | Decision Maker    | Driving expressive | Strong       | Mayor               |
+| 2 Dr. C.J. Winckler    | SAFD Medical Director        | Decision Maker     | Decision Maker    | Driving expressive | Strong       | Fire Chief          |
+| 3 Dr. Miramontes       |                              |                    |                   |                    |              |                     |
+| 4 Chief Garrett Levi Nikolaus | SAFD Dispatch Section Chief | Coach              |                   |                    |              | SAFD Communications Division |
+| 5 Lt. Librado Valadez  | Dispatch Supervisor          | Coach              |                   |                    |              | SAFD Communications Division |
+
+| Green Flags                             | Action for Continuity |
+| :-------------------------------------- | :-------------------- |
+| 1 Dr. Winckler/Chief Norris' presentation to the City of San Antonio City Council |                       |
+
+| Red Flags                                        | Actions to Mediate |
+| :----------------------------------------------- | :----------------- |
+| 1 Jamo to reach out Dr. Winckler regarding distribution of COG to frontline |                    |
+
+**Strategy - Action Plan**
+
+| Action                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Event                                     | Owner    | Status      | Target Date   |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------- | :------- | :---------- | :------------ |
+| 1 Dr. Winckler/Chief Norris' presentation to the City of San Antonio City Council - confirm date and support from RightSite related to data and other details                                                                                                                                                                                                                                                                                                                                | Dr. Winckler/Chief Norris' meeting with City Council | Jared    | Not Started | End of April? |
+| 2 Swati will work with Lt. Valadez and Kristeen to create a recurring schedule for the SAFD crew to visit the RightSite navigation center and for RightSite navigators to visit the SAFD dispatch center.                                                                                                                                                                                                                                                                                         |                                           | Swati    | Not Started | 4/19/2024     |
+| 3 Lt. Valadez will calculate the Unit Hour Utilization of the fully optimized SAFD EMS crew to firm up the goal on the call volume to RightSite.                                                                                                                                                                                                                                                                                                                                               |                                           | Swati    | Not Started | 4/19/2024     |
+| 4 RightSite to help with upcoming SAFD new hire and refresher training                                                                                                                                                                                                                                                                                                                                                                                                                          | SAFD Incumbent Training                   | Kristeen | In Progress | 2nd week of April |
+| 5 RightSite to deliver new format of clinical report                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                           | Mene     | In Progress | 2/19/2024     |
+| 6 RightSite Language for Referring Back to SAFD                                                                                                                                                                                                                                                                                                                                                                                                                                                 |                                           | Kristeen | In Progress | 4/5/2024      |
+| 7 1. Data Integration with Image Trend: Swati will contact Eric Epley's team regarding data integration efforts between Image Trend and RightSite. SAFD would like SAFD CAD data (especially High Volume Utilizers of the 911 system).<br>2. Workflow between SAFD Dispatch and RightSite: Swati will schedule discovery sessions to finalize a new workflow between an SAFD call taker and RightSite ER doctor for HVU patients. |                                           |          |             |               |
+
+**Support Required**
+
+| Need - Resource | Event | Assigned | Status |
+| :-------------- | :---- | :------- | :----- |
+| 1               |       |          |        |
+
+**Footer:**
+Confidential
+33
+
+## Slide 34: Care Team Operations
+
+**What Happened**
+
+**Navigators**
+
+*   Reduction of episode time through workflow and platform enhancements
+*   Built a better structure for the Navigation team, adding Shift Lead and Manager roles
+*   Increasing the number of intake calls navigators can process by developing different workflows for simple and complex episodes
+*   We implemented a new incoming call identification system to help Navigators determine upfront whether incoming calls are new 911 intakes or follow up activity
+
+**Physicians**
+
+*   Six part and full time physicians practicing in all three states
+*   Creating better and more efficient clinical decision making processes during intake and follow up
+*   Added Medical Direction meetings with our EMS agency partners as part of our clinical CQI (continuous quality improvement) work
+
+**What's Next**
+
+**Navigators and Physicians**
+
+*   Continued reduction of episode time through workflow and platform enhancements
+*   Continued improvement of insurance identification process
+*   Improved staffing forecasts from sales and EMS account management
+
+**Challenges**
+
+*   Call center-like environments are challenging to manage, as expected. Staffing, training, and culture continue to be our focus
+*   Efficient scaling of clinical component of episodes
+*   Optimizing the coordination of navigator and physician activities within an episode
+
+**Footer:**
+Confidential
+34
+
+## Slide 35: Engineering, HR, RightSite Foundation
+
+**Footer:**
+Confidential
+35
+
+## Slide 36: Engineering
+
+**What Happened**
+
+*   Product management and engineering focused on Q1 company priorities, specifically revenue cycle and episode efficiency ("cost per call")
+*   Improved the integration with Advanced MD's billing system to further streamline the revenue cycle process
+*   Added universal episode and contact search to the top of all pages in the application.
+*   Continued our rollout of the Mode Analytics business intelligence solution, with a focus on customer reports, consistent dashboards, and accommodating the wide range of reporting requests from internal and external groups
+*   Released our new EMS Crew Tracking feature into production to import reporting capabilities and drive EMS engagement initiatives.
+*   Successfully completed a Security Assessment for Florida Blue
+*   Completed organization-wide review of episode outcomes and finalized plan for moving forward
+*   Added support for multi-purpose programs that can be used to capture relevant memberships for each patient
+
+**What's Next**
+
+*   Focus on episode data entry efficiency (eliminating double-entry), updated workflow for navigators and physicians, and more consistent reporting.
+*   Complete integration with physician scheduling software for improved physician alerts about new calls
+*   Integrate with an on-demand medical translation service to help patients with language barriers during intakes
+*   Continue integration with the call center platform for additional features such as call notifications, navigator status, and managing pictures of insurance cards obtained from patients
+*   Improve operational and management dashboards for better oversight and patient follow-up
+*   Continue to refine our approach to Mode Analytics reporting
+
+**Challenges**
+
+*   Engineering capacity is limited to a 3-person team - this is a real bottleneck and we should consider adding an engineer now
+*   The engineering team is also handling the Product Management and IT functions, which reduces our development capacity
+*   Priorities can shift during the quarter, even when staying within the lanes of Company Priorities
+
+**Footer:**
+Confidential
+36
+
+## Slide 37: HR
+
+**What Happened**
+
+*   Converted Jared Oscarson into full-time EMS leadership role as a consultant
+*   Created profile/job spec for a Payor Sales Director
+*   Hired an additional “swing-shift” Navigator to join the evening team
+*   Formalized RightSite's first summer internship program and hired a college intern to begin in May
+
+**What's Next**
+
+*   Cindy Buckels moving into the head of RCM role; will continue serving as a payor SME for Clayton and team
+*   Actively recruiting for Payor Sales Director to replace Cindy
+*   Actively recruiting for EMS Clinical Liaison (field rep)
+*   Continually building Navigator bench
+*   First eNPS survey will be released
+
+**Challenges**
+
+*   A call center-like environment is hard to manage; training, guardrails, and culture remain top of mind
+
+**Board of Directors**
+CEO: Jamo Rubin
+
+**Organizational Chart Data:**
+
+| Role                           | Name/Team         | Total Employees | Consultants | ER MDs (PT and FT) |
+| :----------------------------- | :---------------- | :-------------- | :---------- | :----------------- |
+| CEO                            | Jamo Rubin        |                 |             |                    |
+| Commercial Strategy            | Clayton Walberg   |                 |             |                    |
+| EMS                            | Jared Oscarson    |                 |             |                    |
+| Navigation Services            | Kristeen Pierce   |                 |             |                    |
+| CMO                            | Mene Demestihas   |                 |             |                    |
+| Behavioral Health              | Stacey Rubin      |                 |             |                    |
+| Engineering                    | Craig Halley      |                 |             |                    |
+| Finance                        | Matt Sedgwick     |                 |             |                    |
+| Strategy                       | Michael Boxer     |                 |             |                    |
+| Human Resources                | Allison Halley    |                 |             |                    |
+| Health Plan and Provider A/M   | 1                 |                 |             |                    |
+| EMS Implementation and A/M     | 2                 |                 |             |                    |
+| Navigation Team                | 13                |                 |             |                    |
+| Telehealth Emergency Medicine Docs | 5                 |                 |             |                    |
+| Engineers                      | 2                 |                 |             |                    |
+| Reporting                      | 1                 |                 |             |                    |
+| **Total**                      |                   | **25**          | **6**       | **5**              |
+
+**Footer:**
+Confidential
+37
+
+## Slide 38: RightSite Community Foundation
+
+**The RightSite Community Foundation**
+
+The Foundation funds essential services for community members seeking non-emergency care via 911/EMS. Without this option, over 50% of 911 callers end up in expensive ERs unnecessarily, despite accessible alternatives such as ambulatory or telehealth services, pharmacies, or social support.
+
+**Community Members get the care they need:**
+"I'm just not sure how to access the help that I need.”
+-Patient
+
+The RightSite Community Foundation funds RightSite Health services for uninsured or underinsured patients. These services help them find the right place for non-emergency care, avoiding unnecessary trips to the ER.
+
+911/EMS connects uninsured patients with non-emergent needs to RightSite’s Telehealth ER Doctors by video link for immediate care. Then, RightSite Patient Navigators help close the loop for current clinical needs and ongoing social service support, resulting in better outcomes, and fewer unnecessary ER visits.
+
+**Community Members have better outcomes:**
+"I never give up on trying to find a solution for my patients.”
+-RightSite Navigator
+
+RightSite Health helps patients solve their clinical and social needs by providing on-demand virtual access to ER doctors, connecting them to social services, getting prescriptions, and arranging transportation for appointments, if needed.
+
+**How we use funds:**
+Our goal is to make essential healthcare accessible to everyone. The RightSite Community Foundation funds services that directly help uninsured patients who can't access the healthcare system, and so use 911 and EMS for non-emergency needs. Funds are allocated only to patients within the community where the donation originated.
+
+For more information, please contact
+Dawn Dixon
+dawn.dixon@rightsitehealth.com
+rightsitefoundation.org
+
+**RIGHT SI+E COMMUNITY FOUNDATION Logo**
+
+**Footer:**
+Confidential
+38
+
+## Slide 39: Latest Case Study - United Patient 1/2
+
+**Front**
+
+**Case Highlight 4767**
++ 63 yo female, called 911 for ER dialysis.
+
+**Back**
+
+EMS activated, on-demand care from an ER doctor proved pivotal in facilitating patient access to necessary next-day dialysis, circumventing multiple unnecessary ambulance trips to the ER where she wouldn't have qualified for emergent dialysis. The RightSite Navigator arranged a timely, in-network GI appointment and coordinated round-trip, non-ambulance transportation.
+
+“I never thought anyone could help me figure all of this out—thank you!"
+Patient satisfaction: 10/10
+EMS time to release: 10 minutes
+
+Learn more about us at RightSiteHealth.com
+
+**Footer:**
+Confidential
+39
+
+## Slide 40: Latest Case Study - United Patient 2/2
+
+**63 yo female, called 911 for ER dialysis.**
+
+**Decision**
+
+*   **911**: Patient calls 911
+*   **Ambulance dispatched** to patient home
+*   **EMS Crew** assesses patient and determines non-emergent
+
+**Treatment**
+
+*   **RIGHT SI+E**: RightSite activated by EMS (15 sec.)
+*   **RightSite Navigator** completes intake and connects patient to board-certified ER doctor (90 sec.)
+*   **Board-Certified ER Doc** assesses patient, realizes she would not qualify for ER dialysis, and calls patient's dialysis center to arrange next-day outpatient dialysis (8 min.)
+
+**Navigation**
+
+*   **RightSite Navigator** continues with patient confirming dialysis appointment and arranging non-ambulance transportation
+*   **RightSite Navigator** completes 24hr follow up, expedites an in-network GI consultation, and organizes in-network non-ambulance transportation for her future medical visits
+
+**+ THE PROBLEM**
+A newly diagnosed ESRD patient suffered from nausea, vomiting, and diarrhea during dialysis, interrupting her session and resulting in the loss of her reserved dialysis chair. She visited the ER to address her GI symptoms occurring during dialysis, but the earliest GI specialist appointment was two months out.
+
+With dialysis required, and no reserved spot, the dialysis clinic directed her to obtain dialysis at the ER. She called 911/EMS for transportation to the ER for dialysis.
+
+**+ THE SOLUTION**
+**EMS**
+*   Received intake from on-scene medics and completed telehealth assessment
+*   Determine patient would not qualify for ER dialysis
+*   Called patient's dialysis center and arranged next-day outpatient dialysis
+*   RightSite ER doctor's assistance assured the patient avoided multiple ER visits over the weekend for for emergent dialysis evaluation.
+
+**RIGHTSITE ER DOCTOR**
+*   Confirmed dialysis appointment and arranged round trip non-ambulance transportation.
+*   Identified and scheduled and earlier, in-network GI appointment
+*   Arranged for non-ambulance transportation to future medical appointments.
+
+**RIGHTSITE NAVIGATOR**
+*   Confirmed dialysis appointment and arranged non-ambulance transportation.
+*   Identified and scheduled in-network GI consult sooner than scheduled 2 month out appointment.
+*   Arranged for non-ambulance transportation to future medical appointments.
+
+**EMS released** 10 min.
+
+**Footer:**
+Confidential
+40

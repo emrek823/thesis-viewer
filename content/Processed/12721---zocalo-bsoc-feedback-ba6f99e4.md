@@ -1,0 +1,66 @@
+---
+source_pdf: "https://drive.google.com/file/d/1KW5pDV5Hx6Osj26M_kAtvLyi6ZBBXGdU6O40qs252Eo/view"
+drive_folder: "Portfolio/Zocalo"
+type: portfolio
+company: Zocalo
+ingested: 2025-12-23
+original_filename: "12.7.21 - Zocalo BSoC Feedback.gdoc"
+---
+
+> **Original:** [View Original PDF](https://drive.google.com/file/d/1KW5pDV5Hx6Osj26M_kAtvLyi6ZBBXGdU6O40qs252Eo/view)
+
+Investors & Advisors -
+
+I wanted to ask for some help on a specific thread that is developing re: Blue Shield of California. Read below and let me know where you can help.
+
+Background:
+
+On December 7th I connected with Gil Duran on LinkedIn. He sent me a message wanting to learn more about Zócalo Health. After a good first chat, he connected me to Shannon Cosgrove, the BSC Director for Community Health. After two meetings she connected us to several other senior leaders. In early February, Gil connected us to two new contacts - Jennifer Miyamoto Echeverria (Director, Social Programs & Services) and Sandra Rose (Director, Health Transformation Implementation). Gil mentioned they were working on CalAIM. Gil also mentioned that Jennifer and Sandra might benefit from working with us to identify problem areas around Medicaid growth, especially with their CHA programs.
+
+BSoC knows that we are going to start D2C (July target for delivering virtual care) and they have communicated that they see value in our approach which will provide multi-disciplinary care team access that includes social, mental/behavioral health, & primary care engagement to improve enrollment, address provider shortages, and reduce avoidable ED utilization (their words). They like our proposed high-tech, high-touch model which centers promotores de salud as the quarterback of the patient relationship and our goal of demonstrating the ability to engage the millennial Latinx population and the potential value we can bring payors, employers, and risk-bearing entities.
+
+We have since signed an NDA with them and expect that they will be sharing some information in the near future they deem confidential/proprietary.
+
+Next Steps:
+
+We have a 30 minute call scheduled for March 16th at 8:30am PST.
+
+Ask:
+
+We believe that it is important for us to create new opportunities for Zócalo Health. I want to go into future meetings with a clear strategy that we can communicate to BSoC that is in line with their pain points.
+
+Can we back channel and get some intel on this group/division?
+
+Do you know any of the contacts mentioned above or do you have anyone in your network that might be connected?
+
+Do you know anything about these programs and how we can position Zócalo to help?
+
+Any general advice you can give to make sure the 03/16 meeting is as productive as possible?
+
+Abner Mason:
+
+This payer is likely submitting their bid for MediCAL. They will want to know how ZH can help them (as a commercial plan) to meet CalAIM targets and criteria.
+
+SD county is their big county. Some in LA. In LA, they have delegated to the public plan L.A. Care. Not sure what counties they will bid on but other commercial plans want to knock them out.
+
+Anthem, Blue Shield, Molina, HealthNet that are competing for the big counties.
+
+They are trying to figure out how to make their bid attractive to keep these big counties. They want to put into their bid all of these innovative things they are going to do. Look at CHCF as they have some good articles highlighting CalAim criteria.
+
+Will Johnson:
+
+See commentary across questions below - feel free to comment directly with any questions / follow ups.
+
+Broadly speaking, Abner is right on. The California Medicaid market, as a result of CalAIM, will be going through a period of potentially dynamic change. As such, carriers and platforms alike have seen this as an opportunity to take share of a market that has historically been dominated by county-based, public plans (e.g. LA Care, Inland Empire) and historical Medicaid players like HealthNet (Centene). Folks like BSoC are likely looking for ways to refine their pitch, and ultimately look more attractive in the bid process when benchmarked against CalAIM quality and innovation measures.
+
+Intel on Group / Division: The relative importance of these groups can vary from carrier to carrier depending on the focus for the plan. For a large Commercial plan like BSoC, they’ve likely been historically far more interested in slicing into LG / ASO arrangements alongside Kaiser / building more robust PPO offerings, vs building community / SDoH-driven infrastructure. With the advent of CalAIM and the relative opportunity it presents in the context of MediCal bids, this group is likely looking for interesting angles to both advance their pitch / bid and their team’s internal incentives and benchmarks.
+
+Relationship with Contacts: I can run this down and I do have some contacts who are connected, but I’d perhaps wait a bit before conducting any intros. My recommendation would be to get a stronger sense for the org’s goals and real decision makers prior to doing any intros. If you feel like you have a good handle on this already, let me know and we can discuss more tactical next steps.
+
+Program Knowledge: I am familiar with these programs (CalAIM, Medi-Cal) and think Abner highlighted some good points. Similar to our prior discussions, Medicaid is an “offensive” engagement game and all carriers are looking to find solutions for patient engagement. If I am BSoC, they probably have started mapping out both care delivery and patient engagement solutions by cohort (see quick and dirty example below) to bring into their pitch / bid. I imagine the state is going to want to see carriers bring a confluence of capabilities to the discussion, and, since the Public / historical Medicaid players will largely dominante the localized / community-driven infrastructure part of the pitch, they’re likely looking for a handful of differentiated angles to round out their current solution and compete with these entities. From some quick due diligence, it looks like most of their telehealth offering is delivered through TelaDoc and / or a health system partnership (e.g. Partnership with Adventist). I would flag there is a chance they’re looking at your solution as a mechanism to improve their LG / ASO production offering, but think the folks you’re working with are likely far more focused on CalAIM / Medi-Cal.
+
+General Advice: In the near term, I’d try to get a call or two set up with your current contacts at BSoC and learn a bit more about their goals to tease out any underlying motivations. Generally, I think the above commentary is likely what they’re looking for but would spend a bit more time getting to know the challenges of your customer here. I’d also ask yourself some tough questions about platform readiness and your ability to serve an enterprise client. BSoC will likely have a short leash, and may feel a sense of ownership of you if / when you deliver successfully on what they want. Those questions are more philosophical in nature and would strongly encourage you to do some thinking there.
+
+Note there’s prob a “Z” axis here that’s LOB or age-driven.
+
+Note there’s prob a “Z” axis here that’s LOB or age-driven.

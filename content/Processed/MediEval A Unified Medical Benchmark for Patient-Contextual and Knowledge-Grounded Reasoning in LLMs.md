@@ -1,0 +1,33 @@
+---
+title: 'MediEval: A Unified Medical Benchmark for Patient-Contextual and Knowledge-Grounded
+  Reasoning in LLMs'
+authors:
+- Zhan Qu
+- Michael Färber
+date: '2025-12-23'
+categories:
+- cs.CL
+- cs.AI
+pdf_url: https://arxiv.org/pdf/2512.20822v1
+arxiv_id: 2512.20822v1
+tags:
+- paper
+- alphaxiv/hot
+- topic/cs-CL
+- topic/cs-AI
+---
+
+# MediEval: A Unified Medical Benchmark for Patient-Contextual and Knowledge-Grounded Reasoning in LLMs
+
+**Authors:** Zhan Qu, Michael Färber
+
+**Date:** 2025-12-23 | **Categories:** cs.CL, cs.AI
+
+[PDF](https://arxiv.org/pdf/2512.20822v1) | [AlphaXiv](https://alphaxiv.org/abs/2512.20822v1)
+
+## Abstract
+
+Large Language Models (LLMs) are increasingly applied to medicine, yet their adoption is limited by concerns over reliability and safety. Existing evaluations either test factual medical knowledge in isolation or assess patient-level reasoning without verifying correctness, leaving a critical gap. We introduce MediEval, a benchmark that links MIMIC-IV electronic health records (EHRs) to a unified knowledge base built from UMLS and other biomedical vocabularies. MediEval generates diverse factual and counterfactual medical statements within real patient contexts, enabling systematic evaluation across a 4-quadrant framework that jointly considers knowledge grounding and contextual consistency. Using this framework, we identify critical failure modes, including hallucinated support and truth inversion, that current proprietary, open-source, and domain-specific LLMs frequently exhibit. To address these risks, we propose Counterfactual Risk-Aware Fine-tuning (CoRFu), a DPO-based method with an asymmetric penalty targeting unsafe confusions. CoRFu improves by +16.4 macro-F1 points over the base model and eliminates truth inversion errors, demonstrating both higher accuracy and substantially greater safety.
+
+## Notes
+

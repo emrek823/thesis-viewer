@@ -1,0 +1,160 @@
+---
+source_pdf: "https://drive.google.com/file/d/199SIj6Iyp3ikB1Y8XN1Pd1vYS3Q7U14ZDQ990V3MN2U/view"
+drive_folder: "Portfolio/Zocalo Health"
+type: portfolio
+company: Zocalo Health
+ingested: 2025-12-26
+original_filename: "Zocalo 3.18.22"
+---
+
+> **Original:** [View Original PDF](https://drive.google.com/file/d/199SIj6Iyp3ikB1Y8XN1Pd1vYS3Q7U14ZDQ990V3MN2U/view)
+
+Scope of services. When you speak to potential customers, what are the top 3-5 things they are asking for? You mentioned scope of services needs to be confirmed by the Medical Director (target Q2 2022). It would be great to marry this clinical perspective and feasibility/effectiveness of providing this care virtually with what potential customers are asking for.
+
+Customer acquisition. What are those strategies that will contribute to longer-term, more durable customer acquisition? Loved your question on the last call to each of us about creative acquisition strategies. As another example, the caregivers on Aidaly, which pays caregivers for the work they already do for family members, are ~50% Latino.
+
+Copy and other things that we don’t want to learn. 150 people on waitlist now. How do we engage them. What do we put in place?
+
+Goals for beta. What are key performance metrics for the beta? You mention retention and customer satisfaction as 2 key objectives. Any more clarity on specifics around retention (target %, over what timeline) and customer satisfaction (NPS or other)? Any other metrics that have bubbled to the top?
+
+Mariza: Success
+
+Revenue: >$300K ARR
+
+Questioning revenue? That makes sense
+
+Waitlist: >10K
+
+# of patients; 500 active users
+
+Retention - showing you can move past urgent care
+
+50% of patients came back for 2-3 visits - baseline
+
+75% of these patients hadn’t been to the doctor in 2 years
+
+Signs of bringing in family.
+
+Unnecessary pressure
+
+Care delivery in 6 states in 18 months
+
+Vs. dominating 3 states
+
+Competitive Series A: by end of year
+
+Series A objectives. What do you need to accomplish to raise a strong Series A? We've floated some of these ideas around in different conversations but it would be good to lay these out in detail as we prepare for beta. Also, how are you thinking about preparing for a potential market correction? What specific metrics / data points do you think would indicate Zocalo is being affected by a recessionary environment? We've been having this conversation with all of our portfolio companies.
+
+Target customer. Any change in thinking to the target customer you laid out a few weeks ago? Any additional insights on how to convert the rest of the family?
+
+Setting up PC w/ Daniel
+
+Washington and Texas set up coming
+
+EK: Cutting it close with July timeframe with Medallion - lot of stuff in parallel
+
+Insurance policy details - pulling together pro-formas, applications, crunchlist for about 30 different things
+
+Finish pro-forma this week and something for them to look at
+
+Over
+
+Demos with EHR stuff (Elation) + other products
+
+Pricing -
+
+Pricing model
+
+What would you prefer?
+
+Subscription model + per use fee for episode of care
+
+Antidote have family pricing
+
+Is that a good deal for them? High school education → masters degree? No one knows what high deductible plan means. What are these plans tailored for? Kids or chronic conditions
+
+Interview people
+
+X: Believe who is on our target market - willingness to pay. Give us a little bit and we’ll see how people respond to that
+
+EK:
+
+Learned at amazon
+
+Invite only
+
+Customer acquisition
+
+We’re not going to get very far if we market primary care
+
+Need to find out: Marketing around obesity, birth control, diabetes → messaging about certain things. How do you continue this longitudinally?
+
+Pre-pandemic for general
+
+Cough / Cold / flu
+
+UTI
+
+Depression / anxiety
+
+STI testing
+
+Latino + post pandemic is unknown
+
+We can’t automate this DTC brand either we need to know what gets going
+
+WE need people to trust here
+
+Google analytics for us (social vs. other channels)
+
+Hoopsuite vs. now?
+
+Cookies? We haven’t done anything
+
+Customer acquisition - bringing in big community organizers.
+
+Blue shield of CA
+
+CAL AIM RFP response
+
+Blue cross is big in SD + LA. Really trying to go through rural populations and other medicaid populations throughout the state. Tried the whole CHW model to try and engage
+
+Key pain points
+
+CHW tied to health plan automatically puts up some barriers and they haven’t been able to do anything. Really interested in our ideas
+
+After thinking about these rural communities, they struggle more and more because CHWs are not available
+
+How do CBOs, CHWs, and PCP
+
+8th meeting we’ve had - how do we build something without really optimizing for them? We don’t want it to be a distraction
+
+Trust is huge -
+
+Ashley
+
+I don’t want to hire full-time employees right now -
+
+Stud vs. mckinsey consultant
+
+Feel the crunch of the little things
+
+Felicia on board to take user research off the plate
+
+EHR will help me sleep a little bit better
+
+Little stressed out.
+
+Get Daniel across the line
+
+Response back from their counsel + Dan
+
+Filings take a couple weeks
+
+Texas - few weeks later
+
+Washington - 30 days
+
+California - no problem
+
+Turned down -

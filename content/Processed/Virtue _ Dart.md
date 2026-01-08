@@ -3,7 +3,7 @@ granola_id: 97d22f42-9e6b-4c39-a75d-b5c830870612
 title: "Virtue / Dart"
 type: note
 created: 2025-12-09T18:30:18.029Z
-updated: 2025-12-10T04:37:39.311Z
+updated: 2025-12-23T21:14:31.367Z
 attendees:
   - aakruti@darthealthai.com
   - sd@virtuevc.com

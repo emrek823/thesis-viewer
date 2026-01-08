@@ -1,0 +1,36 @@
+---
+title: 'EEG-DLite: Dataset Distillation for Efficient Large EEG Model Training'
+authors:
+- Yuting Tang
+- Weibang Jiang
+- Shanglin Li
+- Yong Li
+- Chenyu Liu
+- Xinliang Zhou
+- Yi Ding
+- Cuntai Guan
+date: '2025-12-13'
+categories:
+- cs.LG
+pdf_url: https://arxiv.org/pdf/2512.12210v1
+arxiv_id: 2512.12210v1
+tags:
+- paper
+- alphaxiv/hot
+- topic/cs-LG
+---
+
+# EEG-DLite: Dataset Distillation for Efficient Large EEG Model Training
+
+**Authors:** Yuting Tang, Weibang Jiang, Shanglin Li, Yong Li, Chenyu Liu...
+
+**Date:** 2025-12-13 | **Categories:** cs.LG
+
+[PDF](https://arxiv.org/pdf/2512.12210v1) | [AlphaXiv](https://alphaxiv.org/abs/2512.12210v1)
+
+## Abstract
+
+Large-scale EEG foundation models have shown strong generalization across a range of downstream tasks, but their training remains resource-intensive due to the volume and variable quality of EEG data. In this work, we introduce EEG-DLite, a data distillation framework that enables more efficient pre-training by selectively removing noisy and redundant samples from large EEG datasets. EEG-DLite begins by encoding EEG segments into compact latent representations using a self-supervised autoencoder, allowing sample selection to be performed efficiently and with reduced sensitivity to noise. Based on these representations, EEG-DLite filters out outliers and minimizes redundancy, resulting in a smaller yet informative subset that retains the diversity essential for effective foundation model training. Through extensive experiments, we demonstrate that training on only 5 percent of a 2,500-hour dataset curated with EEG-DLite yields performance comparable to, and in some cases better than, training on the full dataset across multiple downstream tasks. To our knowledge, this is the first systematic study of pre-training data distillation in the context of EEG foundation models. EEG-DLite provides a scalable and practical path toward more effective and efficient physiological foundation modeling. The code is available at https://github.com/t170815518/EEG-DLite.
+
+## Notes
+

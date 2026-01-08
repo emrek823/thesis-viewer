@@ -1,0 +1,109 @@
+---
+source_pdf: "https://drive.google.com/file/d/1UmXYviBDom6Ha7GSZNTMIaqgi9CzsX6w/view"
+drive_folder: "Portfolio/Ryght/Ryght - Data Room/3. Commercial/SaaS Enterprise Contracts"
+type: portfolio
+company: Ryght
+ingested: 2025-12-27
+original_filename: "Complete_with_DocuSign_Ryght_Inc_-_BEK_Heapd.pdf"
+---
+
+> **Original:** [View Original PDF](https://drive.google.com/file/d/1UmXYviBDom6Ha7GSZNTMIaqgi9CzsX6w/view)
+
+```markdown
+DocuSign Envelope ID: 12CC302B-55E8-4303-9AAC-3B83F68242C3
+
+ryght.ai
+
+# RYGHT, INC. ORDER FORM
+
+**BEKHealth**
+85 North Main Street
+Suite 1028
+Brandford, CT 06405
+dlevin@bekhealth.com
+919-923-7801
+
+| Effective Date                          | Initial Subscription Term                                                                                                                                                             |
+| :-------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Upon the go-live of copilot 1 by BEK Health | One Year. Renewal shall occur automatically on the one (1) year anniversary of the Effective Date ("Renewal Date") unless terminated with written notice 30 days or less prior to Renewal Date. |
+
+| Product                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Quantity | Cost per Unit | Frequency |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- | :------------ | :-------- |
+| **Software Subscription**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |          |               |           |
+| One year Ryght "Enterprise Tier 1" subscription                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |          |               |           |
+| - Entry-level baseline enterprise subscription. Subscription shall only go into effect when first co-pilot is complete. Upon completion, Client shall have 7 days to terminate subscription without penalty, otherwise it shall go into effect on Effective date.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | 1        | $25,000       | Annual    |
+| - BEKHealth and Ryght will work in good faith to create a sustainable subscription model with the understanding that Scaling up of the subscription shall align with BEKHealth's revenue model. For example, additional subscription shall increase along with BEKHealth's additional subscription fees generated from this offering. Variables include # sites, # trials etc.                                                                                                                                                                                                                                                                                                                                                                                                                                        | TBD      | Annual        |           |
+| **Total**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | 1        | $25,000       |           |
+
+All values quoted in USD.
+
+**Pricing Expires:** 1.31.24
+
+## STATEMENT OF WORK
+
+Ryght shall develop a number of co-pilots with/for BEK Health and shall invest into such development.
+
+**Co-Pilot #1 will be:**
+
+*   **Clinical Research Coordinator GenAI Assistant.** The vision for this co-pilot is to provide a dashboard and co-pilots for CRCs to solve the industry problem resulting in overwork and undersupply of CRCs. By providing the "CRC Coach" as a standalone AI application (and subscription), sites will be able to scale their resources to do more.
+    *   Scope end-to-end user requirements and copilot interface
+        *   ☐ Protocol/Trial Summarization
+            *   Develop a query tool for CRCs to quickly obtain answers to trial-specific questions by analyzing multiple documents provided by sponsors, such as protocols, brochures, and update letters.
+        *   ☐ Patient Communication
+            *   Generate messaging for PI's or coordinators to convey the details of a trial in multiple languages and reading levels
+        *   ☐ Additional features outlined for a minimal viable product after gathering feedback from BEK, research sites or customers such as Javara.
+        *   ☐ Data integration (BEK Health data):
+            *   Discover necessary data sources for interpolation
+            *   Determine secure methods for connecting sources
+            *   If necessary, develop connectors
+            *   Structure data for access
+    *   Develop orchestration process, prompts and copilot interface
+    *   Outline testing process and acceptance criteria
+
+DocuSign Envelope ID: 12CC302B-55E8-4303-9AAC-3B83F68242C3
+
+*   Setup deployment process for iterative development
+*   Ryght resources: solution architect, AI / data engineer, customer success specialist
+*   BEK Health resources: Dave Levin or designee; any IT resources for data integration
+*   Ryght commits to a carve out such that the Clinical Research Coordinator GenAI Assistant shall not be marketed, nor sold to the following organizations for a time period of 6 months from completion:
+    *   Deep6 AI
+    *   Haystack Health
+    *   Aspen Insights
+    *   Dyania Health
+    *   TriNetX
+    *   Sieve Health
+
+## Additional co-pilots discussed for future development:
+
+*   **Sponsor feasibility**
+    *   New or augmented product offering BEK Health can monetize with biotech and pharmaceutical company customers
+    *   Generative AI experience for BEK Health customers to gain insights into patent matching counts, site research capabilities, principal investigator background, diversity information, competing trial data
+*   Cohorting patients for intent or desire to participate in a clinical trial
+*   Predictive models to identify to new successful principal investigators
+*   Summarization or structuring of unstructured healthcare data to augment BEK Health existing natural language processing
+*   Protocol deconstruction to identify inclusion/exclusion criteria, relevant ICD codes and generate queries
+*   Platform Improvements using GenAI
+*   Site education tools such as; how to be a principal investigator, regulatory, budgets and contract education.
+
+## TERMS AND CONDITIONS
+
+1.  By signing this Order Form or submitting a purchase order or other ordering document to Ryght, Inc. ("Ryght") in connection with this Order Form, Customer hereby orders from Ryght the software and services described in this Order Form and agrees to be bound by the Terms of Service, available at [link] (the "Terms of Service"), together with all applicable Additional Terms identified therein. Capitalized terms used in this Order Form but not defined herein shall have the meanings set forth in the Terms of Service.
+2.  Fees do not include any taxes, duties, or other governmental charges, all of which are Customer's responsibility.
+3.  This Order Form, which incorporates by this reference the Terms of Service and all Additional Terms and other terms set forth therein (collectively with the Order Form, this "Agreement"), is made and entered into by and between Ryght and Customer, effective as of the Effective Date specified above. If there are inconsistencies or conflicts between the terms of this Order Form and the Terms of Service, the terms in this Order Form will take precedence.
+4.  This Order Form commences as of the Effective Date set forth above and: (a) will remain in effect for the duration of the Initial Subscription Term set forth above; (b) renewal shall occur automatically on the one (1) year anniversary of the Effective Date ("Renewal Date") unless terminated with written notice 30 days or less prior to Renewal Date; and (c) can only be terminated by Customer if Ryght fails to cure a material breach of this Agreement within 30 days of receiving notice from Customer of such material breach.
+
+## Executed and Agreed:
+
+| CUSTOMER                  | RYGHT, INC.                 |
+| :------------------------ | :-------------------------- |
+| DocuSigned by:            | DocuSigned by:              |
+| Dave Levin                |                             |
+| **Signature**             | **Signature**               |
+| 9812FF6F4D6...            | AB8566447E...               |
+| Dave Levin                | Tyrone Richardson           |
+| **Name**                  | **Name**                    |
+| CEO                       | Chief Commercial Officer    |
+| **Title**                 | **Title**                   |
+| 1/31/2024                 | 1/25/2024                   |
+| **Date**                  | **Date**                    |
+```

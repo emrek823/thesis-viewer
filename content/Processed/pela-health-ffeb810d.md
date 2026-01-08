@@ -1,0 +1,275 @@
+---
+source_pdf: "https://drive.google.com/file/d/14HxqaOS9RNA5gzhIyT4oCJFyK9SR9IoIsbzm8dyqHT4/view"
+drive_folder: "Research"
+type: research
+
+ingested: 2025-12-26
+original_filename: "Pela Health.gslides"
+---
+
+> **Original:** [View Original PDF](https://drive.google.com/file/d/14HxqaOS9RNA5gzhIyT4oCJFyK9SR9IoIsbzm8dyqHT4/view)
+
+## Slide 1: Pela Health Logo
+
+Pela Health
+
+## Slide 2: Delivering Care to your Doorstep
+
+# Delivering Care to your Doorstep
+
+It's time we meet assisted living facility patients where they are to improve health outcomes and prevent costlier forms of care.
+
+## Slide 3: ALF patients are more complex than patients at home
+
+# ALF patients are more complex than patients at home
+
+| Category | Value | Description |
+|---|---|---|
+| **1M+ Beds** nationally | 6.8% CAGR | (Implied growth rate for beds) |
+| Avg Age of ALF Patient | **84** | |
+| Patients Visited On-Site | **47%** | |
+| Patients with ≥2 conditions | **75%** | |
+| Patients Hospitalized | **50%** | |
+
+*(No explicit data points for the line chart itself are provided, but the growth rate of 6.8% CAGR is mentioned for 1M+ Beds nationally)*
+
+## Slide 4: Current primary care options leave too much to be desired
+
+# Current primary care options leave too much to be desired
+
+*   No clinical services performed on-site
+*   Sporadic visits from PCPs with large panels
+
+## Slide 5: Current Primary Care Trends in ALFs Need a Fix
+
+### Current Primary Care Trends in ALFs Need a Fix
+
+*   Poor communication between providers, resident families, and ALF staff
+*   Broken care coordination and **fragmented transitions of care**
+*   Increased ED visits, **hospitalizations**, and movement to nursing homes
+*   Siloed data preventing predictive analytics and targeted care interventions
+
+## Slide 6: Our Response to Fragmented, Backwards Care
+
+# Our Response to Fragmented, Backwards Care
+### A tech-enabled service delivering proactive primary care for ALF residents
+
+*   Coordinated Care Teams
+*   Collaborative Technology
+*   Advanced Analytics
+
+## Slide 7: Collaborative Technology
+
+## Collaborative Technology
+
+Our proprietary technology platform allows us to collaborate with facilities by:
+
+*   Unifying medical records and documentation between physicians and the ALF staff
+*   Automate and sync communications between residents, residents' families, the physician team, ancillary healthcare providers, and ALF leadership / staff
+*   Automate visit summaries for families to track care plan progress
+*   Remotely monitor patients and build a novel dataset linking patients to real-time vitals data
+
+## Slide 8: Coordinated Care Teams
+
+## Coordinated Care Teams
+
+Roving teams of primary care doctors and their staff to visit panels of 200 patients per NPI provide:
+
+**For Residents**
+*   Routine visits with as-needed urgent care services
+*   Activities for patients (e.g., tai chi, yoga, etc.) + ongoing counseling services
+
+**For Families**
+*   "Office Hours" for families wanting to communicate with providers
+*   Centralized medical information and point of contact
+
+**For Facilities**
+*   On-demand training and protocol writing
+*   Quarterly live training for clinical staff members
+*   Pharmacy consultant for medication reviews and reconciliation
+
+## Slide 9: Advanced Analytics
+
+## Advanced Analytics
+
+Our platform allows for a proprietary, unmatched data-driven view of the geriatric patient's lifecycle. We will use this to:
+
+*   Facilitate **prescription tracking** to monitor **medication adherence** and enable medication **response alerts**
+*   Predict incidents and acute events (e.g., falls, UTIs, strokes)
+*   Guide clinical processes in facilities to **reduce unnecessary transfers of care**
+*   Manage care gaps and **identify patients at-risk** of missing preventive services
+
+## Slide 10: Pilot Results (pre-funding)
+
+# Pilot Results (pre-funding)
+
+*   10 partnering ALF + 2 ILF sites with active patients
+*   > $140,000 revenue generated with 1 APRN
+
+**MoM Growth: 13.29%**
+
+**Patient Count (based on units of 99336) Growth Chart Data:**
+
+| Month | Patient Count |
+|-------|---------------|
+| 2     | ~30           |
+| 4     | ~40           |
+| 6     | ~55           |
+| 8     | ~90           |
+| 10    | ~120          |
+| 12    | ~135          |
+
+**Partner Logos:**
+*   R (Magnolia Senior Living)
+*   Magnolia SENIOR LIVING
+*   thrive senior living
+*   SAVANNAH GRAND
+*   BROOKDALE SENIOR LIVING
+
+## Slide 11: Market size for clinical services in LTC
+
+# Market size for clinical services in LTC
+
+**Market Size Data:**
+
+*   Total American long-term care persons: **$36B**
+*   Total number of American ALF beds currently: **$3B**
+*   First metro markets we will approach in GA/AL: **$118M**
+
+**Other Expansion Opportunities**
+*   Clinical research site network
+*   Predictive and diagnostic algorithms
+*   Managed Care Network
+
+## Slide 12: Revenue Model
+
+# Revenue Model
+
+Medicare-covered care with two elements: FFS and Shared Savings
+
+*   **Medicare Fee-for-Service**
+    *   ~**$3,984 PMPY** (Per Member Per Year)
+*   **Shared Savings Payment**
+    *   ~**$180-500 PMPY**
+
+## Slide 13: FFS Revenue Model
+
+# FFS Revenue Model
+
+**Medicare Fee-for-Service: ~$3,984 PMPY**
+
+Breakdown of FFS Revenue Model PMPY:
+
+*   **Remote Monitoring**: $1,270 PMPY
+*   **Annual Wellness**: $170 PMPY
+*   **Cognitive Assess**: $283 PMPY
+*   **Chronic Care Mgmt**: $576 PMPY
+*   **Routine Visits**: $1615 PMPY
+*   **Transition Care Visits**: $70 PMPY
+
+## Slide 14: Profit Margins (National Median)
+
+# Profit Margins (National Median)
+
+| Metric                   | 200 Patients (1 MD) | 800 Patients (4 NPs, 1 MD) |
+| :----------------------- | :------------------ | :------------------------- |
+| **ARR**                  | $833,237            | $3,332,946                 |
+| **Contribution Margin**  | $355,237            | $1,890,946                 |
+| **Contribution Margin %**| 42%                 | 57%                        |
+| **CM PMPY**              | $1,776              | $2,364                     |
+
+## Slide 15: Competitors
+
+# Competitors
+
+*(2x2 matrix with "Focus on residential care communities" on the Y-axis (top) and "Analytical Depth" on the X-axis (right) and "Focus on community-dwelling" on the Y-axis (bottom))*
+
+**Top Right (High Residential Focus, High Analytical Depth):**
+*   Pela Health
+
+**Top Left (High Residential Focus, Low Analytical Depth):**
+*   PINE PARK HEALTH
+
+**Bottom Left (Low Residential Focus / Independent PCPs, Low Analytical Depth):**
+*   eventus
+*   Visiting Physicians Association (VPA)
+
+**Bottom Right (Low Residential Focus / Community-dwelling, High Analytical Depth):**
+*   Landmark
+
+## Slide 16: Roadmap
+
+# Roadmap
+
+| Year | Phase | Description                                    |
+| :--- | :---- | :--------------------------------------------- |
+| 2021 | Experiment | Experiment with 10 ALFs/180+ patients          |
+| 2022 | (Seed)      | Prove out unit economics and behavior        |
+| 2023 | (Series A)  | Grow care pods approach + take on more risk  |
+| 2024 | (Series B+) | Move towards MA + begin enabler layout       |
+
+## Slide 17: Milestones
+
+# Milestones
+
+### Atomic Level Evidence (Seed)
+*   Form key internal team
+*   Finish out family and facility-interacting software
+*   Build one care team for 800 patients
+*   Identify meaningful improvements in RAF, patient outcomes, quality metrics, and unit economics
+*   Make meaningful progress in predictive algorithms
+
+### Increase Risk Appetite (Series A)
+*   Strike strategic deals with facility chain operators and owners
+*   Meet FFS panel threshold for participating in self-owned MSSP ACO
+*   Begin subcapitation conversations with enablers + MA plans
+*   Begin validating and deploying algorithms
+
+### Move to Global Capitation (Series B+)
+*   Begin process of enrolling as a pilot MA
+*   Validate unit economics of our increased risk bearing care model
+*   Retool technology for use in enabler contexts in competitive markets
+*   Continue validating and testing algorithms for move towards licensing
+
+## Slide 18: Team
+
+# Team
+
+**Sharvil Patel**
+*   Emory University, Quantitative Theories and Methods
+*   Deep clinical informatics and insurance design research background
+*   Reimbursement consulting for PCPs and LTCFs
+
+**Piyush Patel, MD**
+*   10+ years as a PCP focusing on geriatrics
+*   Medical director for 5+ nursing facilities
+*   Preferred medical provider for 5+ assisted living facilities
+
+## Slide 19: We are raising $3.5M for our seed round.
+
+# We are raising $3.5M for our seed round.
+
+| Source of Use           | Monthly Costs | One-Time Fees |
+| :---------------------- | :------------ | :------------ |
+| CEO                     | $6,666.67     |               |
+| COO/Strategic Finance   | $6,666.67     |               |
+| Senior SWE              | $12,500.00    |               |
+| Junior SWE              | $8,333.33     |               |
+| CMO                     | $6,666.67     |               |
+| Legal Fees              |               | $100,000.00   |
+| 1 MD                    | $29,166.67    |               |
+| 4 NPs                   | $33,333.33    |               |
+| 10 MAs                  | $25,000.00    |               |
+| 800 Watches             |               | $152,000.00   |
+| Samsung Watch Developer |               | $50,000.00    |
+| Particle                | $5,000.00     |               |
+| Miscellaneous Costs     |               | $50,000.00    |
+| **24 Months of Runway** |               | **$3,552,000.00** |
+
+## Slide 20: Thank You
+
+# Thank You
+
+Contact:
+Sharvil Patel, CEO
+sharvil@pelahealth.com

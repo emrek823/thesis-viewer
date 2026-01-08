@@ -1,0 +1,31 @@
+---
+title: 'From artificial to organic: Rethinking the roots of intelligence for digital
+  health'
+authors:
+- Prajwal Ghimire
+- Keyoumars Ashkan
+date: '2025-12-23'
+categories:
+- cs.AI
+pdf_url: https://arxiv.org/pdf/2512.20723v1
+arxiv_id: 2512.20723v1
+tags:
+- paper
+- alphaxiv/hot
+- topic/cs-AI
+---
+
+# From artificial to organic: Rethinking the roots of intelligence for digital health
+
+**Authors:** Prajwal Ghimire, Keyoumars Ashkan
+
+**Date:** 2025-12-23 | **Categories:** cs.AI
+
+[PDF](https://arxiv.org/pdf/2512.20723v1) | [AlphaXiv](https://alphaxiv.org/abs/2512.20723v1)
+
+## Abstract
+
+The term artificial implies an inherent dichotomy from the natural or organic. However, AI, as we know it, is a product of organic ingenuity: designed, implemented, and iteratively improved by human cognition. The very principles that underpin AI systems, from neural networks to decision-making algorithms, are inspired by the organic intelligence embedded in human neurobiology and evolutionary processes. The path from organic to artificial intelligence in digital health is neither mystical nor merely a matter of parameter count, it is fundamentally about organization and adaption. Thus, the boundaries between artificial and organic are far less distinct than the nomenclature suggests.
+
+## Notes
+

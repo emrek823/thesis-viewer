@@ -3,7 +3,7 @@ granola_id: b8e9f15c-6f51-4686-a36f-022dac1b866e
 title: "Virtue / Autonomy"
 type: note
 created: 2025-12-08T19:31:08.642Z
-updated: 2025-12-08T20:13:14.017Z
+updated: 2025-12-23T13:46:46.268Z
 attendees:
   - natalie@autonomyhealth.io
   - rooshil@autonomyhealth.io

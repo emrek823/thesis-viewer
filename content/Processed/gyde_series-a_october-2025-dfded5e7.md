@@ -1,0 +1,814 @@
+---
+source_pdf: "https://drive.google.com/file/d/1zdPhBFSH2xv2we0zW4eaDUw-AHCDjwy0/view"
+drive_folder: "Research"
+type: research
+
+ingested: 2025-12-27
+original_filename: "Gyde_Series A_October 2025.pdf"
+---
+
+> **Original:** [View Original PDF](https://drive.google.com/file/d/1zdPhBFSH2xv2we0zW4eaDUw-AHCDjwy0/view)
+
+# Gyde Pitch Deck
+
+## Slide 1: The first AI-native insurance, wealth, and health brokerage.
+October 2025
+
+*Gyde
+Confidential & Proprietary © 2025 Gyde. All rights reserved.
+
+## Slide 2: By The Numbers
+Gyde progress in four months
+
+*Gyde
+
+**$55-60M**
+in estimated 2026 revenue under
+signed and verbal LOIs
+
+**$5M**
+In estimated 2026 EBITDA under signed
+and verbal LOIS
+
+**2**
+AI applications shipped
+
+**3**
+Additional Targets in late stage
+discussions for acquisition in 1H 2026
+
+Built by our world class team
+
+Logos:
+Oscar
+Spark+
+Stripe
+Zocdoc
+BAIN & COMPANY
+PROCORE
+VISTA
+scale
+The Baldwin Group
+
+## Slide 3: Vision and Belief
+*Gyde
+
+We believe the broker should be a
+comprehensive guide for consumers and
+employers across insurance, wealth, and
+health needs—
+
+and a critical partner to risk-bearing
+entities as they seek to manage the
+populations they serve.
+
+## Slide 4: Background
+*Gyde
+
+Brokers are the
+entry and triage
+point to healthcare,
+insurance, and other
+financial products
+but remain
+underappreciated
+and underleveraged
+
+**Partner**
+Payer & Provider
+
+**Product**
+Insurance & Financial
+Service Products
+
+**Broker**
+
+**Client**
+Consumer &
+Employer
+
+My partner and I just had a baby,
+and I need a life insurance policy.
+What do you recommend?
+
+I'm turning 65 next year. Can you
+help me find a Medicare policy?
+
+I just received a claim from my
+provider that I don't understand.
+Can you translate for me?
+
+I haven't received my ID card and
+not sure that my coverage has
+effectuated. Can you help?
+
+Can you help me find an in-network
+provider who accepts my new
+health plan?
+
+The fully insured rate increases are
+crippling us. What options do we
+have to find savings?
+
+## Slide 5: Problem
+*Gyde
+
+Operational burdens put service and scale at odds, hindering
+growth and suppressing the value they could provide
+
+**Rising Administrative Burden**
+“My business has gotten so
+large and administratively
+burdensome, I only have the
+capacity to work on renewals,
+which take far longer than
+they used to.”
+
+**Capacity Constraints**
+"I have to hire more customer
+service team members to
+service my book, and
+increased plan switching has
+made serving our customers
+more difficult.”
+
+**Comfort & Capability Challenges**
+“I have limited capacity to
+cross sell, and, even when I do,
+I'm not comfortable offering
+other products due to fear of
+making a mistake."
+
+## Slide 6: Solution
+*Gyde
+
+Brokers need a partner.
+
+Gyde is building a brokerage transformation machine
+to deliver unprecedented economic value for the
+brokerage and deeper risk-bearing entity partnerships.
+
+**M&A Engine**
+
+**AI Platform**
+
+**Data & Signals**
+
+*   Deeper Strategic Partnerships
+*   Unprecedented Brokerage Economics
+*   Next Gen Member Experience
+
+## Slide 7: Our Founders
+*Gyde
+
+Led by industry natives with proven track records of delivering
+category-defining products and driving rapid growth
+
+**Will Johnson**
+CEO & Co-Founder
+Over 10 years at Oscar Health, scaled
+revenue from ~$100M to $11B. Built 75% of
+Oscar's broker revenue, and a 60K agent
+network. Oversaw design and
+implementation of Oscar's broker portal.
+Previously in healthcare and tech
+strategy at Bain.
+
+**Sam Wiener**
+COO & Co-Founder
+Led growth at Spark Advisors, scaling from
+50k to 400k members and 500 to 7.5k brokers
+in 3 years. Responsible for Spark's
+go-to-market and broker ops strategy.
+Previously ran national sales and ops at
+Oscar Health, launching new markets and
+products.
+
+Logos:
+oscar
+Spark
+BAIN & COMPANY
+Zocdoc
+
+## Slide 8: Our Team
+*Gyde
+
+We've assembled a world-class team with experience spanning
+healthcare, insurance, AI, private equity, and software
+
+**SALES**
+*   **Holland Finley**
+    Chief of Staff
+    Manager, Bain & Co
+*   **Brian Keene**
+    Market Director
+    Director of Growth, The Baldwin Group
+*   **Sebastian Alcantara**
+    Market Development Executive
+    Senior Sales Executive, Oscar Health
+*   **Clayton Wilson**
+    Market Development Executive
+    Enterprise SDR, Procore Technologies
+
+**VALUE CREATION**
+*   **Nick Keeley**
+    Head of Value Creation
+    Operating VP, Resurgens Partners
+*   **Christian Robinson**
+    Forward Deployed Specialist
+    Strategic Projects Lead, Scale AI
+
+**MARKETING & OPS**
+*   **Dan Marshall**
+    Go-To-Market Lead
+    Partnerships Lead, Plannery
+*   **Makee Anderson**
+    Growth Marketing Associate
+    Fulbright Fellow
+
+**ENGINEERING**
+*   **Enrique Espaillat**
+    AI Engineer
+    Senior SWE, Stripe
+*   **George Quievryn**
+    AI Engineer
+    Assc Director of Engineering, Oscar Health
+*   **Michael Lee**
+    AI/ML Engineer
+    ML Engineer, Capital One
+*   **Andrew Li**
+    AI/ML Engineer
+    SWE, Stripe
+*   **David Winder**
+    Infra Engineer
+    Sr Director of Core Technology, Oscar Health
+
+## Slide 9: Our Model
+*Gyde
+
+Building the
+brokerage
+transformation
+engine
+
+—where disciplined
+M&A and an AI-centric
+approach to value
+creation accelerate our
+model
+
+**1. Acquire Rapidly with Discipline**
+Acquire great agencies at fair
+prices with a productized,
+AI-enabled M&A motion.
+
+**2. Transform Agency with Gyde AI**
+Leverage AI applications
+to unburden the broker and
+drive market leading growth.
+
+**3. Fuel Value Creation**
+Deploy operational expertise and
+partner directly with agency teams
+to expand margins.
+
+**4. Deliver a Great Owner Experience**
+Deliver an agency owner
+oriented, NPS focused
+approach to create a wildly
+promotional owner base.
+
+**5. Generate Referrals**
+High NPS owners drive
+referrals to mission-aligned
+agencies willing to be
+acquired at fair prices.
+
+## Slide 10: LOI Snapshot
+*Gyde
+
+We acquire great agencies at fair multiples across target segments
+
+Protecting Against
+Subsidy Expiration:
+$5M paid upfront,
+remaining held in escrow
+and trued up based on
+book size in May 2026.
+Remaining payments
+paid out in three equal
+payments in June of
+2026, 2027, and 2028.
+
+| | IFP Co | MA Co | EB Co |
+| :---------------------- | :------------------------------------------------ | :---------------------------------- | :----------------------------------------------- |
+| **Why we partnered** | National scale, ICHRA ready, and tech forward owner | Palm Beach's top rated MA Agency | Growth oriented owners with deep Southeast networks |
+| **Est. 2026 Revenue** | $55M\* | $1.8M | $1.6M |
+| **Est. 2026 EBITDA** | $4M | $180K | $700K |
+| **Location** | Florida | Florida | Georgia |
+| **Core Product** | Individual & Family Plans | Medicare Advantage | Employee Benefits |
+| **LOI Status** | Signed | Signed | Sending LOI |
+| **Deal Structure** | 51% Acquisition 8x EBITDA Four Year Earn Out | 81% Acquisition 2.88x Revenue Four Year Earn Out | 100% Acquisition 10x EBITDA Four Year Earn Out |
+
+\*2025 Revenue is ~$70M but we assume decline due to expected subsidy expiration
+
+## Slide 11: Wedge Market
+*Gyde
+
+Execute where others struggle, and move up market over time
+
+*   We remain convicted that the Southeast and Southwest are target geos, but will likely expand to Midwest and / or Mountain West in mid to late 2026
+*   We will focus 2026 efforts on the $1-$10M revenue segment to both learn, but also to attack the segment where our peer group is less active
+*   This segment also remains heavily fragmented, with significant growth potential given their limited resources
+
+| Category | Count |
+| :--------------------------------- | :------ |
+| US Insurance Agencies | 134,000 |
+| MA, EB, & IFP Agencies | 33,500 |
+| Southeast / Southwest Agencies | 20,100 |
+| Agencies Doing $1-$10M Revenue | 6,633 |
+| Independent Agencies in Category | 5,306 |
+
+## Slide 12: M&A Pipeline Performance
+*Gyde
+
+Proven ability to convert targets rapidly, with a robust pipeline
+
+| | Total Deals | Stage Conversion | Avg. Duration (Days) | Total Revenue |
+| :------------------------ | :---------- | :--------------- | :------------------- | :------------ |
+| **Meeting Set** | 63 | 43% | 16 | $229.7M |
+| **Discovery Complete** | 27 | 62% | 10 | $153.6M |
+| **Demo Complete** | 17 | 71% | 17 | $112.8M |
+| **Finance Review Complete** | 12 | 67% | 20 | $91.6M |
+| **Onsite Complete** | 8 | 38% | 14 | $75.7M |
+| **Verbal to distribute LOI** | 3 | 67% | 15 | $58.4M |
+| **Signed** | 2 | - | N/A | $56.8M |
+
+**Key Win Themes**
+
+**AI Platform Excitement**
+The market is excited about the impact
+AI could have on their business, and
+recognizes Gyde as the future market
+leader.
+
+**Model Differentiation & Deal Making**
+Gyde's AI-driven model and team are
+universally cited as unique. Nobody is
+going to market the way we are, and we
+are confident in our ability to structure
+deals that balance owner's needs with
+Gyde's strategy.
+
+**Pipeline Velocity**
+Gyde has driven pipeline velocity within
+our target segment, without any brand
+awareness or PR, and have a healthy
+pipeline built for 2026.
+
+## Slide 13: Gyde Platform
+*Gyde
+
+Unlocking value
+through the first
+AI-native application
+suite, built by Gyde.
+
+Automates the busy work and lets
+brokers focus on what matters: their clients.
+
+Renewals
+Client Service
+Cross-Selling
+
+**Chat Transcript Snippets:**
+
+*   **Gyde:** Looks like you have a gap in your dental coverage, would you like to see some options for supplemental dental coverage?
+    *   **User:** Yes
+*   **Gyde:** Great. Let's set up an appointment to talk about this with George.
+    *   **User:** Julie
+*   **Gyde:** Hi Julie, this is Gyde—your broker George's virtual assistant. Your Medicare coverage is coming up for renewal. Would you like to schedule a time to review your current plan with your broker?
+    *   **User:** Yep, that'd be great.
+*   **Gyde:** Okay, let's set up a time for you to chat with George. How's next Tuesday at 2pm, 3pm, or 4pm CT?
+
+**Quote:**
+"What Gyde is
+building is the
+dream. Q4 is
+turning out to be
+just a lot more
+work. I'm working
+harder than all of
+my friends, I can
+tell you that. I can't
+keep doing this."
+
+## Slide 14: Gyde Platform
+*Gyde
+
+Automatically reaches out,
+schedules plan reviews,
+confirms auto renewal intent,
+and captures data and signals
+
+Renewals
+Client Service
+Cross-selling
+
+**Automated Chat Transcript Snippets & Calendar:**
+
+*   **Gyde:** Hi, this is Gyde. I'm George Bell's Renewal Assistant. Is this Julie Wilson?
+    *   **User:** Yes, this is Julie.
+*   **Gyde:** Hi Julie, so nice to meet you. I'm reaching out to remind you that we're currently in Medicare Annual Enrollment Period, which runs from October 15 through December 7. This is the time each year when you can review your coverage and make any changes if needed.
+*   **Gyde:** George is offering plan reviews during AEP to make sure you're still in the best plan for your needs. Would you like me to help schedule a time for you to meet with him?
+    *   **User:** Yes, that would be great. I'd like to go over my options.
+*   **Gyde:** Absolutely. Do you prefer mornings or afternoons?
+    *   **User:** Mornings are best for me.
+*   **Gyde:** I have you down for 9:30am on October 3rd with George.
+    *   **User:** I just realized I have a conflict. Is there another available time?
+*   **Gyde:** Of course. I remember you said mornings work best. George has a 11:30am EST opening that day. Does that work?
+    *   **User:** Yes, that works. Can you book it?
+*   **Gyde:** No problem! I've updated your appointment with George to Friday, October 3rd at 11:30am EST.
+
+**George's Calendar**
+*   **8 AM**
+*   **9 AM**
+*   **10 AM**
+    *   Maria S. | Gyde Booking
+        9:30-10:30
+*   **11 AM**
+*   **12 PM**
+*   **1 PM**
+*   **2 PM**
+    *   Robert M. | Gyde Booking
+        1:30-2:30
+*   **3 PM**
+
+**Campaigns designed around each key open enrollment deadline**
+
+**Automatically handles:**
+*   Enrollment period reminders
+*   Scheduling (and rescheduling) renewal meetings with their agent.
+*   Key clinical and financial changes since last year that would impact coverage.
+
+\*Agency management has full view into the pipeline to see how leads advance and how each team member is responding
+
+## Slide 15: Gyde Platform
+*Gyde
+
+Automated,
+always-on client
+service, so customers
+get immediate
+attention— even
+when agents are
+asleep
+
+Renewals
+Client Service
+Cross-selling
+
+**Chat Transcript Snippets:**
+
+*   **User:** I can't find my ID card.
+*   **Gyde:** Okay. You should be able to access it in your health plan's mobile app. But I can request a new one to be mailed to your house. Would you like me to do that?
+    *   **User:** Yes please
+*   **Gyde:** Okay, are you still at 163 Beechwood Avenue, San Antonio, TX 78015?
+
+**Client Service Features:**
+*   Clients can send questions to Gyde anytime for fast answers about coverage, care, and more.
+*   Throughout the year, Gyde reaches out in key moments (birthdays, holidays, and more) to strengthen trust and earn loyalty.
+
+**Escalation:**
+Deborah
+Any urgent issues are
+auto escalated to the
+client's broker-of-record.
+
+## Slide 16: Gyde Platform
+*Gyde
+
+Proactive client insights that increase cross-sell success
+across the full team, increasing lifetime value
+
+Renewals
+Client Service
+Cross-selling
+
+**Client Profile: Julie Wilson**
+*   Medicare
+*   Dental
+*   Vision
+*   Life
+*   Wealth Mgmt
+*   Critical Illness
+
+**Potential Cross-Sell Opportunities:**
+*   Home
+*   Life Policy
+*   Critical Illness
+*   Auto
+*   Hospital Indemnity
+*   Wealth Mgmt
+
+**Cross-Sell Strategy:**
+*   Campaigns throughout the year are designed to seamlessly integrate cross-selling intel with customer service follow-up.
+*   Preparing brokers to confidently make recommendations and proactively boost LTV.
+
+## Slide 17: Gyde Workflow Automation
+*Gyde
+
+Gyde enables a step change improvement in efficiency, and shifts
+the broker's workflow from task inundation to renewal automation
+
+| | Traditional Broker | Broker powered by Gyde AI |
+| :-------- | :-------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Outreach** | Initiate manual, high volume outreach to all renewing clients in a HIPAA compliant & CMS-approved workflow | AI outreach to all renewing clients – HIPAA compliant, CMS-approved, & personalized on behalf of the broker |
+| **Follow Up** | Chase renewing clients throughout AEP / OE to ensure they don't miss their opportunity to change plans | AI-driven, non-deterministic follow ups targeted at clients who haven't completed campaign goals |
+| **Schedule** | Schedule plan reviews with clients to discuss options— high volume coordination outside of traditional working hours | AI-scheduled plan reviews, leveraging integrations with each broker's calendar and meeting preference configurations |
+| **Prepare** | Prepare for client plan reviews by collecting as much information as possible, but most fact finding happens during the plan review | AI-completed renewal assessment to gauge changes in client living, financial, & health situations prior to the plan review |
+| **Meeting** | Conduct ~1 hour client plan reviews – most result in passive, auto-renewals while others require an active plan change where the broker usually recommends the same 3-5 plans to every client. | 50% fewer plan reviews needed and reviews can now be completed in ~30 minutes. Meeting prep in minutes with Gyde AI's summaries & transcripts, and plan recommendations are more personalized. |
+
+Our AI platform
+amplifies strategic
+capacity, increasing
+the time spent on high
+leverage interactions
+and growth-focused
+tasks like new
+business development
+and cross sell
+
+## Slide 18: Asset Activation
+*Gyde
+
+An activation-focused approach to
+a historically successful playbook
+
+**Comparison of Aggregation Firms (logos/values):**
+*   INTEGRITY MARKETING GROUP: $50B
+*   ACRISURE: $32B
+*   AssuredPartners: $13.5B
+
+**Aggregation Activation**
+
+| | Legacy Peer Group | VS | *Gyde* |
+| :------------------------------ | :--------------------------------------------- | :-: | :------------------------------------------------ |
+| **Core Strategy** | Asset Aggregation | | Partner Activation & Transformation |
+| **Integration & Standardization** | Low & Mixed / Hands Off | | High, Hands-On, and AI Enabled |
+| **Use of Leverage** | High | | Moderate to High (when cheap) |
+| **Technology Investment** | Low | | High |
+| **Technology Team** | Legacy IT Leaders, offshore tech development | | Engineers from Market Leading Technology Organizations |
+| **Owner Profile** | Tail end of career | | Mid-career |
+| **Acquired Assets** | Hundreds | | ~100 |
+
+## Slide 19: Value Creation Plan
+*Gyde
+
+Scalable post-acquisition playbook delivers integration and
+optimization over 24 months
+
+**Integration**
+**Months 1-3**
+*   Ensure business continuity and migrate workflows, data, and core systems
+*   Integrate teams, culture, and key operations
+*   Map existing sales and service workflows
+
+**Deployment**
+**Months 4-12**
+*   Launch AI platform across service, renewal, and cross-sell
+*   Deploy growth playbook and train brokers
+*   Streamline operations and initiate lead gen + recruiting
+
+**Optimization**
+**Months 13-24+**
+*   Optimize AI using historical data and automation
+*   Build agency hierarchy and leadership bench
+*   Explore tuck-in acquisitions and expand product offering
+
+## Slide 20: Drive Growth
+*Gyde
+
+Gyde's platform
+and value
+creation function
+unlocks market
+leading growth
+
+breaking through growth
+stagnation and creating
+operating leverage for Gyde
+partners
+
+**Annual Growth Waterfall Chart Data:**
+
+| Stage | Annual Growth |
+| :-------------------- | :------------ |
+| Baseline | 10% (negative bar) |
+| Growth & Retention | ~14% |
+| Product Cross-sell | ~16% |
+| Agent Recruitment | ~25% |
+| Contract Optimization | ~28% |
+| Gyde Agency Annual Growth | ~30% |
+
+**Breakdown of Gyde's Impact:**
+*   **Gyde platform:** Growth & Retention, Product Cross-sell
+*   **Gyde value creation:** Agent Recruitment, Contract Optimization
+
+## Slide 21: Financial Overview
+*Gyde
+
+Disciplined, high velocity M&A and transformation enables a
+category defining outcome
+
+**Financial Summary**
+
+| | 2025E | 2026E | 2027E | 2028E | 2029E | 2030E |
+| :---------------------- | :---- | :---- | :---- | :---- | :---- | :---- |
+| **Broker** | $0 | $16 | $63 | $176 | $393 | $745 |
+| **Wealth Management** | - | - | $9 | $26 | $59 | $114 |
+| **Data & Engagement** | - | - | - | $18 | $39 | $75 |
+| **Revenue** | **$0** | **$16** | **$73** | **$220** | **$491** | **$934** |
+| % Growth | na | na | 347% | 203% | 123% | 90% |
+| | | | | | | |
+| **Broker** | $0 | $3 | $14 | $45 | $116 | $246 |
+| **Wealth Management** | - | - | $3 | $8 | $18 | $34 |
+| **Data & Engagement** | - | - | - | $11 | $24 | $45 |
+| **Segment EBITDA** | **$0** | **$3** | **$16** | **$63** | **$157** | **$325** |
+| % Margin | 15% | 19% | 23% | 29% | 32% | 35% |
+| | | | | | | |
+| **(-) Gyde Opex** | ($2) | ($9) | ($14) | ($21) | ($31) | ($46) |
+| **EBITDA** | **($2)** | **($6)** | **$2** | **$42** | **$125** | **$279** |
+| % Margin | na | na | 3% | 19% | 25% | 30% |
+
+**Valuation Walk**
+
+| | | | | | |
+| :--------------------------- | :---- | :---- | :---- | :---- | :---- | :---- |
+| **NTM Adj. EBITDA** | | | $42 | $125 | $279 | $511 |
+| **(x) Exit Multiple** | | | 20x | 20x | 20x | 20x |
+| **Exit TEV** | | | **$843** | **$2,501** | **$5,579** | **$10,230** |
+| | | | | | | |
+| **(-) Net Debt** | ($34) | ($15) | $196 | $467 | | |
+| **(-) Outstanding Earnout Obligation** | $19 | $51 | $105 | $170 | | |
+| **Estimated Gross Equity Value** | **$858** | **$2,465** | **$5,278** | **$9,592** | | |
+
+**Key Assumptions**
+
+**M&A Velocity**
+M&A activity in the model assumes 1 transaction in 2025, 4 in
+2026, 12 in 2027, 18 in 2028, and 24 deals annually in both 2029
+and 2030.
+
+**Annual Growth**
+Gyde assets grow at 25-30% annually (2.5-3x market).
+
+**Margin Expansion**
+Margin grows to 45% over a three to four year transformation
+(2-2.5x market).
+
+**Multiple Arbitrage**
+Achieve 2x multiple arbitrage, acquiring assets for 8-12x EBITDA or
+2.5-3x revenue, and trade at 20x EBITDA ($AJG and $GSHD TTM at
+low to mid 20s) or 5-6x revenue.
+
+**Product Launch Timing**
+Wealth Management and Clinical Data & Engagement launch in
+years 2027 and 2028 respectively.
+
+**Leverage**
+Leverage ratio increases in 2027 and 2028 to enable M&A velocity.
+
+## Slide 22: Building Promoters
+*Gyde
+
+We've talked to upwards of 100
+agency owners who have sold,
+and none had positive things
+to say about the experience
+
+Gyde is doing it differently,
+and we will build a wildly
+promotional owner base
+because of it.
+
+**Testimonials:**
+
+"We had many suitors pursuing us but we
+ultimately decided to partner with Gyde
+because of our trust in their leadership,
+growth experience, technology abilities, and
+strategic partnership opportunities that are
+just not there within the other organizations in
+the industry!"
+
+“From the first conversation, I could tell this
+team was different. They're sharp,
+forward-thinking, and have a clear track
+record of building and scaling businesses the
+right way. What really stood out to me was
+their grasp on the numbers—not just financial
+projections, but how to turn strategy into real
+growth. More than anything, I trusted their
+vision and felt aligned with the way they move:
+fast, focused, and with purpose."
+
+## Slide 23: Ask & Use of Funds
+*Gyde
+
+**~$20M**
+of a $50M Round at
+a $250M Post Money
+Valuation.
+
+LSVP is leading our
+Series A, committing
+$30M.
+
+The Stanford
+Endowment Fund
+will contribute $150k.
+
+**M&A Transactions**
+*   Execute 6+ deals in our target segments
+
+**Hire World Class Talent**
+*   Fill key leadership roles, including CTO, and expand our engineering and M&A teams
+
+**Product Development**
+*   Launch core AI-applications
+*   Begin scoping wealth management and clinical data LOBs
+
+## Slide 24: Gyde
+*Gyde
+
+**Will Johnson | Co-Founder & CEO**
+will@gydehealth.ai
+
+Confidential & Proprietary © 2025 Gyde. All rights reserved.
+
+## Slide 25: Appendix
+*Gyde
+
+25
+
+## Slide 26: Product Roadmap
+*Gyde
+
+Product development roadmap for the next 15 months
+
+Consumer
+Employer
+
+**Q4 2025**
+*   **M1:**
+*   **M2:** Launch MA & IFP renewal app
+*   **M3:** Build and launch cross-sell app
+
+**Q1 2026**
+*   **M1:**
+*   **M2:** Build and launch client service & onboarding app
+*   **M3:**
+*   **M2 (Employer):** Build and launch renewals app
+
+**Q2 2026**
+*   **M1:**
+*   **M2:** Build and launch CRM & Q&E integrations
+*   **M3:**
+*   **M1 (Employer):** Build and launch client service & onboarding app
+
+**Q3 2026**
+*   **M1:**
+*   **M2:**
+*   **M3:**
+*   **M1 (Employer):** Build and launch CRM & Q&E integrations
+
+**Q4 2026**
+*   **M1:**
+*   **M2:**
+*   **M3:**
+
+## Slide 27: M&A Sourcing
+*Gyde
+
+Gyde established four
+core sourcing channels,
+with investment
+focused on developing
+owned channels as
+a foundation
+
+Banks and Brokers in the space are
+sophisticated but coin operated. We focused
+efforts on other channels in our first quarter of
+operations, but will start activating this
+channel coming out of our next financing.
+
+**Chart: % of Qualified Meetings by Channel**
+
+| Channel (Lowest to highest 2025 investment) | % of Qualified Meetings |
+| :------------------------------------------ | :---------------------- |
+| Advisory (Banks, Brokers) | 0% |
+| Referral Partners | 19% |
+| Existing Rolodexes | 60% |
+| Self Source (Cold) | 21% |

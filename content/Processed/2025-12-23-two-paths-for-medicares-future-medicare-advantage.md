@@ -1,0 +1,79 @@
+---
+url: https://paragoninstitute.org/medicare/two-paths-for-medicares-future-medicare-advantage-and-accountable-care-organizations/
+title: "Two Paths for Medicare’s Future: Medicare Advantage and Accountable Care Organizations"
+clipped: 2025-12-23 13:03
+source: slack
+slack_channel: mkt-research-headlines
+---
+
+# Two Paths for Medicare’s Future: Medicare Advantage and Accountable Care Organizations
+
+> Source: [https://paragoninstitute.org/medicare/two-paths-for-medicares-future-medicare-advantage-and-accountable-care-organizations/](https://paragoninstitute.org/medicare/two-paths-for-medicares-future-medicare-advantage-and-accountable-care-organizations/)
+
+![Paragon Health Institute Icon White](https://paragoninstitute.org/wp-content/uploads/2023/12/paragon-health-institute-icon-white.png)
+
+January 15, 2025
+
+# Two Paths for Medicare’s Future: Medicare Advantage and Accountable Care Organizations
+
+[Joe Albanese](https://paragoninstitute.org/author/joe-albanese/)
+
+[![1AW Two Paths ACO MA0](https://paragoninstitute.org/wp-content/uploads/2025/01/1AW_Two_Paths_ACO_MA0-1024x574.webp)](https://paragoninstitute.org/wp-content/uploads/2025/01/1AW_Two_Paths_ACO_MA0.webp)
+
+[![Joe Albanese](https://paragoninstitute.org/wp-content/uploads/2023/11/joe-albanese-150x150.webp)](https://paragoninstitute.org/author/joe-albanese/)
+
+### [Joe Albanese](https://paragoninstitute.org/author/joe-albanese/)
+
+Senior Policy Analyst at Paragon Health Institute
+
+Joe Albanese is a Senior Policy Analyst with Paragon Health Institute. He comes to Paragon with over six years of federal and nonprofit public policy experience.
+
+[Download](https://paragoninstitute.org/wp-content/uploads/2025/01/Two-Paths-for-Medicares-Future_FOR-RELEASE_V1.pdf)
+
+*Policymakers have long sought to move traditional Medicare (TM) away from its [fee-for-service](https://paragoninstitute.org/glossary/fee-for-service/) financing model, which rewards volume of care over quality, relies on complex and politicized administrative pricing, and inhibits care innovations that do not fit neatly into its framework. The two main alternatives that have emerged over the years are [Medicare Advantage](https://paragoninstitute.org/glossary/medicare-advantage/) (MA) and accountable care organizations (ACOs). MA has grown to over half of Medicare enrollment, and officials at the Center for Medicare and Medicaid Services ([CMS](https://paragoninstitute.org/glossary/cms/)) have set the goal of having every TM beneficiary in an accountable care relationship by 2030. This brief explains each of these models and highlights their structural differences and similar policy challenges.*
+
+### Key Takeaways
+
+* [Medicare Advantage](https://paragoninstitute.org/glossary/medicare-advantage/) (MA) and accountable care organizations (ACOs) offer population risk-based payment methods for health care insurers and providers, respectively, as alternatives to traditional [fee-for-service](https://paragoninstitute.org/glossary/fee-for-service/) Medicare.
+* MA and [ACO](https://paragoninstitute.org/glossary/aco/) models have different designs in terms of enrollment, financing, and care management rules, but they face common policy concerns related to payment benchmarks, risk adjustment, quality measurement, and selection biases. These factors in turn affect savings, program participation, quality of care, and access.
+* These policy factors have implications for the levels of savings that each program can achieve for Medicare, which evidence suggests can be improved.
+
+### Background
+
+MA is a program within Medicare where private insurance plans provide coverage to Medicare beneficiaries and pay health care providers for their services. ACOs are groups of health care providers that agree to be held accountable for the cost and quality of care for groups of beneficiaries in TM.
+
+Managed care companies began to participate in Medicare at a limited scale in the 1970s. Congress formally incorporated them into Medicare [Part C](https://paragoninstitute.org/glossary/part-c/) in 1997 under the name “Medicare+Choice.” In 2003, it updated [Part C](https://paragoninstitute.org/glossary/part-c/)’s design and renamed it [Medicare Advantage](https://paragoninstitute.org/glossary/medicare-advantage/). Medicare pays MA organizations (MAOs) based on a process where their plans submit bids against TM spending targets called benchmarks. In 2023, 184 MAOs offered about 5,600 plans to 31.6 million MA enrollees, with total non-drug payments of about $455 billion.[1](#cmfSimpleFootnoteLink1 "Total Part D expenditures were $117.3 billion in 2022, and about 56 percent of Part D enrollees were enrolled in MA in 2023. Medicare Payment Advisory Commission (MedPAC), “March 2024 Report to the Congress: Medicare Payment Policy,” March 15, 2024,") MA enrollment has grown rapidly to over half of the Medicare population, driven by its ability to innovate in benefit offerings and manage the cost of care. As such, it offers the clearest alternative to the shortcomings of TM and is a vehicle for greater coverage choice and market competition in Medicare.[2](#cmfSimpleFootnoteLink2 "Joe Albanese, “Improving Medicare Through Medicare Advantage,” Paragon Health Institute, February 2024, ")
+
+Congress first included ACOs in Medicare through the [Affordable Care Act](https://paragoninstitute.org/glossary/affordable-care-act/), although the concept predates that law. Congress directed [CMS](https://paragoninstitute.org/glossary/cms/) to establish a voluntary payment model starting in 2012 called the Medicare Shared Savings Program (MSSP), where participating health care providers and suppliers establish ACOs through networking agreements. ACOs must include primary care providers and may include specialists and hospitals, but there is typically a delineation between physician-group-led and hospital-led ACOs. Providers within ACOs receive payment for furnishing health care services but keep a portion of “shared savings” if they reduce costs below a benchmark spending target calculated from historical spending data. There have also been several other [ACO](https://paragoninstitute.org/glossary/aco/) models with different rules, such as [ACO](https://paragoninstitute.org/glossary/aco/) Realizing Equity, Access, and Community Health (REACH), which relies on direct contracting between [CMS](https://paragoninstitute.org/glossary/cms/) and providers as risk-bearing entities.[3](#cmfSimpleFootnoteLink3 "This brief largely focuses on MSSP and ACO REACH, but current and previous ACO models include the ACO Investment, Advance Payment ACO, Comprehensive End-stage Renal Disease Care, Next Generation ACO, Pioneer ACO, and Vermont All-Payer ACO models. Others include similar designs as ACO models but use different terminology. For example, the Kidney Care Choices model allows participation by kidney contracting entities, and the Geographic Direct Contracting and Global and Professional Direct Contracting models (the latter was renamed to ACO REACH) refer to direct contracting entities.") In 2024, there were 480 ACOs (roughly 635,000 providers) and 10.8 million people in MSSP as well as 122 ACOs (roughly 173,000 providers) and 2.6 million people in REACH.[4](#cmfSimpleFootnoteLink4 "CMS, “Participation Continues to Grow in CMS’ Accountable Care Organization Initiatives in 2024,” press release, January 29, 2024, ") CMS officials have suggested moving all TM enrollees to an accountable care relationship by 2030.
+
+ACOs and MAOs do not directly compete against each other, as ACOs receive shared savings for TM beneficiaries and MAOs [pay for](https://paragoninstitute.org/glossary/pay-for/) services received by MA beneficiaries. However, ACOs indirectly affect competition for enrollees between TM and MA.
+
+### Design Differences
+
+**Enrollment**A key difference between MA and ACOs is that Medicare beneficiaries may choose to enroll in MA plans (new beneficiaries are enrolled in TM by default), while Medicare generally assigns TM beneficiaries to ACOs if they receive services from ACO-aligned primary care providers. However, TM beneficiaries may also voluntarily join ACOs or, conversely, opt out of sharing certain information with ACOs to which they are assigned. An ACO is still responsible for the cost of Medicare services its assigned beneficiaries choose to receive from other providers outside of the ACO.
+
+Because joining an MA plan is voluntary, there is more competitive pressure to attract and retain enrollees (for example, plans must devote more resources to marketing). An ACO must provide written notice to enrollees who become aligned with the ACO, according to federal guidelines. ACOs also have some incentive to advertise—for example, to encourage beneficiaries to see aligned providers or to gain voluntary enrollees. MA plans must submit their marketing communications to CMS for review, a requirement that CMS removed for ACOs starting 2023.[5](#cmfSimpleFootnoteLink5 "  CMS, “Medicare Communications and Marketing Guidelines (MCMG),” February 9, 2022, <a href=https://www.cms.gov/files/document/medicare-communications-and-marketing-guidelines-3-16-2022.pdf style=\"color:#00A6CF;\">https://www.cms.gov/files/document/medicare-communications-and-marketing-guidelines-3-16-2022.pdf</a>; CMS, “Medicare and Medicaid Programs,” 87 Fed. Reg. 69404 (Nov. 18, 2022), <a href=https://www.federalregister.gov/documents/2022/11/18/2022-23873/medicare-and-medicaid-programs-cy-2023-payment-policies-under-the-physician-fee-schedule-and-other style=\"color:#00A6CF;\">https://www.federalregister.gov/documents/2022/11/18/2022-23873/medicare-and-medicaid-programs-cy-2023-payment-policies-under-the-physician-fee-schedule-and-other</a>. ")
+
+**Financing**Medicare pays MA plans and ACOs in a manner intended to incentivize more efficient care. MA payments are fully capitated, which means that they are set on a per-member per-month basis, rather than per service or based on actual costs incurred. If a plan’s payments exceed its costs, it keeps the full difference, but likewise it bears the full loss if the opposite is true. CMS also requires MA plans to meet a medical-loss ratio where at least 85 percent of revenue goes toward health care and quality improvement, as opposed to administrative costs or profits. This creates a strong incentive to hold down costs, although plan competition and CMS regulations discourage cost reductions that undermine the quality of coverage. MA plans can implement various methods for payment, including adopting a similar [fee-for-service](https://paragoninstitute.org/glossary/fee-for-service/) model as TM.
+
+ACOs face difference levels of financial risk based on the models they participate in. ACO models may allow for upside-only arrangements, particularly for new participants, but require them to gradually bear more downside risk—alongside higher upside reward—over time. In MSSP in 2024, there were five levels of risk. At the low end, ACOs keep 40 percent of cost savings up to a limit of 10 percent of the benchmark without sharing in any losses. At the high end, they keep 75 percent of savings up to 20 percent of the benchmark while bearing up to 75 percent of losses up to 15 percent of the benchmark.[6](#cmfSimpleFootnoteLink6 "MedPAC, “Accountable Care Organization Payment Systems,” revised October 2024, ") REACH has two risk levels: 50 percent of savings and losses and 100 percent of savings and losses. REACH also offers the option for capitated primary care payments.[7](#cmfSimpleFootnoteLink7 "CMS, “ACO REACH,” ")
+
+![2MS Figure 1 MA Plan Diagram](https://paragoninstitute.org/wp-content/uploads/2025/01/2MS_Figure_1_MA_plan_diagram.webp)
+
+![4MS Table2 Comparing MA And ACOs 01](https://paragoninstitute.org/wp-content/uploads/2025/01/4MS_Table2_Comparing-MA-and-ACOs-01.webp)
+
+**Care Management**Because MA plans are payers of health care services, they have greater visibility into beneficiaries’ total cost of care. Unlike TM, they may contract with networks of providers—including [health maintenance organization](https://paragoninstitute.org/glossary/health-maintenance-organization/) ([HMO](https://paragoninstitute.org/glossary/hmo/)) MA plans—and conduct utilization management. Thus, MA beneficiaries have higher cost-sharing when visiting [out-of-network](https://paragoninstitute.org/glossary/out-of-network/) providers and may be subject to explicit prior authorization for care. MA plans often integrate [Part D](https://paragoninstitute.org/glossary/part-d/) prescription drug coverage into their plans and may develop specialized plans for particular populations. MA plans are also required to cap out-of-pocket expenses for their enrollees, while TM beneficiaries must purchase supplemental coverage to do this.
+
+ACOs can only directly manage the cost of care provided by its aligned providers and are subject to TM rules limiting the establishment of networks or utilization management. This arrangement gives beneficiaries aligned with ACOs more flexibility in choosing providers or obtaining care, but it constrains ACOs’ ability to police cost, quality, and program integrity. Therefore, they rely heavily on prescribing specific standards of treatment and coordinating care among aligned providers, and encouraging use of such providers, to contain cost. One intended result may be early detection and prevention of medical conditions through primary care.
+
+![6MS Tbl1 Comparing MA And ACOs A0wUU000002hyKjYAI 01](https://paragoninstitute.org/wp-content/uploads/2025/01/6MS_tbl1__Comparing-MA-and-ACOs_a0wUU000002hyKjYAI-01.webp)
+
+### Payment Issues
+
+Despite differing structures and roles in the health care system, MA and ACOs share some design features, as well as concerns about their payment policies.
+
+**Benchmarks**[MA benchmarks](https://paragoninstitute.org/glossary/ma-benchmarks/) are bidding targets calculated based on local TM spending, including spending by non-MA-eligible beneficiaries who do not have both [Part A](https://paragoninstitute.org/glossary/part-a/) and [Part B](https://paragoninstitute.org/glossary/part-b/) coverage. Counties are divided into quartiles by their levels of TM spending and assigned benchmarks of 95, 100, 107.5, and 115 percent of local TM spending. Counties with more spending get lower benchmarks and vice versa. This is intended to encourage savings in high-cost counties and greater plan participation in low-cost counties. MA base payments are the lesser of a plan’s bid or benchmark. When the bid is below the benchmark, the plan keeps a portion of the difference as a rebate it must use to reduce premiums, lower cost-sharing, or offer supplemental benefits such as dental, vision, hearing, and gym memberships.
+
+In MSSP, benchmarks are a target for earning shared savings. CMS calculates ACOs’ benchmarks for a given agreement period using historical TM expenditure data for their assignment populations during a baseline period prior to the start of its model and blends it with average TM spending for local ACO-eligible beneficiaries. It updates benchmarks annually by blending a projected expenditure growth rate with actual national and regional growth rates, changes in enrollee severity and case mix (i.e., risk adjustment), and changes to the model’s ACO participants.[8](#cmfSimpleFootnoteLink8 "  MedPAC, “Accountable Care Organization Payment Systems”; CMS, Medicare Shared Savings Program: Shared Savings and Losses, Assignment and Quality Performance Standard Methodology, January 2023, https://www.cms.gov/files/document/medicare-shared-savings-program-shared-savings-and-losses-and-assignment-methodology-s
+
+[... truncated ...]
