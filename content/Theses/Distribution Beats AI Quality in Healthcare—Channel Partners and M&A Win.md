@@ -212,6 +212,8 @@ The evidence cuts both ways: startups captured 70% of new ambient market DESPITE
 
 - [[Healthcare AI Stack Wins Through Infrastructure, Not Models—Input Structuring, Integration Depth, and Output Validation by 2028]] — Complementary thesis: Infrastructure = WHAT you build; Distribution = HOW you sell it
 - [[Payer Infrastructure Modernizes—Pre-Pay AI and Cloud CAPS Capture Mid-Market by 2028]]
+- [[Specialty Drug Economics Favor Vertical Integrators—340B, Biosimilars, and Prior Auth Consolidate]] — Same distribution-beats-quality mechanism in pharmacy: Latent ($50M Series B) vs Mandolin ($57M) shows specialty pharmacy (Part D) beats infusion (Part B) because that's "where the money is." Switching costs even more extreme: "would need an act of God to switch."
+- **Nitra case study (vertical fintech):** Same horizontal-vs-vertical dynamic in healthcare practice fintech. Nitra (card + supplies marketplace) faces Ramp/Brex threat—horizontal players with balance sheets to move fast if they decide healthcare matters. Nitra's defense: healthcare-specific value props (GPO pricing, DEA licensing for Rx, specialty supplies). Pattern match: vertical depth buys time, but horizontal players can build vertical features faster than verticals can build horizontal scale. See [[Vertical-AI-Moats]] for full analysis.
 
 ---
 
