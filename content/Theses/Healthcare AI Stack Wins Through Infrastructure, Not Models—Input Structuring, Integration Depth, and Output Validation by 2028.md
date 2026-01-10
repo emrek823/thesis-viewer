@@ -296,6 +296,8 @@ Health systems choose multi-EHR + specialty depth + coding integration vendors b
 | 2025-08 | [[abridge-_-interviews-_-tegus-company-profile-5ebf5e4a]] | Operator | "100%, you're going to see a lot of customers go the Epic route, because it's going to be almost free" |
 | 2025-08 | [[abridge-_-interviews-_-tegus-company-profile-5ebf5e4a]] | Operator | "Ominous that Epic chose Microsoft... because they're never going to be competition to Epic" |
 | 2025-08 | [[former-vice-president-of-enterprise-analytics-at-r1-rcm-_-wa-0bb1f33e]] | Operator | "Epic has 50% share, won 70% of contracts in last year; will crowd out point solutions" |
+| 2026-01-09 | [Fierce Healthcare: Epic AI](https://www.fiercehealthcare.com/ai-and-machine-learning/how-epics-ai-moves-could-shake-health-tech-market) | News | Epic launches Art (ambient scribe via Microsoft Dragon), Emmie (patient-facing), Penny (RCM). "Portfolio rationalization" for health systems in 2026—fewer vendors, deeper Epic integration |
+| 2026-01-09 | [Becker's: CIO Reactions](https://www.beckershospitalreview.com/healthcare-information-technology/ai/a-watershed-moment-cios-react-to-epics-ai-scribe-launch/) | News | Seattle Children's CDO: "Strongest signal yet this technology is moving from niche to core." 70%+ practices using AI for visits. Ambient AI now table stakes. |
 
 ### Human-in-Loop Evidence (Merged from Agentic Workers 2026-01-07)
 | Date | Source | Type | Key Signal |

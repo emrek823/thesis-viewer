@@ -33,6 +33,7 @@ AI drug discovery moats come from proprietary data (not model architecture) beca
 - *2025-12-27:* OpenMidnight at $1.6K proved foundation models commoditize
 - *2025-12-29:* Recursion REC-4881 positive Phase 1b/2—first major clinical validation
 - *2026-01-07:* **MERGED** — Three theses (Wet Lab Flywheels, Protein Design Software, Clinical Outcome Data) combined under unified "data beats algorithms" frame
+- *2026-01-09:* **MODEL LICENSING PARADIGM** — GSK-Noetik ($50M model license), Chai-Lilly, Boltz-Pfizer confirm pharma paying for models not drug assets. Business model shift: SaaS multiples (10-15x) vs biotech multiples (3-5x) on same revenue. Phase II bottleneck (28.9% success) unchanged—AI speeds discovery, not development. Zero AI-discovered drugs approved yet.
 
 ---
 
@@ -43,6 +44,7 @@ AI drug discovery moats come from proprietary data (not model architecture) beca
 - [x] **Computational developability is solved.** Chai-2 achieved 86% developability and 16% hit rate (100x improvement). ([[Chai Discovery unveils Chai-2 with 86% developability and 16% hit rate]])
 - [x] **Foundation models commoditize.** OpenMidnight achieved SOTA pathology on 12K slides for $1.6K. Training cost not correlated with performance. ([[How to Train a State-of-the-Art Pathology Foundation Model with $1.6k]])
 - [x] **Open-source matches proprietary.** Boltz-2 and Chai-1 match AlphaFold3 accuracy. Structure prediction is commoditized. ([[Structure Prediction Commoditizes - AlphaFold3 vs Boltz vs Chai]])
+- [x] **Model licensing replaces biobucks.** GSK-Noetik ($50M upfront for model license), Chai-Lilly (platform deployment), Boltz-Pfizer (exclusive model training). Pharma pays for computational tools, not drug candidates. ([[2026-01-09-ai-drug-discovery-model-licensing-sea-change]])
 
 ### Wet Lab Data Moats
 - [x] **Flywheel effects demonstrated.** Recursion's 65PB phenomics platform shows improving predictions with data scale. Positive Phase 1b/2 for REC-4881—first major clinical validation. ([[Recursion Boltz-2 Partnership and REC-4881 Results]])
@@ -56,13 +58,22 @@ AI drug discovery moats come from proprietary data (not model architecture) beca
 - [x] **$1B+ moats exist in outcome-linked data.** Tempus: "$1B+ platform investment over 9 years... significant capital for another player to catch up." ([[initiating-coverage-of-a-differentiated-specialty-laboratory-9f1a7e9c]])
 - [ ] **Human genetic linkage predicts success.** Projects with human genetic linkage: 73% active/successful vs 43% without. 2x success rate. ([[the-role-of-human-genetics-in-drug-discovery-9e4348fe]])
 
+### Data Geography Creates Regional Moats
+- [x] **Clinical/EHR data doesn't transfer across geographies.** US-developed CVD models overestimate risk when applied to Canadian data. Coding systems (ICD-10-CM vs Chinese GB/T), formularies, and care pathways all differ. 46% of CVD prediction models from European research with unclear global generalizability. ([[2026-01-09-ai-drug-discovery-model-licensing-sea-change]])
+- [x] **Genomics has severe ancestry transferability gaps.** European → African ancestry PRS: only 20-40% accuracy retention. Accuracy decreases linearly with genetic distance (r = -0.95). This limits cross-population value of genomic datasets. ([Nature 2023](https://www.nature.com/articles/s41586-023-06079-4))
+- [x] **Imaging is partially portable but needs fine-tuning.** Models trained on US data show "large discrepancies" on Nigerian chest X-rays. Physics is universal but disease presentation and demographics vary. Generative augmentation can help bridge gaps. ([Nature Medicine 2024](https://www.nature.com/articles/s41591-024-03113-4))
+- [x] **Molecular/protein data is globally portable.** AlphaFold trained on global PDB works everywhere. Proteins fold the same way regardless of geography. China's lab data advantage is real for this modality.
+
+**Implication:** Data moats are modality-specific. Lab data (Boltz, Chai) = global competition. Clinical outcome data (SMB, Tempus, Epic) = regional moats. China's 600M covered lives advantage applies to wet lab scale, NOT clinical AI.
+
 ---
 
 ## Bear Case
 
 - [ ] **Open-source catches up faster than expected.** If RFdiffusion + AlphaFold3 + Boltz-2 reach clinical validation rates within 12 months, even downstream data moats erode. BindCraft already achieves 10-100% hit rates.
 - [ ] **Clinical failures reset narrative.** If AI-discovered drugs fail Phase II/III, "AI-discovered" becomes stigma. BenevolentAI's 90% valuation collapse shows market unforgiving.
-- [ ] **No AI drugs approved yet.** Despite $3.2B+ invested, zero approvals. 8 programs in clinic as of 2025. Bubble risk if optimism not matched by reality.
+- [x] **No AI drugs approved yet.** Despite $3.2B+ invested, zero approvals. 8 programs in clinic as of 2025. Bubble risk if optimism not matched by reality. **UPDATE 2026-01-09:** Still zero approvals. Insilico INS018_055 in Phase II is furthest along.
+- [x] **Phase II bottleneck unchanged.** AI-discovered drugs show 80-90% Phase I success (vs 40-65% baseline) but Phase II success rate remains at 28.9%. AI accelerates discovery, not development. The bottleneck shifts downstream (CMC, tox studies, trial capacity) rather than disappearing. ([[2026-01-09-ai-drug-discovery-model-licensing-sea-change]])
 - [ ] **Federated learning enables data sharing.** If Lilly TuneLab and similar federated approaches enable cross-pharma outcome sharing, data moats erode and network effects don't compound.
 - [ ] **Foundation models generalize.** AlphaFold-level breakthroughs could obviate proprietary experimental data.
 - [ ] **Regulatory agencies require traditional validation.** FDA has not created accelerated pathways specifically for AI-designed therapeutics.
@@ -133,6 +144,9 @@ AI drug discovery moats come from proprietary data (not model architecture) beca
 - Pharma M&A targets shift from "best AI" to "best outcome data assets"
 - CRO market contracts or major CRO margin compression
 - Startup achieves IND with <$10M and <18 months from concept
+- **More $50M+ model licensing deals announced in 2026** (GSK-Noetik is template)
+- **AI biotech companies restructure investor comms around ARR metrics vs pipeline milestones**
+- **China share of global licensing value stays >30%** (validates structural advantage)
 
 **If WRONG (thesis fails):**
 - Open-source tools achieve equivalent clinical translation rates
@@ -140,6 +154,8 @@ AI drug discovery moats come from proprietary data (not model architecture) beca
 - Lilly TuneLab and federated learning create liquid market for outcome data
 - FDA requires traditional validation pathways regardless of in-silico accuracy
 - Pure computational company achieves successful drug discovery exit
+- **Model licensing deals don't recur**—pharma returns to milestone-based biobucks after initial experiments
+- **Insilico INS018_055 fails Phase II**—furthest AI-discovered drug, would reset narrative
 
 ---
 
@@ -154,6 +170,23 @@ AI drug discovery moats come from proprietary data (not model architecture) beca
 | 2025-12-29 | [[Structure Prediction Commoditizes - AlphaFold3 vs Boltz vs Chai]] | Research | Boltz-2 and Chai-1 match AlphaFold3 accuracy. Structure prediction commoditized. |
 | 2025-12-29 | [[ODesign - World Model for Biomolecular Interaction Design]] | Research | First generative world model for cross-modality molecular design. Open-source Apache 2.0. |
 | 2026-01-04 | [[From In Silico to In Vitro Evaluating Molecule Generative Models for Hit Generation]] | Research | Generative molecules validated in vitro—GSK-3β hits confirmed active |
+| 2026-01-09 | [[2026-01-09-ai-drug-discovery-model-licensing-sea-change]] | Research | **MODEL LICENSING PARADIGM:** GSK-Noetik $50M, Chai-Lilly, Boltz-Pfizer. Biobucks → SaaS. Same revenue = 2-3x valuation as software vs biotech. |
+
+### US-China Competitive Evidence
+| Date | Source | Type | Key Signal |
+|------|--------|------|------------|
+| 2026-01-09 | [[2026-01-09-ai-drug-discovery-model-licensing-sea-change]] | Research | China captured 32% of global biotech licensing deal value in Q1 2025 (up from 21%). XtalPi potential $10B+ in deals. |
+| 2026-01-09 | [Rest of World](https://restofworld.org/2025/ai-drug-discovery-startups-big-pharma-china/) | News | China structural advantages: 600M+ covered lives (training data), 30-50% cheaper trials, AI drug discovery in Five-Year Plan. |
+| 2026-01-09 | [[2026-01-09-ai-drug-discovery-model-licensing-sea-change]] | Research | XtalPi-DoveTree: $51M upfront + $5.99B potential. AstraZeneca-CSPC: $5B. Sanofi-Helixon: $1.72B. |
+
+### Data Transferability Evidence
+| Date | Source | Type | Key Signal |
+|------|--------|------|------------|
+| 2023 | [Nature](https://www.nature.com/articles/s41586-023-06079-4) | Research | PRS accuracy: European → African only 20-40% retained. Accuracy correlates with genetic distance (r = -0.95). |
+| 2024 | [Nature Medicine](https://www.nature.com/articles/s41591-024-03113-4) | Research | Medical imaging AI uses "demographic shortcuts"—fairness degrades in new populations even with identical architecture. |
+| 2025 | [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC11838679/) | Research | GRASP LLM achieves "zero-shot transferability" across EHR coding systems—but required novel architecture specifically for this. |
+| 2025 | [Nature Comms](https://www.nature.com/articles/s41467-019-11112-0) | Research | 67% of PRS studies used exclusively European ancestry; only 3.8% included African/Hispanic/Indigenous populations. |
+| 2025 | [Scientific Reports](https://www.nature.com/articles/s41598-025-95390-3) | Research | Chest X-ray models trained on US data show "large discrepancies" on Nigerian target domain—requires adversarial adaptation. |
 
 ### Wet Lab Data Moat Evidence
 | Date | Source | Type | Key Signal |
@@ -201,16 +234,29 @@ AI drug discovery moats come from proprietary data (not model architecture) beca
 **Will federated learning erode data moats?**
 → OPEN: If Lilly TuneLab enables cross-pharma sharing, network effects may not compound
 
+**Does model licensing actually improve Phase II success, or just speed up failures?**
+→ OPEN: AI-discovered drugs show 80-90% Phase I success but Phase II is still 28.9%. If model licensing doesn't improve efficacy predictions, pharma may revert to traditional milestone deals. Watch Insilico INS018_055 Phase II results as bellwether.
+
+**How durable is the SaaS multiple arbitrage?**
+→ OPEN: Chai at $1.3B on zero approvals. If AI drug discovery companies are valued as software (10-15x ARR) but face biotech risk (clinical failures), multiples could compress violently. BenevolentAI's 90% collapse is the template.
+
+**Will US-China competitive dynamics bifurcate the market?**
+→ OPEN: China has structural data advantages (600M+ covered lives) and policy support. If China captures >40% of licensing value, may indicate US losing competitive position. Track XtalPi, CSPC deal flow.
+
 ---
 
 ## Related Theses
 
+- [[AI Biotech Model Licensing Captures SaaS Multiples—Drug Deals Become Software Deals by 2028]] — Business model shift; same tech, 2-3x valuation as software vs biotech
 - [[Biotech Operations Intelligence Captures Trial Ops—Point Solutions Become Platforms]]
 - [[Real-World Data Infrastructure Becomes Pharma Critical Path—Data Quality Beats Volume by 2028]]
+- [[China Demand-Side Policy Drives Pharma Innovation—Volume Guarantees Shift Frontier from US to Asia]] — US-China competitive dynamics in AI drug discovery
 
 ---
 
 *Created: 2026-01-07*
+*Updated: 2026-01-09 — Added model licensing paradigm, Phase II bottleneck, US-China dynamics, data transferability by modality*
 *Merged from: Wet Lab Flywheels Create Drug Discovery Data Moats + Protein Design Becomes Software + Clinical Outcome Data Becomes Drug Discovery Moat*
 *Key insight: The hierarchy is Algorithms < Wet Lab Data < Clinical Outcome Data. Computational design commoditizes; proprietary data (experimental + clinical outcomes) becomes the moat.*
-*Confidence: High (40+ sources across three original theses, multiple operator interviews, Recursion clinical validation, Tempus M&A activity)*
+*Key nuance: Data moats are geography-dependent by modality. Lab data (molecular, protein) = global competition. Clinical outcome data (EHR, patient trajectories) = regional moats. Genomics = 60-80% accuracy loss cross-ancestry. This protects SMB/Tempus/Epic from China competition while Boltz/Chai face XtalPi globally.*
+*Confidence: High (55+ sources, multiple operator interviews, Recursion clinical validation, Tempus M&A, GSK-Noetik deal, transferability research from Nature/Nature Medicine)*

@@ -415,6 +415,7 @@ GLP-1 adoption at 25% is a **demand shock** that propagates through:
 | 2026-01-05 | [[2025-the-state-of-ai-in-healthcare-menlo-ventures]] | Research | Menlo Ventures state of AI in healthcare - GLP-1 monitoring context |
 | 2026-01-05 | [[glp-1-health-plans-weight-management-market]] | Research | GLP-1 health plans and weight management market analysis |
 | 2026-01-06 | [[2026-01-06-aom_weighing-the-evidencepdf]] | Research | RGA actuarial model: GLP-1s reduce US mortality 3.5% by 2045; 12% obesity prevalence reduction; insured populations see smaller benefit than general pop (lower baseline BMI); anti-selection risk as patients lose weight, lapse policies, re-enter at better rates |
+| 2026-01-09 | [CNBC: Oral Wegovy Launch](https://www.cnbc.com/2026/01/05/first-glp-1-pill-for-obesity-from-novo-nordisk-launches-in-the-us.html) | News | Oral Wegovy launched Jan 5, 2026 at $149-299/month cash; available at 70,000+ pharmacies; eliminates specialty handling—validates thesis on oral format disrupting specialty pharmacy |
 
 ### Channel/PBM Disruption Evidence (Merged from PBM Thesis 2026-01-07)
 | Date | Source | Type | Key Signal |

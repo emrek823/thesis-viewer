@@ -120,6 +120,9 @@ Raw data aggregators (claims databases, EHR extracts) fail these requirements. I
 | 2026-01-05 | [[real-world-data--assessing-electronic-health-records-and-med-0088ee5f]] | Policy | "Data validation requirements: accuracy, completeness, traceability" |
 | 2026-01-05 | [[datavant-corporate-overview-deck-2-22-20-1-beb1caaa]] | Company | Datavant positioning as data linkage/quality infrastructure |
 | 2026-01-05 | [[precision-medicine-market]] | Research | "$119B market (2025) expanding to $537B (2035) at 16.26% CAGR" |
+| 2026-01-09 | [[2026-01-09-fda-deregulation-investment-thesis]] | Research | FDA removes RWD submission barriers: "Submit whatever real-world data you want now" — Makary; creates DEMAND for quality infrastructure |
+| 2026-01-09 | [FDA RWE Press Release](https://www.fda.gov/news-events/press-announcements/fda-eliminates-major-barrier-using-real-world-evidence-drug-and-device-application-reviews) | Policy | Only 12 drugs in 14 years included RWE due to prior requirements; barrier now removed |
+| 2026-01-09 | [Datavant Position](https://www.datavant.com/hipaa-privacy/datavant-supports-fda-guidance-with-a-privacy-first-approach-to-using-real-world-evidence-for-regulatory-decision-making) | Company | 500+ institutions, 60M records, PPRL infrastructure benefits from FDA RWD acceptance |
 
 ---
 

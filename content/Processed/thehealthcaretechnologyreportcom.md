@@ -1,8 +1,8 @@
 # thehealthcaretechnologyreport.com
 
 **Source:** Google News
-**URL:** https://news.google.com/rss/articles/CBMijwFBVV95cUxOcGZSV01XcFlzZXVhbktKejJCWUtRcGl2T1BPWW4zVkk3ZGxJYndHWkhwYS0xcks2dm5Bdl84U1VTZDNzWXhUQVJZR3BZMEVrMm5ianJpYlF4My1JUUJQdktWMWV0dG1NZGpoVGpDQzNqeHpCNkpNSHZxRmNoVWt2YjNkdXd4WWpuWGNWeGwwVQ?oc=5
-**Date:** 2026-01-04
+**URL:** https://news.google.com/rss/articles/CBMijgFBVV95cUxNejR5Y3RNX0ZWZkNOZDhsa09BX2dlaHNKVkJtVVU5THlzNkdhal9Ib1UzdXM1Si1RNFZWbTMtZlhxWjdvQ0JVYmxhYXNWekIwZFlNODNoSXYyR2dzZkZfQ2ZYVDYxaFc3MThUQzRodENKRjQ3eFBKa182WWluMm9WWDNGNEt5amp0aU9YS3V3?oc=5
+**Date:** 2026-01-09
 
 ---
 
@@ -12,7 +12,7 @@ Verify you are human by completing the action below.
 
 thehealthcaretechnologyreport.com needs to review the security of your connection before proceeding.
 
-Ray ID: 9b8a93cebfea422f
+Ray ID: 9bb3c55e1e850cc6
 
 Performance & security by Cloudflare
 
