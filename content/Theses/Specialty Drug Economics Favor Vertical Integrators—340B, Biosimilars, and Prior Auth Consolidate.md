@@ -313,8 +313,8 @@ Cone Health CPO explicitly chose Latent over Mandolin: "Mandolin's product was r
 | 2026-01-08 | [[latent---northwestern-55b5fe6b]] | Operator | **Northwestern on Latent**: "Specialty pharmacy generates second most revenue outside oncology." Planning to phase out CoverMyMeds for Latent. |
 | 2026-01-08 | [[latent---northwestern-55b5fe6b]] | Operator | **Epic threat**: "Epic is building their own LLM solutions... but they're behind." |
 | 2026-01-08 | [[tandem-dd-log-e45b9f15]] | Company | **Tandem**: 1,035 providers, $5M run rate target, pharma-funded model. Pharma pays $38-96K/physician for 10x ROI. |
-| 2026-01-08 | [[2025-12-30_Latent-Health.md]] | Research | Latent Health: $50M Series B, 25+ health systems, 97% clinical accuracy, General Catalyst backed |
-| 2026-01-08 | [[2025-12-30_Mandolin-Health.md]] | Research | Mandolin: $57M raised ($40M Series A from Greylock), 700+ clinics, focused on infusion not specialty pharmacy |
+| 2026-01-08 | [[2025-12-30_Latent-Health]] | Research | Latent Health: $50M Series B, 25+ health systems, 97% clinical accuracy, General Catalyst backed |
+| 2026-01-08 | [[2025-12-30_Mandolin-Health]] | Research | Mandolin: $57M raised ($40M Series A from Greylock), 700+ clinics, focused on infusion not specialty pharmacy |
 
 ### Specialty Pharmacy Economics Evidence
 | Date | Source | Type | Key Signal |
@@ -324,6 +324,9 @@ Cone Health CPO explicitly chose Latent over Mandolin: "Mandolin's product was r
 | 2025-12-28 | [[the-new-world-of-commercial-analytics---specialty-pharmacy-6bfeec6e]] | Research | "Specialty drugs accounted for half of the $603B total prescription drug spending" |
 | 2025-12-28 | [[investors-master-ha-full_from_deals-7c981be6]] | Company | "$263B specialty drug spending" |
 | 2025-12-28 | [[prosper-infusion_seed_investors-v13-4adaf2e0]] | Company | "Home infusion is ~50% cheaper than hospital-based care" |
+| 2025 | [[tegus_komodo-health_38232_rare-disease-medical-affairs-outco-8b1fa8dc]] | Tegus | Rare disease medical affairs outcomes and specialty drug dynamics |
+| 2025 | [[tegus_odaia_52461_senior-specialty-sales-representative-at-a-3877ac68]] | Tegus | Specialty pharma sales rep perspective on market dynamics |
+| 2025 | [[tegus_mural-health_69131_vp-pharmacovigilance-interim-vp-of--e95b43d3]] | Tegus | Pharmacovigilance for specialty drugs |
 
 ---
 

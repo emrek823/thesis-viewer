@@ -283,7 +283,7 @@ Cardinal uses ZoomLogi → Cardinal's customers see tracking
 - [[Virtue __ ZoomLogi-2025-05-02_12-58-49.md]] — Cardinal Health FourKites failure mention
 - [[Virtue __ ZoomLogi-2025-10-16_15-30-56.md]] — ARR, customer pipeline, 2026 projections
 - [[untitled-document-9-daff6484.md]] — Competitive landscape analysis
-- [[Z_GUIDE/Archive/Archive/Pipeline/2025-12-30_ZoomLogi.md]] — Flexport comparable mention
+- [[2025-12-30_ZoomLogi]] — Flexport comparable mention
 
 ### Web
 - [FreightAmigo: FourKites vs Project44](https://www.freightamigo.com/en/blog/logistics/fourkites-vs-project44-feature-comparison/) — Feature comparison

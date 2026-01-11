@@ -124,7 +124,7 @@ Sources: [[2026-01-06-tax-advantaged-spending-arbitrage-models.md]]:48, 52-54, [
 **Pitch:** AI-powered HSA covering spending, saving, investing, lending in unified experience.
 **Action:** Evaluate against Thatch/TrueMed positioning.
 
-Source: [[Z_GUIDE/Weekly-Reports/Deals/2026-01-05.md]]:13
+Source: [[2026-01-05]]:13
 
 ### 3. Just-in-Time HSA Funding (Thatch Innovation)
 
@@ -243,7 +243,7 @@ Source: [[2026-01-06-tax-advantaged-spending-arbitrage-models.md]]:189, 204-208
 - [[2026-01-06-hsa-fsa-employer-market-validation.md]] — Market size, regulatory analysis, ICHRA expansion
 - [[2026-01-06-tax-advantaged-spending-arbitrage-models.md]] — TrueMed model, GLP-1 companion stack, food-as-medicine opportunity
 - [[gc-thatch-memo-2-3130da7e.md]] — Thatch diligence, just-in-time HSA funding patent
-- [[Z_GUIDE/Weekly-Reports/Deals/2026-01-05.md]] — Saga Health inbound deal
+- [[2026-01-05]] — Saga Health inbound deal
 
 ### Web
 - [Devenir 2025 Midyear Report](https://www.devenir.com/research/2025-midyear-devenir-hsa-research-report/) — Market size, projections

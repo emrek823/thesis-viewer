@@ -176,6 +176,7 @@ Model Licensing Deals:
 | 2025-12-15 | [Bloomberg](https://www.bloomberg.com/news/articles/2025-12-15/openai-backed-chai-discovery-raises-130-million-for-ai-designed-molecules) | News | Chai $130M Series B at $1.3B valuation |
 | 2025-09-09 | [[Lilly launches TuneLab platform]] | News | Lilly monetizing $1B+ AI investment via platform licensing |
 | 2024-03 | [C&EN](https://cen.acs.org/business/informatics/rise-subscription-based-AI-platforms/102/web/2024/03) | News | SaaS pricing models emerging: $4,500/GPU/year |
+| 2025-12 | [[SMB __ Virtue]] | Granola | Sanofi POC $360K → $4.8M contract expected. IQVIA $44M proposal via Nvidia. Model licensing to AMCs (MSK, Yale, MD Anderson, Mayo). |
 
 ---
 

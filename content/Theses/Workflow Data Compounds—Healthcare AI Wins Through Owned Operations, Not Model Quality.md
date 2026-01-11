@@ -189,6 +189,7 @@ The bull thesis bet is that workflow data compounds faster than incumbents can c
 | 2025-12-29 | [[2025-12-23-horizontal-vs-vertical-ai-healthcare]] | LLM-Chat | "Horizontal AI captures admin; verticals retain clinical moats." Sierra $10B, $100M ARR in 21 months—but use cases are scheduling/billing, NOT clinical. |
 | 2025-10 | Web: Olive AI Failure | Research | Olive raised $850M, failed due to "fast-paced growth and lack of focus." Execution beats both distribution and quality. |
 | 2025-12 | Web: Healthcare AI Moats | Research | "Healthcare is the only major industry where regulation, liability, workflow data, and labor dynamics intersect to create defensible moats." |
+| 2026-01-05 | [[Hermes + Virtue-2026-01-05_16-01-06]] | Granola | Infrastructure layer positioning: "GetCodes Health will use Hermes for record retrieval while focusing on abstraction." $126K ARR with 90%+ captured in last 60 days. |
 
 ---
 

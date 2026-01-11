@@ -244,6 +244,12 @@ The connection: Pre-pay requires "deep integration with core claims infrastructu
 | [[mar-04-2025-tegus_healthedge_122824_former-sr-director-produ-e63cc578]] | Operator | HealthEdge product strategy and competitive positioning |
 | [[mar-11-2025-tegus_healthedge_123729_vice-president-of-emergi-6a8aa53b]] | Operator | Lyric/HealthEdge competitive dynamics in claims editing |
 | [[mar-03-2025-tegus_optum_122675_former-evp-products-at-health-81bd4ab4]] | Operator | "Multi-pass claim editing (first pass, second pass, audit). Payment integrity departments sample claims manually. Core admin systems separate from claim editors." |
+| 2025 | [[mar-12-2025-tegus_healthedge_123885_healthcare-innovation-an-2f3d9330]] | Tegus | HealthEdge innovation and competitive positioning |
+| 2025 | [[mar-13-2025-tegus_healthedge_124064_former-director-alignmen-1c57627e]] | Tegus | HealthEdge alignment and market strategy |
+| 2025 | [[jan-16-2025-tegus_cotiviti-holdings-inc_116819_vice-presiden-31dee671]] | Tegus | Cotiviti VP on payment integrity market dynamics |
+| 2025 | [[jun-11-2025-tegus_optum_137438_vice-president-of-product-man-d6927638]] | Tegus | Optum VP product management on payer infrastructure |
+| 2025 | [[apr-16-2025-tegus_optum_129158_technology-executive-strategy-3746fdf2]] | Tegus | Optum technology strategy executive perspective |
+| 2025 | [[tegus_anterior_144141_senior-director-digital-product-at-uni-1689cd9b]] | Tegus | Anterior digital product at UNH - prior auth automation |
 | 2026-01-04 | [[cohelm-1-1-0a1dc897]] | Research | Prior Auth $31B market, Co:Helm reduces nurse requirements from 200 to 50 (75% reduction) |
 | 2026-01-04 | [[q1-2023-sector-spotlight_employer-sponsored-hc_tpas_51523-cccb93c9]] | Research | Self-funded health plans 65% of employer market; TPAs providing cloud-based infrastructure |
 | 2026-01-04 | [[solving-the-rubiks-cube-of-drg-validation-white-paper-111234-54eb5595]] | Research | Prepay DRG validation with analytics-driven claim selection reduces time-to-value vs postpay |
