@@ -1,3 +1,5 @@
+![[Images/payment-integrity-ai-wins-via-second-pass-strategy.png]]
+
 # Payment Integrity AI Wins via Second-Pass Strategy—Data Accumulation Enables Upmarket Migration by 2028
 
 ## 1-2 Sentence Summary
@@ -110,6 +112,9 @@ For this thesis to be wrong: Cotiviti would need to acquire 2+ AI-native payment
 | 2025 | [[tegus_cotiviti-holdings-inc_133796]] | Tegus | "20 to one ROI...north of $100 million a year in savings gap" |
 | 2025 | [[mar-03-2025-tegus_optum_122667]] | Tegus | "primary edit is based almost 100% on care guidelines...fairly static" |
 | 2025 | [[mar-03-2025-tegus_optum_122675]] | Tegus | "You have some that are smaller than a million lives...writing their own edits" |
+| 2025 | [[tegus_optum_137438_vice-president-of-product-management-at-c-fde59493]] | Tegus | Post-pay 20% contingency fees vs 10% pre-pay; 400 data elements across departments = 3-4 month onboarding; creates switching costs |
+| 2025 | [[tegus_cotiviti-holdings-inc_133802_regional-vice-president-p-82d88ab7]] | Tegus | "Vendor stacking" strategy—AI vendors in second-pass after Cotiviti; higher contingency fees for incremental finds |
+| 2025 | [[june-13-2025-tegus_3m-health-care_137939_advisor-director-of-31bc0d82]] | Tegus | Milliman repricing $200-250K per market; "relativity" metrics drive network contracting; establishes provider pricing benchmarks |
 
 ---
 

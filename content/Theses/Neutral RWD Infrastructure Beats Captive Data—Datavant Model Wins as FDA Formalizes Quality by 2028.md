@@ -1,3 +1,5 @@
+![[Images/neutral-rwd-infrastructure-beats-captive-data.png]]
+
 # Neutral RWD Infrastructure Beats Captive Data—Datavant Model Wins as FDA Formalizes Quality by 2028
 
 ## The Take
@@ -219,6 +221,9 @@ But if extraction commoditizes, data licensing becomes commodity. Tempus survive
 ## Sources
 
 ### Vault
+- [[tegus-calls-on-interop-8d257b4b]] — Healthcare data access commodifies through regulation → differentiation shifts to data normalization and activation, not access; multiple interoperability experts confirm
+- [[june-13-2025-tegus_3m-health-care_137939_advisor-director-of-31bc0d82]] — Milliman repricing $200-250K per market; "relativity" metrics drive network contracting; data normalization creates value
+- [[2026-01-10-new-ai-tool-sifts-and-assesses-years-of-data-in-patient-electronic-health-record]] — Large health systems (Penn Medicine) build proprietary EHR-embedded AI using diverse population data; "Chart Hero" saves clinicians 2 hours/day
 - [[Real-World Data Infrastructure Becomes Pharma Critical Path—Data Quality Beats Volume by 2028.md]]
 - [[2025-12-23-fda-proposes-framework-to-advance-credibility-of-a]]
 - [[Automation in Clinical Trial Statistical Programming A Structured Review of TLF Generation, Validati]]

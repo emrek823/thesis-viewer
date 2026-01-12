@@ -12,6 +12,18 @@ initial_investment: August 2025
 ## Comprehensive Investment Memo Research — January 2026
 
 ---
+**Top 5 Points**
+
+1. **Only multi-scale JEPA patient model** — SMB is the only company building molecular→patient world models using JEPA architecture, with SOTA results (26× on genomics, 18% lift on dynamic prediction tasks)
+
+2. **Model licensing = 10-30x better exit math** — GSK-Noetik ($50M) and Tempus-AZ ($200M) prove pharma will license foundation models. This shifts valuation from risk-adjusted drug milestones (9x exit) to ARR multiples (72-117x exit on our $10M)
+
+3. **6-person team is a feature, not a bug** — Biology scales differently than SaaS. Genentech had 5 scientists at their Lilly deal; Nabla Bio has ~20 people signing Takeda deals. If SMB lands a $50M deal, that's $8.3M revenue per employee
+
+4. **First pharma partnership is the key catalyst** — Technical differentiation is proven (MSK validation, open-sourced weights). Commercial validation through first pharma deal converts thesis to reality
+
+5. **Timing advantage on unproven architecture** — JEPA is Meta's proposed AGI path, untested in biology. SMB is first mover — if it works for patient modeling, they have moat that's hard to replicate. High-risk, high-asymmetry bet
+
 
 # EXECUTIVE SUMMARY
 

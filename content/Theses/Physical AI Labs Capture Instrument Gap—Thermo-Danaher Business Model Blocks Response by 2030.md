@@ -1,3 +1,5 @@
+![[Images/physical-ai-labs-capture-instrument-gap.png]]
+
 ## 1-2 Sentence Summary
 **Physical AI startups** (Medra, Periodic Labs, Lila Sciences) capture the autonomous lab opportunity because **Thermo Fisher and Danaher's 80%+ recurring revenue business model** structurally prevents them from building automation-native instruments with open APIs → **$1B+ already deployed** to this gap, with new instrument primes emerging by 2030.
 

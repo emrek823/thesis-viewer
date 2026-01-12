@@ -1,3 +1,5 @@
+![[Images/healthcare-platform-consolidation-compresses-sales-cycles.png]]
+
 # Healthcare Platform Consolidation Compresses Sales Cycles—Workflow Unification Beats Point Solutions by 2028
 
 ## 1-2 Sentence Summary

@@ -1,3 +1,5 @@
+![[Images/voice-ai-captures-practice-scheduling.png]]
+
 # Voice AI Captures Practice Scheduling—Integration Depth Creates Lock-In by 2028
 
 ## The Take
@@ -297,6 +299,18 @@ Voice AI Captures Practice Scheduling
 - [[5-assort-health-tegus]] — $150K annual Assort spend; 1.5 FTE breakeven; 50% calls automated
 - [[Chief Executive Officer at Barrington Orthopedic Specialists _ Assort Health _ Tegus]] — 7→4 FTEs via attrition; 9-10/10 satisfaction; low six figures spend
 - [[chief-innovation-officer-at-simonmed-imaging-_-tennr-_-tegus-224eecf0]] — Radiology complexity; Tennr not yet enterprise-ready; massive opportunity if they verticalize
+
+### Additional Tegus (from /new-thesis 2026-01-11)
+- [[4-assort-health-_-interviews-_-tegus-company-profile-8256a1c3]] — Voice AI vendors win by offering EHR integration + phone lookup; cost per call $8 → $4
+- [[2-assort-health-_-interviews-_-tegus-company-profile-e79e4fff]] — Retina practice: 10,000 calls/month, 30% missed → AI handles 4,000-5,000 at $50K/year, saves $90K vs 2-3 FTEs
+- [[17-assort-health-_-interviews-_-tegus-company-profile-9d3ee4b0]] — Orthopedic specialty algorithm failures cause trial extension or churn
+- [[16-assort-health-_-interviews-_-tegus-company-profile-89090b62]] — Large DSOs (1,200 locations) select on Epic/Salesforce interoperability + customization
+- [[15-assort-health-_-interviews-_-tegus-company-profile-8223db85]] — Horizontal AI platforms beat healthcare-vertical; diverse training data creates better algorithms
+- [[14-assort-health-_-interviews-_-tegus-company-profile-4136b045]] — Specialty-specific algorithms: 90-day first practice → <30 days subsequent (network effects)
+- [[13-assort-health-_-interviews-_-tegus-company-profile-7d5aee72]] — 74-clinic surgical group: accent/cultural diversity handling critical for multi-state
+- [[12-assort-health-_-interviews-_-tegus-company-profile-120ba852]] — Phone lookup routes new patients (35%) to US agents → conversion 50% to 65%
+- [[11-assort-health-_-interviews-_-tegus-company-profile-321f96ac]] — Orthopedic: 7→3 FTEs, 40% abandonment → <10% with athenahealth integration
+- [[10-assort-health-_-interviews-_-tegus-company-profile-23fc1c16]] — Retina: 10K calls, 30% missed, $15K/month staff → AI few thousand/month
 
 ### Web
 - [Assort Health $102M funding](https://www.prnewswire.com/news-releases/assort-health-secures-102-million-to-scale-nations-first-agentic-ai-platform-that-solves-longstanding-frustrations-tied-to-patient-access-and-experience-302570046.html) — 42M patient interactions, 89% wait time reduction, 98% resolution

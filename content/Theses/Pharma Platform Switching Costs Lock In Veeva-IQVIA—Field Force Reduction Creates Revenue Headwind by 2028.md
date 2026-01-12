@@ -1,3 +1,5 @@
+![[Images/pharma-platform-switching-costs-lock-in-veeva-iqvia.png]]
+
 # Pharma Platform Switching Costs Lock In Veeva/IQVIA—Field Force Reduction Creates Revenue Headwind by 2028
 
 ## 1-2 Sentence Summary
@@ -117,6 +119,10 @@ For this thesis to be wrong: Veeva would need to announce and successfully execu
 | 2025 | [[tegus_veeva-systems-inc_76341]] | Tegus | "ePRO/eCOA becomes mandatory for FDA" |
 | 2025 | [[tegus_veeva-systems-inc_5988]] | Tegus | "Per-rep licensing...20-30% reduction post-COVID" |
 | 2025 | [[tegus_iqvia-holdings-inc_37781]] | Tegus | "IQVIA really has one of the better ones...Veeva, they're not good at it" on KOL tools |
+| 2025 | [[tegus_veeva-systems-inc_86838_senior-director-head-of-clinic-54a485e7]] | Tegus | Veeva pricing based on R&D spend (not usage) → sponsors pay twice (direct + CRO embedded costs); Gilead pays $10-12M clinical, $15M quality/regulatory annually |
+| 2025 | [[tegus_veeva-systems-inc_86838_senior-director-head-of-clinic-54a485e7]] | Tegus | Product roadmap favors CROs over sponsors; CROs have aggregate influence across multiple sponsors |
+| 2025 | [[tegus_veeva-systems-inc_78906_former-senior-director-medical-5a0da191]] | Tegus | Veeva Medical Affairs lacks integration between modules; high total cost of ownership despite market dominance |
+| 2025 | [[tegus_odaia_52461_senior-specialty-sales-representative-at-a-44db2690]] | Tegus | Pharma reps ignore Veeva CRM alerts because IQVIA data arrives before alerts; reps maintain personal spreadsheets due to CRM data inaccuracy |
 
 ---
 

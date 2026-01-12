@@ -211,7 +211,7 @@ Healthcare AI Stack Wins Through Infrastructure, Not Models
 | H4 | Specialty ontology creates defensible niche | 65% | 75% | **CONFIRMED** | MSK oncology, 400 cancer types |
 | H5 | Human-in-loop creates switching costs | 60% | 80% | **CONFIRMED** | Tennr, Recora productivity data |
 | H6 | 2028 thesis timeline is accurate | 70% | 40% | **WEAKENED** | Commoditization happening 2026, not 2028 |
-| H7 | Abridge diversifies in time | 50% | 35% | **WEAKENED** | Only athena partnership, no MEDITECH/Cerner |
+| H7 | Abridge diversifies in time | 50% | 65% | **UPDATED** | Now has MEDITECH, Oracle Health (Cerner), athenahealth integrations—diversifying faster than expected |
 
 ---
 
@@ -302,6 +302,7 @@ Healthcare AI Stack Wins Through Infrastructure, Not Models
 
 ## How This Evolved
 
+- **2026-01-11:** PRESSURE TESTED (adversarial rebuild). Core mechanisms CONFIRMED. Key update: Abridge has added multi-EHR integrations (MEDITECH, Oracle Health, athenahealth)—weakens "Epic-only" critique. Ambience won Cleveland Clinic head-to-head bake-off. Both Abridge and Ambience expanding into CDI/coding. Epic Art still scheduled for "early 2026."
 - **2026-01-10:** REBUILD with contrarian pressure testing. Commoditization timeline ACCELERATED from 2028 to 2027. Title changed to reflect Epic bundling threat. M6 (commoditization timeline) added. H6 WEAKENED.
 - **2026-01-07:** MERGED from Input Structuring + Output Validation + Agentic Workers. Unified three-layer framework.
 - **2026-01-02:** SPLIT front-end voice AI into [[Front-End Distribution Wins Healthcare Voice AI—Channel Partners Beat AI Quality by 2027]]
@@ -364,12 +365,28 @@ Healthcare AI Stack Wins Through Infrastructure, Not Models
 - [Galen Growth Epic Analysis](https://www.galengrowth.com/epic-joins-the-ai-scribe-race-can-startups-still-win/) — Startup survival strategies
 - [Ardent Health Ambience Rollout](https://ardenthealth.com/our-stories/ardent-health-announces-enterprise-rollout-ambience-healthcares-ai-platform) — 45% documentation time savings, 90% utilization
 - [Sacra Ambience Profile](https://sacra.com/c/ambience/) — $30M ARR, valuation, competitive positioning
+- [[Sources/News/2026-01-08/openai-selects-bwell-to-power-secure-health-data-connectivity-for-ai-driven-heal]] — b.well SDK for Health AI transforms health data into AI-optimized inputs for LLMs; validates input structuring layer
+- [[Sources/Browser-History/2026-01-07-2025-reaching-escape-velocity-in-healthcare---blog]] — Commure: 60+ EHR integrations, $25B annualized payments; validates multi-EHR breadth thesis
+- [[Sources/Browser-History/2026-01-06-latent-health-accelerating-medication-access-with]] — Latent Health: 25+ health systems (Yale, Ochsner, Mt. Sinai); validates specialty pharmacy PA as workflow capture
 
 ---
 
 *Confidence: HIGH — 8 operator interviews, multiple industry reports, contrarian pressure testing validated core mechanisms. Timeline ACCELERATED from 2028 to 2027.*
-*Last rebuilt: 2026-01-10*
+*Last rebuilt: 2026-01-11*
 *Rebuild trigger: Epic Art launch results (Q1 2026), Abridge diversification announcements, major health system switching events*
+
+---
+
+## Evidence Added 2026-01-11
+
+| Date | Source | Type | Key Signal |
+|------|--------|------|------------|
+| 2026-01-11 | [Abridge Product](https://www.abridge.com/product) | Company | Abridge now has "deep, bidirectional EHR integrations with Epic, Oracle Health, athenahealth, and MEDITECH"—diversification faster than expected |
+| 2026-01-11 | [Sacra Abridge](https://sacra.com/c/abridge/) | Research | Abridge $100M ARR (May 2025), $117M contracted ARR Q1 2025, 200+ health systems |
+| 2026-01-11 | [Ambience $243M Series C](https://www.ambiencehealthcare.com/blog/ambience-healthcare-announces-243-million-series-c-to-scale-its-ai-platform-for-health-systems) | News | Ambience $1.25B valuation, Cleveland Clinic exclusive after head-to-head bake-off |
+| 2026-01-11 | [Sacra Ambience](https://sacra.com/c/ambience/) | Research | Ambience $30M ARR, 97.7 KLAS satisfaction, AutoCDI module $4K-5K/provider |
+| 2026-01-11 | [Epic Art Launch](https://www.fiercehealthcare.com/health-tech/epic-unveils-major-ai-features-ai-charting-microsoft-cosmos-ai-risk-prediction-and-rcm) | News | Epic Art "limited use" early 2026; uses Microsoft Dragon for transcription |
+| 2026-01-11 | [KLAS Ambience ROI](https://klasresearch.com/report/ambience-healthcare-roi-validations-2025-how-the-pursuit-of-clinician-well-being-led-to-demonstrable-roi-for-st-luke-s-health-system/3812) | Research | Ambience ranked #1 Improving Clinician Experience in KLAS Emerging Solutions Top 20 |
 
 ---
 

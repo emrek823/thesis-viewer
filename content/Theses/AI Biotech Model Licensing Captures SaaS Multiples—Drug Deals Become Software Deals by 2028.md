@@ -1,3 +1,5 @@
+![[Images/ai-biotech-model-licensing-captures-saas-multiples.png]]
+
 # Thesis: AI Biotech Model Licensing Captures SaaS Multiples—Drug Deals Become Software Deals by 2028
 
 ## Investment Take
@@ -177,6 +179,10 @@ Model Licensing Deals:
 | 2025-09-09 | [[Lilly launches TuneLab platform]] | News | Lilly monetizing $1B+ AI investment via platform licensing |
 | 2024-03 | [C&EN](https://cen.acs.org/business/informatics/rise-subscription-based-AI-platforms/102/web/2024/03) | News | SaaS pricing models emerging: $4,500/GPU/year |
 | 2025-12 | [[SMB __ Virtue]] | Granola | Sanofi POC $360K → $4.8M contract expected. IQVIA $44M proposal via Nvidia. Model licensing to AMCs (MSK, Yale, MD Anderson, Mayo). |
+| 2026-01-10 | [[2026-01-10-pharma-saas-what-wins]] | LLM-Chat | Clinical/commercial SaaS: 74% gross margins, 25% operating margins. Preclinical platforms remain unprofitable. Gilead: $10-12M clinical, $15M quality/regulatory annually. |
+| 2026-01-10 | [[2026-01-10-pharma-model-licensing-investment-paradigm]] | LLM-Chat | GSK-Noetik $50M for 5-year model license (recurring fees), Tempus-AZ $200M predictive models. Recurring revenue replaces milestone-gated biobucks. |
+| 2026-01-09 | [[2026-01-09-noetik-gsk-model-licensing-economics]] | Research | Deep dive on GSK-Noetik deal structure—subscription model for AI multiomics, non-exclusive license to OCTO-VC virtual cell models. |
+| 2026-01-09 | [[gsk-noetik-sign-cancer-deal-on-ai-virtual-cell-models-6ff46e44]] | News | GSK-Noetik deal coverage—5-year collaboration, data partnership beyond licensing. |
 
 ---
 
