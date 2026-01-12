@@ -47,6 +47,8 @@ export function AnnotationPopover({
   // Comment mode uses simple text input
   const [commentText, setCommentText] = useState("");
 
+  const [error, setError] = useState<string | null>(null);
+
   const transport = useMemo(
     () =>
       new DefaultChatTransport({
@@ -56,7 +58,13 @@ export function AnnotationPopover({
     [thesisSlug, selectedText]
   );
 
-  const { messages, sendMessage, status } = useChat({ transport });
+  const { messages, sendMessage, status } = useChat({
+    transport,
+    onError: (err) => {
+      console.error("[AnnotationPopover] Chat error:", err);
+      setError(err.message || "Failed to get AI response");
+    },
+  });
 
   const isStreaming = status === "streaming" || status === "submitted";
 
@@ -75,8 +83,14 @@ export function AnnotationPopover({
   const handleChatSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim() || isStreaming) return;
-    await sendMessage({ text: input });
-    setInput("");
+    setError(null); // Clear previous errors
+    try {
+      await sendMessage({ text: input });
+      setInput("");
+    } catch (err) {
+      console.error("[AnnotationPopover] Send error:", err);
+      setError(err instanceof Error ? err.message : "Failed to send message");
+    }
   };
 
   const handleSendRewrite = async () => {
@@ -244,6 +258,14 @@ export function AnnotationPopover({
                   <div className="mr-2">
                     <div className="bg-gray-100 rounded-lg px-3 py-2 text-sm text-gray-500">
                       Thinking...
+                    </div>
+                  </div>
+                )}
+
+                {error && (
+                  <div className="mr-2">
+                    <div className="bg-red-50 border border-red-200 rounded-lg px-3 py-2 text-sm text-red-600">
+                      Error: {error}
                     </div>
                   </div>
                 )}

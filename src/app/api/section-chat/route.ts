@@ -4,23 +4,23 @@ import { getThesis } from "@/lib/theses";
 
 export const maxDuration = 60;
 
-const webSearchTool = anthropic.tools.webSearch_20250305({
-  maxUses: 3,
-});
-
 export async function POST(req: Request) {
   try {
-    const { messages, thesisSlug, selectedText } = await req.json();
+    const body = await req.json();
+    const { messages, thesisSlug, selectedText } = body;
 
-    console.log("[section-chat] Request received:", {
-      messagesCount: messages?.length,
-      thesisSlug,
-      selectedTextLength: selectedText?.length
-    });
+    // Validate input
+    if (!messages || !Array.isArray(messages)) {
+      return new Response(
+        JSON.stringify({ error: "Invalid messages format" }),
+        { status: 400, headers: { "Content-Type": "application/json" } }
+      );
+    }
 
     const thesis = thesisSlug ? getThesis(thesisSlug) : null;
 
-  let systemPrompt = `You are a sharp research editor helping improve a specific section of an investment thesis. Your job is to help rewrite the selected text to be more precise, evidence-backed, and compelling.
+    // Build system prompt
+    let systemPrompt = `You are a sharp research editor helping improve a specific section of an investment thesis. Your job is to help rewrite the selected text to be more precise, evidence-backed, and compelling.
 
 ## Your Role
 - Focus ONLY on improving the selected text
@@ -44,8 +44,8 @@ Always explain briefly WHY you're suggesting the change (new evidence found, cla
 - Cite specific sources when adding claims
 - If you searched the web, reference what you found`;
 
-  if (thesis) {
-    systemPrompt += `
+    if (thesis) {
+      systemPrompt += `
 
 ---
 
@@ -57,14 +57,19 @@ Always explain briefly WHY you're suggesting the change (new evidence found, cla
 
 ## Full Thesis (for context):
 ${thesis.content.slice(0, 3000)}${thesis.content.length > 3000 ? "\n\n[...truncated...]" : ""}`;
-  } else {
-    systemPrompt += `
+    } else {
+      systemPrompt += `
 
 ---
 
 ## Selected Text to Improve:
 "${selectedText}"`;
-  }
+    }
+
+    // Define web search tool inside handler for proper context
+    const webSearchTool = anthropic.tools.webSearch_20250305({
+      maxUses: 3,
+    });
 
     const result = streamText({
       model: anthropic("claude-sonnet-4-20250514"),
@@ -74,14 +79,20 @@ ${thesis.content.slice(0, 3000)}${thesis.content.length > 3000 ? "\n\n[...trunca
         web_search: webSearchTool,
       },
       stopWhen: stepCountIs(5),
+      onError: (error) => {
+        console.error("[section-chat] Stream error:", error);
+      },
     });
 
     return result.toUIMessageStreamResponse();
   } catch (error) {
     console.error("[section-chat] Error:", error);
-    return new Response(JSON.stringify({ error: String(error) }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" },
-    });
+    return new Response(
+      JSON.stringify({
+        error: error instanceof Error ? error.message : "Unknown error",
+        stack: error instanceof Error ? error.stack : undefined
+      }),
+      { status: 500, headers: { "Content-Type": "application/json" } }
+    );
   }
 }
