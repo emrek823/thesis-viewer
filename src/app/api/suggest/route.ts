@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
-  const { thesis, suggestion, chatContext } = await req.json();
+  const { thesis, suggestion, chatContext, email } = await req.json();
 
   const webhookUrl = process.env.SLACK_WEBHOOK_URL;
 
@@ -21,6 +21,16 @@ export async function POST(req: Request) {
           text: `📝 Thesis Suggestion: ${thesis}`,
           emoji: true,
         },
+      },
+      {
+        type: "section",
+        text: {
+          type: "mrkdwn",
+          text: `*From:* ${email || "Anonymous"}`,
+        },
+      },
+      {
+        type: "divider",
       },
       {
         type: "section",

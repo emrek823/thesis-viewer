@@ -39,7 +39,7 @@ export function ThesisWithAnnotations({ content, thesisTitle, thesisSlug }: Prop
     setPopover({ show: true, mode: "suggest", selectedText: text, position });
   }, []);
 
-  const handleSubmit = async (content: string, selectedText: string, mode: "comment" | "suggest") => {
+  const handleSubmit = async (content: string, selectedText: string, mode: "comment" | "suggest", email?: string, chatContext?: string) => {
     setSending(true);
 
     try {
@@ -50,7 +50,8 @@ export function ThesisWithAnnotations({ content, thesisTitle, thesisSlug }: Prop
         body: JSON.stringify({
           thesis: thesisTitle,
           suggestion: `**${mode === "comment" ? "Comment" : "Edit Suggestion"}**\n\n**On text:** "${selectedText}"\n\n**${mode === "comment" ? "Comment" : "Suggested change"}:** ${content}`,
-          chatContext: `Inline ${mode} on thesis: ${thesisTitle}`,
+          chatContext: chatContext || `Inline ${mode} on thesis: ${thesisTitle}`,
+          email,
         }),
       });
 
@@ -103,6 +104,7 @@ export function ThesisWithAnnotations({ content, thesisTitle, thesisSlug }: Prop
           mode={popover.mode}
           position={popover.position}
           thesisTitle={thesisTitle}
+          thesisSlug={thesisSlug}
           onClose={() => setPopover(null)}
           onSubmit={handleSubmit}
           isLoading={sending}

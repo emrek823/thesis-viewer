@@ -1,5 +1,6 @@
 import { getAllTheses } from "@/lib/theses";
 import Link from "next/link";
+import { ThesisExplainer } from "@/components/ThesisExplainer";
 
 const maturityOrder = {
   Conviction: 0,
@@ -32,14 +33,21 @@ export default function HomePage() {
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-12">
+      {/* Hero Section */}
+      <div className="mb-16">
+        <h1 className="font-mono font-bold text-3xl mb-6 text-gray-900">
+          Living Investment Theses
+        </h1>
+        <ThesisExplainer />
+      </div>
+
       {/* Header with stats */}
       <div className="mb-12">
-        <h1 className="pixel-header text-xl mb-4 text-gray-800">
-          INVESTMENT THESES
-        </h1>
+        <h2 className="pixel-header text-xl mb-4 text-gray-800">
+          ACTIVE THESES
+        </h2>
         <p className="text-gray-600 max-w-2xl mb-6">
-          Active research on healthcare and technology investment opportunities.
-          Each thesis represents a developing investment belief.
+          Click any thesis to read, challenge, or suggest improvements.
         </p>
 
         {/* Stats bar */}

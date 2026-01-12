@@ -10,8 +10,8 @@ const USE_SHEETS = !!(
   process.env.GOOGLE_REFRESH_TOKEN
 );
 
-// Fallback paths for local development
-const CANDIDATES_PATH = path.join(process.cwd(), "content/outbound/candidates.json");
+// Use CLI candidate store directly
+const CANDIDATES_PATH = path.join(process.env.HOME || "", ".claude/data/candidates.json");
 const VOTES_PATH = path.join(process.cwd(), "content/outbound/votes.json");
 
 interface Candidate {
@@ -20,10 +20,46 @@ interface Candidate {
   bucket: string;
   linkedin: string;
   thesis: string;
+  question?: string;
   rating?: number | null;
   ratedAt?: string | null;
   warmPath?: string | null;
   rowNumber?: number;
+  // V2 fields
+  allTheses?: string[];
+  thesisRatings?: Record<string, number | null>;
+}
+
+// V2 store types
+interface ThesisTag {
+  added_at: string;
+  source_question: string;
+  validation_need?: string;
+  source_queries?: string[];
+  why_relevant?: string | null;
+  rating: number | null;
+  rated_at: string | null;
+  notes: string | null;
+}
+
+interface Person {
+  linkedin: string;
+  name: string;
+  role: string;
+  added_at: string;
+  affinity: {
+    person_id: number | null;
+    synced_at: string | null;
+    theses_synced: string[];
+  };
+  thesis_tags: Record<string, ThesisTag>;
+}
+
+interface StoreV2 {
+  version: number;
+  persons: Record<string, Person>;
+  analyses: any[];
+  meta: any;
 }
 
 interface Vote {
@@ -116,7 +152,45 @@ async function updateSheetsRating(linkedin: string, rating: number) {
 async function getLocalCandidates(): Promise<Candidate[]> {
   try {
     const data = await fs.readFile(CANDIDATES_PATH, "utf-8");
-    return JSON.parse(data);
+    const parsed = JSON.parse(data);
+
+    // V2 format: persons dict with thesis_tags
+    if (parsed.version === 2 && parsed.persons) {
+      const candidates: Candidate[] = [];
+      for (const person of Object.values(parsed.persons) as Person[]) {
+        for (const [thesis, tag] of Object.entries(person.thesis_tags)) {
+          candidates.push({
+            name: person.name,
+            role: person.role || "Unknown",
+            bucket: "research",
+            linkedin: person.linkedin,
+            thesis: thesis,
+            question: tag.validation_need || tag.source_question || "",  // Prefer validation_need
+            rating: tag.rating,
+            ratedAt: tag.rated_at,
+            // V2 fields for UI
+            allTheses: Object.keys(person.thesis_tags),
+            thesisRatings: Object.fromEntries(
+              Object.entries(person.thesis_tags).map(([t, tg]) => [t, (tg as ThesisTag).rating])
+            ),
+          });
+        }
+      }
+      return candidates;
+    }
+
+    // V1 format: candidates array (legacy fallback)
+    const candidates = parsed.candidates || parsed;
+    return candidates.map((c: any) => ({
+      name: c.name,
+      role: c.role || "Unknown",
+      bucket: c.bucket || "research",
+      linkedin: c.linkedin,
+      thesis: c.thesis || "",
+      question: c.question || "",
+      rating: c.rating,
+      ratedAt: c.rated_at || c.ratedAt,
+    }));
   } catch {
     return [];
   }
@@ -134,6 +208,70 @@ async function getLocalVotes(): Promise<VotesData> {
 async function saveLocalVotes(votesData: VotesData): Promise<void> {
   votesData.updated_at = new Date().toISOString();
   await fs.writeFile(VOTES_PATH, JSON.stringify(votesData, null, 2));
+}
+
+// Update rating directly in CLI candidate store (V2 format)
+async function updateCliCandidateRating(linkedin: string, rating: number, thesis?: string): Promise<boolean> {
+  try {
+    const data = await fs.readFile(CANDIDATES_PATH, "utf-8");
+    const store = JSON.parse(data);
+
+    // V2 format: persons dict with thesis_tags
+    if (store.version === 2 && store.persons) {
+      // Normalize LinkedIn URL
+      const normalizedLinkedin = linkedin.split("?")[0].replace(/\/$/, "");
+
+      // Find person by LinkedIn (try exact match first, then normalized)
+      let person = store.persons[linkedin] || store.persons[normalizedLinkedin];
+
+      // Try to find by iterating if not found
+      if (!person) {
+        for (const [url, p] of Object.entries(store.persons)) {
+          if (url.includes(linkedin.split("/in/")[1] || "")) {
+            person = p as Person;
+            break;
+          }
+        }
+      }
+
+      if (!person) return false;
+
+      // If thesis specified, rate that specific thesis
+      if (thesis && (person as Person).thesis_tags[thesis]) {
+        (person as Person).thesis_tags[thesis].rating = rating;
+        (person as Person).thesis_tags[thesis].rated_at = new Date().toISOString();
+      } else {
+        // Find first unrated thesis, or update first thesis
+        const thesisTags = (person as Person).thesis_tags;
+        const unratedThesis = Object.keys(thesisTags).find(t => thesisTags[t].rating === null);
+        const targetThesis = unratedThesis || Object.keys(thesisTags)[0];
+
+        if (targetThesis) {
+          thesisTags[targetThesis].rating = rating;
+          thesisTags[targetThesis].rated_at = new Date().toISOString();
+        }
+      }
+
+      if (!store.meta) store.meta = {};
+      store.meta.updated_at = new Date().toISOString();
+      await fs.writeFile(CANDIDATES_PATH, JSON.stringify(store, null, 2));
+      return true;
+    }
+
+    // V1 format fallback
+    const candidates = store.candidates || [];
+    const candidate = candidates.find((c: any) => c.linkedin === linkedin);
+    if (!candidate) return false;
+
+    candidate.rating = rating;
+    candidate.rated_at = new Date().toISOString();
+    store.updated_at = new Date().toISOString();
+    await fs.writeFile(CANDIDATES_PATH, JSON.stringify(store, null, 2));
+    return true;
+  } catch (error) {
+    console.error("Error updating CLI store:", error);
+    return false;
+  }
 }
 
 // === API handlers ===
@@ -165,22 +303,17 @@ export async function GET() {
   // Fallback to local files
   if (candidates.length === 0) {
     const localCandidates = await getLocalCandidates();
-    const votesData = await getLocalVotes();
-    const votesByUrl = new Map(votesData.votes.map((v) => [v.linkedin, v]));
 
-    candidates = localCandidates.map((c) => {
-      const vote = votesByUrl.get(c.linkedin);
-      return {
-        ...c,
-        voted: !!vote,
-        vote: vote?.vote || null,
-      };
-    });
+    candidates = localCandidates.map((c) => ({
+      ...c,
+      voted: c.rating !== null && c.rating !== undefined,
+      vote: c.rating || null,
+    }));
 
     voteCounts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
-    for (const v of votesData.votes) {
-      if (v.vote >= 1 && v.vote <= 5) {
-        voteCounts[v.vote]++;
+    for (const c of localCandidates) {
+      if (c.rating && c.rating >= 1 && c.rating <= 5) {
+        voteCounts[c.rating]++;
       }
     }
   }
@@ -198,7 +331,7 @@ export async function GET() {
 
 export async function POST(request: NextRequest) {
   const body = await request.json();
-  const { linkedin, name, role, bucket, vote } = body;
+  const { linkedin, name, role, bucket, vote, thesis } = body;
 
   if (!linkedin || vote === undefined) {
     return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
@@ -215,7 +348,13 @@ export async function POST(request: NextRequest) {
     }
   }
 
-  // Fallback to local
+  // Update CLI candidate store directly (pass thesis for V2 format)
+  const updated = await updateCliCandidateRating(linkedin, Number(vote), thesis);
+  if (updated) {
+    return NextResponse.json({ status: "ok", source: "cli-store", thesis });
+  }
+
+  // Fallback to separate votes file
   const votesData = await getLocalVotes();
   votesData.votes = votesData.votes.filter((v) => v.linkedin !== linkedin);
   votesData.votes.push({
