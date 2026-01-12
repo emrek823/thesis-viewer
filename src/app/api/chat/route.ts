@@ -1,5 +1,5 @@
 import { anthropic } from "@ai-sdk/anthropic";
-import { streamText, stepCountIs } from "ai";
+import { streamText, stepCountIs, convertToModelMessages } from "ai";
 import { getThesis } from "@/lib/theses";
 import { parseThesis, formatThesisStructure } from "@/lib/thesis-parser";
 
@@ -114,7 +114,7 @@ ${s.content}
   const result = streamText({
     model: anthropic("claude-sonnet-4-20250514"),
     system: systemPrompt,
-    messages,
+    messages: convertToModelMessages(messages),
     tools: {
       web_search: webSearchTool,
     },
