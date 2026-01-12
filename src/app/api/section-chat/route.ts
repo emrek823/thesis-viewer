@@ -1,5 +1,5 @@
 import { anthropic } from "@ai-sdk/anthropic";
-import { streamText, stepCountIs, convertToModelMessages } from "ai";
+import { streamText, stepCountIs } from "ai";
 import { getThesis } from "@/lib/theses";
 
 export const maxDuration = 60;
@@ -62,7 +62,7 @@ ${thesis.content.slice(0, 3000)}${thesis.content.length > 3000 ? "\n\n[...trunca
   const result = streamText({
     model: anthropic("claude-sonnet-4-20250514"),
     system: systemPrompt,
-    messages: convertToModelMessages(messages),
+    messages,
     tools: {
       web_search: webSearchTool,
     },
