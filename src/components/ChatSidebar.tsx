@@ -19,12 +19,19 @@ interface ParsedEdit {
 }
 
 // Helper to extract text content from v5 message parts
-function getMessageText(message: { parts?: Array<{ type: string; text?: string }> }): string {
-  if (!message.parts) return "";
-  return message.parts
-    .filter((p) => p.type === "text" && p.text)
-    .map((p) => p.text)
-    .join("");
+function getMessageText(message: { parts?: Array<{ type: string; text?: string }>; content?: string }): string {
+  // AI SDK v5: messages have parts array
+  if (message.parts && message.parts.length > 0) {
+    return message.parts
+      .filter((p) => p.type === "text" && p.text)
+      .map((p) => p.text)
+      .join("");
+  }
+  // Fallback: check for content string (older format)
+  if (typeof message.content === "string") {
+    return message.content;
+  }
+  return "";
 }
 
 function parseEditBlocks(content: string): ParsedEdit[] {
