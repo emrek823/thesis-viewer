@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ThesisWithAnnotations } from "@/components/ThesisWithAnnotations";
 import { SourcesPanel } from "@/components/SourcesPanel";
 import { ChatSidebar } from "@/components/ChatSidebar";
+import { ThesisExplainer } from "@/components/ThesisExplainer";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -36,6 +37,8 @@ export default async function ThesisPage({ params }: Props) {
           &larr; All Theses
         </Link>
       </div>
+
+      <ThesisExplainer />
 
       <div className="flex gap-8">
         <article className="flex-1 min-w-0">
