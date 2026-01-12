@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 
 interface Candidate {
   name: string;
@@ -8,11 +8,20 @@ interface Candidate {
   bucket: string;
   linkedin: string;
   thesis: string;
+  question?: string;
   outreach_angle?: string;
   voted: boolean;
   vote: number | null;
   warmPath?: string | null;
   rowNumber?: number;
+  // V2 multi-thesis fields
+  allTheses?: string[];
+  thesisRatings?: Record<string, number | null>;
+}
+
+interface ThesisOption {
+  filename: string;
+  title: string;
 }
 
 interface Pattern {
@@ -55,6 +64,15 @@ export function OutboundVoter() {
   const [sendingHappenstance, setSendingHappenstance] = useState(false);
   const [happenstanceStatus, setHappenstanceStatus] = useState<string | null>(null);
 
+  // Thesis discovery state
+  const [theses, setTheses] = useState<ThesisOption[]>([]);
+  const [selectedThesis, setSelectedThesis] = useState<string>("");
+  const [discovering, setDiscovering] = useState(false);
+  const [discoveryResult, setDiscoveryResult] = useState<string | null>(null);
+
+  // Active thesis for current candidate (for multi-thesis rating)
+  const [activeThesis, setActiveThesis] = useState<string | null>(null);
+
   const loadData = useCallback(async () => {
     const res = await fetch("/api/outbound");
     const json = await res.json();
@@ -70,10 +88,56 @@ export function OutboundVoter() {
     loadData();
   }, [loadData]);
 
-  // Reset enrichment when candidate changes
+  // Load available theses
+  useEffect(() => {
+    fetch("/api/discover")
+      .then((res) => res.json())
+      .then((json) => {
+        if (json.theses) {
+          setTheses(json.theses);
+        }
+      })
+      .catch(console.error);
+  }, []);
+
+  const runDiscovery = async () => {
+    if (!selectedThesis || discovering) return;
+
+    setDiscovering(true);
+    setDiscoveryResult(null);
+
+    try {
+      const res = await fetch("/api/discover", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ thesis: selectedThesis }),
+      });
+      const json = await res.json();
+
+      if (json.error) {
+        setDiscoveryResult(`Error: ${json.error}`);
+      } else {
+        setDiscoveryResult(
+          `Found ${json.newCandidates?.length || 0} new candidates. Total: ${json.totalCandidates}`
+        );
+        // Refresh the candidates list
+        loadData();
+      }
+    } catch (error) {
+      setDiscoveryResult(`Error: ${error}`);
+    }
+
+    setDiscovering(false);
+  };
+
+  // Reset enrichment and active thesis when candidate changes
   useEffect(() => {
     setEnrichment(null);
-  }, [currentIndex]);
+    // Set active thesis to the candidate's current thesis
+    if (data?.candidates[currentIndex]) {
+      setActiveThesis(data.candidates[currentIndex].thesis);
+    }
+  }, [currentIndex, data]);
 
   const fetchEnrichment = async () => {
     if (!data || enriching) return;
@@ -155,6 +219,7 @@ export function OutboundVoter() {
     if (!data || currentIndex >= data.candidates.length) return;
 
     const candidate = data.candidates[currentIndex];
+    const thesisToRate = activeThesis || candidate.thesis;
 
     await fetch("/api/outbound", {
       method: "POST",
@@ -165,14 +230,24 @@ export function OutboundVoter() {
         role: candidate.role,
         bucket: candidate.bucket,
         vote: rating,
+        thesis: thesisToRate,
       }),
     });
 
-    // Update local state
+    // Update local state (including thesis-specific rating)
     setData((prev) => {
       if (!prev) return prev;
       const newCandidates = [...prev.candidates];
-      newCandidates[currentIndex] = { ...candidate, voted: true, vote: rating };
+      const updatedCandidate = {
+        ...candidate,
+        voted: true,
+        vote: rating,
+        thesisRatings: {
+          ...candidate.thesisRatings,
+          [thesisToRate]: rating,
+        }
+      };
+      newCandidates[currentIndex] = updatedCandidate;
       return {
         ...prev,
         candidates: newCandidates,
@@ -190,23 +265,57 @@ export function OutboundVoter() {
     }
     if (next >= data.candidates.length) next = 0; // wrap around
     setCurrentIndex(next);
-  };
 
-  const goTo = (index: number) => {
-    if (data && index >= 0 && index < data.candidates.length) {
-      setCurrentIndex(index);
+    // Open LinkedIn for next candidate (user action, so not blocked)
+    const nextCandidate = data.candidates[next];
+    if (nextCandidate?.linkedin) {
+      openLinkedIn(nextCandidate.linkedin);
     }
   };
 
-  // Keyboard shortcuts: 1-5 for rating, arrow keys for navigation
+  const goTo = (index: number, alsoOpenLinkedIn = false) => {
+    if (data && index >= 0 && index < data.candidates.length) {
+      setCurrentIndex(index);
+      if (alsoOpenLinkedIn) {
+        const candidate = data.candidates[index];
+        if (candidate?.linkedin) {
+          openLinkedIn(candidate.linkedin);
+        }
+      }
+    }
+  };
+
+  // Reference to the LinkedIn popup window
+  const linkedInWindowRef = useRef<Window | null>(null);
+
+  // Open LinkedIn in a separate window (reuses same popup)
+  const openLinkedIn = useCallback((url?: string) => {
+    if (!data) return;
+    const linkedinUrl = url || data.candidates[currentIndex]?.linkedin;
+    if (!linkedinUrl) return;
+
+    // If we have an existing window that's still open, navigate it
+    if (linkedInWindowRef.current && !linkedInWindowRef.current.closed) {
+      linkedInWindowRef.current.location.href = linkedinUrl;
+      linkedInWindowRef.current.focus();
+    } else {
+      // Open new popup window (user can position it on right side)
+      linkedInWindowRef.current = window.open(linkedinUrl, 'linkedin_popup', 'width=800,height=900');
+    }
+  }, [data, currentIndex]);
+
+
+  // Keyboard shortcuts: 1-5 for rating, arrow keys for navigation, L for LinkedIn
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key >= "1" && e.key <= "5") {
         vote(parseInt(e.key));
       } else if (e.key === "ArrowLeft") {
-        goTo(currentIndex - 1);
+        goTo(currentIndex - 1, true); // also open LinkedIn
       } else if (e.key === "ArrowRight") {
-        goTo(currentIndex + 1);
+        goTo(currentIndex + 1, true); // also open LinkedIn
+      } else if (e.key === "l" || e.key === "L") {
+        openLinkedIn();
       }
     };
     window.addEventListener("keydown", handleKeyDown);
@@ -254,6 +363,42 @@ export function OutboundVoter() {
     <div className="flex gap-6 h-[calc(100vh-200px)] min-h-[600px]">
       {/* Left side: Candidate card */}
       <div className="w-1/3 min-w-[350px] flex flex-col">
+        {/* Discovery panel */}
+        <div className="card-nintendo bg-white p-4 mb-4">
+          <div className="flex items-center gap-2 mb-2">
+            <svg className="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <span className="text-xs font-bold text-gray-600 uppercase">Find Candidates</span>
+          </div>
+          <div className="flex gap-2">
+            <select
+              value={selectedThesis}
+              onChange={(e) => setSelectedThesis(e.target.value)}
+              className="flex-1 text-sm px-3 py-2 border rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-accent"
+            >
+              <option value="">Select thesis...</option>
+              {theses.map((t) => (
+                <option key={t.filename} value={t.filename}>
+                  {t.title.length > 40 ? t.title.substring(0, 40) + "..." : t.title}
+                </option>
+              ))}
+            </select>
+            <button
+              onClick={runDiscovery}
+              disabled={!selectedThesis || discovering}
+              className="px-4 py-2 bg-accent hover:bg-accent/90 text-white text-sm font-medium rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {discovering ? "..." : "Go"}
+            </button>
+          </div>
+          {discoveryResult && (
+            <p className={`text-xs mt-2 ${discoveryResult.includes("Error") ? "text-red-500" : "text-green-600"}`}>
+              {discoveryResult}
+            </p>
+          )}
+        </div>
+
         {/* Stats bar */}
         <div className="flex items-center justify-between mb-4 text-sm">
           <span className="text-gray-500">
@@ -319,9 +464,60 @@ export function OutboundVoter() {
             {candidate.role || "No role specified"}
           </p>
 
+          {/* Thesis pills - clickable to switch active thesis */}
+          <div className="mb-4">
+            <div className="text-gray-500 text-xs mb-2">Theses:</div>
+            <div className="flex flex-wrap gap-2">
+              {(candidate.allTheses && candidate.allTheses.length > 0
+                ? candidate.allTheses
+                : [candidate.thesis]
+              ).map((thesis) => {
+                const rating = candidate.thesisRatings?.[thesis];
+                const isActive = activeThesis === thesis;
+                return (
+                  <button
+                    key={thesis}
+                    onClick={() => setActiveThesis(thesis)}
+                    className={`px-3 py-1 rounded-full text-xs font-medium transition flex items-center gap-1 ${
+                      isActive
+                        ? "bg-accent text-white ring-2 ring-accent ring-offset-1"
+                        : rating !== null && rating !== undefined
+                        ? "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                        : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                    }`}
+                  >
+                    {thesis.length > 20 ? thesis.substring(0, 20) + "…" : thesis}
+                    {rating !== null && rating !== undefined && (
+                      <span className={`${isActive ? "text-white/80" : "text-gray-500"}`}>
+                        ★{rating}
+                      </span>
+                    )}
+                    {(rating === null || rating === undefined) && (
+                      <span className={`${isActive ? "text-white/60" : "text-gray-400"}`}>·</span>
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+            {/* Stats summary */}
+            {candidate.allTheses && candidate.allTheses.length > 1 && (
+              <div className="text-xs text-gray-400 mt-2">
+                {candidate.allTheses.length} theses · {
+                  Object.values(candidate.thesisRatings || {}).filter(r => r !== null && r !== undefined).length
+                } rated
+              </div>
+            )}
+          </div>
+
+          {/* Validation need for active thesis */}
           <div className="bg-gray-50 p-3 rounded-lg mb-4 text-sm flex-1">
-            <div className="text-gray-500 mb-1">📋 Thesis:</div>
-            <div className="font-medium">{candidate.thesis}</div>
+            <div className="text-gray-500 mb-1">📋 Active: <span className="font-medium text-gray-700">{activeThesis || candidate.thesis}</span></div>
+            {candidate.question && (
+              <>
+                <div className="text-gray-500 mb-1 mt-2">🎯 Validates:</div>
+                <div className="text-gray-700 text-xs">{candidate.question}</div>
+              </>
+            )}
           </div>
 
           {/* 1-5 Rating buttons */}
@@ -344,9 +540,13 @@ export function OutboundVoter() {
             </div>
           </div>
 
-          <p className="text-center text-xs text-gray-400 mt-3">
-            Press 1-5 to rate · ←→ to navigate
-          </p>
+          <div className="mt-3 p-2 bg-gray-50 rounded text-xs text-gray-500">
+            <div className="font-medium text-gray-600 mb-1">Workflow:</div>
+            <div>1. Press <kbd className="px-1 bg-gray-200 rounded">L</kbd> → opens LinkedIn popup</div>
+            <div>2. Drag popup to right side of screen</div>
+            <div>3. Click thesis pills to switch active thesis</div>
+            <div>4. Press <kbd className="px-1 bg-gray-200 rounded">1-5</kbd> → rates active thesis & loads next</div>
+          </div>
         </div>
 
         {/* Patterns toggle */}
@@ -399,17 +599,15 @@ export function OutboundVoter() {
       <div className="flex-1 flex flex-col">
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-sm font-medium text-gray-600">Research & Outreach</h3>
-          <a
-            href={candidate.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => openLinkedIn()}
             className="text-xs text-blue-600 hover:underline flex items-center gap-1"
           >
-            Open LinkedIn
+            Open LinkedIn (L)
             <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
-          </a>
+          </button>
         </div>
 
         <div className="flex-1 card-nintendo bg-white p-5 overflow-y-auto">
