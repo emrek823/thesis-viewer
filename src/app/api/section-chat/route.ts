@@ -9,9 +9,16 @@ const webSearchTool = anthropic.tools.webSearch_20250305({
 });
 
 export async function POST(req: Request) {
-  const { messages, thesisSlug, selectedText } = await req.json();
+  try {
+    const { messages, thesisSlug, selectedText } = await req.json();
 
-  const thesis = thesisSlug ? getThesis(thesisSlug) : null;
+    console.log("[section-chat] Request received:", {
+      messagesCount: messages?.length,
+      thesisSlug,
+      selectedTextLength: selectedText?.length
+    });
+
+    const thesis = thesisSlug ? getThesis(thesisSlug) : null;
 
   let systemPrompt = `You are a sharp research editor helping improve a specific section of an investment thesis. Your job is to help rewrite the selected text to be more precise, evidence-backed, and compelling.
 
@@ -59,15 +66,22 @@ ${thesis.content.slice(0, 3000)}${thesis.content.length > 3000 ? "\n\n[...trunca
 "${selectedText}"`;
   }
 
-  const result = streamText({
-    model: anthropic("claude-sonnet-4-20250514"),
-    system: systemPrompt,
-    messages,
-    tools: {
-      web_search: webSearchTool,
-    },
-    stopWhen: stepCountIs(5),
-  });
+    const result = streamText({
+      model: anthropic("claude-sonnet-4-20250514"),
+      system: systemPrompt,
+      messages,
+      tools: {
+        web_search: webSearchTool,
+      },
+      stopWhen: stepCountIs(5),
+    });
 
-  return result.toUIMessageStreamResponse();
+    return result.toUIMessageStreamResponse();
+  } catch (error) {
+    console.error("[section-chat] Error:", error);
+    return new Response(JSON.stringify({ error: String(error) }), {
+      status: 500,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
 }
