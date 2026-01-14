@@ -160,6 +160,8 @@ The most bearish scenario: Epic bundles Curiosity into EHR contracts at minimal 
 | 2026-01-04 | [[SpatialBench Can Agents Analyze Real-World Spatial Biology Data]] | Research | Frontier AI agents achieve only 20-38% accuracy on spatial biology analysis. Validates LLM limitations on biological reasoning. |
 | 2026-01-04 | [[Vaalia Health Causal AI for precision healthcare]] | Company | Causal AI for adherence prediction. Counterfactual "what-if" analysis. 20-40% oral oncology discontinuation addressable. |
 | 2026-01-04 | [[SurgWorld Learning Surgical Robot Policies from Videos via World Modeling]] | Research | World model for surgical robotics: generates realistic surgery videos, VLA policy outperforms real-only training. |
+| 2026-01-12 | [[Sources/Granola/Virtue - Internal Team Sync-2026-01-12_11-21-24]] | Operator | "Yann LeCun's Ami raised ~$500M at $3.5B valuation for JEPA approach—major capital commitment validates world model thesis" |
+| 2026-01-11 | [[Sources/Browser-History/2026-01-11-nabla]] | Company | "Nabla raised $120M, partners with Yann LeCun's Advanced Machine Intelligence for world model technology to build FDA-certifiable agentic AI in healthcare" |
 
 ---
 

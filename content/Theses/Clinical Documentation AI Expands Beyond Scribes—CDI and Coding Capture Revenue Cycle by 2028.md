@@ -31,6 +31,7 @@ Three dynamics explain why:
 - **Market structure:** CDI becomes wedge into revenue cycle. 2-3 AI-native platforms dominate mid-market while enterprise keeps legacy.
 
 **How this evolved:**
+- *2026-01-13:* /new-thesis added Horus multi-agent consensus ("only system running multi-agent, consensus-based logic"), Alaffia 20x throughput + 40% savings, Eric Larsen quote on RCM agentic AI
 - *2026-01-10:* Auto-generated from /new-thesis clustering of Granola operator interviews (Horus)
 - *2026-01-11:* **PRESSURE TESTED** — Thesis weakened. Abridge launched "billable notes" + prior auth at point of care; Ambience explicitly marketing as "leading platform for documentation, coding, and CDI." Ambient platforms are not waiting. Epic launching "Penny" for autonomous coding.
 
@@ -91,6 +92,9 @@ Three dynamics explain why:
 - [x] **Revenue impact is quantifiable.** UF Health loses $25M annually on improper CDI. Research found $3M missed from just two CPT codes. "98% of billable encounters being underbilled."
 - [x] **Channel partnerships accelerate distribution.** E4 Health (400+ hospitals), PYA, Huron Consulting, Imaginable Healthcare Solutions—channel faster than direct sales.
 - [x] **Product differentiation is real.** Agent orchestration, consensus-based reasoning across models, real-time payer policy retrieval. CDI-first players have integration depth.
+- [x] **Multi-agent consensus validated.** "HorusVision is the only system running multi-agent, consensus-based logic, piecing together case information from the EHR, payor policies, and federal & state compliance regulatory information" ([[2026-01-08-horus-health]])
+- [x] **RCM will be "first to agentify."** "In revenue cycle management, the claim is either right or wrong—it's objective. It's verifiable. And consequently, it will be among the first areas to 'agentify.'" — Eric Larsen, TowerBrook ([[2026-01-06-eric-larsen-on-the-emergence-and-potential-of-ai-i]])
+- [x] **AI claims management at scale.** Alaffia: "20x throughput increase... 40% savings from existing processes... AI Agent processes thousands of medical records against relevant clinical criteria and policies, prioritizing the most valuable claims for human review" ([[2026-01-06-alaffia-ai-powered-claims-management-for-healthca]])
 - [ ] **Ambient expansion may fail.** Adding CDI to ambient platform is technically different than building CDI-first. Payer policy complexity may create quality gaps.
 
 ---
@@ -180,6 +184,9 @@ The strongest counter-argument is that ambient documentation platforms will natu
 | 2026-01-11 | [What Epic is signaling for 2026](https://www.beckershospitalreview.com/healthcare-information-technology/ehrs/what-epic-is-signaling-for-2026/) | News | Epic 150+ AI features in development for 2026; Art ambient scribe early 2026 |
 | 2026-01-11 | [AI models fall short in medical coding accuracy](https://www.news-medical.net/news/20240422/AI-models-fall-short-in-medical-coding-accuracy.aspx) | Research | GPT-4: 33.9% ICD-10-CM accuracy, 45.9% ICD-9-CM, 49.8% CPT |
 | 2026-01-11 | [Solventum 360 Encompass CDI](https://www.solventum.com/en-us/home/health-information-technology/solutions/360-encompass-cdi/) | Company | Solventum AI-powered CDI with machine learning; NLP algorithms for automated reviews |
+| 2026-01-08 | [[2026-01-08-horus-health]] | News | Horus multi-agent consensus—"only system running multi-agent, consensus-based logic" |
+| 2026-01-06 | [[2026-01-06-eric-larsen-on-the-emergence-and-potential-of-ai-i]] | News | RCM "first to agentify"—objective, verifiable decisions enable AI substitution |
+| 2026-01-06 | [[2026-01-06-alaffia-ai-powered-claims-management-for-healthca]] | News | Alaffia: 20x throughput, 40% savings, custom AI agents for claims |
 
 ---
 
@@ -192,5 +199,5 @@ The strongest counter-argument is that ambient documentation platforms will natu
 ---
 
 *Confidence: MEDIUM-LOW — Technical moat (foundation model limitations) still exists, but ambient platforms aggressively expanding into CDI/coding. Abridge and Ambience are not "ambient-only." Watch for CDI accuracy comparisons.*
-*Last rebuilt: 2026-01-11*
-*Source: /new-thesis clustering from Granola (Horus)*
+*Last rebuilt: 2026-01-13*
+*Source: /new-thesis clustering from Granola (Horus), batch 2 additions (Alaffia, Eric Larsen)*

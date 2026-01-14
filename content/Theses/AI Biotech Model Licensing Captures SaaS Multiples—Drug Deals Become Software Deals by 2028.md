@@ -25,9 +25,10 @@
 - **Market structure:** Bifurcation between "AI-as-infrastructure" (software multiples) and "AI-as-drug-discovery" (biotech multiples). The infrastructure players win on valuation.
 
 **How this evolved:**
+- *2026-01-13:* /new-thesis added Benchling-Lilly TuneLab federated learning partnership—$1B+ Lilly data monetized to 1,300+ biotech companies
 - *2026-01-08:* GSK-Noetik ($50M upfront for 5-year model license)—CEO calls it "a new paradigm in biotech: the licensing of human foundation models"
 - *2026-01-08:* Boltz-Pfizer (exclusive model training on Pfizer data + custom workflows)
-- *2026-01-09:* Chai-Lilly (platform deployment + purpose-built exclusive model)
+- *2026-01-09:* Chai-Lilly (platform deployment + purpose-built exclusive model)—"one of the pharma industry's largest AI software deals"
 - *2026-01-09:* Research synthesis confirmed pattern: biobucks → SaaS is real and investable
 
 ---
@@ -38,7 +39,7 @@
 - [x] **GSK pays $50M for models, not drugs.** 5-year subscription + data collaboration. Non-exclusive license to OCTO-VC virtual cell models. "A new paradigm for AI-focused biotech." ([[2026-01-09-ai-drug-discovery-model-licensing-sea-change]])
 - [x] **Boltz-Pfizer: exclusive model training.** Pfizer pays for Boltz to refine models on Pfizer's historical data. Custom AI workflows for target programs. ([[2026-01-09-ai-drug-discovery-model-licensing-sea-change]])
 - [x] **Chai-Lilly: platform deployment.** Lilly deploys Chai's platform internally + gets purpose-built exclusive model trained on Lilly data. ([[2026-01-09-ai-drug-discovery-model-licensing-sea-change]])
-- [x] **Lilly TuneLab: reverse platform model.** Lilly *sells* AI model access to biotechs via federated learning. $1B+ data investment monetized as platform. ([[Lilly launches TuneLab platform]])
+- [x] **Lilly TuneLab: reverse platform model.** Lilly *sells* AI model access to biotechs via federated learning. $1B+ data investment monetized as platform. "Scientists will be able to run Lilly TuneLab prediction models for antibodies and small molecules, then share data back for federated learning." 1,300+ biotech companies via Benchling partnership. ([[2026-01-08-benchling-and-lilly-tunelab-partner-to-democratize]])
 
 ### Valuation Arbitrage Evidence
 - [x] **Chai at $1.3B on zero approvals.** $225M total funding, valued at software multiples despite biotech risk profile. ([[2026-01-09-ai-drug-discovery-model-licensing-sea-change]])
@@ -183,6 +184,8 @@ Model Licensing Deals:
 | 2026-01-10 | [[2026-01-10-pharma-model-licensing-investment-paradigm]] | LLM-Chat | GSK-Noetik $50M for 5-year model license (recurring fees), Tempus-AZ $200M predictive models. Recurring revenue replaces milestone-gated biobucks. |
 | 2026-01-09 | [[2026-01-09-noetik-gsk-model-licensing-economics]] | Research | Deep dive on GSK-Noetik deal structure—subscription model for AI multiomics, non-exclusive license to OCTO-VC virtual cell models. |
 | 2026-01-09 | [[gsk-noetik-sign-cancer-deal-on-ai-virtual-cell-models-6ff46e44]] | News | GSK-Noetik deal coverage—5-year collaboration, data partnership beyond licensing. |
+| 2026-01-08 | [[2026-01-08-benchling-and-lilly-tunelab-partner-to-democratize]] | News | Benchling-Lilly TuneLab: federated learning to 1,300+ biotechs, $1B+ Lilly data |
+| 2026-01-09 | [[2026-01-09-chai-discovery-announces-collaboration-with-eli-li]] | News | Chai-Lilly: "one of pharma's largest AI software deals", double-digit hit rates |
 
 ---
 
@@ -220,7 +223,7 @@ Model Licensing Deals:
 ---
 
 *Created: 2026-01-09*
-*Updated: 2026-01-09 — Expanded from auto-generated stub with full deal evidence, valuation math, and competitive analysis*
+*Updated: 2026-01-13 — Added Benchling-Lilly TuneLab federated learning partnership, Chai-Lilly deal details*
 *Seed sources: [[2026-01-09-ai-drug-discovery-model-licensing-sea-change]], GSK-Noetik deal, Chai-Lilly deal, Boltz-Pfizer deal*
 *Key insight: Same revenue achieves 2-3x higher valuation as software vs biotech. Model licensing transforms AI drug discovery from pipeline-dependent biotech to platform-based software.*
 *Confidence: Medium (deal evidence strong, but thesis depends on renewals and decoupling from clinical risk—both unproven)*

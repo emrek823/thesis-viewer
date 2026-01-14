@@ -32,7 +32,7 @@ Human cost floors collapse in successful automated labs. Today, even if sequenci
 
 - [ ] **$900M+ deployed to the gap in 2025.** Periodic Labs ($300M seed, $1B pre-money valuation), Lila Sciences ($550M total, $1.3B valuation), Medra ($52M Series A with Genentech customer). Capital validates the thesis. ([[2026-01-08-charles-yang-autonomous-labs-precall]])
 
-- [ ] **Execution layer is commoditizing faster than instruments.** π0 open-sourced with 1-20 hours fine-tuning data sufficient for new tasks. Kosmos AI Scientist does 6 months PhD work in 1 day. Computational bottleneck clearing—wet lab hardware is the constraint. ([[Open Sourcing π0]], [[Kosmos An AI Scientist for Autonomous Discovery]])
+- [ ] **Execution layer is commoditizing faster than instruments.** π0 open-sourced with 1-20 hours fine-tuning data sufficient for new tasks. Kosmos AI Scientist does 6 months PhD work in 1 day. Computational bottleneck clearing—wet lab hardware is the constraint. VLA (Vision-Language-Action) models enable telling robots "what to do" not "how to do it"—Physical Intelligence leading with open-source models. ([[Open Sourcing π0]], [[Kosmos An AI Scientist for Autonomous Discovery]], [[Virtue and Tomaz Berisa-2025-12-17_14-00-41]])
 
 - [ ] **Human costs create hard floor that only full automation solves.** Even if sequencing were free, low-pass genome costs $20-30 due to humans in loop. Current market $300-400 vs theoretical $100. Can't build venture business running a lab unless you automate the whole thing. ([[Sources/Granola/Granola 1/Virtue and Tomaz Berisa]])
 

@@ -29,6 +29,7 @@ Counsel Health ($36M raised, a16z + GV) demonstrates the model works: 96% issue 
 Incumbents (Teladoc 93M members, Amazon Clinic) will integrate AI but lack startup velocity to own the consumer front door. The risk is OpenAI going direct via health system partnerships—but that makes them a competitor to Epic/Microsoft, not to Counsel/K Health.
 
 **How this evolved:**
+- *2026-01-13:* /new-thesis added consumer health AI adoption data (62% say system broken, 3 in 5 used AI for health), Kin Health ("forget 80% of what doctor said"), Torch (fragmented records), Fidji Simo interview
 - *2026-01-09:* Auto-generated from /new-thesis clustering
 - *2026-01-09:* Research deep dive on trust, monetization, physician-in-the-loop dynamics
 - *2026-01-09:* **REBUILD** — Added lawsuit/safety risks, FDA deregulation, physician-in-the-loop criticism. Contrarian threats: AI chatbot lawsuits elevated to bear case.
@@ -46,6 +47,9 @@ Incumbents (Teladoc 93M members, Amazon Clinic) will integrate AI but lack start
 - [x] **17% of adults lack primary care physician** — Demand for hybrid AI+physician models growing ([NPR](https://www.npr.org/sections/shots-health-news/2026/01/09/nx-s1-5670382/primary-care-doctor-shortage-medical-ai-diagnosis))
 - [x] **52% healthcare organizations report moderate AI ROI** — 45% achieved measurable return within 12 months ([Menlo Ventures](https://menlovc.com/perspective/2025-the-state-of-ai-in-healthcare/))
 - [ ] **ChatGPT Health explicitly not HIPAA-compliant** — "HIPAA doesn't apply in this setting" = regulatory arbitrage persists ([OpenAI](https://openai.com/index/introducing-chatgpt-health/))
+- [x] **62% say healthcare system is broken** — "3 in 5 US adults used AI tools for their health or healthcare over the past 3 months" — Fidji Simo interview ([[2026-01-08-chatgpt-health-and-what-ai-can-do-for-a-broken-sys]])
+- [x] **Patients forget 80% of doctor visits** — "We leave the doctor's office and immediately forget 80% of what was said. The instructions, the next steps, the nuances of our own health; they fade into anxiety and uncertainty" ([[2026-01-09-kin-health]])
+- [x] **Fragmented records create demand** — "No one should have to log into three different portals just to piece together their blood sugar trends. Torch merges your data from every hospital and lab into one complete, clear, and beautiful picture" ([[2026-01-06-torch---track-medical-records]])
 
 ---
 
@@ -160,6 +164,9 @@ The third counter is that K Health's poor customer experience (2.2 Trustpilot, 2
 | 2026-01-07 | [[Sources/News/2026-01-07/66-top-healthcare-startups-and-healthtech-companies-built-in]] | News | K Health: AI symptom checker + $35 physician visits |
 | 2026-01-08 | [[Sources/News/2026-01-08/rocket-doctor-brings-ai-to-healthcare-diagnostics-jewish-community-voice]] | News | Rocket Doctor AI: 300 doctors using physician-in-the-loop |
 | 2026-01-07 | [[Sources/News/2026-01-07/telehealth-ai-reimbursement-has-digital-health-in-limbo-for-2026]] | News | Telehealth reimbursement limbo continues |
+| 2026-01-08 | [[2026-01-08-chatgpt-health-and-what-ai-can-do-for-a-broken-sys]] | News | Fidji Simo: "62% say system broken; 3 in 5 used AI for health; 5 min per patient" |
+| 2026-01-09 | [[2026-01-09-kin-health]] | News | Kin Health: "Patients forget 80% of what doctor says; AI visit companion" |
+| 2026-01-06 | [[2026-01-06-torch---track-medical-records]] | News | Torch: "3 portals → single view; merge data from every hospital and lab" |
 
 ---
 
@@ -175,5 +182,5 @@ The third counter is that K Health's poor customer experience (2.2 Trustpilot, 2
 ---
 
 *Confidence: MEDIUM-LOW — Core mechanism validated (ChatGPT can't prescribe, physician-in-the-loop needed for complex care monetization), but Utah autonomous prescribing precedent weakens thesis. K Health customer experience poor. Lawsuit risk elevated.*
-*Last rebuilt: 2026-01-11*
+*Last rebuilt: 2026-01-13*
 *Contrarian threats: Utah Doctronic (HIGH) — AI prescribes 190 meds at $4 without physician, 99.2% accuracy, states expanding. Addressed: limited to refills, non-controlled substances. K Health 2.2 Trustpilot (MEDIUM) — poor customer experience. Raine v. OpenAI lawsuit (MEDIUM) — tests AI liability for companion chatbots.*

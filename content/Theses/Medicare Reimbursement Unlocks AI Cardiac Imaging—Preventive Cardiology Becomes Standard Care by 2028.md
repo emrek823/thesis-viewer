@@ -116,6 +116,7 @@ AI cardiac imaging improves prediction but not outcomes—a classic medical tech
 | 2025 | [JACC: CCTA False Positive Rate](https://www.jacc.org/doi/10.1016/j.jacc.2019.12.011) | Research | "61-92% PPV; calcification causes 45.9% of false positives" |
 | 2025 | [Lancet: Challenges for AI in Cardiac Imaging](https://www.thelancet.com/journals/landig/article/PIIS2589-7500(24)00142-0/fulltext) | Research | "Clinical translation remains scarce... integrating AI into practice remains substantial challenge" |
 | 2025 | [ACC: DANCAVAS Should Inform Future Trials](https://www.acc.org/latest-in-cardiology/articles/2025/08/26/11/47/sat-12pm-personalized-esc-2025) | Research | "Higher bleeding in screening group suggests aspirin should be used very selectively" |
+| 2026-01 | [[Sources/Policy/Congress/Health Tech Investment Act S.1399 Analysis]] | Policy | "S.1399 codifies 5-year guaranteed reimbursement pathway for FDA-cleared diagnostic AI—extends protection from MAC-by-MAC approval to statutory path—accelerates Cleerly, HeartFlow, Caristo adoption timelines" |
 
 ---
 

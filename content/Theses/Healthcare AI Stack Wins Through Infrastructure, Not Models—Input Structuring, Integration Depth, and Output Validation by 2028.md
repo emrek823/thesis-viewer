@@ -387,6 +387,10 @@ Healthcare AI Stack Wins Through Infrastructure, Not Models
 | 2026-01-11 | [Sacra Ambience](https://sacra.com/c/ambience/) | Research | Ambience $30M ARR, 97.7 KLAS satisfaction, AutoCDI module $4K-5K/provider |
 | 2026-01-11 | [Epic Art Launch](https://www.fiercehealthcare.com/health-tech/epic-unveils-major-ai-features-ai-charting-microsoft-cosmos-ai-risk-prediction-and-rcm) | News | Epic Art "limited use" early 2026; uses Microsoft Dragon for transcription |
 | 2026-01-11 | [KLAS Ambience ROI](https://klasresearch.com/report/ambience-healthcare-roi-validations-2025-how-the-pursuit-of-clinician-well-being-led-to-demonstrable-roi-for-st-luke-s-health-system/3812) | Research | Ambience ranked #1 Improving Clinician Experience in KLAS Emerging Solutions Top 20 |
+| 2026-01-11 | [[Sources/News/2026-01-11/why-2026-healthcare-vc-is-betting-on-ai-integration-over-innovation]] | Research | "AI health-tech funding surged to $10.7B in 2025 (24% YoY), 47% of digital health funding. Average deal size $26.1M vs $20.4M in 2024. 187K+ physician deficit by 2037, 70% healthcare leaders rank operational efficiency top priority" |
+| 2026-01-12 | [[Sources/LLM-Chats/Claude-Epic Curiosity healthcare foundation model memo]] | Research | "Epic Cosmos 300M+ patient records, ~50% EHR share, 70% hospital discharges. CoMET trained on 115B medical events from 118M patients—outperforms task-specific supervised models without fine-tuning" |
+| 2026-01-11 | [[Sources/LLM-Chats/2026-01-11-ai-durable-healthcare-thesis]] | Research | "1,300+ FDA-cleared AI devices. 95% AI project failure rate, only 19% report radiology AI 'high success'. 510(k) median 142 days" |
+| 2026-01-11 | [[Sources/Browser-History/2026-01-11-nabla]] | Company | "Nabla integrates with all major EHRs, 35+ languages, 150+ health systems. Raised $120M, partners with Yann LeCun's Advanced Machine Intelligence for world model technology" |
 
 ---
 
