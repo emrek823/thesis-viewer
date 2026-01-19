@@ -1,3 +1,5 @@
+![[Images/biotech-manufacturing-intelligence.png]]
+
 # Thesis: Biotech Manufacturing Intelligence — GxP Validation Creates Moat as CDMO Fragmentation Increases by 2028
 
 ## 1-2 Sentence Summary

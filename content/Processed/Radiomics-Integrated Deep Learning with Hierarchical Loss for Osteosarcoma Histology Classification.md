@@ -1,0 +1,38 @@
+---
+title: Radiomics-Integrated Deep Learning with Hierarchical Loss for Osteosarcoma
+  Histology Classification
+authors:
+- Yaxi Chen
+- Zi Ye
+- Shaheer U. Saeed
+- Oliver Yu
+- Simin Ni
+- Jie Huang
+- Yipeng Hu
+date: '2026-01-14'
+categories:
+- cs.CV
+- cs.AI
+pdf_url: https://arxiv.org/pdf/2601.09416v1
+arxiv_id: 2601.09416v1
+tags:
+- paper
+- alphaxiv/hot
+- topic/cs-CV
+- topic/cs-AI
+---
+
+# Radiomics-Integrated Deep Learning with Hierarchical Loss for Osteosarcoma Histology Classification
+
+**Authors:** Yaxi Chen, Zi Ye, Shaheer U. Saeed, Oliver Yu, Simin Ni...
+
+**Date:** 2026-01-14 | **Categories:** cs.CV, cs.AI
+
+[PDF](https://arxiv.org/pdf/2601.09416v1) | [AlphaXiv](https://alphaxiv.org/abs/2601.09416v1)
+
+## Abstract
+
+Osteosarcoma (OS) is an aggressive primary bone malignancy. Accurate histopathological assessment of viable versus non-viable tumor regions after neoadjuvant chemotherapy is critical for prognosis and treatment planning, yet manual evaluation remains labor-intensive, subjective, and prone to inter-observer variability. Recent advances in digital pathology have enabled automated necrosis quantification. Evaluating on test data, independently sampled on patient-level, revealed that the deep learning model performance dropped significantly from the tile-level generalization ability reported in previous studies. First, this work proposes the use of radiomic features as additional input in model training. We show that, despite that they are derived from the images, such a multimodal input effectively improved the classification performance, in addition to its added benefits in interpretability. Second, this work proposes to optimize two binary classification tasks with hierarchical classes (i.e. tumor-vs-non-tumor and viable-vs-non-viable), as opposed to the alternative ``flat'' three-class classification task (i.e. non-tumor, non-viable tumor, viable tumor), thereby enabling a hierarchical loss. We show that such a hierarchical loss, with trainable weightings between the two tasks, the per-class performance can be improved significantly. Using the TCIA OS Tumor Assessment dataset, we experimentally demonstrate the benefits from each of the proposed new approaches and their combination, setting a what we consider new state-of-the-art performance on this open dataset for this application. Code and trained models: https://github.com/YaxiiC/RadiomicsOS.git.
+
+## Notes
+

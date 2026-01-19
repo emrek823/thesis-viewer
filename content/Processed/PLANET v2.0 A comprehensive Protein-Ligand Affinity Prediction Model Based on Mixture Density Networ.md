@@ -1,0 +1,38 @@
+---
+title: 'PLANET v2.0: A comprehensive Protein-Ligand Affinity Prediction Model Based
+  on Mixture Density Network'
+authors:
+- Haotian Gao
+- Xiangying Zhang
+- Jingyuan Li
+- Xinchong Chen
+- Haojie Wang
+- Yifei Qi
+- Renxiao Wang
+date: '2026-01-12'
+categories:
+- cs.LG
+- q-bio.MN
+pdf_url: https://arxiv.org/pdf/2601.07415v1
+arxiv_id: 2601.07415v1
+tags:
+- paper
+- alphaxiv/hot
+- topic/cs-LG
+- topic/q-bio-MN
+---
+
+# PLANET v2.0: A comprehensive Protein-Ligand Affinity Prediction Model Based on Mixture Density Network
+
+**Authors:** Haotian Gao, Xiangying Zhang, Jingyuan Li, Xinchong Chen, Haojie Wang...
+
+**Date:** 2026-01-12 | **Categories:** cs.LG, q-bio.MN
+
+[PDF](https://arxiv.org/pdf/2601.07415v1) | [AlphaXiv](https://alphaxiv.org/abs/2601.07415v1)
+
+## Abstract
+
+Drug discovery represents a time-consuming and financially intensive process, and virtual screening can accelerate it. Scoring functions, as one of the tools guiding virtual screening, have their precision closely tied to screening efficiency. In our previous study, we developed a graph neural network model called PLANET (Protein-Ligand Affinity prediction NETwork), but it suffers from the defect in representing protein-ligand contact maps. Incorrect binding modes inevitably lead to poor affinity predictions, so accurate prediction of the protein-ligand contact map is desired to improve PLANET. In this study, we have proposed PLANET v2.0 as an upgraded version. The model is trained via multi-objective training strategy and incorporates the Mixture Density Network to predict binding modes. Except for the probability density distributions of non-covalent interactions, we innovatively employ another Gaussian mixture model to describe the relationship between distance and energy of each interaction pair and predict protein-ligand affinity like calculating the mathematical expectation. As on the CASF-2016 benchmark, PLANET v2.0 demonstrates excellent scoring power, ranking power, and docking power. The screening power of PLANET v2.0 gets notably improved compared to PLANET and Glide SP and it demonstrates robust validation on a commercial ultra-large-scale dataset. Given its efficiency and accuracy, PLANET v2.0 can hopefully become one of the practical tools for virtual screening workflows. PLANET v2.0 is freely available at https://www.pdbbind-plus.org.cn/planetv2.
+
+## Notes
+

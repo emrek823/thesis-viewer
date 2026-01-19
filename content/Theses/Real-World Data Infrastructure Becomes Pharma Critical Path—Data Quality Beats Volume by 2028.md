@@ -1,3 +1,5 @@
+![[Images/real-world-data-infrastructure-becomes-pharma-critical-path.png]]
+
 # Thesis: Real-World Data Infrastructure Becomes Pharma Critical Path—Data Quality Beats Volume by 2028
 
 ## Mechanism

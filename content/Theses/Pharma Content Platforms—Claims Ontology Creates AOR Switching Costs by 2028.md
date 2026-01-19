@@ -1,3 +1,5 @@
+![[Images/pharma-content-platforms.png]]
+
 # Thesis: Pharma Content Platforms — Claims Ontology Creates AOR Switching Costs by 2028
 
 ## 1-2 Sentence Summary
