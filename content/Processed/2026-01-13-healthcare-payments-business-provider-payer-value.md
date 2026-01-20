@@ -244,6 +244,8 @@ Payers make money on virtual cards. Providers hate them. RTP is provider-friendl
 
 ### Workflow Position
 
+Which wedge would you focus on given the differences in certain specialties (oncology vs. AIC vs. cardiology vs. )
+
 ```
 PRE-SERVICE → SUBMISSION → ADJUDICATION → PAYMENT → SPEND
      │              │            │            │         │
