@@ -150,12 +150,12 @@ REVENUE PER EMPLOYEE                     REVENUE PER EMPLOYEE
 
 ## Founding Team
 
-| Role | Name | Background |
-|------|------|------------|
-| Founder & CEO | Kevin Brown | Led oncology FM development at Bristol Myers Squibb; Director of AI at SimBioSys; federated learning R&D at Siemens Healthineers |
-| Co-Founder & Chief Scientist | Zekai (Zach) Chen | PhD GWU (ML); Senior Data Scientist at BMS; FMs at JPMorgan Chase |
-| Founder & CTO | Arda Pekis | Georgia Tech; Built FMs for genomics/imaging; FDA clearance for breast cancer software at SimBioSys |
-| Founding Engineer | David Laprade | Joined June 2025 |
+| Role                         | Name              | Background                                                                                                                       |
+| ---------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Founder & CEO                | Kevin Brown       | Led oncology FM development at Bristol Myers Squibb; Director of AI at SimBioSys; federated learning R&D at Siemens Healthineers |
+| Co-Founder & Chief Scientist | Zekai (Zach) Chen | PhD GWU (ML); Senior Data Scientist at BMS; FMs at JPMorgan Chase                                                                |
+| Founder & CTO                | Arda Pekis        | Georgia Tech; Built FMs for genomics/imaging; FDA clearance for breast cancer software at SimBioSys                              |
+| Founding Engineer            | David Laprade     | Joined June 2025                                                                                                                 |
 
 **Key insight**: Team has direct experience building production foundation models at BMS (oncology), SimBioSys (FDA-cleared), and JPMorgan (financial ML at scale). This is *not* a first-time team.
 
@@ -173,12 +173,12 @@ REVENUE PER EMPLOYEE                     REVENUE PER EMPLOYEE
 
 ## Current Resources
 
-| Metric | Standard Model Bio | Benchmark |
-|--------|-------------------|-----------|
-| Total Raised | ~$10M (estimated) | Noetik: $50M+, Chai: $225M |
-| Employees | ~6 | |
-| Compute | 32 NVIDIA H100 GPUs | Evo 2: 2,000 H100s |
-| Data | Federated learning (claimed) | Tempus: 40M records owned |
+| Metric       | Standard Model Bio           | Benchmark                  |
+| ------------ | ---------------------------- | -------------------------- |
+| Total Raised | ~$2.8M (estimated)           | Noetik: $50M+, Chai: $225M |
+| Employees    | ~9                           |                            |
+| Compute      | 32 NVIDIA H100 GPUs          | Evo 2: 2,000 H100s         |
+| Data         | Federated learning (claimed) | Tempus: 40M records owned  |
 
 ---
 
@@ -359,15 +359,15 @@ SMB-v1-Structure (1.7B parameters) = first **biological world model** using Join
 
 ## Market Map
 
-| Company | Focus | Architecture | Funding | Commercial |
-|---------|-------|--------------|---------|------------|
-| **SMB** | Multi-scale patient | JEPA + NEP | ~$10M | Pre-revenue |
-| Noetik | Virtual cell / TME | 1.5B transformer | $50M+ | GSK $50M deal |
-| Chai | Molecular structure | Diffusion | $225M | Lilly deal |
-| Recursion | Phenomics | ViT-MAE | $688M+ | Roche $150M |
-| Tempus | Clinical data | Various | $1.6B+ | AZ $200M |
-| BioMap | Life sciences FM | 210B MOE | $200M+ | Sanofi $1B+ |
-| Evo 2 | DNA/genomics | StripedHyena | ~$10M compute | Academic |
+| Company   | Focus               | Architecture     | Funding       | Commercial    |
+| --------- | ------------------- | ---------------- | ------------- | ------------- |
+| **SMB**   | Multi-scale patient | JEPA + NEP       | ~$2.8M        | Pre-revenue   |
+| Noetik    | Virtual cell / TME  | 1.5B transformer | $50M+         | GSK $50M deal |
+| Chai      | Molecular structure | Diffusion        | $225M         | Lilly deal    |
+| Recursion | Phenomics           | ViT-MAE          | $688M+        | Roche $150M   |
+| Tempus    | Clinical data       | Various          | $1.6B+        | AZ $200M      |
+| BioMap    | Life sciences FM    | 210B MOE         | $200M+        | Sanofi $1B+   |
+| Evo 2     | DNA/genomics        | StripedHyena     | ~$10M compute | Academic      |
 
 ## Key Insight
 

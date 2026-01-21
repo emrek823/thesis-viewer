@@ -1,0 +1,32 @@
+---
+title: Context-aware Graph Causality Inference for Few-Shot Molecular Property Prediction
+authors:
+- Van Thuy Hoang
+- O-Joun Lee
+date: '2026-01-16'
+categories:
+- cs.LG
+- cs.AI
+pdf_url: https://arxiv.org/pdf/2601.11135v1
+arxiv_id: 2601.11135v1
+tags:
+- paper
+- alphaxiv/hot
+- topic/cs-LG
+- topic/cs-AI
+---
+
+# Context-aware Graph Causality Inference for Few-Shot Molecular Property Prediction
+
+**Authors:** Van Thuy Hoang, O-Joun Lee
+
+**Date:** 2026-01-16 | **Categories:** cs.LG, cs.AI
+
+[PDF](https://arxiv.org/pdf/2601.11135v1) | [AlphaXiv](https://alphaxiv.org/abs/2601.11135v1)
+
+## Abstract
+
+Molecular property prediction is becoming one of the major applications of graph learning in Web-based services, e.g., online protein structure prediction and drug discovery. A key challenge arises in few-shot scenarios, where only a few labeled molecules are available for predicting unseen properties. Recently, several studies have used in-context learning to capture relationships among molecules and properties, but they face two limitations in: (1) exploiting prior knowledge of functional groups that are causally linked to properties and (2) identifying key substructures directly correlated with properties. We propose CaMol, a context-aware graph causality inference framework, to address these challenges by using a causal inference perspective, assuming that each molecule consists of a latent causal structure that determines a specific property. First, we introduce a context graph that encodes chemical knowledge by linking functional groups, molecules, and properties to guide the discovery of causal substructures. Second, we propose a learnable atom masking strategy to disentangle causal substructures from confounding ones. Third, we introduce a distribution intervener that applies backdoor adjustment by combining causal substructures with chemically grounded confounders, disentangling causal effects from real-world chemical variations. Experiments on diverse molecular datasets showed that CaMol achieved superior accuracy and sample efficiency in few-shot tasks, showing its generalizability to unseen properties. Also, the discovered causal substructures were strongly aligned with chemical knowledge about functional groups, supporting the model interpretability.
+
+## Notes
+
