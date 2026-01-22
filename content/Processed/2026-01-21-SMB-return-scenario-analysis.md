@@ -1,20 +1,20 @@
 # SMB Return Scenario Analysis
 
-*Analysis date: 2026-01-11*
-*Position: $3.8M total ($1.8M initial + $2M bridge)*
+*Analysis date: 2026-01-21*
+*Position: $4.3M total ($1.8M initial + $2.5M follow-on)*
 
 ---
 
 ## Position Structure
 
-| | Original | Bridge | Combined |
+| | Original | Follow-on | Combined |
 |--|----------|--------|----------|
-| **Investment** | $1.8M | $2.0M | **$3.8M** |
-| **Post-money** | $22.5M | $30M cap | — |
-| **Ownership acquired** | 8.0% | 6.67% | — |
-| **Blended ownership** | — | — | **14.13%** |
-| **% of Fund II ($55.75M)** | 3.2% | 3.6% | **6.8%** |
-| **Effective entry valuation** | — | — | **$26.9M** |
+| **Investment** | $1.8M | $2.5M | **$4.3M** |
+| **Post-money** | $22.5M cap | $35M post | — |
+| **Ownership acquired** | 8.0% | 7.14% | — |
+| **Blended ownership** | — | — | **15.14%** |
+| **% of Fund II ($55.75M)** | 3.2% | 4.5% | **7.7%** |
+| **Effective entry valuation** | — | — | **$28.4M** |
 
 ---
 
@@ -95,18 +95,18 @@
 
 ---
 
-## Return Scenarios on $3.8M Position
+## Return Scenarios on $4.3M Position
 
 | Scenario | Exit Valuation | Dilution | Exit Ownership | Proceeds | Multiple | % of Fund II Returned |
 |----------|----------------|----------|----------------|----------|----------|----------------------|
-| **Write-off** | $0 | — | — | $0 | **0x** | -6.8% |
-| **Soft landing** | $50M | 35% | 9.2% | $4.6M | **1.2x** | 8.3% |
-| **Base** | $300M | 40% | 8.5% | $25.5M | **6.7x** | 46% |
-| **Good** | $750M | 45% | 7.8% | $58.5M | **15.4x** | 105% |
-| **Great** (Tempus-scale) | $2.5B | 50% | 7.1% | $177M | **46.6x** | 318% |
-| **Exceptional** (Veeva-like) | $6B | 55% | 6.4% | $384M | **101x** | 689% |
-| **Transformational** | $10B | 60% | 5.7% | $570M | **150x** | 1,022% |
-| **Unicorn ceiling** | $15B | 60% | 5.7% | $855M | **225x** | 1,534% |
+| **Write-off** | $0 | — | — | $0 | **0x** | -7.7% |
+| **Soft landing** | $50M | 35% | 9.8% | $4.9M | **1.1x** | 8.8% |
+| **Base** | $300M | 40% | 9.1% | $27.2M | **6.3x** | 49% |
+| **Good** | $750M | 45% | 8.3% | $62.5M | **14.5x** | 112% |
+| **Great** (Tempus-scale) | $2.5B | 50% | 7.6% | $189M | **44.0x** | 340% |
+| **Exceptional** (Veeva-like) | $6B | 55% | 6.8% | $409M | **95.0x** | 733% |
+| **Transformational** | $10B | 60% | 6.1% | $606M | **141x** | 1,087% |
+| **Unicorn ceiling** | $15B | 60% | 6.1% | $909M | **211x** | 1,631% |
 
 ---
 
@@ -114,30 +114,30 @@
 
 | Scenario | Proceeds | Fund Multiple Contribution | Context |
 |----------|----------|---------------------------|---------|
-| **Write-off** | $0 | -0.07x | Lose 6.8% of fund |
-| **Base** ($300M) | $25.5M | **+0.46x** | Returns ~half the fund |
-| **Good** ($750M) | $58.5M | **+1.05x** | Returns entire fund |
-| **Great** ($2.5B) | $177M | **+3.2x** | 3x the fund from one position |
-| **Exceptional** ($6B) | $384M | **+6.9x** | Nearly 7x fund |
-| **Transformational** ($10B) | $570M | **+10.2x** | 10x fund from single position |
-| **Unicorn ceiling** ($15B) | $855M | **+15.3x** | 15x fund |
+| **Write-off** | $0 | -0.08x | Lose 7.7% of fund |
+| **Base** ($300M) | $27.2M | **+0.49x** | Returns ~half the fund |
+| **Good** ($750M) | $62.5M | **+1.12x** | Returns entire fund + 12% |
+| **Great** ($2.5B) | $189M | **+3.4x** | 3.4x the fund from one position |
+| **Exceptional** ($6B) | $409M | **+7.3x** | 7x fund |
+| **Transformational** ($10B) | $606M | **+10.9x** | ~11x fund from single position |
+| **Unicorn ceiling** ($15B) | $909M | **+16.3x** | 16x fund |
 
 ---
 
-## Comparison: Hold $1.8M vs. Add $2M Bridge
+## Comparison: Hold $1.8M vs. Add $2.5M Follow-on
 
-| Metric | Hold ($1.8M only) | Add $2M ($3.8M total) | Delta |
+| Metric | Hold ($1.8M only) | Add $2.5M ($4.3M total) | Delta |
 |--------|-------------------|----------------------|-------|
-| **Ownership (pre-dilution)** | 8.0% | 14.13% | +77% |
-| **Fund exposure** | 3.2% | 6.8% | +3.6 pts |
-| **Base case proceeds** | $13.6M | $25.5M | +$11.9M |
-| **Base case multiple** | 7.6x | 6.7x | -0.9x |
-| **Great case proceeds** | $95M | $177M | +$82M |
-| **Great case multiple** | 53x | 46.6x | -6.4x |
-| **$10B exit proceeds** | $304M | $570M | +$266M |
-| **$10B exit multiple** | 169x | 150x | -19x |
+| **Ownership (pre-dilution)** | 8.0% | 15.14% | +89% |
+| **Fund exposure** | 3.2% | 7.7% | +4.5 pts |
+| **Base case proceeds** | $13.6M | $27.2M | +$13.6M |
+| **Base case multiple** | 7.6x | 6.3x | -1.3x |
+| **Great case proceeds** | $95M | $189M | +$94M |
+| **Great case multiple** | 53x | 44x | -9x |
+| **$10B exit proceeds** | $304M | $606M | +$302M |
+| **$10B exit multiple** | 169x | 141x | -28x |
 
-**Trade-off:** Sacrifice ~10-15% on multiple but gain ~85% more absolute dollars in every success scenario.
+**Trade-off:** Sacrifice ~17% on multiple but gain ~100% more absolute dollars in every success scenario.
 
 ---
 
@@ -146,14 +146,14 @@
 | Scenario | Probability | Proceeds | Expected Value |
 |----------|-------------|----------|----------------|
 | Write-off | 15% | $0 | $0 |
-| Soft landing | 10% | $4.6M | $0.5M |
-| Base | 30% | $25.5M | $7.7M |
-| Good | 25% | $58.5M | $14.6M |
-| Great | 12% | $177M | $21.2M |
-| Exceptional+ | 8% | $450M avg | $36M |
-| **Total Expected** | — | — | **$80M** |
+| Soft landing | 10% | $4.9M | $0.5M |
+| Base | 30% | $27.2M | $8.2M |
+| Good | 25% | $62.5M | $15.6M |
+| Great | 12% | $189M | $22.7M |
+| Exceptional+ | 8% | $480M avg | $38.4M |
+| **Total Expected** | — | — | **$85.4M** |
 
-**Expected multiple: ~21x on $3.8M**
+**Expected multiple: ~20x on $4.3M**
 
 ---
 
@@ -161,18 +161,18 @@
 
 | Target Multiple | Required Exit | Required Ownership | Achievable? |
 |-----------------|---------------|-------------------|-------------|
-| **5x** ($19M) | $225M | 8.5% | Base case |
-| **10x** ($38M) | $475M | 8% | Good case |
-| **25x** ($95M) | $1.2B | 7.5% | Between Good/Great |
-| **50x** ($190M) | $2.7B | 7% | Great case |
-| **100x** ($380M) | $5.8B | 6.5% | Exceptional |
-| **150x** ($570M) | $10B | 5.7% | Transformational |
+| **5x** ($21.5M) | $240M | 9.0% | Base case |
+| **10x** ($43M) | $510M | 8.4% | Good case |
+| **25x** ($107.5M) | $1.35B | 8.0% | Between Good/Great |
+| **50x** ($215M) | $2.9B | 7.5% | Great case |
+| **100x** ($430M) | $6.3B | 6.8% | Exceptional |
+| **150x** ($645M) | $10.6B | 6.1% | Transformational |
 
 ---
 
 ## Decision Framework
 
-### At $3.8M (6.8% of fund), SMB becomes a concentrated bet.
+### At $4.3M (7.7% of fund), SMB becomes a concentrated bet.
 
 **This makes sense if:**
 - You believe Sanofi closes (March catalyst)
@@ -183,7 +183,7 @@
 **This doesn't make sense if:**
 - You're uncertain on Sanofi timing
 - You want to preserve dry powder for other opportunities
-- 6.8% concentration in pre-revenue feels too aggressive
+- 7.7% concentration in pre-revenue feels too aggressive
 
 ---
 
@@ -210,14 +210,14 @@
 
 | Metric | Value |
 |--------|-------|
-| **Position size** | $3.8M (6.8% of fund) |
-| **Entry valuation** | $26.9M effective |
-| **Expected value** | ~$80M (~21x) |
-| **Base case** | $25.5M (6.7x) |
-| **Upside case** | $177M-$855M (46-225x) |
-| **Max downside** | -$3.8M (-6.8% of fund) |
+| **Position size** | $4.3M (7.7% of fund) |
+| **Entry valuation** | $28.4M effective |
+| **Expected value** | ~$85.4M (~20x) |
+| **Base case** | $27.2M (6.3x) |
+| **Upside case** | $189M-$909M (44-211x) |
+| **Max downside** | -$4.3M (-7.7% of fund) |
 
-**At $3.8M, SMB becomes a "make the fund" bet.** The expected value (~21x) is attractive. The tail outcomes ($10-15B) are plausible given comps. The downside (-6.8%) is painful but not fatal.
+**At $4.3M, SMB becomes a "make the fund" bet.** The expected value (~20x) is attractive. The tail outcomes ($10-15B) are plausible given comps. The downside (-7.7%) is painful but not fatal.
 
 **The key variable is conviction on the March Sanofi catalyst.** If that closes, this position looks brilliant. If it slips 6+ months, you've doubled down before de-risking.
 
@@ -256,4 +256,4 @@
 ---
 
 *Analysis by: Claude (Virtue research session)*
-*Last updated: 2026-01-11*
+*Last updated: 2026-01-21*

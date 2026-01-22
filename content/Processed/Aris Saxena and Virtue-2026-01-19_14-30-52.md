@@ -3,7 +3,7 @@ granola_id: 782d2323-12a4-4d6d-9c24-5281a2ec239c
 title: "Aris Saxena and Virtue"
 type: note
 created: 2026-01-19T19:30:52.059Z
-updated: 2026-01-19T20:06:37.112Z
+updated: 2026-01-21T12:36:57.676Z
 attendees:
   - aris@solsticehealth.co
   - yiwen@solsticehealth.co
