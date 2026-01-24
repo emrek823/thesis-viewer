@@ -3,7 +3,7 @@ granola_id: d86ccd4b-0cfa-4286-b11a-f276fe26d989
 title: "Charles Yang (Renaissance) <> Sean / Emre (Virtue)"
 type: note
 created: 2026-01-08T16:59:24.043Z
-updated: 2026-01-08T17:29:25.838Z
+updated: 2026-01-23T22:01:00.379Z
 attendees:
   - charlesxjyang@gmail.com
   - sd@virtuevc.com
