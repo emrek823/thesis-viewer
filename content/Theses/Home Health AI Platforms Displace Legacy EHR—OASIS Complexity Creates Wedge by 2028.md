@@ -1,3 +1,5 @@
+![[Images/home-health-ai-platforms-displace-legacy-ehr.png]]
+
 # Thesis: Home Health AI Platforms Displace Legacy EHR — OASIS Complexity Creates Wedge by 2028
 
 ## 1-2 Sentence Summary

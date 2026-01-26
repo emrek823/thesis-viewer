@@ -1,3 +1,5 @@
+![[Images/specialty-pharma-logistics-intelligence.png]]
+
 # Thesis: Specialty Pharma Logistics Intelligence — Vertical Specialists Beat Generalists in Cold Chain by 2028
 
 ## 1-2 Sentence Summary
