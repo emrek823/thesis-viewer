@@ -176,6 +176,10 @@ The most likely failure mode for the thesis isn't regulatory rejection or AI fai
 | 2025-10 | [[Alba __ Virtue]] | Operator | >50% ICSRs rejected due to poor info quality; 17 days avg from initial call to regulatory submission; "Argus monopoly opportunity—shocking how much monopoly with very little innovation" |
 | 2025 | [[Sentinel Key Statistics]] | Research | 541.5M unique patients, 138.7M active enrollees, 27.7B medical encounters |
 | 2025 | [[PV Market Grand View Research]] | Research | $8-10B market 2024; 10-13% CAGR to $22-23B by 2034 |
+| 2026-01-09 | [[Sources/LLM-Chats/2026-01-09-pv-revenue-vs-cost-center-analysis]] | Research | PV confirmed as compliance cost center, NOT strategic revenue—budget authority with regulatory affairs, not commercial |
+| 2026-01-26 | [[Sources/Granola/Alba __ Virtue]] | Founder | "Alba: >50% ICSRs rejected due to poor info quality; 17 days average from initial call to regulatory submission. Argus monopoly opportunity - 'shocking how much monopoly with very little innovation.'" |
+| 2026-01-26 | [[Sources/Granola/Alba __ Virtue]] | Founder | "Jazz Pharmaceuticals head of PV (advisor) excited about 'Harvey plus Lovable' analogy for PV physicians. Signal detection should be continuous, not monthly/bi-monthly. $4M seed round planned." |
+| 2026-01-26 | [[Sources/Research-Papers/PFed-Signal An ADR Prediction Model based on Federated Learning]] | Research | "PFed-Signal: federated learning on FAERS achieves 0.957 AUC, 0.887 accuracy, 0.913 recall for ADR prediction—eliminates biased data via Euclidean distance" |
 
 ---
 
