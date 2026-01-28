@@ -2,46 +2,19 @@
 
 ## The Take
 
-**$305B market with 8.8% CAGR through 2032.** McKinsey names home health and hospice as "bright spots" with aging population and site-of-care shifts. Phoebe grew $0 to $1M ARR in <6 months. Olli raised $10M Series A at 100+ customers. Zingage raised $12.5M with 400+ agencies. This is one of the fastest-growing AI wedges in healthcare.
+**Consensus:** EHR replacement is hard—Epic and legacy vendors have lock-in, and home health is a fragmented market (48K+ agencies, no single provider >5% share) where enterprise sales are too expensive for startups to scale. Homecare Homebase's September 2025 AI launch shows incumbents can respond.
 
-**The mechanism:** Home health agencies face a unique documentation bottleneck—OASIS assessments require mapping messy narrative text from scanned eFaxes to tens of thousands of ICD-10 codes, taking up to 3 hours per complex patient. AI-native platforms deliver 90% time savings by transforming manual search into expert validation. Once the documentation layer is owned, expansion to full EHR + payer data monetization follows.
+**Today:** Home health is a greenfield opportunity because the incumbent (Homecare Homebase) is constrained by 2003 code architecture and can only add AI overlays, not rebuild from first principles. The original thesis assumed incumbents "can't innovate"—HCHB's September 2025 AI launch (Intake Central, Curate: Medications, Predict: Hospitalization Risk) proves that wrong. But the real wedge is iteration speed: startups ship 70+ features competitors lack (Steno), achieve 6x faster processing (Dart), and deploy in 3 weeks vs. 6 months. The founder of HCHB itself (April Anthony) chose Steno's platform for her new agency Vital Caring—the strongest possible signal.
 
-**The race has changed.** Homecare Homebase launched AI tools in September 2025 (Intake Central, Curate: Medications, Predict: Hospitalization Risk). The original thesis assumed incumbents "can't innovate"—this is now wrong. But HCHB's 2003 codebase constrains AI integration to overlays rather than native rebuilds. The real wedge is iteration speed: startups ship 70+ features competitors lack (Steno), achieve 6x faster processing (Dart), and deploy in 3 weeks vs. 6 months. The founder of HCHB itself (April Anthony) chose Steno's platform for her new agency Vital Caring.
+Home health agencies face four unique challenges that create the AI wedge: (1) OASIS assessments require manual data entry from messy visit audio—up to 3 hours per complex patient with "hundreds of questions surrounding a patient's condition"; (2) scanned documents and eFaxes contain narrative text that must map to tens of thousands of ICD-10 codes—hospital data is structured, home health data is chaos; (3) caregiver call-outs and hospital discharges overwhelm phone-and-spreadsheet systems—one scheduler loses 2-5+ hours/day chasing coverage; (4) QA rework delays reimbursement with 7.7% improper payment error rate ($1.2B/year) creating audit risk.
 
-**Winners by 2028:** AI-native platforms that own the documentation layer and expand to full EHR (Steno, Olli). Platforms with accreditation body partnerships (Dart-CHAP). Scheduling AI platforms that reduce missed shifts 75% (Phoebe, Zingage).
+The $305B market grows at 8.8% CAGR through 2032. McKinsey names home health and hospice as "bright spots" with aging population and site-of-care shifts. AI-native platforms attack from multiple wedges: documentation AI (Steno: auto-drafts from visit audio, 70+ features competitors lack), coding AI (Olli: 90% time savings, 75% cost savings in 30-day pilot), scheduling AI (Zingage: 2x volume same staff; Phoebe: 75% fewer missed shifts, $0 to $1M ARR in <6 months), and clinical data analysis (Dart: 80-90% query conversion to expansion products, 100k+ reviews/week).
 
-**Losers:** Legacy EHRs that bolt-on AI features rather than rebuild architectures.
+**In 3-5 years:** AI-native platforms that own the documentation layer expand to full EHR functionality. Steno has landed Accent Care (4th largest, 44K patients) and Vital Caring (11th/12th largest). Home health AI platforms capture $2B+ in workflow automation value. Top 3 platforms own 60%+ of AI-enabled agencies. Legacy EHRs that bolt-on AI features rather than rebuild architectures lose share.
 
 **How this evolved:**
-- *2026-01-13:* Auto-generated from /new-thesis clustering of 6+ sources
 - *2026-01-26:* **REBUILD** — Homecare Homebase launched AI tools (Sept 2025), invalidating "can't innovate" claim. Thesis mechanism shifted from "inability to innovate" to "iteration speed advantage." Confidence lowered from Medium to Medium-Low. Contrarian threats: HCHB AI launch is HIGH threat but addressable.
-
----
-
-## Investment Take
-
-**Today:** The consensus says EHR replacement is hard—Epic and legacy vendors have lock-in. The contrarian view: **home health is a greenfield opportunity because the incumbent (Homecare Homebase) is constrained by 2003 code architecture and can only add AI overlays, not rebuild from first principles.**
-
-Home health agencies face four unique challenges that create the AI wedge:
-
-1. **OASIS assessments require manual data entry** from messy visit audio—up to 3 hours per complex patient with "hundreds of questions surrounding a patient's condition" ([[Sources/Browser-History/2026-01-07-validated-at-ml4h-2025-how-olli-healths-proprietar|Olli ML4H]])
-2. **Scanned documents and eFaxes** contain narrative text that must map to tens of thousands of ICD-10 codes—hospital data is structured, home health data is chaos
-3. **Caregiver call-outs and hospital discharges** overwhelm phone-and-spreadsheet systems—one scheduler loses 2-5+ hours/day chasing coverage
-4. **QA rework** delays reimbursement with 7.7% improper payment error rate ($1.2B/year) creating audit risk
-
-AI-native platforms attack from multiple wedges:
-- **Documentation AI** (Steno Health): Auto-drafts from visit audio, flags gaps, 70+ features competitors lack ([[Sources/Granola/Alex (Steno Health) __ Virtue (Sean _ Emre)|Steno call]])
-- **Coding AI** (Olli Health): 90% time savings, transforms manual search to expert validation, 75% cost savings in 30-day pilot ([[Sources/Browser-History/2026-01-07-validated-at-ml4h-2025-how-olli-healths-proprietar|Olli ML4H]])
-- **Scheduling AI** (Zingage, Phoebe): 2x volume with same staff, 75% fewer missed shifts ([[Sources/Browser-History/2026-01-08-zingage-raises-125m-to-power-the-future-of-home-ca|Zingage]], [[Sources/Browser-History/2026-01-22-we-raised-95m-to-modernize-americas-home-healthcar|Phoebe]])
-- **Clinical Data Analyst** (Dart Health): 80-90% of queries convert to expansion products, 100k+ reviews/week ([[Sources/Granola/Virtue _ Dart-2026-01-15_12-01-03|Dart call]])
-
-**In 3-5 years:**
-
-**Winners:** AI-native platforms that capture the documentation layer first, then expand to full EHR functionality. Steno has landed Accent Care (4th largest, 44K patients) and Vital Caring (11th/12th largest, founded by HCHB founder). Olli serves 100+ agencies with 75% cost savings. Phoebe grew 0 to $1M ARR in <6 months with "75% fewer missed shifts." These companies can achieve profitability from single large customers due to per-patient-per-month pricing.
-
-**Losers:** Homecare Homebase and legacy home health EHRs. HCHB's September 2025 AI launch shows they're responding, but the AI features (Intake Central, Curate: Medications, Predict: Hospitalization) are narrower than startup offerings and constrained by integration with 2003 architecture. The fact that April Anthony—founder of HCHB itself—chose Steno for her new agency is the strongest signal.
-
-**Market structure by 2028:** Home health AI platforms capture $2B+ in workflow automation value. Top 3 platforms own 60%+ of AI-enabled agencies. Consolidation accelerates as larger agencies acquire AI capabilities through platform partnerships rather than building internally.
+- *2026-01-13:* Auto-generated from /new-thesis clustering of 6+ sources.
 
 ---
 
@@ -67,40 +40,17 @@ AI-native platforms attack from multiple wedges:
 - [ ] **Regulatory scrutiny increasing** — DOJ expects to frame AI-generated documentation inaccuracies as "reckless disregard" under False Claims Act. CMS using AI (WISER) to detect fraud in real-time.
 - [ ] **98% of digital health startups fail** — High failure rate in healthcare tech; fragmented market and reimbursement complexity create headwinds.
 
-## The Counter Thesis
-
-**What would have to be true for this thesis to be wrong?**
-
-Homecare Homebase's AI launch could be the beginning of a faster response than expected. If HCHB successfully integrates AI features that match startup capabilities while leveraging their installed base (200K+ users, 800K patients daily), the switching cost advantage could prevent displacement. The strategic alliance with Element5 suggests they're taking the threat seriously.
-
-The fragmented market (48K+ agencies) could make enterprise sales too expensive for startups to achieve scale before consolidation closes the window. If PE-backed acquirers prefer buying agencies rather than AI tools, the TAM for startup platforms could be smaller than expected.
-
-Regulatory risk is underappreciated. The DOJ is already subpoenaing digital health companies for AI-generated documentation. If CMS increases scrutiny of AI-documented visits, agencies may slow adoption, favoring incumbent EHRs with established compliance track records over startups.
-
-The biggest risk: this becomes a feature war rather than platform displacement. If HCHB and other legacy EHRs add "good enough" AI features, startups may be acquired as point solutions rather than becoming next-gen EHR platforms. The winner-take-most market structure may not materialize.
+**What would have to be true for you to be wrong?** Homecare Homebase's AI launch could be the beginning of a faster response than expected. If HCHB successfully integrates AI features that match startup capabilities while leveraging their installed base (200K+ users, 800K patients daily), the switching cost advantage could prevent displacement. The strategic alliance with Element5 suggests they are taking the threat seriously. The fragmented market (48K+ agencies) could make enterprise sales too expensive for startups to achieve scale before consolidation closes the window. If PE-backed acquirers prefer buying agencies rather than AI tools, the TAM for startup platforms could be smaller than expected. Regulatory risk is underappreciated—the DOJ is already subpoenaing digital health companies for AI-generated documentation. If CMS increases scrutiny of AI-documented visits, agencies may slow adoption, favoring incumbent EHRs with established compliance track records. The biggest risk: this becomes a feature war rather than platform displacement. If HCHB and other legacy EHRs add "good enough" AI features, startups may be acquired as point solutions rather than becoming next-gen EHR platforms.
 
 ---
 
 ## Timeline
 
-**Now - 2026:**
-- Watch for: Large agency wins (500+ patients), accreditation body partnerships closing
-- Entry points: AI documentation/coding platforms targeting OASIS complexity, scheduling AI platforms
-- Zingage $12.5M raise, Olli $10M raise, Phoebe $9.5M raise validate scheduling/coding AI wedges
-- HCHB AI launch (Sept 2025) forces startups to accelerate differentiation
-- Steno closes Bayada and VNS (expected shortly per Jan 2026 call)
+**Now → 2026:** Watch for large agency wins (500+ patients), accreditation body partnerships closing. Entry points: AI documentation/coding platforms targeting OASIS complexity, scheduling AI platforms. Zingage $12.5M raise, Olli $10M raise, Phoebe $9.5M raise validate scheduling/coding AI wedges. HCHB AI launch (Sept 2025) forces startups to accelerate differentiation. Steno closes Bayada and VNS (expected shortly per Jan 2026 call).
 
-**2027 - 2028:**
-- Inflection: First AI-native platform achieves 100+ enterprise agency customers OR gets acquired by large agency
-- Critical threshold: If HCHB AI features match startup capabilities, thesis weakens significantly
-- Watch for payer integration deals validating data monetization pathway
-- Consolidation expected as leaders acquire point solutions
+**2027 → 2028:** Inflection: First AI-native platform achieves 100+ enterprise agency customers OR gets acquired by large agency. Critical threshold: If HCHB AI features match startup capabilities, thesis weakens significantly. Watch for payer integration deals validating data monetization pathway. Consolidation expected as leaders acquire point solutions.
 
-**2029+:**
-- AI-native EHR becomes standard for home health
-- Payer data monetization unlocks secondary revenue streams
-- Legacy EHR replacement cycle completes for AI-enabled agencies
-- Market structure: top 3 AI platforms serve 60%+ of AI-enabled agencies
+**2029+:** AI-native EHR becomes standard for home health. Payer data monetization unlocks secondary revenue streams. Legacy EHR replacement cycle completes for AI-enabled agencies. Market structure: top 3 AI platforms serve 60%+ of AI-enabled agencies.
 
 ---
 
@@ -130,19 +80,9 @@ The biggest risk: this becomes a feature war rather than platform displacement. 
 
 ## Watch For
 
-**If RIGHT (thesis plays out):**
-- AI-native platforms win 10+ enterprise agency contracts (500+ patients each)
-- Homecare Homebase loses measurable market share or announces EHR rebuild initiative
-- Payer integration deals validate data monetization (Optum, Humana, MA plans)
-- Major acquisition: payer or large agency acquires AI platform at $100M+ valuation
-- HCHB founder's company (Vital Caring) success on Steno validates displacement
+**If RIGHT:** AI-native platforms win 10+ enterprise agency contracts (500+ patients each). Homecare Homebase loses measurable market share or announces EHR rebuild initiative. Payer integration deals validate data monetization (Optum, Humana, MA plans). Major acquisition: payer or large agency acquires AI platform at $100M+ valuation. HCHB founder's company (Vital Caring) success on Steno validates displacement.
 
-**If WRONG (thesis fails):**
-- Homecare Homebase AI features achieve parity with startups within 18 months
-- Epic/Oracle enter home health market with dedicated products
-- Agency consolidation reduces TAM before AI-native platforms scale (PE acquires agencies, not AI tools)
-- Regulatory action against AI documentation creates liability that favors incumbent compliance
-- Startup funding dries up before achieving platform scale
+**If WRONG:** Homecare Homebase AI features achieve parity with startups within 18 months. Epic/Oracle enter home health market with dedicated products. Agency consolidation reduces TAM before AI-native platforms scale (PE acquires agencies, not AI tools). Regulatory action against AI documentation creates liability that favors incumbent compliance. Startup funding dries up before achieving platform scale.
 
 ---
 
@@ -164,13 +104,6 @@ The biggest risk: this becomes a feature war rather than platform displacement. 
 | 2025-11-XX | Web | News | "Olli $10M Series A; 100+ home health companies; 75% cost savings in 30-day pilot" |
 | 2025-09-30 | Web | News | "HCHB launches Intake Central, Curate: Medications, Predict: Hospitalization Risk; Element5 strategic alliance" |
 | 2026-01-XX | Web | Research | "HCHB: 200K+ users, 800K patients daily, 100M visits/year; part of Hearst Health network" |
-
----
-
-## Related Theses
-
-- [[Clinical Documentation AI Expands Beyond Scribes—CDI and Coding Capture Revenue Cycle by 2028]] — shares documentation AI mechanism
-- [[Voice AI Captures Practice Scheduling—Integration Depth Creates Lock-In by 2028]] — shares scheduling AI mechanism, different care setting
 
 ---
 

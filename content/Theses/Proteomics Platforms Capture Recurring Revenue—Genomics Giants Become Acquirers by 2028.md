@@ -156,6 +156,7 @@ For this thesis to be wrong:
 | 2026-01-26 | Quanterix Q2 2025 earnings | Company | Revenue down 29% YoY. Stock down 62% in 6 months. NIH cuts affecting 22% of revenue. Path to breakeven 2026. |
 | 2026-01-26 | "$10 proteome" research | Research | Orbitrap Astral and timsTOF Ultra 2 achieve low-cost deep proteome profiling. Mean cost ~$897/patient but falling. |
 | 2026-01-26 | Boltz-2 open-source release | Research | MIT/Recursion: ~0.6 correlation with experimental binding in seconds vs 6-12 hours FEP at ~$100. Gap with private models "collapsed." |
+| 2026-01 | [[epibiologics-raises-107m-for-its-protein-degrading-cancer-drug]] | News | EpiBiologics $107M Series B for bispecific antibody protein degraders; Amgen acquired Dark Blue for up to $840M -- validates protein-level therapeutics as high-value acquisition targets for genomics/pharma giants |
 
 ---
 
