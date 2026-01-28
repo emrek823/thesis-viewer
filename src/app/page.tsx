@@ -1,6 +1,5 @@
 import { getAllTheses } from "@/lib/theses";
 import Link from "next/link";
-import { ThesisExplainer } from "@/components/ThesisExplainer";
 
 const maturityOrder = {
   Conviction: 0,
@@ -38,7 +37,6 @@ export default function HomePage() {
         <h1 className="font-mono font-bold text-3xl mb-6 text-gray-900">
           Living Investment Theses
         </h1>
-        <ThesisExplainer />
       </div>
 
       {/* Header with stats */}

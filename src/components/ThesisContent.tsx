@@ -8,12 +8,28 @@ interface Props {
   content: string;
 }
 
+const ALLOWED_PROTOCOLS = ["http:", "https:", "mailto:"];
+
+function isSafeHref(href: string | undefined): boolean {
+  if (!href) return false;
+  if (href.startsWith("/") || href.startsWith("#")) return true;
+  try {
+    const url = new URL(href);
+    return ALLOWED_PROTOCOLS.includes(url.protocol);
+  } catch {
+    return false;
+  }
+}
+
 export function ThesisContent({ content }: Props) {
   return (
     <ReactMarkdown
       remarkPlugins={[remarkGfm]}
       components={{
         a: ({ href, children }) => {
+          if (!isSafeHref(href)) {
+            return <span>{children}</span>;
+          }
           if (href?.startsWith("/")) {
             return (
               <Link href={href} className="text-accent hover:underline">

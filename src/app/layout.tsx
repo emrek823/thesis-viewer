@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { KonamiCode } from "@/components/KonamiCode";
 
 export const metadata: Metadata = {
   title: "Thesis Viewer | Virtue VC",
-  description: "Investment thesis research and analysis",
+  description: "Living investment theses — read, challenge, and suggest improvements.",
+  openGraph: {
+    title: "Thesis Viewer | Virtue VC",
+    description: "Living investment theses — read, challenge, and suggest improvements.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -33,12 +37,6 @@ export default function RootLayout({
                 Theses
               </a>
               <a
-                href="/outbound"
-                className="px-3 py-1.5 text-sm text-gray-600 hover:text-accent border-2 border-transparent hover:border-gray-200 transition-all"
-              >
-                Outbound
-              </a>
-              <a
                 href="https://www.virtuevc.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -50,7 +48,6 @@ export default function RootLayout({
           </div>
         </header>
         <main>{children}</main>
-        <KonamiCode />
       </body>
     </html>
   );

@@ -1,10 +1,8 @@
 import { getThesis, getAllTheses } from "@/lib/theses";
-import { resolveWikilinks } from "@/lib/wikilinks";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ThesisWithAnnotations } from "@/components/ThesisWithAnnotations";
-import { SourcesPanel } from "@/components/SourcesPanel";
-import { ChatSidebar } from "@/components/ChatSidebar";
+import type { Metadata } from "next";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -13,6 +11,21 @@ interface Props {
 export async function generateStaticParams() {
   const theses = getAllTheses();
   return theses.map((t) => ({ slug: t.slug }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const thesis = getThesis(decodeURIComponent(slug));
+  if (!thesis) return { title: "Thesis Not Found" };
+  return {
+    title: `${thesis.title} | Virtue VC`,
+    description: thesis.take || `Investment thesis: ${thesis.title}`,
+    openGraph: {
+      title: `${thesis.title} | Virtue VC`,
+      description: thesis.take || `Investment thesis: ${thesis.title}`,
+      type: "article",
+    },
+  };
 }
 
 export default async function ThesisPage({ params }: Props) {
@@ -24,10 +37,8 @@ export default async function ThesisPage({ params }: Props) {
     notFound();
   }
 
-  const processedContent = resolveWikilinks(thesis.content);
-
   return (
-    <div className="max-w-6xl mx-auto px-6 py-8">
+    <div className="max-w-4xl mx-auto px-6 py-8">
       <div className="mb-6">
         <Link
           href="/"
@@ -37,34 +48,24 @@ export default async function ThesisPage({ params }: Props) {
         </Link>
       </div>
 
-      <div className="flex gap-8">
-        <article className="flex-1 min-w-0">
-          <header className="mb-8">
-            <div className="flex items-center gap-3 mb-4">
-              <span
-                className={`badge badge-${thesis.maturity.toLowerCase()}`}
-              >
-                {thesis.maturity}
-              </span>
-            </div>
-            <h1 className="font-mono font-bold text-3xl">{thesis.title}</h1>
-          </header>
+      <article>
+        <header className="mb-8">
+          <div className="flex items-center gap-3 mb-4">
+            <span
+              className={`badge badge-${thesis.maturity.toLowerCase()}`}
+            >
+              {thesis.maturity}
+            </span>
+          </div>
+          <h1 className="font-mono font-bold text-3xl">{thesis.title}</h1>
+        </header>
 
-          <ThesisWithAnnotations
-            content={processedContent}
-            thesisTitle={thesis.title}
-            thesisSlug={decodedSlug}
-          />
-        </article>
-
-        {thesis.sources.length > 0 && (
-          <aside className="w-80 shrink-0 hidden lg:block">
-            <SourcesPanel sources={thesis.sources} />
-          </aside>
-        )}
-      </div>
-
-      <ChatSidebar thesisSlug={decodedSlug} thesisTitle={thesis.title} />
+        <ThesisWithAnnotations
+          content={thesis.content}
+          thesisTitle={thesis.title}
+          thesisSlug={decodedSlug}
+        />
+      </article>
     </div>
   );
 }

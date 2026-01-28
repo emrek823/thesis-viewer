@@ -10,10 +10,9 @@ interface Position {
 interface Props {
   containerRef: React.RefObject<HTMLElement>;
   onComment: (text: string, position: Position) => void;
-  onSuggestEdit: (text: string, position: Position) => void;
 }
 
-export function SelectionToolbar({ containerRef, onComment, onSuggestEdit }: Props) {
+export function SelectionToolbar({ containerRef, onComment }: Props) {
   const [show, setShow] = useState(false);
   const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
   const [selectedText, setSelectedText] = useState("");
@@ -64,12 +63,6 @@ export function SelectionToolbar({ containerRef, onComment, onSuggestEdit }: Pro
     window.getSelection()?.removeAllRanges();
   };
 
-  const handleSuggestEdit = () => {
-    onSuggestEdit(selectedText, position);
-    setShow(false);
-    window.getSelection()?.removeAllRanges();
-  };
-
   if (!show) return null;
 
   return (
@@ -79,21 +72,13 @@ export function SelectionToolbar({ containerRef, onComment, onSuggestEdit }: Pro
     >
       <button
         onClick={handleComment}
+        aria-label="Add a comment on selected text"
         className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-100 rounded transition-colors"
       >
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
         </svg>
         Comment
-      </button>
-      <button
-        onClick={handleSuggestEdit}
-        className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-100 rounded transition-colors"
-      >
-        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-        </svg>
-        Edit with AI
       </button>
     </div>
   );
