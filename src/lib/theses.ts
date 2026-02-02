@@ -79,6 +79,61 @@ function extractSources(content: string): string[] {
   return Array.from(new Set(sources));
 }
 
+/**
+ * Sanitize thesis content for external/public viewing:
+ * - Remove everything after Open Questions section (Evidence, Confidence, etc.)
+ * - Strip wiki links [[...]]
+ * - Remove first H1 if it matches the title (prevents duplicate title)
+ */
+function sanitizeForExternal(content: string, title: string): string {
+  let sanitized = content;
+
+  // 1. Truncate after Open Questions section
+  // Keep Open Questions but remove Evidence, Confidence, and anything after
+  const openQuestionsMatch = sanitized.match(
+    /(## Open Questions[\s\S]*?)(?=\n---\n\n## Evidence|\n## Evidence|\n---\n\n\*Confidence|\n\*Confidence|$)/i
+  );
+  if (openQuestionsMatch) {
+    // Find where Open Questions starts and keep everything up to end of that section
+    const beforeOpenQuestions = sanitized.substring(
+      0,
+      sanitized.indexOf("## Open Questions")
+    );
+    sanitized = beforeOpenQuestions + openQuestionsMatch[1].trim();
+  } else {
+    // Fallback: just cut at Evidence or Confidence
+    const evidenceIdx = sanitized.indexOf("\n## Evidence");
+    const confidenceIdx = sanitized.search(/\n\*Confidence:/);
+    const cutIdx = Math.min(
+      evidenceIdx > 0 ? evidenceIdx : Infinity,
+      confidenceIdx > 0 ? confidenceIdx : Infinity
+    );
+    if (cutIdx !== Infinity) {
+      sanitized = sanitized.substring(0, cutIdx).trim();
+    }
+  }
+
+  // 2. Strip wiki links [[Source/Path/File]] or [[link|display text]]
+  // Replace with just the display text or nothing
+  sanitized = sanitized.replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, "$2"); // [[path|text]] -> text
+  sanitized = sanitized.replace(/\[\[[^\]]+\]\]/g, ""); // [[path]] -> empty
+
+  // Clean up any orphaned citation markers (e.g., "> quote\n> ")
+  sanitized = sanitized.replace(/>\s*\n>\s*$/gm, "");
+
+  // 3. Remove first H1 if it matches the title (case-insensitive, trimmed)
+  const h1Match = sanitized.match(/^# (.+)\n/);
+  if (h1Match) {
+    const h1Title = h1Match[1].trim();
+    // Compare normalized versions
+    if (h1Title.toLowerCase() === title.toLowerCase()) {
+      sanitized = sanitized.replace(/^# .+\n+/, "");
+    }
+  }
+
+  return sanitized.trim();
+}
+
 export function getAllTheses(): Thesis[] {
   if (!fs.existsSync(THESES_DIR)) {
     return [];
@@ -86,27 +141,39 @@ export function getAllTheses(): Thesis[] {
 
   const files = fs.readdirSync(THESES_DIR).filter((f) => f.endsWith(".md"));
 
-  return files.map((filename) => {
-    const filePath = path.join(THESES_DIR, filename);
-    const fileContent = fs.readFileSync(filePath, "utf-8");
-    const { content } = matter(fileContent);
+  return files
+    .map((filename) => {
+      const filePath = path.join(THESES_DIR, filename);
+      const fileContent = fs.readFileSync(filePath, "utf-8");
+      const { content } = matter(fileContent);
 
-    const slug = filename.replace(".md", "");
-    // Title is the slug itself (filenames are now human-readable)
-    const title = slug;
+      const slug = filename.replace(".md", "");
+      // Title is the slug itself (filenames are now human-readable)
+      const title = slug;
 
-    return {
-      slug,
-      title,
-      content,
-      maturity: extractMaturity(content),
-      take: extractTake(content),
-      sources: [],
-    };
-  });
+      // Skip empty files or files named "Theses"
+      if (!content.trim() || slug.toLowerCase() === "theses") {
+        return null;
+      }
+
+      return {
+        slug,
+        title,
+        content: sanitizeForExternal(content, title),
+        maturity: extractMaturity(content),
+        take: extractTake(content),
+        sources: [],
+      };
+    })
+    .filter((t): t is NonNullable<typeof t> => t !== null);
 }
 
 export function getThesis(slug: string): Thesis | null {
+  // Block access to "Theses" file
+  if (slug.toLowerCase() === "theses") {
+    return null;
+  }
+
   const filePath = path.join(THESES_DIR, `${slug}.md`);
 
   if (!fs.existsSync(filePath)) {
@@ -116,6 +183,14 @@ export function getThesis(slug: string): Thesis | null {
   const fileContent = fs.readFileSync(filePath, "utf-8");
   const { content } = matter(fileContent);
 
+  // Skip empty files
+  if (!content.trim()) {
+    return null;
+  }
+
+  const title = slug;
+
+  // Note: We extract sources from raw content before sanitizing
   const sourceNames = extractSources(content);
   const sources = sourceNames
     .map((name) => getSource(name))
@@ -123,8 +198,8 @@ export function getThesis(slug: string): Thesis | null {
 
   return {
     slug,
-    title: slug,
-    content,
+    title,
+    content: sanitizeForExternal(content, title),
     maturity: extractMaturity(content),
     take: extractTake(content),
     sources,
