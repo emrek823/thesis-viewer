@@ -33,10 +33,37 @@ export default function HomePage() {
   return (
     <div className="max-w-6xl mx-auto px-6 py-12">
       {/* Hero Section */}
-      <div className="mb-16">
+      <div className="mb-12">
         <h1 className="font-mono font-bold text-3xl mb-6 text-gray-900">
           Living Investment Theses
         </h1>
+
+        {/* Intro copy */}
+        <div className="max-w-3xl mb-8 space-y-4 text-gray-700 leading-relaxed">
+          <p>
+            We believe AI should amplify thinking, not replace it. These theses start from our
+            research—papers, calls, conversations—with LLMs drafting initial structure. Then comes
+            the real work: Claude interviews us, probes our assumptions, and forces clarity. What
+            you see here is the output of that dialogue.
+          </p>
+          <p>
+            We&apos;re open-sourcing because great theses sharpen through critique. Comment directly,
+            challenge our logic, or{" "}
+            <a href="https://virtue.vc" className="text-accent hover:underline">reach out</a> if
+            you&apos;re building similar AI-augmented workflows. This exercise taught us where these
+            models excel and where they don&apos;t—the outcome of AI tooling shouldn&apos;t be more
+            slop, but faster loops on real conviction.
+          </p>
+        </div>
+
+        {/* Process diagram */}
+        <div className="mb-8">
+          <img
+            src="/thesis-process.svg"
+            alt="Thesis development process: Research Footprint → AI Interview → Refined Thesis"
+            className="w-full max-w-3xl"
+          />
+        </div>
       </div>
 
       {/* Header with stats */}

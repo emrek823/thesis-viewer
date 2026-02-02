@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180">
+  <defs>
+    <style>
+      .box { fill: #fafaf9; stroke: #1f2937; stroke-width: 2; }
+      .box-accent { fill: #fef3c7; stroke: #92400e; stroke-width: 2; }
+      .title { font-family: ui-monospace, monospace; font-size: 14px; font-weight: bold; fill: #1f2937; }
+      .subtitle { font-family: ui-monospace, monospace; font-size: 11px; fill: #6b7280; }
+      .arrow { stroke: #9ca3af; stroke-width: 2; fill: none; }
+      .arrow-head { fill: #9ca3af; }
+      .step-num { font-family: ui-monospace, monospace; font-size: 10px; fill: #9ca3af; }
+    </style>
+  </defs>
+
+  <!-- Step 1: Research Footprint -->
+  <g transform="translate(20, 30)">
+    <text class="step-num" x="0" y="0">01</text>
+    <rect class="box" x="0" y="10" width="200" height="100" rx="4"/>
+    <text class="title" x="100" y="45" text-anchor="middle">Research Footprint</text>
+    <text class="subtitle" x="100" y="65" text-anchor="middle">papers, calls, notes</text>
+    <text class="subtitle" x="100" y="80" text-anchor="middle">market conversations</text>
+    <text class="subtitle" x="100" y="95" text-anchor="middle">LLM dialogues</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <g transform="translate(230, 80)">
+    <path class="arrow" d="M 0,0 L 60,0"/>
+    <polygon class="arrow-head" points="60,-5 70,0 60,5"/>
+  </g>
+
+  <!-- Step 2: LLM Interview -->
+  <g transform="translate(300, 30)">
+    <text class="step-num" x="0" y="0">02</text>
+    <rect class="box-accent" x="0" y="10" width="200" height="100" rx="4"/>
+    <text class="title" x="100" y="45" text-anchor="middle">AI Interview</text>
+    <text class="subtitle" x="100" y="65" text-anchor="middle">synthesis + probing</text>
+    <text class="subtitle" x="100" y="80" text-anchor="middle">challenge assumptions</text>
+    <text class="subtitle" x="100" y="95" text-anchor="middle">force clarity</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <g transform="translate(510, 80)">
+    <path class="arrow" d="M 0,0 L 60,0"/>
+    <polygon class="arrow-head" points="60,-5 70,0 60,5"/>
+  </g>
+
+  <!-- Step 3: Refined Thesis -->
+  <g transform="translate(580, 30)">
+    <text class="step-num" x="0" y="0">03</text>
+    <rect class="box" x="0" y="10" width="200" height="100" rx="4"/>
+    <text class="title" x="100" y="45" text-anchor="middle">Refined Thesis</text>
+    <text class="subtitle" x="100" y="65" text-anchor="middle">sharper conviction</text>
+    <text class="subtitle" x="100" y="80" text-anchor="middle">exposed assumptions</text>
+    <text class="subtitle" x="100" y="95" text-anchor="middle">open for critique</text>
+  </g>
+
+  <!-- Feedback loop hint -->
+  <path class="arrow" d="M 680,140 Q 680,160 400,160 Q 120,160 120,140" stroke-dasharray="4,4"/>
+  <text class="subtitle" x="400" y="175" text-anchor="middle">continuous refinement</text>
+</svg>
