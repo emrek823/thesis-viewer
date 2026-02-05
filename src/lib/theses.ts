@@ -81,6 +81,9 @@ function extractSources(content: string): string[] {
 
 /**
  * Sanitize thesis content for external/public viewing:
+ * - Remove blockquotes attributed to non-public sources (interviews, operator calls, expert networks)
+ * - Remove Tegus/expert network references
+ * - Remove ## Related Theses section
  * - Remove everything after Open Questions section (Evidence, Confidence, etc.)
  * - Strip wiki links [[...]]
  * - Remove first H1 if it matches the title (prevents duplicate title)
@@ -88,13 +91,131 @@ function extractSources(content: string): string[] {
 function sanitizeForExternal(content: string, title: string): string {
   let sanitized = content;
 
-  // 1. Truncate after Open Questions section
+  // --- Phase 1: Scrub non-public source attributions from blockquotes ---
+
+  // For blockquotes with "— Attribution" at the end, replace non-public attributions
+  // with "Internal research". Keep public ones (earnings calls, press releases, named execs).
+  //
+  // Public attribution patterns we KEEP:
+  //   - "Tim Noel, UHC CEO, Q4 2025 earnings" (named exec + earnings)
+  //   - "HCHB Press Release, Sept 2025" (press releases)
+  //   - "Quanterix Q3 2025 Results" (public earnings/results)
+  //   - "pi-0 open source release" (public announcements)
+  //   - Published paper titles
+  //
+  // Non-public patterns we REPLACE → "Internal research":
+  //   - "ETK Payment Integrity 2024" (purchased reports)
+  //   - "Industry analysis/research/operator" (internal)
+  //   - "ACO operator", "Agency owner" (anonymized interviews)
+  //   - "Former VP..., industry interview" (proprietary interviews)
+  //   - "investor presentation/deck" (non-public materials)
+
+  const publicAttributionPatterns = [
+    /earnings/i,
+    /\bQ[1-4]\b/i,
+    /press\s+release/i,
+    /announcement/i,
+    /\blaunch\b/i,
+    /open\s+source/i,
+    /\bCEO\b|\bCFO\b|\bCTO\b|\bCOO\b/,
+  ];
+
+  // Non-public patterns that override the length heuristic
+  const nonPublicPatterns = [
+    /tegus/i,
+    /industry interview/i,
+    /operator interview/i,
+    /expert call/i,
+    /investor presentation/i,
+    /investor deck/i,
+  ];
+
+  function isPublicAttribution(attr: string): boolean {
+    // Explicitly non-public sources are always replaced, even if long
+    if (nonPublicPatterns.some((p) => p.test(attr))) return false;
+    // Known public source patterns
+    if (publicAttributionPatterns.some((p) => p.test(attr))) return true;
+    // Long attributions (>40 chars) are likely published paper titles, not internal sources
+    if (attr.trim().length > 40) return true;
+    return false;
+  }
+
+  // Replace non-public blockquote attributions with "Internal research"
+  // Use greedy .* so we match the LAST " — " (the attribution separator),
+  // not an em-dash inside the quote text (e.g., "billing—both")
+  sanitized = sanitized.replace(
+    /^(>.*)\s+—\s+(.+)$/gm,
+    (_match, quote, attribution) => {
+      if (isPublicAttribution(attribution)) {
+        return `${quote} — ${attribution}`;
+      }
+      return `${quote} — Internal research`;
+    }
+  );
+
+  // Remove entire blockquotes from proprietary interviews/operator calls
+  // (these reveal methodology, not just attribution)
+  sanitized = sanitized.replace(
+    /(?:^>.*\n)*^>.*(?:industry interview|operator interview|expert call|tegus call|tegus|investor presentation|investor deck).*$\n*/gim,
+    ""
+  );
+
+  // Remove inline "Tegus expert calls" references
+  sanitized = sanitized.replace(
+    /(?:,?\s*(?:and\s+)?)?Tegus\s+expert\s+calls?/gi,
+    ""
+  );
+
+  // Remove inline interview attributions in non-blockquote text
+  sanitized = sanitized.replace(
+    /\s*—\s*(?:Former\s+)?[\w\s]+,\s*(?:industry interview|operator interview|expert call)\s*/gi,
+    ""
+  );
+
+  // Generalize titled operators at named orgs in inline prose
+  // "CPO at Cone Health:" → "Health system pharmacy leaders:"
+  // "Northwestern IT pharmacist:" → "Health system IT leaders:"
+  const titleReplacements: [RegExp, string][] = [
+    [/\bCPO(?:\s+at\s+[A-Z][\w\s]*?)(?=:|\s+says?\b|\s+chose\b|\s+would\b)/g, "Health system pharmacy leaders"],
+    [/\b(?:IT\s+[Pp]harmacist|IT\s+director)(?:\s+at\s+[A-Z][\w\s]*?)(?=:|\s+says?\b)/g, "Health system IT leaders"],
+    [/\bCMIO(?:\s+at\s+[A-Z][\w\s]*?)(?=:|\s+says?\b)/g, "Health system informatics leaders"],
+  ];
+  for (const [pattern, replacement] of titleReplacements) {
+    sanitized = sanitized.replace(pattern, replacement);
+  }
+
+  // Generalize specific health system vendor migration plans
+  // "Northwestern planning to phase out CoverMyMeds for Latent" → generic
+  sanitized = sanitized.replace(
+    /\b[A-Z][a-z]+(?:Health|Medical|Children's)?\s+planning to phase out\s+\w+\s+for\s+\w+/g,
+    "Major health systems are phasing out legacy tools for AI-native alternatives"
+  );
+
+  // Also catch "[HealthSystem] IT pharmacist:" without "at"
+  sanitized = sanitized.replace(
+    /\b(?:Northwestern|MaineHealth|LifePoint|Ochsner|MetroHealth)\s+(?:IT\s+)?(?:pharmacist|CMIO|CIO|director)/gi,
+    "Health system IT leaders"
+  );
+
+  // --- Phase 2: Strip structural sections ---
+
+  // Remove ## Related Theses section entirely (wiki links would render as broken)
+  sanitized = sanitized.replace(
+    /\n+---\n+## Related Theses[\s\S]*?(?=\n+---\n|\n+\*Confidence|$)/i,
+    ""
+  );
+  // Also catch without leading ---
+  sanitized = sanitized.replace(
+    /\n+## Related Theses[\s\S]*?(?=\n+---\n|\n+\*Confidence|$)/i,
+    ""
+  );
+
+  // Truncate after Open Questions section
   // Keep Open Questions but remove Evidence, Confidence, and anything after
   const openQuestionsMatch = sanitized.match(
     /(## Open Questions[\s\S]*?)(?=\n---\n\n## Evidence|\n## Evidence|\n---\n\n\*Confidence|\n\*Confidence|$)/i
   );
   if (openQuestionsMatch) {
-    // Find where Open Questions starts and keep everything up to end of that section
     const beforeOpenQuestions = sanitized.substring(
       0,
       sanitized.indexOf("## Open Questions")
@@ -113,19 +234,25 @@ function sanitizeForExternal(content: string, title: string): string {
     }
   }
 
-  // 2. Strip wiki links [[Source/Path/File]] or [[link|display text]]
-  // Replace with just the display text or nothing
+  // Catch any remaining *Confidence: lines that survived truncation
+  sanitized = sanitized.replace(/^\*Confidence:[\s\S]*$/gm, "");
+
+  // --- Phase 3: Strip wiki links and clean up ---
+
+  // Strip wiki links [[Source/Path/File]] or [[link|display text]]
   sanitized = sanitized.replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, "$2"); // [[path|text]] -> text
   sanitized = sanitized.replace(/\[\[[^\]]+\]\]/g, ""); // [[path]] -> empty
 
-  // Clean up any orphaned citation markers (e.g., "> quote\n> ")
+  // Clean up orphaned citation markers
   sanitized = sanitized.replace(/>\s*\n>\s*$/gm, "");
 
-  // 3. Remove first H1 if it matches the title (case-insensitive, trimmed)
+  // Clean up multiple consecutive blank lines (from removed blockquotes)
+  sanitized = sanitized.replace(/\n{3,}/g, "\n\n");
+
+  // Remove first H1 if it matches the title (prevents duplicate title)
   const h1Match = sanitized.match(/^# (.+)\n/);
   if (h1Match) {
     const h1Title = h1Match[1].trim();
-    // Compare normalized versions
     if (h1Title.toLowerCase() === title.toLowerCase()) {
       sanitized = sanitized.replace(/^# .+\n+/, "");
     }
