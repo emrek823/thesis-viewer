@@ -45,24 +45,32 @@ The investment insight: **operational dependency without technical moat is fragi
 ## Bull Case
 
 **1. Payment integrity has the most durable lock-in in healthcare.** Cotiviti and Optum CES own 90%+ of claims editing with 1.2% annual churn—"ClaimsXten and Optum CES have never churned a customer." The moat is 130+ knowledge packs vs. 13 at HealthEdge—"$100M+ annual savings gap takes years to close." This is technical moat (rules complexity) + data moat (decades of payer patterns) + low incumbent threat (they ARE the incumbents). New Mountain Capital consolidating the category (Machinify acquired Performant for $670M) validates durable value.
+> "ClaimsXten and Optum CES own ~90% and have never churned a customer... Content moat is 130+ packs vs 13 at HealthEdge." — ETK Payment Integrity 2024
 
 **2. Prior auth has high technical moat despite slow adoption.** Payer policy knowledge compounds—each payer has different rules, different service lines, different states. Former Change Healthcare VP: "There's two vendors that represent 80% of the clinical questionnaires, MCG and InterQual. You can't do all three jobs without playing ball with those two." The technical moat is payer-specific policy intelligence that takes years to build. 3-year contracts provide switching cost. But buying cycles are 9-36 months and "market won't close until 2035."
+> "You can't do all three [prior auth jobs] without playing ball with MCG and InterQual." — Former VP Product Management, Change Healthcare
 
 **3. Referrals/fax lock-in is real but fragile.** BetterNight cut from 40 admins to 5 after Tennr implementation—"could not untangle...disastrous." This is HIGH operational dependency + HIGH switching cost (would need to rehire). BUT: fax parsing is technically solved, documents are similar across organizations (LOW data moat), and no technical moat prevents a well-funded competitor from replicating. Lock-in depends on Tennr maintaining execution advantage, not structural barriers.
+> "My company could not untangle themselves from Tennr if we tried at this point. It would be disastrous." — BetterNight Technical Program Manager
 
-**4. Low incumbent threat amplifies fragile lock-in.** Referrals/fax benefits from Epic having no competitive product. MPOWERHealth: "We have not found any competitors to Tennr in the referral space." This buys time—but if Epic builds referral automation or a well-funded startup enters, the lack of technical/data moat means switching becomes possible once operational dependency is addressed.
+**4. Low incumbent threat amplifies fragile lock-in.** Referrals/fax benefits from Epic having no competitive product. MPOWERHealth: "We have not found any competitors to Tennr in the referral space." This buys time—but if Epic builds referral automation or a well-funded startup enters, the lack of technical/data moat means switching becomes possible once operational dependency is addressed (e.g., hiring back staff or using the new vendor's managed service).
+> "We have not found any competitors to Tennr in the referral space." — MPOWERHealth, 9.5/10 rating
 
 ---
 
 ## Bear Case
 
 **1. CDI/ambient lock-in is vulnerable despite high adoption.** MaineHealth's informatics director: AI models are "apple to apple" but differ on EHR integration. 97% user retention suggests behavioral lock-in, but Epic Art at $80/provider vs. startup $600/provider is 7.5x price disadvantage. Epic running 200+ AI pilots. MaineHealth's goal: "keep things in Epic as much as we can." HIGH incumbent threat + LOW technical moat = vulnerable lock-in.
+> "AI models are 'apple to apple' but differ on EHR integration... The goal is to keep things in Epic as much as we can." — MaineHealth Informatics Director
 
 **2. Voice scheduling has weak lock-in across all dimensions.** TrustCare's COO on switching AI phone vendors: "Not be hard at all." athena launching free AI in Feb 2026. Zocdoc Zo at $2/booked appointment with 70% resolution. LOW operational dependency (can hire back), LOW switching cost (swap API), LOW technical moat (voice APIs commoditized), LOW data moat (call patterns similar), HIGH incumbent threat. Even specialty rules (28-day injection spacing) provide only temporary differentiation.
+> "Switching would not be hard at all." — TrustCare COO (chose Flip over Assort)
 
-**3. Referrals/fax fragility could be exposed by well-funded competitor.** Brightree API "took decades to become proficient"—but is this genuine complexity or just neglected infrastructure? 60 WIP states for DME processing is workflow complexity, not technical moat. A competitor with strong engineering could rebuild this in 12-18 months. The staff cuts that create operational dependency could be addressed by a competitor offering managed services.
+**3. Referrals/fax fragility could be exposed by well-funded competitor.** Brightree API "took decades to become proficient"—but is this genuine complexity or just neglected infrastructure? 60 WIP states for DME processing is workflow complexity, not technical moat. A competitor with strong engineering could rebuild this in 12-18 months. The staff cuts that create operational dependency could be addressed by a competitor offering managed services (they hire the staff, customer just pays subscription).
+> "Brightree API integration taken decades to become proficient." — SleepQuest President/COO
 
-**4. 95% of AI pilots fail to reach deployment, limiting lock-in realization.** Industry experts note: "Most voice AI / healthcare automation still marginal improvements." KLAS found agentic AI adoption was mentioned by only 17 of 3,000 health systems. Lock-in only matters for the 5% that reach production scale—survivorship bias inflates the category's attractiveness.
+**4. 95% of AI pilots fail to reach deployment, limiting lock-in realization.** Jeremy Schwach (Hummingbird CEO): "Most voice AI / healthcare automation still marginal improvements. LinkedIn AI success stories are mostly hype." KLAS found agentic AI adoption was mentioned by only 17 of 3,000 health systems. Lock-in only matters for the 5% that reach production scale—survivorship bias inflates the category's attractiveness.
+> "Behind closed doors, founders admit limited enterprise impact." — Jeremy Schwach, Hummingbird CEO
 
 ---
 
@@ -114,6 +122,31 @@ Current low incumbent threat is key to referrals/fax thesis. If Epic announces r
 
 ---
 
+## Evidence
+
+| Date | Source | Type | Key Signal |
+|------|--------|------|------------|
+| 2025-10 | [[manager-at-betternight-_-tennr-_-tegus-3c373487]] | Operator | "Could not untangle from Tennr... disastrous." 40 to 5 admins. "$10K increase I'd say yes." |
+| 2025 | [[Sources/Market-Research-PDFs/etk-payment-integrity-2024-915ce9fb]] | Research | Cotiviti/Optum 90%+ share, 1.2% churn, 130+ content packs. "Never churned a customer." |
+| 2025-03 | [[Former Vice President of Product Management at Change Healthcare _ Cohere Health _ Tegus]] | Operator | Prior auth: 9-36 month buying cycles. 2% penetration. "Market won't close until 2035." |
+| 2025-08 | [[director-at-mainehealth-_-abridge-_-tegus-86d57eab]] | Operator | 97% retention. Abridge captures generic codes; Ambience "way more advanced" on coding. |
+| 2025-07 | [[Senior Director of Revenue Cycle Management at Wellsky _ Abridge _ Tegus]] | Operator | Stanford/WellSky: $4M+ one-time revenue pickup from ambient. 9/10 rating. |
+| 2025-07 | [[informatics-director-at-mainehealth-_-abridge-_-tegus-44ab924d]] | Operator | "AI models are 'apple to apple' but differ on EHR integration." Goal: "keep things in Epic." |
+| 2025-07 | [[3-assort-health-_-interviews-_-tegus-company-profile-c5b880a3]] | Operator | TrustCare chose Flip over Assort. Switching "not hard at all." |
+| 2025-07 | [[it-manager-at-luminary-hospice-_-assort-health-_-tegus-991d060b]] | Operator | Luminary Hospice: $150K/year. "50% cheaper wouldn't cause switch." |
+| 2025-12 | [[tennr-mpowerhealth-936bbeef]] | Operator | "No real competitors in referral space." 9.5/10 rating. |
+| 2025-12 | [[tennr-sleepquest-b48eb7eb]] | Operator | Brightree API "took decades to learn." 60 WIP states. |
+| 2026-01 | [[Chief Operating Officer at Neb Medical Services _ Tennr _ Tegus]] | Operator | 90-95% of DME orders still handwritten fax. 5 to 2 FTEs. |
+| 2026-01 | [[Sources/Granola/Jeremy Schwach and Virtue]] | Primary | Most voice AI = "marginal improvements." LinkedIn hype. Epic 200+ AI pilots. |
+| 2025-12 | [[future-of-healthtech-2025-v2-e6b0381e]] | Research | 44% of healthtech VC to provider ops (up from 19% in 2021). 85% AI spend to startups. |
+| 2025-12 | [[2025-12-23-zocdoc-launches-voice-ai-agent-zo-to-streamline-bo]] | News | Zocdoc Zo: $2/booked appointment. 70% resolution. |
+| 2025-10 | [[Sources/Browser-History/2025-12-21-machinify-completes-acquisition-of-performant-heal.md]] | News | Machinify acquires Performant for $670M. New Mountain consolidating payment integrity. |
+| 2026-02 | [[senior-director-of-revenue-cycle-management-at-wellsky-_-epi-220585a3]] | Operator | SmarterDX delivering 8-figure annual revenue improvement through AI-driven CDI; self-pay rising 7%→20% |
+| 2026-02 | [[senior-director-of-revenue-cycle-management-at-wellsky-_-bre-33758a62]] | Operator | Brellium ambient CDI reduces denial rates from 10-20% to single digits |
+| 2026-02 | [[former-us-director-of-new-business-development-at-r1-rcm-inc-98a5a54e]] | Operator | R1 RCM full outsourcing dynamics; hybrid pricing (NPR % + contingency); AI/ML in coding |
+
+---
+
 ## Related Theses
 
 - [[Healthcare Payment Infrastructure Is Rebuilding, Startups Win the Seams]] — Payment integrity detail
@@ -122,3 +155,6 @@ Current low incumbent threat is key to referrals/fax thesis. If Epic announces r
 ---
 
 *Confidence: HIGH — Framework validated across 15+ operator interviews. Core insight: operational dependency without technical moat = fragile (referrals/fax); technical + data moat = durable (payment integrity, prior auth); high incumbent threat = vulnerable regardless (CDI, voice). Investment implication: prioritize durable lock-in categories even if adoption is slower.*
+
+*Last indexed: 2026-02-04*
+*Last rebuilt: 2026-02-02*
