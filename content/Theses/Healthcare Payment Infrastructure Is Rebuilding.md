@@ -5,15 +5,15 @@ $947B in annual claims, 9.5B transactions, 80-character ACH limits. Healthcare p
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  ACTION LAYER  — FP&A, analytics, decision support          │
-│  (Translucent)                                              │
+│                                                │
 ├─────────────────────────────────────────────────────────────┤
-│  CLINICAL DATA FLOW  — eligibility, prior auth, referrals   │
-│  (Commure, Rhyme, many RCM cos)                             │
+│  CLINICAL DATA FLOW  — eligibility, prior auth, CDI, referrals   │
+│                             │
 ├─────────────────────────────────────────────────────────────┤
 │  CLAIMS FLOW  — provider RCM, payer claims editing/processing│
-│  (Cotiviti/Optum payer-side; Machinify, Alaffia, many RCM)  │
+  │
 ├─────────────────────────────────────────────────────────────┤
-│  PAYMENT RAILS  — money movement, reconciliation, accel.    │
+│  PAYMENT RAILS  — money movement, reconciliation, payment accel.    │
 │  (ACH/checks legacy; TriBridge, Thrivory, Valley Steer)     │
 └─────────────────────────────────────────────────────────────┘
 ```

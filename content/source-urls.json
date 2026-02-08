@@ -1,5 +1,6 @@
 {
   "Sources/Tegus/2025-12-21-waystar-holding-corp-overview-tegus-company-prof": "https://app.tegus.co/app/company/52714/waystar-holding-corp/overview",
+  "Sources/Market-Research-PDFs/Bessemer State of Health AI 2026": "https://www.bvp.com/atlas/state-of-health-ai-2026",
   "Sources/Research-Papers/Benchmark Success, Clinical Failure When Reinforcement Learning Optimizes for Benchmarks, Not Patien": "https://arxiv.org/abs/2512.23090",
   "Sources/Research-Papers/Perceive and Calibrate Analyzing and Enhancing Robustness of Medical Multi-Modal Large Language Mode": "https://arxiv.org/abs/2512.21964",
   "Sources/Research-Papers/DuaDeep-SeqAffinity Dual-Stream Deep Learning Framework for Sequence-Only Antigen-Antibody Affinity ": "https://arxiv.org/abs/2512.22007",
@@ -218,6 +219,7 @@
   "Sources/Research-Papers/MedEvalArena A Self-Generated, Peer-Judged Benchmark for Medical Reasoning": "https://www.medrxiv.org/content/10.64898/2026.01.27.26344905v1.full.pdf",
   "Sources/Research-Papers/LeMoF Level-guided Multimodal Fusion for Heterogeneous Clinical Data": "https://arxiv.org/abs/2601.10092",
   "Sources/Research-Papers/MORPHFED Federated Learning for Cross-institutional Blood Morphology Analysis": "https://arxiv.org/abs/2601.04121",
+  "Sources/Research-Papers/METR Model Evaluation and Threat Research": "https://metr.org/",
   "Sources/Research-Papers/BUCAN Bayesian Uncertainty-aware Classification with Attention Networks for Medical Images": "https://www.medrxiv.org/content/10.1101/2025.11.05.25339638v2.full.pdf",
   "Sources/Research-Papers/MMPG MoE-based Adaptive Multi-Perspective Graph Fusion for Protein Representation Learning": "https://arxiv.org/abs/2601.10157",
   "Sources/Research-Papers/Med3D-R1 Incentivizing Clinical Reasoning in 3D Medical Vision-Language Models for Abnormality Diagn": "https://arxiv.org/abs/2602.01200",
@@ -247,6 +249,7 @@
   "Sources/Research-Papers/MMedExpert-R1 Strengthening Multimodal Medical Reasoning via Domain-Specific Adaptation and Clinical": "https://arxiv.org/abs/2601.10949",
   "Sources/Research-Papers/Machine Learning-Based Identification of Blood Biomarkers that Distinguish Precachectic and Cachecti": "https://www.medrxiv.org/content/10.64898/2025.12.23.25342866v1.full.pdf",
   "Sources/Research-Papers/Foundation Models in Biomedical Imaging Turning Hype into Reality": "https://arxiv.org/abs/2512.15808",
+  "Sources/Research-Papers/ARISE State of Clinical AI Report 2026": "https://arise-ai.org/report",
   "Sources/Research-Papers/Evaluating the Pre-Consultation Ability of LLMs using Diagnostic Guidelines": "https://arxiv.org/abs/2601.03627",
   "Sources/Research-Papers/Towards Efficient and Robust Linguistic Emotion Diagnosis for Mental Health via Multi-Agent Instruct": "https://arxiv.org/abs/2601.13481",
   "Sources/Research-Papers/VISTA-PATH An interactive foundation model for pathology image segmentation and quantitative analysi": "https://arxiv.org/abs/2601.16451",
@@ -516,6 +519,7 @@
   "Sources/Research-Papers/Prior-Guided DETR for Ultrasound Nodule Detection": "https://arxiv.org/abs/2601.02212",
   "Sources/Research-Papers/Bayes-PD Exploring a Sequence to Binding Bayesian Neural Network model trained on Phage Display data": "https://arxiv.org/abs/2601.03930",
   "Sources/Research-Papers/PAS-Mamba Phase-Amplitude-Spatial State Space Model for MRI Reconstruction": "https://arxiv.org/abs/2601.14530",
+  "Sources/Research-Papers/HealthBench Not Yet Clinically Ready PMC Review": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12547120/",
   "Sources/Research-Papers/Numerical Twin with Two Dimensional Ornstein--Uhlenbeck Processes of Transient Oscillations in EEG s": "https://arxiv.org/abs/2512.21768",
   "Sources/Research-Papers/ASBA A-line State Space Model and B-line Attention for Sparse Optical Doppler Tomography Reconstruct": "https://arxiv.org/abs/2601.14165",
   "Sources/Research-Papers/Drug discovery guided by maximum drug likeness": "https://arxiv.org/abs/2512.21895",
@@ -1826,8 +1830,8 @@
   "Theses/AI Value in Healthcare Shifts to Providers — Quality Measurement Creates the Flywheel": "/thesis/AI Value in Healthcare Shifts to Providers — Quality Measurement Creates the Flywheel",
   "Theses/Clinical AI Evaluation Ladder ": "/thesis/Clinical AI Evaluation Ladder ",
   "Theses/Real-World Data Restructures Around Origination — Startups Win the Infrastructure Layer": "/thesis/Real-World Data Restructures Around Origination — Startups Win the Infrastructure Layer",
+  "Theses/Healthcare Payment Infrastructure Is Rebuilding": "/thesis/Healthcare Payment Infrastructure Is Rebuilding",
   "Theses/Mispriced Healthcare Risk Creates AI Arbitrage Opportunities": "/thesis/Mispriced Healthcare Risk Creates AI Arbitrage Opportunities",
   "Theses/Theses": "/thesis/Theses",
-  "Theses/Pharma Commercial Stack Fragments After Decade of Veeva Dominance ": "/thesis/Pharma Commercial Stack Fragments After Decade of Veeva Dominance ",
-  "Theses/Healthcare Payment Infrastructure Is Rebuilding, Startups Win the Seams": "/thesis/Healthcare Payment Infrastructure Is Rebuilding, Startups Win the Seams"
+  "Theses/Pharma Commercial Stack Fragments After Decade of Veeva Dominance ": "/thesis/Pharma Commercial Stack Fragments After Decade of Veeva Dominance "
 }
