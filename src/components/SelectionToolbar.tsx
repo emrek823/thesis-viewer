@@ -67,13 +67,13 @@ export function SelectionToolbar({ containerRef, onComment }: Props) {
 
   return (
     <div
-      className="fixed z-50 flex gap-1 bg-white border border-gray-200 rounded-lg shadow-lg p-1 transform -translate-x-1/2 -translate-y-full"
+      className="fixed z-50 flex gap-1 bg-zinc-900 border border-zinc-700 rounded-lg shadow-lg p-1 transform -translate-x-1/2 -translate-y-full"
       style={{ left: position.x, top: position.y }}
     >
       <button
         onClick={handleComment}
         aria-label="Add a comment on selected text"
-        className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-100 rounded transition-colors"
+        className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-300 hover:bg-zinc-800 rounded transition-colors"
       >
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />

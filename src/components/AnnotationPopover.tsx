@@ -55,17 +55,17 @@ export function AnnotationPopover({
 
       {/* Popover */}
       <div
-        className="fixed z-50 w-[min(90vw,440px)] bg-white border border-gray-200 rounded-xl shadow-xl transform -translate-x-1/2"
+        className="fixed z-50 w-[min(90vw,440px)] bg-zinc-900 border border-zinc-700 rounded-xl shadow-xl transform -translate-x-1/2"
         style={{ left: safeX, top: safeY, maxHeight: "70vh" }}
       >
         <div className="p-4 flex flex-col" style={{ maxHeight: "70vh" }}>
           {/* Header */}
           <div className="flex items-center justify-between mb-3">
-            <h3 className="font-mono font-bold text-sm">Add Comment</h3>
+            <h3 className="font-mono font-bold text-sm text-white">Add Comment</h3>
             <button
               onClick={onClose}
               aria-label="Close comment form"
-              className="text-gray-400 hover:text-gray-600"
+              className="text-gray-500 hover:text-gray-300"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -74,16 +74,16 @@ export function AnnotationPopover({
           </div>
 
           {/* Selected text preview */}
-          <div className="mb-3 p-2 bg-gray-50 rounded-lg border-l-2 border-accent shrink-0">
-            <p className="text-xs text-gray-500 mb-1">Selected text:</p>
-            <p className="text-sm text-gray-700 line-clamp-3">&ldquo;{selectedText}&rdquo;</p>
+          <div className="mb-3 p-2 bg-zinc-800 rounded-lg border-l-2 border-accent shrink-0">
+            <p className="text-xs text-gray-400 mb-1">Selected text:</p>
+            <p className="text-sm text-gray-300 line-clamp-3">&ldquo;{selectedText}&rdquo;</p>
           </div>
 
           <textarea
             value={commentText}
             onChange={(e) => setCommentText(e.target.value)}
             placeholder="What's your thought on this?"
-            className="w-full px-3 py-2 text-sm border border-gray-200 rounded-lg resize-none focus:outline-none focus:border-accent mb-3"
+            className="w-full px-3 py-2 text-sm bg-zinc-800 text-gray-200 border border-zinc-700 rounded-lg resize-none focus:outline-none focus:border-accent mb-3"
             rows={4}
             autoFocus
           />
@@ -94,7 +94,7 @@ export function AnnotationPopover({
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your email"
-                className="w-full px-3 py-2 text-sm border border-gray-200 rounded-lg focus:outline-none focus:border-accent"
+                className="w-full px-3 py-2 text-sm bg-zinc-800 text-gray-200 border border-zinc-700 rounded-lg focus:outline-none focus:border-accent"
                 autoFocus
               />
               <button

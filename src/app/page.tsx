@@ -34,12 +34,12 @@ export default function HomePage() {
     <div className="max-w-6xl mx-auto px-6 py-12">
       {/* Hero Section */}
       <div className="mb-12">
-        <h1 className="font-mono font-bold text-3xl mb-6 text-gray-900">
+        <h1 className="font-mono font-bold text-3xl mb-6 text-white">
           Living Investment Theses
         </h1>
 
         {/* Intro copy */}
-        <div className="max-w-3xl mb-8 space-y-4 text-gray-700 leading-relaxed">
+        <div className="max-w-3xl mb-8 space-y-4 text-gray-300 leading-relaxed">
           <p>
             Every expert call, earnings transcript, regulatory filing, and deal memo we encounter
             gets saved to a persistent file system — tens of thousands of primary sources accumulating
@@ -78,10 +78,10 @@ export default function HomePage() {
 
       {/* Header with stats */}
       <div className="mb-12">
-        <h2 className="font-mono uppercase tracking-wider text-xl mb-4 text-gray-800">
+        <h2 className="font-mono uppercase tracking-wider text-xl mb-4 text-gray-100">
           ACTIVE THESES
         </h2>
-        <p className="text-gray-600 max-w-2xl mb-6">
+        <p className="text-gray-400 max-w-2xl mb-6">
           Click any thesis to read, challenge, or suggest improvements.
         </p>
 
@@ -89,7 +89,7 @@ export default function HomePage() {
         <div className="flex gap-6 text-sm">
           <div className="flex items-center gap-2">
             <span className="font-mono uppercase tracking-wider text-xs text-gray-500">TOTAL</span>
-            <span className="font-mono font-bold text-lg">{totalTheses}</span>
+            <span className="font-mono font-bold text-lg text-white">{totalTheses}</span>
           </div>
           <div className="flex items-center gap-2">
             <span className="font-mono uppercase tracking-wider text-xs text-gray-500">★ CONVICTION</span>
@@ -113,22 +113,22 @@ export default function HomePage() {
               <h2 className="font-mono uppercase tracking-wider text-xs text-gray-500 mb-4 flex items-center gap-2">
                 <span>{maturityIcons[maturity]}</span>
                 {maturity.toUpperCase()}
-                <span className="font-mono text-gray-400">({items.length})</span>
+                <span className="font-mono text-gray-600">({items.length})</span>
               </h2>
               <div className="grid gap-4">
                 {items.map((thesis) => (
                   <Link
                     key={thesis.slug}
                     href={`/thesis/${encodeURIComponent(thesis.slug)}`}
-                    className="block p-5 card-nintendo bg-white group"
+                    className="block p-5 card-nintendo bg-zinc-900 group"
                   >
                     <div className="flex items-start justify-between gap-4">
                       <div className="flex-1 min-w-0">
-                        <h3 className="font-mono font-bold text-lg mb-2 group-hover:text-accent transition-colors">
+                        <h3 className="font-mono font-bold text-lg mb-2 text-white group-hover:text-accent transition-colors">
                           {thesis.title}
                         </h3>
                         {thesis.take && (
-                          <p className="text-gray-600 text-sm leading-relaxed">
+                          <p className="text-gray-400 text-sm leading-relaxed">
                             {thesis.take}
                           </p>
                         )}
@@ -147,7 +147,7 @@ export default function HomePage() {
       )}
 
       {theses.length === 0 && (
-        <div className="text-center py-20 text-gray-500">
+        <div className="text-center py-20 text-gray-400">
           <p className="font-mono uppercase tracking-wider text-sm mb-4">NO THESES FOUND</p>
           <p className="text-sm">
             Add markdown files to <code className="text-xs">content/Theses/</code>

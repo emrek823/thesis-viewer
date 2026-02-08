@@ -42,7 +42,7 @@ export default async function ThesisPage({ params }: Props) {
       <div className="mb-6">
         <Link
           href="/"
-          className="text-sm text-gray-500 hover:text-accent transition-colors"
+          className="text-sm text-gray-400 hover:text-accent transition-colors"
         >
           &larr; All Theses
         </Link>
@@ -57,7 +57,7 @@ export default async function ThesisPage({ params }: Props) {
               {thesis.maturity}
             </span>
           </div>
-          <h1 className="font-mono font-bold text-3xl">{thesis.title}</h1>
+          <h1 className="font-mono font-bold text-3xl text-white">{thesis.title}</h1>
         </header>
 
         <ThesisWithAnnotations

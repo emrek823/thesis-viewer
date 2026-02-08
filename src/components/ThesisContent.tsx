@@ -59,7 +59,7 @@ export function ThesisContent({ content }: Props) {
 
           if (isInline) {
             return (
-              <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono" {...props}>
+              <code className="bg-zinc-800 px-1.5 py-0.5 rounded text-sm font-mono" {...props}>
                 {children}
               </code>
             );

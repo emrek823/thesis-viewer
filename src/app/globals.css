@@ -5,10 +5,10 @@
 @tailwind utilities;
 
 :root {
-  --foreground: #1a1a1a;
-  --background: #ffffff;
-  --muted: #6b7280;
-  --border: #e5e7eb;
+  --foreground: #e5e7eb;
+  --background: #0a0a0a;
+  --muted: #9ca3af;
+  --border: #27272a;
 }
 
 body {
@@ -89,13 +89,13 @@ body {
 .prose code {
   font-family: 'Fira Mono', monospace;
   font-size: 0.875em;
-  background: #f3f4f6;
+  background: #27272a;
   padding: 0.2em 0.4em;
   border-radius: 4px;
 }
 
 .prose pre {
-  background: #1a1a1a;
+  background: #18181b;
   color: #e5e7eb;
   padding: 1rem;
   border-radius: 8px;
@@ -122,7 +122,7 @@ body {
   text-align: left;
   padding: 0.75rem;
   border-bottom: 2px solid var(--border);
-  background: #f9fafb;
+  background: #18181b;
 }
 
 .prose td {
@@ -131,7 +131,7 @@ body {
 }
 
 .prose tr:hover td {
-  background: #f9fafb;
+  background: #18181b;
 }
 
 .prose hr {
@@ -156,21 +156,21 @@ body {
 }
 
 .badge-hypothesis {
-  background: #fef3c7;
-  color: #92400e;
-  border-color: #fbbf24;
+  background: #422006;
+  color: #fbbf24;
+  border-color: #92400e;
 }
 
 .badge-emerging {
-  background: #dbeafe;
-  color: #1e40af;
-  border-color: #93c5fd;
+  background: #172554;
+  color: #93c5fd;
+  border-color: #1e40af;
 }
 
 .badge-established {
-  background: #d1fae5;
-  color: #065f46;
-  border-color: #6ee7b7;
+  background: #052e16;
+  color: #6ee7b7;
+  border-color: #065f46;
 }
 
 .badge-conviction {
@@ -183,12 +183,12 @@ body {
 .card-nintendo {
   border: 1px solid var(--border);
   border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
   transition: all 0.15s ease;
 }
 
 .card-nintendo:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
 /* Section headers */
@@ -228,7 +228,7 @@ body {
 /* Progress bar */
 .progress-nintendo {
   height: 4px;
-  background: #e5e7eb;
+  background: #27272a;
   border-radius: 2px;
   overflow: hidden;
 }
