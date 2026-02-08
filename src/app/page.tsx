@@ -78,7 +78,7 @@ export default function HomePage() {
 
       {/* Header with stats */}
       <div className="mb-12">
-        <h2 className="pixel-header text-xl mb-4 text-gray-800">
+        <h2 className="font-mono uppercase tracking-wider text-xl mb-4 text-gray-800">
           ACTIVE THESES
         </h2>
         <p className="text-gray-600 max-w-2xl mb-6">
@@ -88,11 +88,11 @@ export default function HomePage() {
         {/* Stats bar */}
         <div className="flex gap-6 text-sm">
           <div className="flex items-center gap-2">
-            <span className="pixel-header text-xs text-gray-500">TOTAL</span>
+            <span className="font-mono uppercase tracking-wider text-xs text-gray-500">TOTAL</span>
             <span className="font-mono font-bold text-lg">{totalTheses}</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="pixel-header text-xs text-gray-500">★ CONVICTION</span>
+            <span className="font-mono uppercase tracking-wider text-xs text-gray-500">★ CONVICTION</span>
             <span className="font-mono font-bold text-lg text-accent">{convictionCount}</span>
           </div>
           <div className="flex-1 max-w-xs">
@@ -110,7 +110,7 @@ export default function HomePage() {
         ([maturity, items]) =>
           items.length > 0 && (
             <section key={maturity} className="mb-12">
-              <h2 className="pixel-header text-xs text-gray-500 mb-4 flex items-center gap-2">
+              <h2 className="font-mono uppercase tracking-wider text-xs text-gray-500 mb-4 flex items-center gap-2">
                 <span>{maturityIcons[maturity]}</span>
                 {maturity.toUpperCase()}
                 <span className="font-mono text-gray-400">({items.length})</span>
@@ -148,7 +148,7 @@ export default function HomePage() {
 
       {theses.length === 0 && (
         <div className="text-center py-20 text-gray-500">
-          <p className="pixel-header text-sm mb-4">NO THESES FOUND</p>
+          <p className="font-mono uppercase tracking-wider text-sm mb-4">NO THESES FOUND</p>
           <p className="text-sm">
             Add markdown files to <code className="text-xs">content/Theses/</code>
           </p>

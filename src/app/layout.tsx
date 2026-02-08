@@ -19,10 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-sans min-h-screen bg-gray-50">
-        <header className="bg-white border-b-4 border-gray-200">
+        <header className="bg-white border-b border-gray-200">
           <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="/" className="flex items-center gap-2 group">
-              <span className="pixel-header text-sm text-accent group-hover:animate-pulse">
+              <span className="font-mono text-sm text-accent">
                 ◆
               </span>
               <span className="font-mono font-bold text-lg tracking-tight">
@@ -32,7 +32,7 @@ export default function RootLayout({
             <nav className="flex gap-4">
               <a
                 href="/"
-                className="px-3 py-1.5 text-sm text-gray-600 hover:text-accent border-2 border-transparent hover:border-gray-200 transition-all"
+                className="px-3 py-1.5 text-sm text-gray-600 hover:text-accent border border-transparent hover:border-gray-200 rounded transition-all"
               >
                 Theses
               </a>
@@ -40,7 +40,7 @@ export default function RootLayout({
                 href="https://www.virtuevc.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3 py-1.5 text-sm text-gray-600 hover:text-accent border-2 border-transparent hover:border-gray-200 transition-all"
+                className="px-3 py-1.5 text-sm text-gray-600 hover:text-accent border border-transparent hover:border-gray-200 rounded transition-all"
               >
                 Website
               </a>

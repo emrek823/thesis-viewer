@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Inter:wght@400;500;600;700&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -140,97 +140,83 @@ body {
   margin: 2rem 0;
 }
 
-/* Maturity badges - Nintendo achievement style */
+/* Maturity badges */
 .badge {
-  font-family: 'Press Start 2P', monospace;
-  font-size: 0.5rem;
+  font-family: 'Fira Mono', monospace;
+  font-size: 0.65rem;
   font-weight: 400;
   padding: 0.4rem 0.6rem;
-  border-radius: 0;
+  border-radius: 4px;
   text-transform: uppercase;
   letter-spacing: 0.02em;
-  border: 3px solid;
-  box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+  border: 1px solid;
+  box-shadow: none;
   position: relative;
-  transition: all 0.1s ease;
-}
-
-.badge:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 rgba(0,0,0,0.2);
+  transition: all 0.15s ease;
 }
 
 .badge-hypothesis {
   background: #fef3c7;
   color: #92400e;
-  border-color: #92400e;
+  border-color: #fbbf24;
 }
 
 .badge-emerging {
   background: #dbeafe;
   color: #1e40af;
-  border-color: #1e40af;
+  border-color: #93c5fd;
 }
 
 .badge-established {
   background: #d1fae5;
   color: #065f46;
-  border-color: #065f46;
+  border-color: #6ee7b7;
 }
 
 .badge-conviction {
   background: #4d65ff;
   color: white;
   border-color: #3a4fcc;
-  animation: badge-glow 2s ease-in-out infinite;
 }
 
-@keyframes badge-glow {
-  0%, 100% { box-shadow: 4px 4px 0 rgba(0,0,0,0.2); }
-  50% { box-shadow: 4px 4px 12px rgba(77, 101, 255, 0.5); }
-}
-
-/* Nintendo-style cards */
+/* Cards */
 .card-nintendo {
-  border: 3px solid var(--border);
-  border-radius: 0;
-  box-shadow: 6px 6px 0 rgba(0,0,0,0.1);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   transition: all 0.15s ease;
 }
 
 .card-nintendo:hover {
-  transform: translate(-3px, -3px);
-  box-shadow: 9px 9px 0 rgba(0,0,0,0.15);
-  border-color: #4d65ff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Pixel-style section headers */
+/* Section headers */
 .pixel-header {
-  font-family: 'Press Start 2P', monospace;
+  font-family: 'Fira Mono', monospace;
   font-size: 0.7rem;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
-/* Chunky buttons */
+/* Buttons */
 .btn-nintendo {
-  font-family: 'Press Start 2P', monospace;
-  font-size: 0.6rem;
+  font-family: 'Fira Mono', monospace;
+  font-size: 0.75rem;
   padding: 0.75rem 1.25rem;
-  border: 3px solid;
-  border-radius: 0;
-  box-shadow: 4px 4px 0 rgba(0,0,0,0.3);
-  transition: all 0.1s ease;
+  border: 1px solid;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: all 0.15s ease;
   text-transform: uppercase;
 }
 
 .btn-nintendo:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 rgba(0,0,0,0.3);
+  filter: brightness(0.95);
 }
 
 .btn-nintendo:active {
-  transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+  filter: brightness(0.9);
 }
 
 .btn-nintendo-primary {
@@ -239,23 +225,15 @@ body {
   border-color: #3a4fcc;
 }
 
-/* Progress bar - game style */
+/* Progress bar */
 .progress-nintendo {
-  height: 12px;
+  height: 4px;
   background: #e5e7eb;
-  border: 2px solid #1a1a1a;
-  border-radius: 0;
+  border-radius: 2px;
   overflow: hidden;
 }
 
 .progress-nintendo-fill {
   height: 100%;
-  background: linear-gradient(90deg, #4d65ff 0%, #6b7fff 50%, #4d65ff 100%);
-  background-size: 20px 100%;
-  animation: progress-stripes 0.5s linear infinite;
-}
-
-@keyframes progress-stripes {
-  0% { background-position: 0 0; }
-  100% { background-position: 20px 0; }
+  background: #4d65ff;
 }
