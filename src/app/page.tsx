@@ -41,27 +41,32 @@ export default function HomePage() {
         {/* Intro copy */}
         <div className="max-w-3xl mb-8 space-y-4 text-gray-300 leading-relaxed">
           <p>
-            Every expert call, earnings transcript, regulatory filing, and deal memo we encounter
-            gets saved to a persistent file system — tens of thousands of primary sources accumulating
-            over time. An AI agent traverses this full corpus, reading documents in full — not
-            summaries, not chunks — to surface connections and contradictions we&apos;d miss working
-            sequentially. No embeddings, no knowledge graph infrastructure. The reasoning itself is
-            the query engine.
+            Every expert call, earnings transcript, regulatory filing, tweet, funding announcement,
+            press release, research paper, LLM chat we read and everything we create gets saved to a
+            persistent file system. Tens of thousands of primary sources accumulating over time. An AI
+            agent traverses this full corpus, reading documents in full (not summaries or chunks) to
+            surface connections and contradictions we&apos;d normally miss.
           </p>
           <p>
-            But the AI doesn&apos;t write the thesis. We do. Investment conviction in healthcare lives
-            in non-verifiable domains — what constitutes a &ldquo;good&rdquo; thesis can&apos;t be
-            checked against a ground truth the way code or math can. We&apos;ve iterated through
-            multiple approaches to automate thesis generation and the quality never meets the bar.
-            The same pattern shows up across healthcare: as AI moves past low-hanging fruit into
-            judgment-heavy decisions, human expertise becomes more important, not less. These theses
-            are the product of that conviction — AI-augmented research, manually written.
+            We don&apos;t need embeddings or knowledge graph infrastructure because the reasoning
+            itself is the query engine.
+          </p>
+          <p>
+            But the AI doesn&apos;t write the thesis. We do.
+          </p>
+          <p>
+            Investment conviction in healthcare lives in non-verifiable domains. What constitutes
+            a &ldquo;good&rdquo; thesis can&apos;t be checked against a ground truth the way code
+            can. We&apos;ve iterated through multiple approaches to automate thesis generation and
+            the quality never meets the bar. The same pattern shows up across healthcare startups.
+            As AI moves past low-hanging fruit into judgment-heavy decisions, human expertise becomes
+            more important, not less. These theses are the product of our internal work that will
+            continue to evolve over time with more research and input from folks in industry.
           </p>
           <p>
             <strong>Select any text inside a thesis and click &ldquo;Comment&rdquo;</strong> to
-            send us pushback, corrections, or additional evidence — it goes straight to our team.
-            You can also{" "}
-            <a href="https://virtue.vc" className="text-accent hover:underline">reach out</a> if
+            send us pushback, corrections, or additional evidence. You can also{" "}
+            <a href="mailto:ek@virtuevc.com" className="text-accent hover:underline">reach out</a> if
             you&apos;re building in these spaces.
           </p>
         </div>
