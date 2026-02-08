@@ -1,6 +1,9 @@
 ## Overview
+XXX 
 
-We've been investing across the pharma tech stack over the last few years and the world is evolving. Claims data is table stakes and 
+We've been investing across the pharma tech stack over the last few years and the world is evolving. Claims data is table stakes and the value of continual RWD purchases is declining when you the learnings can be incorporated into. 
+
+XXX 
 
 The RWD market hit $2.38B in 2025 and projects to $6.1B by 2032 (14.4% CAGR), but the economics are restructuring away from aggregators toward data originators going direct. The delta: only 12 drugs in 14 years included RWE under prior FDA rules; December 2025 guidance removed the patient-level data requirement, opening regulatory floodgates. Commissioner Makary: "Removing unnecessary barriers... submit whatever real-world data you want." The mechanism: data originators (CVS, Optum, Evernorth) realized their liberal licensing terms let aggregators capture value they should own. Inovalon was one of the first to pull data from DRG, forcing direct contracts while prohibiting reselling. This model extended to Evernorth, CVS/Caremark, OptumRx, Change, and FinThrive — restricting fields of use, applications of use (Evernorth prohibits underwriting), and techniques of use (banning AI/ML training). PurpleLab's CEO: "High licensing costs put gross margins and free cash flow at the mercy of our data suppliers."
 
