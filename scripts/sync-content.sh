@@ -19,7 +19,7 @@ rm -rf "$CONTENT_PATH/Theses"
 mkdir -p "$CONTENT_PATH/Theses"
 if [ -d "$VAULT_PATH/Theses" ]; then
   for f in "$VAULT_PATH/Theses"/*.md; do
-    [ -f "$f" ] && [[ "$(basename "$f")" != _* ]] && [[ "$(basename "$f")" != .* ]] && cp "$f" "$CONTENT_PATH/Theses/"
+    [ -f "$f" ] && [ -s "$f" ] && [[ "$(basename "$f")" != _* ]] && [[ "$(basename "$f")" != .* ]] && cp "$f" "$CONTENT_PATH/Theses/"
   done
   count=$(ls -1 "$CONTENT_PATH/Theses"/*.md 2>/dev/null | wc -l)
   echo "  Copied $count theses from Theses/"
