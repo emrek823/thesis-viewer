@@ -258,7 +258,7 @@ function sanitizeForExternal(content: string, title: string): string {
       if (url) {
         return `[${display}](${url})`;
       }
-      return display;
+      return `${display} *Internal analysis*`;
     }
   );
 
