@@ -1,5 +1,17 @@
 ## Overview
 
+XXX ASCII diagram 
+- We've seen work across the action layer (FP&A w/ translucent)
+- RCM - many 
+- Clinical data flow 
+- Payments infra
+
+There's opportunity across this entire stack to drive, particularly to drive payer rules to the point of care. How does this work? 
+
+
+
+
+
 **$947B in annual claims, 9.5B transactions, 80-character ACH limits.** Healthcare payment infrastructure was built for an era of paper checks and batch processing. ERAs (remittance data) and EFTs (money) travel on separate rails, driving manual reconciliation in "health system basements." The payment integrity market that catches errors is a $15B oligopoly—Cotiviti and Optum own 90%+ of claims editing with 1.2% annual churn—but a structural shift from post-pay to pre-pay is creating the first opening in decades. Pre-pay grew from "virtually nonexistent" 10 years ago to 40% of payment integrity today, trending toward 60%+ by 2030. Meanwhile, FedNow/RTP hit 70% bank coverage (up from 30% at TriBridge's founding), enabling real-time payment rails that carry data WITH money for the first time. The insurer margin crisis (UNH MCR at 89.25%, industry margins at lowest point in two decades) creates existential urgency for infrastructure modernization.
 
 The opportunity is in the seams: between payer claims and provider billing systems (pre-pay payment integrity), between payment and remittance data (RTP reconciliation), between legacy COBOL platforms and modern cloud-native infrastructure. Payment integrity has four layers—primary claims editing ($0.5B, ClaimsXten/Optum duopoly), secondary editing ($1B), pre-pay PI ($10B, 40% EBITDA margins), and post-pay PI ($15B, shifting away due to provider abrasion). Startups win by entering as second-pass vendors (proving 60%+ hit rate vs 25-30% status quo at 20:1 ROI), accumulating proprietary training data, then migrating to first-pass position. The window is narrow: New Mountain Capital is consolidating AI-native vendors (Machinify acquired Performant for $670M; also owns ClaimLogiq, Rawlings), and Cotiviti acquired Edifecs for interoperability.
@@ -114,7 +126,7 @@ The margin crisis resolves through brute-force premium increases (9-11% for 2026
 ## Related Theses
 
 - [[Back-end AI Automation in Healthcare is Scaling - What Creates Lock In]]
-- [[Mispriced Healthcare Risk Creates AI Arbitrage Opportunities]]
+- [[Theses/Mispriced Healthcare Risk Creates AI Arbitrage Opportunities]]
 
 ---
 

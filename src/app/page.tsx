@@ -41,18 +41,28 @@ export default function HomePage() {
         {/* Intro copy */}
         <div className="max-w-3xl mb-8 space-y-4 text-gray-700 leading-relaxed">
           <p>
-            We believe AI should amplify thinking, not replace it. These theses start from our
-            research—papers, calls, conversations—with LLMs drafting initial structure. Then comes
-            the real work: Claude interviews us, probes our assumptions, and forces clarity. What
-            you see here is the output of that dialogue.
+            Every expert call, earnings transcript, regulatory filing, and deal memo we encounter
+            gets saved to a persistent file system — tens of thousands of primary sources accumulating
+            over time. An AI agent traverses this full corpus, reading documents in full — not
+            summaries, not chunks — to surface connections and contradictions we&apos;d miss working
+            sequentially. No embeddings, no knowledge graph infrastructure. The reasoning itself is
+            the query engine.
           </p>
           <p>
-            We&apos;re open-sourcing because great theses sharpen through critique. Comment directly,
-            challenge our logic, or{" "}
+            But the AI doesn&apos;t write the thesis. We do. Investment conviction in healthcare lives
+            in non-verifiable domains — what constitutes a &ldquo;good&rdquo; thesis can&apos;t be
+            checked against a ground truth the way code or math can. We&apos;ve iterated through
+            multiple approaches to automate thesis generation and the quality never meets the bar.
+            The same pattern shows up across healthcare: as AI moves past low-hanging fruit into
+            judgment-heavy decisions, human expertise becomes more important, not less. These theses
+            are the product of that conviction — AI-augmented research, manually written.
+          </p>
+          <p>
+            <strong>Select any text inside a thesis and click &ldquo;Comment&rdquo;</strong> to
+            send us pushback, corrections, or additional evidence — it goes straight to our team.
+            You can also{" "}
             <a href="https://virtue.vc" className="text-accent hover:underline">reach out</a> if
-            you&apos;re building similar AI-augmented workflows. This exercise taught us where these
-            models excel and where they don&apos;t—the outcome of AI tooling shouldn&apos;t be more
-            slop, but faster loops on real conviction.
+            you&apos;re building in these spaces.
           </p>
         </div>
 
