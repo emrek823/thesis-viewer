@@ -49,8 +49,8 @@ def extract_frontmatter_url(filepath):
     if match:
         return match.group(1)
 
-    # Also check arxiv_url, pdf_url as fallbacks
-    for field in ["arxiv_url", "pdf_url", "source"]:
+    # Also check arxiv_url, pdf_url, source_url as fallbacks
+    for field in ["arxiv_url", "pdf_url", "source_url", "source"]:
         match = re.search(rf'^{field}:\s*["\']?(https?://[^\s"\']+)["\']?\s*$', frontmatter, re.MULTILINE)
         if match:
             url = match.group(1)
