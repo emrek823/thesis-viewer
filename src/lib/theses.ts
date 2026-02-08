@@ -258,7 +258,7 @@ function sanitizeForExternal(content: string, title: string): string {
       if (url) {
         return `[${display}](${url})`;
       }
-      return `${display} *Internal analysis*`;
+      return display;
     }
   );
 
@@ -276,6 +276,19 @@ function sanitizeForExternal(content: string, title: string): string {
       return "";
     }
   );
+
+  // Strip internal-only entries from ## Sources section (bullets without a public link)
+  const sourcesMatch = sanitized.match(/(## Sources\n)([\s\S]*?)(\n---|\n## |\n\*Confidence|$)/i);
+  if (sourcesMatch) {
+    const sourcesLines = sourcesMatch[2].split("\n");
+    const publicOnly = sourcesLines.filter(
+      (line) => !line.startsWith("- ") || /\[.*?\]\(.*?\)/.test(line)
+    );
+    sanitized = sanitized.replace(
+      sourcesMatch[0],
+      sourcesMatch[1] + publicOnly.join("\n") + sourcesMatch[3]
+    );
+  }
 
   // Clean up orphaned citation markers
   sanitized = sanitized.replace(/>\s*\n>\s*$/gm, "");
