@@ -140,6 +140,70 @@ body {
   margin: 2rem 0;
 }
 
+/* Light prose for thesis detail pages — black text on white background */
+.prose-light {
+  color: #1a1a1a;
+}
+
+.prose-light h1,
+.prose-light h2,
+.prose-light h3,
+.prose-light h4 {
+  color: #0a0a0a;
+}
+
+.prose-light p,
+.prose-light li {
+  color: #374151;
+}
+
+.prose-light strong {
+  color: #111827;
+}
+
+.prose-light a {
+  color: #4d65ff;
+}
+
+.prose-light blockquote {
+  color: #6b7280;
+  border-left-color: #d1d5db;
+}
+
+.prose-light code {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.prose-light pre {
+  background: #f9fafb;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+}
+
+.prose-light pre code {
+  background: none;
+}
+
+.prose-light th {
+  background: #f9fafb;
+  border-bottom-color: #d1d5db;
+  color: #111827;
+}
+
+.prose-light td {
+  border-bottom-color: #e5e7eb;
+  color: #374151;
+}
+
+.prose-light tr:hover td {
+  background: #f9fafb;
+}
+
+.prose-light hr {
+  border-top-color: #e5e7eb;
+}
+
 /* Maturity badges */
 .badge {
   font-family: 'Fira Mono', monospace;

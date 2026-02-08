@@ -59,7 +59,7 @@ export function ThesisWithAnnotations({ content, thesisTitle, thesisSlug }: Prop
   return (
     <div className="relative">
       {/* Main content */}
-      <div ref={containerRef as React.RefObject<HTMLDivElement>} className="prose max-w-none">
+      <div ref={containerRef as React.RefObject<HTMLDivElement>} className="prose prose-light max-w-none">
         <ThesisContent content={content} />
       </div>
 
