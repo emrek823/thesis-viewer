@@ -20,7 +20,7 @@ import os
 import re
 import sys
 
-VAULT_PATH = os.path.expanduser("~/Desktop/Obsidian Vault/LLM_Second_Brain")
+VAULT_PATH = os.path.expanduser("~/Desktop/LLM_Second_Brain")
 CONTENT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "content")
 OUTPUT_FILE = os.path.join(CONTENT_PATH, "source-urls.json")
 

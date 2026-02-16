@@ -9,7 +9,7 @@
 #   - Scrubs non-public source attributions
 #   - Strips internal sections (Evidence, Confidence, Related Theses)
 
-VAULT_PATH="$HOME/Desktop/Obsidian Vault/LLM_Second_Brain"
+VAULT_PATH="$HOME/Desktop/LLM_Second_Brain"
 CONTENT_PATH="$(dirname "$0")/../content"
 
 echo "Syncing content from vault..."
