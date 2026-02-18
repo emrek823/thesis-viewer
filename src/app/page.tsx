@@ -129,14 +129,9 @@ export default function HomePage() {
                   >
                     <div className="flex items-start justify-between gap-4">
                       <div className="flex-1 min-w-0">
-                        <h3 className="font-mono font-bold text-lg mb-2 text-white group-hover:text-accent transition-colors">
+                        <h3 className="font-mono font-bold text-lg text-white group-hover:text-accent transition-colors">
                           {thesis.title}
                         </h3>
-                        {thesis.take && (
-                          <p className="text-gray-400 text-sm leading-relaxed">
-                            {thesis.take}
-                          </p>
-                        )}
                       </div>
                       <span
                         className={`badge badge-${maturity.toLowerCase()} shrink-0`}
