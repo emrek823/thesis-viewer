@@ -254,7 +254,7 @@ function sanitizeForExternal(content: string, title: string): string {
   sanitized = sanitized.replace(
     /!\[\[([^\]]+\.(?:png|jpg|jpeg|gif|svg|webp))\]\]/gi,
     (_match, filename: string) => {
-      return `![](/images/${filename})`;
+      return `![](${encodeURI(`/images/${filename}`)})`;
     }
   );
 
