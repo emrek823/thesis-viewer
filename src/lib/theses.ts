@@ -248,7 +248,15 @@ function sanitizeForExternal(content: string, title: string): string {
   // Catch any remaining *Confidence: lines that survived truncation
   sanitized = sanitized.replace(/^\*Confidence:[\s\S]*$/gm, "");
 
-  // --- Phase 3: Resolve wiki links to public URLs ---
+  // --- Phase 3: Resolve wiki links and image embeds ---
+
+  // ![[image.png]] → ![](/images/image.png) for Obsidian image embeds
+  sanitized = sanitized.replace(
+    /!\[\[([^\]]+\.(?:png|jpg|jpeg|gif|svg|webp))\]\]/gi,
+    (_match, filename: string) => {
+      return `![](/images/${filename})`;
+    }
+  );
 
   // [[path|display text]] → [display text](url) if URL exists, otherwise plain display text
   sanitized = sanitized.replace(
