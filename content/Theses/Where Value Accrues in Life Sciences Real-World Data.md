@@ -1,4 +1,3 @@
-![[Images/where-value-accrues-in-life-sciences-real-world-data.png]]
 
 ## Overview
 
