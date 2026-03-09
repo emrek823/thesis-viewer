@@ -1,8 +1,9 @@
+XXX - question / answer / framing for the whole thesis 
 ## Overview
+
 
 Healthcare payment infrastructure in the US today is moving [[Sources/Market-Research-PDFs/tribridge---vc-pitch-deck-main---jan-12-50c96a1b|~$4T in annual claims between payers and providers across 9B+ transactions]] but was built for paper checks and batch processing. 
 
-We've seen a huge wave of RCM companies on the provider side - what's next?  
 
 We think about this as four basic layers (with some overlap of course; for cleanliness), and we've seen opportunities across all of them as each layer of the stack is evolving simultaneously. We anchor with payment rails at the bottom because nuance of provider's cash flows and how payers think about float on claims they are playing out impacts market movements across this stack. 
 ![[Pasted image 20260208140251.png]]
@@ -60,5 +61,7 @@ The risk is that consolidation outpaces startup velocity. Payer sales cycles run
 - [[Sources/Granola/Manan Shah __ Emre Karatas (Virtue)|Manan Shah / Backbone (translation gap: physicians document for care not reimbursement)]]
 - [[Sources/Granola/Tenix _ Virtue-2026-02-02_16-06-04|Tenix / Virtue Meeting (revenue integrity, 5% underpayment, action layer)]]
 - [[Sources/Granola/Will Detwiler (NewCo) __ Sean_Emre|Will Detwiler / Tenix Background (Midstream+Translucent+Clarium)]]
+
+**Related:** For the consumer-directed healthcare spending stack (HSAs, FSAs, ICHRAs, cash-pay) — a different mechanism, different buyers, different competitive dynamics — see [[Theses/In Progress/Consumer-Directed Healthcare Spending Doubles — Infrastructure Gap Creates Five Investment Wedges]]. SubCo operates primarily in that thesis's Layer 3, not in the provider-payer claims infrastructure covered here.
 
 *Last rebuilt: 2026-02-08*
