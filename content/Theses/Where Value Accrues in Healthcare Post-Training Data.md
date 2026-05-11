@@ -1,6 +1,6 @@
 ---
 source: notion
-synced: 2026-04-29 11:25
+synced: 2026-05-11 10:34
 status: Drafts
 notion_id: 351c0b14-1fd6-81c8-95cb-fabb31b77f4a
 ---
@@ -48,11 +48,6 @@ This has four direct implications for how healthcare AI startups should think ab
 - **GTM — pick the wedge that fits, but always tie it back to a real workflow.** All three buckets are viable, and the failure mode is picking a bucket strategy without a workflow target. Bucket 1 needs your own deployed product to harvest edits from. Bucket 2 needs an incumbent workflow to graduate into — the benchmark is a credibility asset, not the destination. Bucket 3 needs the workflow product itself, hardest to build but most defensible. Competing with Scale or Surge on horizontal labeling is the wrong game — different economics, no path to compounding moat in healthcare.
 - **Revenue model — price against yield, not labor.** Healthcare has a structural advantage horizontal AI doesn't: operational outcomes are measurable. Denial avoided, code accepted, prior auth approved. <span color="blue" underline="true">[SmarterDx](https://www.smarterdx.com)</span> prices CDI at 11.6% take of found revenue (\~\$822K ACV anchored to \~\$7M of uplift per hospital). Iodine generates \$1B/yr in additional hospital revenue at \~10% take rate. Labelers can't match that pricing because they don't sit on the operational outcome. The companies that bundle training data + eval + model improvement into outcome-priced contracts capture multiples no horizontal vendor can reach.
 - **Defensibility against big labs — the lab playbook won't work in healthcare.** Labs structurally avoid single-vendor concentration (the "another NVIDIA" problem Potdar names) and can't replicate workflow + regulatory permissioning + domain depth at scale. They will partner, license, and acquire — but the durable position is the workflow company they're partnering *with*, not the lab itself. The vertical app + workflow surface is the only structurally defensible position. Labs need the access; vertical companies own the surface that grants it.
-This thesis sits in line with three other active Virtue beliefs:
-- **\[Where Value Accrues in Life Sciences Real-World Data\](https://www.notion.so/virtuevc/331c0b141fd68184b001ccd384821949)** — originator power shift; workflow integration earns the data while pure data brokerage compresses. Same dynamic, applied one rung over to post-training data instead of pharma RWE.
-- **\[Defensibility in Clinical AI\](https://www.notion.so/virtuevc/331c0b141fd6818ab8c9d4fc0dda4322)** — data access is the binding constraint at upper benchmark levels; context engineering and workflow design beat raw model scale. This post names the data sources that constraint actually runs through.
-- **\[A New Actuarial Infrastructure Layer Is Emerging\](https://www.notion.so/virtuevc/332c0b141fd680e79a71d7a2f4114707)** — Layer 1 (dashboards) and Layer 2 (workflow tools) commoditize; Layer 3 (priced outcome) is where margin compounds. Buckets 1 and 2 follow the same trajectory in healthcare AI training data; outcome-priced workflow integration is the Layer 3 analog.
-The losing positions are unambiguous: pure data brokerage to frontier labs is the labeler trap, bucket-2 benchmark work without a workflow target ends up as services + research, and horizontal-style annotation breaks on \$200/hr clinical labor. The winning position is equally clear: own — or graduate into — a real workflow, train on its exhaust, price against yield. Some companies start at bucket 3 (Canvas). Others graduate via bucket 2 (Kinetic). Both are durable. The mistake is picking a bucket strategy without picking a workflow.
 ---
 ## Sources
 **Primary frameworks:**
@@ -70,11 +65,6 @@ The losing positions are unambiguous: pure data brokerage to frontier labs is th
 - <span color="blue" underline="true">[Datavant — Aetion acquisition (\$400M, May 2025)](https://www.aetion.com/news/datavant-to-acquire-aetion)</span>
 - <span color="blue" underline="true">[Truveta Language Model — 130M patients](https://www.truveta.com/blog/news/truveta-language-model/)</span>
 - <span color="blue" underline="true">[Komodo Health — 325M patients, \$3.3B valuation](https://www.komodohealth.com)</span>
-**Active Virtue theses (mapped):**
-- <mention-page url="https://app.notion.com/p/331c0b141fd68184b001ccd384821949"/> — originator power shift; data brokerage compresses
-- <mention-page url="https://app.notion.com/p/331c0b141fd6818ab8c9d4fc0dda4322"/> — data access as binding constraint at upper benchmark levels
-- <mention-page url="https://app.notion.com/p/332c0b141fd680e79a71d7a2f4114707"/> — Layer 1/2 commoditize; Layer 3 (priced outcome) compounds
 **Conversations:**
-- Canvas Medical — \[ETK: cite contact, date\]
-- Michael Wornow re: HealthAdminBench / Kinetic Systems — \[ETK: cite date\]
+- Canvas, Michael Wornow 
 *Last updated: April 2026*
