@@ -1,0 +1,81 @@
+---
+source: notion
+synced: 2026-05-19 15:55
+status: Drafts
+notion_id: 351c0b14-1fd6-81c8-95cb-fabb31b77f4a
+---
+
+# Healthcare and Life Sciences AI Is Following the Frontier Labs Into Real-World Data
+
+***Healthcare and life sciences AI is moving from labels and synthetic data to real-world data. The moat isn’t collecting it but the domain expertise to refine it.***
+Through our portfolio company [Integral](https://www.useintegral.com/), we’ve had a view from the infrastructure layer of how labs and human-data companies are thinking about post-training data. This frontier-lab lens (*What data will frontier labs pay for?*) turned out to be the sharpest forcing function we’ve found for thinking about data moats for startups. It reveals what labs structurally can’t get (private workflow data inside deployed products, exclusive partnerships, etc.), and where startups can build defensibility.
+## Three kinds of post-training data — and why healthcare is moving to real-world data
+In our work, we drew on [Sid Potdar's three buckets of post-training human data](https://www.linkedin.com/pulse/data-labeling-other-euphemisms-sid-potdar-txdsc/) — annotations on live model output, from-scratch synthetic environments, and real-world data — to anchor how we think about post-training data in healthcare. 
+Similar to Sid, we see the healthcare and life sciences world moving toward real-world data because the [verification problem](https://www.jasonwei.net/blog/asymmetry-of-verification-and-verifiers-law) is structurally different from coding. Whether a clinical note captured the right diagnosis or a prior auth decision matched medical necessity is only knowable from downstream signals — clinician edits, payer adjudications, and reimbursement outcomes. Healthcare is also a “[low-veracity domain](https://seanzcai.substack.com/p/an-ai-bubble-is-a-human-data-problem)” — the underlying logic is heterogeneous, with each payer, for example, interpreting the same rules differently. 
+We break down all three buckets, and in particular the nuance within real-world data, with healthcare and life sciences specific examples below. 
+<table header-row="true" header-column="false">
+<colgroup>
+<col width="179.966796875">
+<col width="565.78125">
+</colgroup>
+<tr>
+<td><span discussion-urls="discussion://364c0b14-1fd6-806a-9db2-001cc22a8d32">Category</span></td>
+<td>Healthcare Examples</td>
+</tr>
+<tr>
+<td>**Annotations on live output. **Domain experts marking model output good or bad</td>
+<td>**Prior auth: **Annotations are binary (approved or not) against ground-truth of medical necessity criteria or payer policy <br>**<br>Scribes: **Annotations reflect clinician “taste” since there is no objectively “perfect” note </td>
+</tr>
+<tr>
+<td>**From-scratch synthetic environments.** Vendor sets the distribution.</td>
+<td>Stanford's [HealthAdminBench](https://som-shahlab.github.io/health-admin-bench-website/) (researcher-built portal clones for prior auth / DME / appeals); Stanford's [Biomni-R0](https://github.com/snap-stanford/biomni) (RL-trained biology agent over biomedical tools); [Lumos MedPI](https://medpi.thelumos.ai/) (clinician-seeded synthetic patients)</td>
+</tr>
+<tr>
+<td>**Real-world data.** Vendor enriches data already produced by real activity.</td>
+<td>**Acquired real-world data:** Data you go buy / acquire. Academic wet lab notebooks (Sid's example); claims aggregators ([Truveta](https://www.truveta.com/), [Datavant](https://www.datavant.com/)); imaging data ([Gradient](https://gradienthealth.io/)).<br><br>**Context-graph capture (System of Record):** [Canvas Medical](https://www.canvasmedical.com/) collects per-patient longitudinal timelines (`encounter_notes`, `suggested_diagnosis_acceptance`, `hospital_admissions`) as workflow exhaust from their next-gen EMR.<br><br>**Context-graph capture (Deployed in workflow):** [Dart Health](https://www.darthealth.ai/) deploys HOMER-1 inside health systems' data infrastructure to run clinical use cases, accumulating a per-customer cloud-isolated workspace of `generated_tools`, `encoded_rules`, `customer_specific_overrides`, `execution_traces`, and `clinical_outcomes`. </td>
+</tr>
+</table>
+Bucket 1 is table stakes for most companies. The tooling is more mature, but what varies is whether the underlying task has a measurable answer. Prior auth annotations carry ground-truth signal while scribe annotations carry preference, for example. More teams are spinning up custom in-house annotation UIs and recruiting experts (or using founder’s expertise) because that’s faster than waiting on SOW from a vendor. 
+For Bucket 2, the horizontal infrastructure layer is generalist (e.g., [Prime Intellect’s environments hub](https://app.primeintellect.ai/dashboard/environments?ex_sort=by_sections)). The healthcare-specific players typically use Bucket 2 as a wedge into something more durable and scalable. Michael Wornow and team took the HealthAdminBench playbook (Stanford) into [Kinetic Systems,](https://kineticsystems.ai/) going directly after Bucket 3 with computer-use agents inside payer and provider workflows. Lumos is moving into Bucket 3 by capturing click-by-click traces of expert workflows as training trajectories for agents. 
+In Bucket 3, there are two types of data:
+- **Acquired real-world data** is data that already exists and you purchase from a vendor like [Protege](https://withprotege.ai/) or license/contract directly with data originators. 
+- **Context-graph capture** is data continuously generated by a deployed product instrumented to capture decision traces (much discussed by [Gupta and Garg](https://foundationcapital.com/ideas/context-graphs-ais-trillion-dollar-opportunity) at Foundation Capital and [Jamin Ball](https://cloudedjudgement.substack.com/p/clouded-judgement-121225-long-live) at Altimeter). 
+We draw this distinction of building a new system of record vs. deploying inside one mostly for competitive positioning. Building a new system of record in healthcare and life sciences in 2026 is rare. The more typical playbook is vertical AI deployed on top of existing systems of record.
+## **Worked Example: Scientific Lab Data** 
+Take scientific lab data as a worked example across all five sub-buckets. This anchors the framework and shows the practical implications of using the frontier-lab lens for application-layer defensibility. 
+- **Bucket 1.** Scientists look at LLM-generated outputs (literature reviews, hypotheses, methodology drafts) and rate good/bad/why. Post-hoc grading of model output.
+- **Bucket 2.** A company sits in the lab and builds a portal or synthetic clone, trying to capture every edge case 50 smart PhDs can think of.
+- **Bucket 3 — acquired real-world data (no context-graph layer).** You go to universities, hospitals, registries and acquire the data that already exists — wet lab notebooks, claims dumps, imaging corpora. The data is real but it’s more what happened than why it happened (although you can infer some of this). 
+- **Bucket 3 — context-graph capture (system of record).** [Benchling](https://www.benchling.com/) is the system of record in this space — useful as a comparison point, even though most startups won’t build a new SoR. Their recent ["AI Scientist" essay](https://www.benchling.com/blog/ai-scientist-that-deserves-the-name) explicitly positions the structured experimental data, workflows, and decision logs they’ve captured over a decade as the foundation for AI.
+- **Bucket 3 — context-graph capture (deployed in workflow).** You build a deployed product that observes scientific execution as it happens (e.g., [Transfyr](https://transfyr.ai/), which is building the API layer for science). Reasoning, decision traces, and protocol deviations are all captured as a first-class data layer because the product was instrumented to do so. 
+You’re starting out with different models to see how well they do on a task you know well. Then you start to hill climb benchmarks or evals that you or others built. Then you go to take the next leap in performance and are thinking about what data you need to be competitive. So then the question for any Bucket 3 play becomes: is previously acquired data enough to reach the model performance your task needs? Or do you need to deploy something that captures reasoning as it happens?
+In practice, acquired real-world data is enough when the task is bounded and the signal already lives in the existing data (imaging classification, structured prediction from claims, certain biomarker work, etc.). Context-graph capture is needed when the task requires reasoning, when the workflow logic varies across customers (payer-specific PA rules, institution-specific escalation paths), or when the verifier itself lives inside a deployed product (a paid claim, an accepted code, a clinician-confirmed diagnosis). 
+Whether you then sell that data to a lab, train your own model, or do both is a business-model question. 
+## <span discussion-urls="discussion://365c0b14-1fd6-80c4-a76b-001c03a7efe7">R</span>eal-world data is a starting point. The domain expertise to refine it is the moat.
+Once you have the real-world data, the refinement work is where the moat lives. As [Shubh (Integral CEO) has written](https://www.linkedin.com/pulse/integral-data-privacy-programs-ai-shubh-sinha-dl5ce/), the easy data has already been trained on. The next trillion tokens are regulated and sensitive, and the bottleneck is usability.
+With this frontier-lab lens, we’ve been working closely with [Integral](https://www.useintegral.com/) to understand what this looks like in practice. Integral has built the independent privacy and sanitization layer for AI data workflows. This layer includes entity-preserving methods that keep the longitudinal record intact while the dataset carries a defensible re-identification posture, across structured data, text, images, and speech. Integral sits on both sides of the trade: frontier labs buy compliant real-world data through it, and data suppliers monetize their own through it.
+Working alongside Integral has highlighted what actually matters. It’s not only the data pipeline itself (table stakes), but the domain expertise to ask the right questions at every layer of the stack. 
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/9652a084-ee9f-44b9-84d4-7ccbc428692b/9bce4462-ad67-40de-9884-72ae77a75dbd/35bc205c-794b-407a-83a7-0dc89768b3ed.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UNPCGPCW%2F20260519%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260519T195459Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBMaCXVzLXdlc3QtMiJGMEQCIHuZt9%2B6URX%2FtBtOPrfcqm1NVffyD0S6YPPZfdC66EK5AiA9TwnmHy8FO3j4MVWxt7p3cyK%2BEQV21ujvuajYR%2B4oeSqIBAjc%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMCI9YIGKnHSqR4CWFKtwDbeBfzXDgaJsfXl2GMG6ZoRtF%2F3CQWwBmax2MC9lfEW8o8pCOJZIVMDgAzCjUYsA%2BfTwUiCZAN6r3PIe6XMEkKqFIgy934OAMzPc3SkSIFKJPfB6yIpjdbTJSXpHlIpFFj5GrYu4lpspCsQIR7zAAd4hAJIB3feGATy1ejhNgVEK9wuK8l5sP8iL3oVuvlntd1Ktdt3ZTJfKePkHcXU7IAkokbCiGAlm7sqoHOab6xbPeGCBxWLX%2F8Vu1RAgZHM1Hd1fiAr6cAI%2BgDIAGTtLDuAjbCxrf98kmC%2BEoa83v5gwajR1C3By5qqfqj2oChGKwFUid9YKFVTEl50xhhaSc%2BXB6MwhdQCmMSsC5%2F%2FsHl1NLhenG5WyC6mz%2BGjbASA8eOBl6RKnPKXoC9QCaH7XcQPv3%2B2NVt%2B8km0lO1mayz1u0XzJcOufS8GH8K9bV2uWe3sGFeIYF4m4ILY5W6wMysQ6et5kChK1vUNMCAuqZrbZseAAhFGb%2Fk2tfopjvHGScRp6YmuNZ364cLWlSawSpvIfBYE8jPvk9%2FLqxXEjAtwSwIOVFbqIniOX%2B9YHEtxamONr7QU13qgU5W6CWmBaArnXNOLGeQA7FQJZNRGkumskMHEUqgE%2FmRjYw1pow2dyy0AY6pgGKyzLDubXQFPQVipdPdrroaUgzlkad1Z7Dsd66zF315NVF5DfBfPAmDN9zBqfRMF7vCPtq8Yd0LVrheZKW7aNRgcWw0i63Y2o3DStrbU2fHIqy0QKBDvW8Ln2lMKWGsn0lMvRaCPkVsveWYiTiNQRUk5MlfVqGvYyr5Uc567dvxFxvjEXcFZ4xsd2OmzPfVhmpMCLoID2sDlGyB5qMKpUJrK4b83nX&X-Amz-Signature=042dad8a76e998beaa1bb6bf93e536038f6c2df14eab70a3001d44ae3a73b681&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+Every step has decisions only a domain expert can make. Why are we missing the middle pages of medical records? Should we route refill renewals to a small model and complex appeals to a big one? Is v2 better on this health system’s case mix, or just better on average? You can’t buy answers to these questions. The moat is the domain expertise at every layer of the stack — from what gets included, to what gets cut, to how things are weighted. 
+## What we see going forward
+**1. The application layer will continue to mature beyond prompt engineering.** Most app-layer companies aren’t training their own models, but they’re not just calling frontier APIs either. They’re building production loops that turn deployed traces into reward signal, evals tuned to their domain, and selective fine-tuning where the data finally warrants it. [Charlie O’Neill describes](https://x.com/oneill_c/status/2054604986269802579) this shift from his vantage point at Baseten. Companies will have a deeper engineering stack underneath the product, where the reward signal that lives inside the workflow gets captured, structured, and turned into something a model can learn from.
+**2. Multi-modal data and models will win in healthcare, but only with the right workflow corpus.** Healthcare is inherently multi-modal (clinical notes, radiology, pathology, audio, structured labs, time-series telemetry, genomics, etc.). Most frontier models today are single-modal or weakly multi-modal, and public corpora don’t align across modalities at the patient level. The app-layer companies capturing multi-modal data inside the workflow — where text, image, audio, and structured data are already linked to the same patient, encounter, and decision — have a dataset labs can’t easily reconstruct from outside.
+**3. Domain expertise is shifting. **Virtue was founded on the belief that domain-specific expertise is essential to building healthcare companies, and we wanted to bring that same expertise as investors. What domain expertise means has shifted over the last five years. It used to be primarily about relationships with buyers and knowing how to play the game within a broken system. Those are still necessary but not sufficient. Teams now need more expertise in data engineering and the data-quality judgment that comes with it, breaking workflows down into automatable steps, and knowing what "good" looks like for AI outputs in domains like healthcare where outputs are hard to verify.
+<span discussion-urls="discussion://361c0b14-1fd6-8033-9170-001c962f4fbc">We’d love to chat more with founders who are building here, AI folks getting into healthcare, and anyone with data assets they think are valuable but untapped! </span>
+*Thanks to many friends who have provided feedback in writing this post! S/O Shubh Sinha, Veeraj Mehta, Aaryan Shah, Michael Wornow, Samir Unni, and many others. *
+## Additional Reading
+- [Sid Potdar — Data Labeling and Other Euphemisms](https://www.linkedin.com/pulse/data-labeling-other-euphemisms-sid-potdar-txdsc/)
+- [Jaya Gupta + Ashu Garg — Context Graphs: AI's Trillion-Dollar Opportunity (Foundation Capital)](https://foundationcapital.com/ideas/context-graphs-ais-trillion-dollar-opportunity)
+- [Jamin Ball — Long Live Systems of Record (Clouded Judgement)](https://cloudedjudgement.substack.com/p/clouded-judgement-121225-long-live)
+- [Benchling — An AI Scientist that deserves the name](https://www.benchling.com/blog/ai-scientist-that-deserves-the-name)
+- [Sean Cai — An AI Bubble is a Human Data Problem](https://seanzcai.substack.com/p/an-ai-bubble-is-a-human-data-problem)
+- [HOMER-1: The Clinical AI Machine \[Dart Health\]](https://www.darthealth.ai/whitepaper/homer1)
+- [Sean Cai — Selling Data & RL Envs to AI Labs (Chris Barber interview)](https://x.com/chrisbarber/status/2054709527069818881)
+- [Charlie O'Neill (Baseten) — Why every serious AI company is training its own model](https://x.com/oneill_c/status/2054604986269802579)
+- [Jason Wei — Asymmetry of Verification and Verifier's Law](https://www.jasonwei.net/blog/asymmetry-of-verification-and-verifiers-law)
+- [Shubh Sinha (Integral) — Data Privacy Programs for AI](https://www.linkedin.com/pulse/integral-data-privacy-programs-ai-shubh-sinha-dl5ce/)
+- [HealthAdminBench (Stanford)](https://som-shahlab.github.io/health-admin-bench-website/)
+*Last updated: May 2026*
+<empty-block/>
+<empty-block/>
+<empty-block/>
